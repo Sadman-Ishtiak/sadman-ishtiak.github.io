@@ -1,5 +1,0 @@
----
-layout: home
-# Index page
----
-# Hello there, My name is Sadman Ishtiak

@@ -1,3 +1,4 @@
+math: true
 # The Site Configuration
 
 # Import the theme
@@ -16,26 +17,26 @@ timezone: Asia/Dhaka
 
 title: Sadman Ishtiak # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: My Personal Learning Blog # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  My name is Sadman Ishtiak, I am currently a student in Jatiya Kabi Kazi Nazrul Islam University studying Computer Science and Engineering. I am a fast learner and a fast forgetter (A torn sachel if I may describe). So this blog is the place where I am storing the informations that I have learned and will be learning in the future which I may not feel particular shame sharing. And also will work as a place for me to make a quick reference. Feel free to follow along if you find this interesting and also feel free to help me learn new things by catching my mistakes and suggesting me new things to learn.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://sadman-ishtiak.github.io/"
 
 github:
   username: Sadman-Ishtiak # change to your GitHub username
 
 twitter:
-  username: twitter_username # change to your Twitter username
+  username: SadmanIshtiak # change to your Twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Sadman Ishtiak
+  email: sadmanishtiak3@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username # change to your Twitter homepage
