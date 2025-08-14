@@ -1,6 +1,6 @@
 ---
 title: Trying to learn hacking using tryhackme Offensive Security Intro 
-date: 2025-08-02 00:00:00 +0600
+date: 2025-08-14 00:00:00 +0600
 categories: [Hacking, offensivesecurityintro]
 tags: [tryhackme, offensivesecurityintro, hacking, gobuster]     # TAG names should always be lowercase
 description: "The first room of tryhackme"
