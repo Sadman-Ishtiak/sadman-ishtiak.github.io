@@ -23,6 +23,7 @@ Where the bar of something means the average value of that value. The `m` and th
 The general formula for multiple linear regression is:
 
 $$y = \beta_0 + \beta_1x_1 + \beta_2x_2 + ... + \beta_nx_n + \epsilon$$
+
 1. y is the dependent variable (the value you are trying to predict).
 2. $x_1, x_2, x_3, ... x_n$ ​are the independent variables (the input features).
 3. $\beta_0$ is the y-intercept, the value of y when all independent variables are zero.
@@ -64,9 +65,14 @@ which gives the output
 ![Value of the output](/assets/images/linear-regression-1.png)
 
 then we need to calculate the value of `m` in `y = mx + c` using the formula
+
 $$m = \frac{\sum{(x - \bar{x})(y - \bar{y})}}{\sum{(x - \bar{x})^{2}}}$$
+
 and the value of `c` using the formula
+
 $$c = \bar{y} - m\bar{x}$$
+
+and by implementing them we get,
 ```py
 numerator = 0
 denominator = 0
@@ -97,8 +103,9 @@ print("Mean Square Error :", square_error / number)
 print("Root Mean Square Error :", (square_error / number)**.5)
 print("Mean Absolute Error :", absolute_error / number)
 ```
+
 This will give us the output 
-```txt
+```text
 Mean Square Error : 101.58853248632813
 Root Mean Square Error : 10.0791136756328
 Mean Absolute Error : 8.037502348939391
