@@ -60,7 +60,9 @@ avg_weight = sum(weights) / number
 print(avg_height, avg_weight)
 ```
 which gives the output 
+
 ![Value of the output](/assets/images/linear-regression-1.png)
+
 then we need to calculate the value of `m` in `y = mx + c` using the formula
 $$m = \frac{\sum{(x - \bar{x})(y - \bar{y})}}{\sum{(x - \bar{x})^{2}}}$$
 and the value of `c` using the formula
