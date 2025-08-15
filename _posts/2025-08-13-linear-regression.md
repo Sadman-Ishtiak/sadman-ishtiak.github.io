@@ -29,6 +29,42 @@ $$y = \beta_0 + \beta_1x_1 + \beta_2x_2 + ... + \beta_nx_n + \epsilon$$
 3. $\beta_0$ is the y-intercept, the value of y when all independent variables are zero.
 4. $\beta_1, \beta_2, \beta_3, ..., \beta_n$ are the coefficients or weights for each independent variable, representing the change in y for a one-unit change in the corresponding x.
 5. ϵ is the error term or residual, which accounts for the variability in y that cannot be explained by the independent variables.
+6. Since there are n number of regressor variable or independent variables we will have n+1 parameters or coeffecients in the model.
+
+The formula $y = \beta_0 + \beta_1x_1 + \beta_2x_2 + ... + \beta_nx_n + \epsilon$ can be written in the matrix form as, 
+$$Y = X\beta + \epsilon$$
+where assuming k is the number of observations, 
+
+$$Y = \begin{bmatrix}
+y_1 \\
+y_2 \\
+y_3 \\
+\vdots \\
+y_k
+\end{bmatrix}$$
+
+$$X = \begin{bmatrix}
+1 & x_{11} & x_{12} & x_{13} & ... & x_{1n} \\
+1 & x_{21} & x_{22} & x_{23} & ... & x_{2n} \\
+1 & x_{31} & x_{32} & x_{33} & ... & x_{3n} \\
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots \\
+1 & x_{k1} & x_{k2} & x_{k3} & ... & x_{kn} \\
+\end{bmatrix}$$
+
+$$\beta = \begin{bmatrix}
+\beta_1 \\ \beta_{2} \\ \beta_{3} \\ \vdots \\ \beta_{n}
+\end{bmatrix}$$
+
+$$\epsilon = \begin{bmatrix}
+\epsilon_1 \\ \epsilon_{2} \\ \epsilon_{3} \\ \vdots \\ \epsilon_{k}
+\end{bmatrix}$$
+
+Generally we do not care about the error $\epsilon$ when we are trying to estimate using linear regression model as we always assume that there will be some error when trying to estimate. and the core idea of linear regression is to reduce the error. So we need the value of the coeffecient $\beta$ from the function. using matrix algebra the value of the coeffecient is,
+
+$$\beta = (X^{T}X)^{-1}X^{T}Y$$
+
+where $X^{T}$ means transpose of $X$ and $X^{-1}$ means inverse of matrix $X$. 
+
 ## Example for two information dataset
 Let us take a good look at the [Heights and Weights Dataset](https://www.kaggle.com/datasets/burnoutminer/heights-and-weights-dataset/data) from kaggle for this example and get on the kaggle notebook. 
 
