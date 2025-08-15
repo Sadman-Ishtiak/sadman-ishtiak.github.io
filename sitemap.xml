@@ -9,102 +9,167 @@
 
 <url>
   <loc>https://sadman-ishtiak.github.io/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://sadman-ishtiak.github.io/categories/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sadman-ishtiak.github.io/tags/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sadman-ishtiak.github.io/archives/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sadman-ishtiak.github.io/about/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sadman-ishtiak.github.io/posts/tryhackme-offensivesecurityintro/</loc>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sadman-ishtiak.github.io/posts/linear-regression/</loc>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sadman-ishtiak.github.io/posts/8086-assembly-2/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sadman-ishtiak.github.io/posts/8086-assembly-1/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sadman-ishtiak.github.io/posts/OhSHINT/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sadman-ishtiak.github.io/posts/template/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sadman-ishtiak.github.io/tags/exam/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sadman-ishtiak.github.io/tags/hacking/</loc>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sadman-ishtiak.github.io/tags/lab/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://sadman-ishtiak.github.io/tags/chirpy/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sadman-ishtiak.github.io/tags/tryhackme/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sadman-ishtiak.github.io/tags/chirpy/</loc>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sadman-ishtiak.github.io/tags/data-science/</loc>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sadman-ishtiak.github.io/tags/gobuster/</loc>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sadman-ishtiak.github.io/tags/linear-regression/</loc>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sadman-ishtiak.github.io/tags/math/</loc>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sadman-ishtiak.github.io/tags/offensivesecurityintro/</loc>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://sadman-ishtiak.github.io/categories/blogging-experience/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sadman-ishtiak.github.io/categories/reminder/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sadman-ishtiak.github.io/categories/data-science/</loc>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sadman-ishtiak.github.io/categories/statistics/</loc>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sadman-ishtiak.github.io/categories/hacking/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sadman-ishtiak.github.io/categories/offensivesecurityintro/</loc>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sadman-ishtiak.github.io/categories/osint/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sadman-ishtiak.github.io/categories/low-level/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sadman-ishtiak.github.io/categories/8086-assembly/</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sadman-ishtiak.github.io/tags/osint/</loc>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://sadman-ishtiak.github.io/tags/statistics/</loc>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://sadman-ishtiak.github.io/assets/pdf/3-1-theory-exam.pdf</loc>
-  <lastmod>2025-08-05T09:11:19+00:00</lastmod>
+  <lastmod>2025-08-14T16:40:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
