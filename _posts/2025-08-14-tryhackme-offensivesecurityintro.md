@@ -15,13 +15,20 @@ There are two things types of general tasks in cyber security.
 2. Defensive security is the opposite of offensive and involves knowing and preventing those exploits.
 ## Hacking your first machine
 This part of the room gives a website and a terminal access which can be used to do an attack on a website. we use the tool `gobuster` which is a terminal based tool that is used to brute force directories on web server. According to the kali website,
-```txt
+```text
 Gobuster is a tool used to brute-force: URIs (directories and files) in web sites, DNS subdomains (with wildcard support), Virtual Host names on target web servers, Open Amazon S3 buckets, Open Google Cloud buckets and TFTP servers.
 ```
 we used the tool in the virtual macihne and given the directed command
 ```bash
 gobuster -u http://fakebank.thm -w wordlist.txt dir
 ```
+This command breaks down to multiple parts
+
+1. `gobuster` is the tool name
+2. `-u` is the flag that tells the next input is an url and the `http://fakebank.thm` is the input url
+3. `-w` flag stands for wordlist and the `wordlist.txt` is the provided file that contains a list of common directories.
+4. `dir` is the mode of scan in the gobuster. This tells gobuster to run directory brute force attack.
+
 and this gives an output
 ![Gobuster in the working](/assets/images/thm-offensivecybersecurity-gobuster.png)
 /bank transfer directory gives http code 200 (accepted) so when we go there we find that this is an admin panel where we can control and transfer money.
