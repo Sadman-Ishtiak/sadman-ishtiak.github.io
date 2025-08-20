@@ -1,6 +1,6 @@
 ---
 title: Training Impact on Teams
-date: 2025-08-20 00:00:00 +0600
+date: 2025-08-19 00:00:00 +0600
 categories: [Hacking, Tryhackme]
 tags: [training, hacking, tryhackme]     # TAG names should always be lowercase
 description : "Discover the impact of training on teams and organisations."
