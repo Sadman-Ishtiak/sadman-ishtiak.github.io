@@ -6,7 +6,7 @@ tags: [training, hacking, tryhackme]     # TAG names should always be lowercase
 description : "Discover the impact of training on teams and organisations."
 math: true
 ---
-This entire tryhackme room describes the importance of training. Although the examples descriptions are given in terms of cybersecurity it can also be implemented in other sections as well.
+This entire tryhackme room describes the importance of training. Although the examples descriptions are given in terms of cybersecurity it can also be implemented in other sections as well. Your can solve this at [here](https://tryhackme.com/room/training).
 
 ## Task 1: Understanding the Impact of Cyber Security Training
 This section describes the importance of training in individual skill of someone in cybersecurity. Also this section gives how to improve team cohesion and efforts as well.
