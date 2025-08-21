@@ -96,7 +96,7 @@ we use access each variable using `${var[]}`
 # Print the entire array
 echo "${cars[@]}"
 # Print one variable
-echo "${transport[1]}"
+echo "${cars[1]}"
 ```
 To delete a variable we `unset` it
 ```bash
