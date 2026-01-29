@@ -1,7 +1,7 @@
 ---
 title: tryhackme room "CTF collection volume 1" solving experience 
 date: 2025-09-30 00:00:00 +0600
-categories: [Hacking, Tryhackme]
+categories: [Cybersecurity, TryHackMe]
 tags: [tryhackme, hacking, ctf]     # TAG names should always be lowercase
 description: "tryhackme room CTF collection volume 1 solving experience and tutorial note"
 math: true

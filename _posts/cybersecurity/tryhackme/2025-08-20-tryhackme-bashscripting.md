@@ -1,7 +1,7 @@
 ---
 title: Bash Scripting
 date: 2025-08-20 00:00:00 +0600
-categories: [Hacking, Tryhackme]
+categories: [Cybersecurity, TryHackMe]
 tags: [bashscripting, hacking, tryhackme, bash, linux]
 description : "A Walkthrough room to teach you the basics of bash scripting"
 math: true

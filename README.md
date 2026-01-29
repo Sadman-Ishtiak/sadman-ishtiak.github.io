@@ -1,43 +1,70 @@
-# Chirpy Starter
+# sadman-ishtiak.github.io
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+My personal website and blog.
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+## Local Development Setup
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+Follow these steps to set up the project locally on your machine.
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+### 1. Prerequisites
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
+Ensure you have **Ruby** installed.
+```bash
+ruby -v
 ```
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+### 2. Clean Global Gems (Optional)
 
-## Usage
+If you have globally installed gems that might conflict or if you want a clean slate, you can uninstall them.
+**Warning:** This will remove all Ruby gems installed globally on your system.
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+```bash
+# List global gems to see what you have
+gem list --local
 
-## Contributing
+# Uninstall all global gems
+gem uninstall -a -I -x
+```
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+### 3. Installation
 
-## License
+This project is configured to install dependencies locally in the `vendor/bundle` directory to avoid polluting your global environment.
 
-This work is published under [MIT][mit] License.
+1.  Install Bundler (if not already installed):
+    ```bash
+    gem install bundler
+    ```
 
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+2.  Configure Bundler to use the local `vendor/bundle` directory:
+    ```bash
+    bundle config set --local path 'vendor/bundle'
+    ```
+
+3.  Install dependencies:
+    ```bash
+    bundle install
+    ```
+
+### 4. Running the Site
+
+You can start the local development server using the provided script or directly with bundler.
+
+**Using the script:**
+```bash
+bash tools/run.sh
+```
+
+**Using Bundler directly:**
+```bash
+bundle exec jekyll serve
+```
+
+The site will be available at `http://127.0.0.1:4000/`.
+
+## Deployment
+
+This site is deployed to GitHub Pages. The workflow is automated via GitHub Actions.
+
+## Credits
+
+Based on the [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) theme.

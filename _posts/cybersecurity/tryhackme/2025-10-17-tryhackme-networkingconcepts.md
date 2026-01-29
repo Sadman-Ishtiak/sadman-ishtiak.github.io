@@ -1,7 +1,7 @@
 ---
 title: tryhackme room "Networking Concepts" solving experience 
 date: 2025-10-17 00:00:00 +0600
-categories: [Computer Network, Tryhackme]
+categories: [Cybersecurity, TryHackMe]
 tags: [tryhackme, hacking, networking, tcp/ip, osi]     # TAG names should always be lowercase
 description: "tryhackme room Networking Concepts solving experience and tutorial note, and note on TCP/IP and OSI model."
 math: true

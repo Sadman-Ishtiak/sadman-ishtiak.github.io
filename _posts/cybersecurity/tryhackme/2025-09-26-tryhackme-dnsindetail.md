@@ -1,7 +1,7 @@
 ---
 title: tryhackme room "DNS in Detail" solving experience 
 date: 2025-09-26 00:00:00 +0600
-categories: [Hacking, Tryhackme]
+categories: [Cybersecurity, TryHackMe]
 tags: [tryhackme, dns, hacking, nslookup]     # TAG names should always be lowercase
 description: "Learning the basics of DNS"
 math: true

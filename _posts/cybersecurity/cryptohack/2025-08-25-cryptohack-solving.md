@@ -1,7 +1,7 @@
 ---
 title: Learning and solving cryptography with cryptohack
 date: 2025-09-27 00:00:00 +0600
-categories: [Hacking, Cryptohack]
+categories: [Cybersecurity, CryptoHack]
 tags: [cryptohack, hacking, cryptography, python]     # TAG names should always be lowercase
 description: "Learning and solving cryptography with cryptohack short note with program and fast explaination"
 math: true

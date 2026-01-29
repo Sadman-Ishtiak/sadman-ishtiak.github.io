@@ -1,7 +1,7 @@
 ---
 title: tryhackme room "Metasploit Introduction" solving experience 
 date: 2025-09-28 00:00:00 +0600
-categories: [Hacking, Tryhackme]
+categories: [Cybersecurity, TryHackMe]
 tags: [tryhackme, hacking, web exploitation tool]     # TAG names should always be lowercase
 description: "tryhackme room \"Metasploit: Introduction\" solving experience"
 math: true

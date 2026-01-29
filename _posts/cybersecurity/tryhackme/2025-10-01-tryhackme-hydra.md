@@ -1,7 +1,7 @@
 ---
 title: tryhackme room "Hydra" solving experience 
 date: 2025-10-01 00:00:00 +0600
-categories: [Hacking, Tryhackme]
+categories: [Cybersecurity, TryHackMe]
 tags: [tryhackme, hacking, hydra, red team]     # TAG names should always be lowercase
 description: "tryhackme room Hydra solving experience and tutorial note"
 math: true
