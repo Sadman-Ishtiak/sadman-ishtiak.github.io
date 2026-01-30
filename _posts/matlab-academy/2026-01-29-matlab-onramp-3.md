@@ -1,5 +1,5 @@
 ---
-title: Matlab Onramp course notes - Part 3: Plots & Data Import
+title: Matlab Onramp course notes - Part 3 Plots & Data Import
 date: 2026-01-29 02:00:00 +0600
 categories: [Matlab Academy, Matlab]
 tags: [matlab, learning]

@@ -1,6 +1,6 @@
 ---
-title: Matlab Onramp course notes - Part 2: Vectors, Matrices & Arrays
-date: 2026-01-29 01:00:00 +0600
+title: Matlab Onramp course notes - Part 2 Vectors, Matrices & Arrays
+date: 2026-01-28 01:00:00 +0600
 categories: [Matlab Academy, Matlab]
 tags: [matlab, learning]
 description: "Studying the self paced course in matlab academy for academic work - Part 2"
