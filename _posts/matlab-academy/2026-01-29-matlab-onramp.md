@@ -1470,7 +1470,7 @@ end
 - Print/share certificate via My Courses.
 - Submit course survey for 100% completion.
 <!-- Embedded MATLAB Academy certificate -->
-<iframe src="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=36379dd5-8709-408b-bf98-3b0ba78be71f" title="MATLAB Academy Certificate" style="width:100%;border:0;" loading="lazy"></iframe>
+<!-- <iframe src="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=36379dd5-8709-408b-bf98-3b0ba78be71f" title="MATLAB Academy Certificate" style="width:100%;border:0;" loading="lazy"></iframe> -->
 
 <p>If the certificate does not display, <a href="https://matlabacademy.mathworks.com/progress/share/certificate.html?id=36379dd5-8709-408b-bf98-3b0ba78be71f" target="_blank" rel="noopener">open the certificate in a new tab</a>.</p>
 
