@@ -2,64 +2,45 @@
 
 My personal website and blog.
 
-## Local Development Setup
+## Quick Start (Local Development)
 
-Follow these steps to set up the project locally on your machine.
+To run this project locally, simply run the provided script. It handles everything: installing dependencies locally (contained within this folder) and starting the server.
 
-### 1. Prerequisites
+1.  **Run the script:**
+    ```bash
+    bash local_run.sh
+    ```
 
-Ensure you have **Ruby** installed.
-```bash
-ruby -v
-```
+2.  **Open your browser:**
+    Go to [http://127.0.0.1:4000/](http://127.0.0.1:4000/).
 
-### 2. Clean Global Gems (Optional)
+---
 
-If you have globally installed gems that might conflict or if you want a clean slate, you can uninstall them.
-**Warning:** This will remove all Ruby gems installed globally on your system.
+### Manual Setup Details
 
-```bash
-# List global gems to see what you have
-gem list --local
+If you prefer to run commands manually, here is what `local_run.sh` does:
 
-# Uninstall all global gems
-gem uninstall -a -I -x
-```
+1.  **Sets up local gem paths** to avoid using system-wide Ruby gems:
+    ```bash
+    export GEM_HOME="$PWD/vendor/gems"
+    export PATH="$GEM_HOME/bin:$PATH"
+    ```
 
-### 3. Installation
-
-This project is configured to install dependencies locally in the `vendor/bundle` directory to avoid polluting your global environment.
-
-1.  Install Bundler (if not already installed):
+2.  **Installs Bundler** (if missing):
     ```bash
     gem install bundler
     ```
 
-2.  Configure Bundler to use the local `vendor/bundle` directory:
+3.  **Installs Dependencies** into `vendor/bundle`:
     ```bash
     bundle config set --local path 'vendor/bundle'
-    ```
-
-3.  Install dependencies:
-    ```bash
     bundle install
     ```
 
-### 4. Running the Site
-
-You can start the local development server using the provided script or directly with bundler.
-
-**Using the script:**
-```bash
-bash tools/run.sh
-```
-
-**Using Bundler directly:**
-```bash
-bundle exec jekyll serve
-```
-
-The site will be available at `http://127.0.0.1:4000/`.
+4.  **Runs the Server**:
+    ```bash
+    bundle exec jekyll serve --livereload
+    ```
 
 ## Deployment
 
