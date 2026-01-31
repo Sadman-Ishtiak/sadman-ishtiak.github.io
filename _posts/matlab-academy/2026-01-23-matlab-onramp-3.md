@@ -1,6 +1,6 @@
 ---
 title: Matlab Onramp course notes - Part 3 Plots & Data Import
-date: 2026-01-29 02:00:00 +0600
+date: 2026-01-23 02:00:00 +0600
 categories: [Matlab Academy, Matlab]
 tags: [matlab, learning]
 description: "Studying the self paced course in matlab academy for academic work - Part 3"
