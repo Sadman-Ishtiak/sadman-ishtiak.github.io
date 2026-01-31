@@ -1,6 +1,6 @@
 ---
 title: "Matlab Signal Onramp course notes - Part 6: Measurements & Summary"
-date: 2026-01-30 00:00:00 +0600
+date: 2026-01-31 00:00:00 +0600
 categories: [Matlab Academy, Matlab Signal Processing]
 tags: [matlab, signal-processing, learning]
 description: "Programmatically measuring earthquake timestamps and concluding the Signal Onramp course."
