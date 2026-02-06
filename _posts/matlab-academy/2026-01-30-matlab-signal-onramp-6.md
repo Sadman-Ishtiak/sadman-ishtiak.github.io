@@ -61,5 +61,3 @@ This course provided a hands-on introduction to signal processing in MATLAB. By 
 
 My certificate for completing this course is available [here](/assets/pdf/Matlab02.pdf).
 
----
-*This concludes the MATLAB Signal Onramp series. Up next: Core Signal Processing Techniques.*
