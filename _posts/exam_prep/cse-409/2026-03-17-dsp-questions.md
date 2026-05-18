@@ -50,7 +50,7 @@ math: true
 38. How do you convert an analog signal to digital?
 39. List applications of Z-transform and define ROC.
 40. Find Z-transform and ROC for $\{1, 0, \mathbf{3}, -1, 2\}$.
-41. Calculate inverse Z-transform for $X(z) = \frac{z+0.2}{(z+0.5)(z-1)}$ for $|z|>1$.
+41. Calculate inverse Z-transform for $X(z) = \frac{z+0.2}{(z+0.5)(z-1)}$ for $|z|>1$
 42. Explain the FFT speed increase factor of 21.33.
 43. How does the Decimation-in-Time (DIT) FFT algorithm work?
 44. Find DFT of $\{1, 1, 0, 0\}$ and IDFT of $\{1, 0, 1, 0\}$.
