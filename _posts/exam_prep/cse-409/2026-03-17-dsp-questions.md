@@ -7,7 +7,7 @@ description: "Compiled Digital Signal Processing (DSP) exam and lab questions fo
 math: true
 ---
 
-# Questions 
+## Questions for CSE-409 Digital Signal Processing
 1. Define and classify signals with examples.
 2. Explain continuous-time vs. discrete-time signals with a diagram.
 3. Sketch $x(t) = \sin(\pi t)$ for $-5 \le t \le 5$.
@@ -40,7 +40,11 @@ math: true
 28. Share your understanding of "digital signal."
 29. Is biometrics an application of DSP? List other applications.
 30. Write properties of auto-correlation and cross-correlation.
-31. Determine system responses (Identity, Delay, Advance, Moving Average) for $x(n) = |n|$ for $-3 \le n \le 3$.
+31. Determine system responses (Identity, Delay, Advance, Moving Average) for 
+$x(n) = |n|$
+ for 
+$-3 \le n \le 3$
+.
 32. Find the response of an LTI system with $h[n] = \{1, 2, 1, -1\}$ to input $x[n] = \{1, 2, 3, 1\}$.
 33. What is a discrete-time system?
 34. Sketch the block diagram for $y(n) = 0.25y(n-1) + 0.5x(n) + 0.5x(n-1)$.
@@ -50,7 +54,9 @@ math: true
 38. How do you convert an analog signal to digital?
 39. List applications of Z-transform and define ROC.
 40. Find Z-transform and ROC for $\{1, 0, \mathbf{3}, -1, 2\}$.
-41. Calculate inverse Z-transform for $X(z) = \frac{z+0.2}{(z+0.5)(z-1)}$ for $|z|>1$
+41. Calculate inverse Z-transform for 
+$
+$X(z) = \frac{z+0.2}{(z+0.5)(z-1)}$ for $|z|>1$
 42. Explain the FFT speed increase factor of 21.33.
 43. How does the Decimation-in-Time (DIT) FFT algorithm work?
 44. Find DFT of $\{1, 1, 0, 0\}$ and IDFT of $\{1, 0, 1, 0\}$.
@@ -76,9 +82,15 @@ math: true
 62. Define time shifting and find $x(n-3)$ and $x(n+2)$ for a given graph.
 63. Mention differences between Z-transform and Fourier transform.
 64. Find Z-transform and ROC of $x[n] = a^n u[n]$.
-65. Find the inverse Z-transform of $X(z) = \frac{z+0.2}{(z+0.5)(z-1)}$ for $|z|>1$.
+65. Find the inverse Z-transform of 
+$X(z) = \frac{z+0.2}{(z+0.5)(z-1)}$
+ for 
+$|z|>1$
+.
 66. What is FFT?
-67. Find the Fourier transform of $x(t) = e^{-a|t|}, a>0$.
+67. Find the Fourier transform of 
+$x(t) = e^{-a|t|}, a>0$
+.
 68. Find the DFT of $\{1, 1, 0, 0\}$ and IDFT of $\{1, 0, 1, 0\}$.
 69. Explain the speed increase factor (21.33) provided by FFT.
 70. Write the radix-2 DIT-FFT algorithm.
@@ -115,13 +127,13 @@ math: true
 98. Write the steps to design analog Butterworth filters.
 99. What is the principle of designing FIR filters using windows?
 
-### DSP Lab (CSE 410) - Compiled Questions
+## DSP Lab (CSE 410) - Compiled Questions
 1. Write a MATLAB program to generate the following elementary signals:
 	1. Cosine wave
 	2. Unit impulse
 	3. Square wave
 	4. Sine wave
- Plot the signals in a figure using the `subplot` function.
+Plot the signals in a figure using the `subplot` function.
 2. Write a MATLAB program to illustrate:
 	1. The effect of up-sampling in the frequency domain.
 	2. The effect of the Interpolation process.
