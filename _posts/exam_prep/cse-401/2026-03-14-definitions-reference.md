@@ -1,7 +1,7 @@
 ---
 title: "Reference: Definitions to Know"
 date: 2026-03-14 00:00:00 +0600
-categories: [Academic, CSE-401 Software Engineering
+categories: [Academic, CSE-401 Software Engineering]
 tags: [definitions, reference, exam-prep]
 description: "All key definitions from the Software Engineering course that you need to memorize for the exam."
 math: true
