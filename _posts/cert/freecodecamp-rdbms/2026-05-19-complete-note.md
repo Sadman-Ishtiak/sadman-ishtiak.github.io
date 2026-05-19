@@ -315,16 +315,92 @@ Best practices
 
 Primary and foreign keys are the core of relational integrity: they link tables and keep data consistent.
 
-
-
 #### What Are the Different Types of Relationships in a Relational Database?
+Relational databases connect tables using keys. The common relationship types are summarized below with implementation notes and short SQL examples.
+
+- One-to-one
+	- Definition: Each row in A corresponds to at most one row in B, and vice versa.
+	- Use case: Optional extension data split into a separate table (e.g., `employees` → `employee_profiles`).
+	- Implementation: foreign key + `UNIQUE` constraint on the FK.
+
+	```sql
+	CREATE TABLE employees (
+		id SERIAL PRIMARY KEY,
+		name TEXT
+	);
+
+	CREATE TABLE vehicles (
+		id SERIAL PRIMARY KEY,
+		employee_id INT UNIQUE REFERENCES employees(id),
+		plate VARCHAR(20)
+	);
+	```
+
+- One-to-many (many-to-one)
+	- Definition: One row in A relates to many rows in B (B holds the foreign key pointing to A).
+	- Use case: `customers` → `orders` (one customer, many orders).
+	- Implementation: FK on the "many" side; index the FK for joins.
+
+	```sql
+	CREATE TABLE customers (id SERIAL PRIMARY KEY, name TEXT);
+	CREATE TABLE orders (
+		id SERIAL PRIMARY KEY,
+		customer_id INT REFERENCES customers(id),
+		total NUMERIC
+	);
+	```
+
+- Many-to-many
+	- Definition: Rows in A relate to many in B and vice versa.
+	- Use case: `books` ↔ `authors`.
+	- Implementation: junction (association) table with two FKs; use a composite primary key or unique index.
+
+	```sql
+	CREATE TABLE books (id SERIAL PRIMARY KEY, title TEXT);
+	CREATE TABLE authors (id SERIAL PRIMARY KEY, name TEXT);
+	CREATE TABLE books_authors (
+		book_id INT REFERENCES books(id),
+		author_id INT REFERENCES authors(id),
+		PRIMARY KEY (book_id, author_id)
+	);
+	```
+
+	Query example:
+
+	```sql
+	SELECT b.title, a.name
+	FROM books b
+	JOIN books_authors ba ON b.id = ba.book_id
+	JOIN authors a ON a.id = ba.author_id
+	WHERE a.name = 'Jane Doe';
+	```
+
+- Self-referencing (recursive)
+	- Definition: Rows in a table reference other rows in the same table (hierarchies, trees).
+	- Use case: organizational chart (`employees.manager_id`).
+
+	```sql
+	CREATE TABLE employees (
+		id SERIAL PRIMARY KEY,
+		name TEXT,
+		manager_id INT REFERENCES employees(id)
+	);
+	```
+
+Design tips
+
+- Choose one-to-one when the extension data is optional or rare.
+- Model parent/child as one-to-many; index the FK for performance.
+- Use junction tables for many-to-many and add composite PKs or explicit surrogate IDs if you need metadata on the relationship.
+- For hierarchies, prefer recursive CTEs (`WITH RECURSIVE`) when querying.
+- Always define appropriate `ON DELETE`/`ON UPDATE` actions to control cascade behavior and avoid orphaned rows.
+
+These relationship patterns cover most schema-design needs and make it easier to reason about joins, constraints, and indexing.
+
 #### What Are the Different Ways to Join Tables?
 
 
 ## Build a Celestial Bodies Database
-
-
-
 ## Build a Celestial Bodies Database
 ## Bash Scripting
 ## SQL and Bash
