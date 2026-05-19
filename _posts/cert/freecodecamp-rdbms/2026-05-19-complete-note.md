@@ -1,0 +1,113 @@
+---
+title: Complete Note on the Relational Database Management System (RDBMS) - FreeCodeCamp Certification
+date: 2026-05-19 00:00:00 +0600
+categories: [RDBMS, FreeCodeCamp, Certification]
+tags: [RDBMS, FreeCodeCamp, Certification, Database Management]
+description: "Complete note on the Relational Database Management System (RDBMS) for FreeCodeCamp certification."
+math: true
+---
+
+## Code Editors and IDEs
+### What is a Code Editor?
+A code editor is a software application that allows programmers to write and edit source code. It provides features such as syntax highlighting, code completion, and debugging tools to enhance the coding experience.
+
+### What is an IDE?
+An Integrated Development Environment (IDE) is a comprehensive software suite that combines a code editor with additional tools for software development. It typically includes features like a code editor, compiler, debugger, and version control integration, all in one application.
+
+In short, a code editor is a tool for writing code or any text type file, while an IDE is a complete environment for software development that includes a code editor along with other essential tools.
+
+
+## How to Install VScode 
+Since I am using linux, I run 
+
+```bash
+sudo apt update
+sudo apt install code
+```
+
+in the terminal to install VScode.
+
+VScode uses directories as workspaces, so I can open a folder in VScode and it will treat that folder as a workspace. This allows me to organize my projects and files efficiently within VScode.
+
+Additionally, Live Server is a popular extension that is the go to for web development as it can automatically reload the browser whenever changes and also check for errors in the code. It is a great tool for web developers to see their changes in real-time and ensure that their code is error-free.
+### Useful Shortcuts in VScode
+- `Ctrl+S` — Save
+- `Ctrl+C` — Copy
+- `Ctrl+V` — Paste
+- `Shift+Alt+F` — Format file
+- `Ctrl+Shift+F` — Search in files
+- `Ctrl+Shift+H` — Replace in files
+- `Ctrl+Shift+K` — Delete line
+- `Ctrl+B` — Toggle sidebar
+- `Ctrl++` / `Ctrl+-` — Zoom in/out
+- `Ctrl+Alt+Down` / `Ctrl+Alt+Up` — Add cursor down/up
+- `Alt` + click — Add cursor
+- `Ctrl+Shift+P` — Command palette
+
+### Recommended Extensions for VScode
+- Better Comments — highlights TODOs, questions, and warnings in comments.
+- Code Spell Checker — in-code spellchecking that understands camelCase.
+- Error Lens — highlights the whole line and shows error messages inline.
+- Indent Rainbow — colors indentation levels for easier scope reading.
+- AI assistants — GitHub Copilot or Tabnine for inline suggestions.
+- Visuals — VS Code Great Icons and Colorize for icons and CSS color previews.
+- Language tools — ESLint + Prettier (JavaScript); Pretty TypeScript Errors (TypeScript).
+- Fun extras — VS Code Pets (virtual pets), Power Mode (visual effects), Discord Presence.
+
+## Bash Fundamentals
+### Understanding the Command Line and Working with Bash, Not started
+#### What Is the Terminal, and How Does It Differ from the Command Line?
+**Command line:** the text-based interface where you type and run commands.
+**Terminal:** the application or terminal emulator that provides a command-line window.
+**Shell:** the program (e.g., Bash, PowerShell, cmd) that interprets and executes commands.
+
+On Windows you'll commonly use Command Prompt or PowerShell (or the newer Windows Terminal to host multiple shells). macOS provides Terminal (third-party alternatives include iTerm). Linux has many terminals (gnome-terminal, Konsole, kitty, etc.), usually installable via your distro's package manager.
+
+These terms are related and often used interchangeably, but they refer to different layers of the same workflow.
+
+#### What Are Some Shortcuts You Can Use in the Command Line to Speed Up Productivity?
+- `Up` / `Down` arrows — cycle command history.
+- `Tab` — autocomplete commands and filenames.
+- `Ctrl+L` (or `cls` in PowerShell) — clear the screen.
+- `Ctrl+C` — interrupt/stop a running command (on Windows it can copy when text is selected).
+- `Ctrl+Z` then `fg` — suspend to background and resume (Unix shells).
+- `!!` — repeat the last command.
+
+Note: Autocomplete behavior varies by shell (zsh uses history; PowerShell suggests commands/variables).
+
+#### What Is Bash, and What Are Some Basic Commands?
+Bash (Bourne Again SHell) is a common Unix shell. Essentials:
+- `pwd` — show current directory.
+- `cd` — change directory (`..` = parent; supports absolute and relative paths).
+- `ls` — list files (`-a` show hidden, `-l` long listing); use `less`/`cat` to view files.
+- `mkdir` / `touch` — create directories and files.
+- `mv` — move or rename; `cp` — copy (`-r` for directories).
+- `rm` — remove files or directories (`-r` recursive; `-f` force).
+- `echo` — print text; use `>` to overwrite and `>>` to append.
+- `head` / `tail`, `chown` / `chmod` — other common utilities.
+- `man` — read a command's manual page.
+
+#### What Are Some Command Options and Flags?
+Options (flags) modify a command's behavior. Short form uses one hyphen and single letters (e.g., `-a`); long form uses two hyphens and words (e.g., `--all`). Examples:
+
+- `--help` — show usage.
+- `--version` — show program version.
+- Combine short flags: `ls -al` == `ls -a -l`.
+- Option values: `--width=50` or `-w 50`.
+
+Use `--help` or `man` to check syntax.
+
+### Build a Boilerplate, Not started
+### Bash Commands Review, Not started
+### Bash Commands Quiz, Not started
+## SQL and PostgreSQL
+## Build a Celestial Bodies Database, Not started
+## Bash Scripting
+## SQL and Bash
+## Build a World Cup Database, Not started
+## Build a Salon Appointment Scheduler, Not started
+## Git
+## Build a Periodic Table Database, Not started
+## Build a Number Guessing Game, Not started
+## Relational Databases Review, Not started
+## Relational Databases Certification Exam
