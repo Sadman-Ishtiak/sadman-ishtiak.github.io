@@ -548,13 +548,32 @@ When to choose relational vs non-relational
 This short review collects the most-used commands, types, and design advice for PostgreSQL and SQL. Use the examples above as a quick reference while practising on `psql` or pgAdmin.
 
 ## Build a Celestial Bodies Database
-## Build a Celestial Bodies Database
+
+
 ## Bash Scripting
+
+
 ## SQL and Bash
+
+
 ## Build a World Cup Database
+
+
 ## Build a Salon Appointment Scheduler
+
+
 ## Git
+
+
 ## Build a Periodic Table Database
+
+
 ## Build a Number Guessing Game
+
+
 ## Relational Databases Review
+
+
 ## Relational Databases Certification Exam
+
+
