@@ -480,7 +480,7 @@ SQL quick reference
 SELECT * FROM dogs WHERE age < 3 ORDER BY age DESC;
 ```
 
-- Create table (example):
+- Create table (example):sequence
 
 ```sql
 CREATE TABLE products (
