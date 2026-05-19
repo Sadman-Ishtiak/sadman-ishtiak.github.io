@@ -55,7 +55,7 @@ Additionally, Live Server is a popular extension that is the go to for web devel
 - Fun extras — VS Code Pets (virtual pets), Power Mode (visual effects), Discord Presence.
 
 ## Bash Fundamentals
-### Understanding the Command Line and Working with Bash, Not started
+### Understanding the Command Line and Working with Bash
 #### What Is the Terminal, and How Does It Differ from the Command Line?
 **Command line:** the text-based interface where you type and run commands.
 **Terminal:** the application or terminal emulator that provides a command-line window.
@@ -97,17 +97,43 @@ Options (flags) modify a command's behavior. Short form uses one hyphen and sing
 
 Use `--help` or `man` to check syntax.
 
-### Build a Boilerplate, Not started
-### Bash Commands Review, Not started
-### Bash Commands Quiz, Not started
+### Bash Commands Review
+#### Terminal, Shell, and Command Line Basics (summary)
+- `Command line` — text interface where you type commands.
+- `Terminal` — application or terminal emulator that hosts the command line.
+- `Shell` — program that interprets commands (e.g., Bash, PowerShell, cmd).
+- Windows: PowerShell, Command Prompt, Windows Terminal.
+- macOS: Terminal (or iTerm, Ghostty).
+- Linux: gnome-terminal, Konsole, kitty, etc.
+
+#### Command Line Shortcuts (quick)
+- `Up` / `Down` — cycle history.
+- `Tab` — autocomplete.
+- `Ctrl+L` / `cls` — clear the screen.
+- `Ctrl+C` — interrupt a command.
+- `Ctrl+Z` then `fg` — suspend and resume (Unix).
+- `!!` — rerun the last command.
+
+#### Bash Basics (quick)
+- `pwd`, `cd`, `ls`, `mkdir`, `touch`, `mv`, `cp`, `rm`.
+- `echo` (`>` overwrite, `>>` append), `head`/`tail`, `chown`/`chmod`.
+- `exit`, `clear`, `find -name`, `man`.
+
+#### Command Options and Flags (quick)
+- Short: `-a`; Long: `--all`.
+- Chain short flags: `ls -alh`.
+- Values: `-w 50` or `--width=50`.
+- Use `--help` to check syntax.
+
+### Bash Commands Quiz
 ## SQL and PostgreSQL
-## Build a Celestial Bodies Database, Not started
+## Build a Celestial Bodies Database
 ## Bash Scripting
 ## SQL and Bash
-## Build a World Cup Database, Not started
-## Build a Salon Appointment Scheduler, Not started
+## Build a World Cup Database
+## Build a Salon Appointment Scheduler
 ## Git
-## Build a Periodic Table Database, Not started
-## Build a Number Guessing Game, Not started
-## Relational Databases Review, Not started
+## Build a Periodic Table Database
+## Build a Number Guessing Game
+## Relational Databases Review
 ## Relational Databases Certification Exam
