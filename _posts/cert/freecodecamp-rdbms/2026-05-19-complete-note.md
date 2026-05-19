@@ -178,7 +178,51 @@ Tips:
 - For details, use `man psql` or the PostgreSQL docs.
 
 #### What Are the Basic Data Types in SQL?
+Data types define what kind of values a column can store. Basic CREATE TABLE syntax:
+
+```sql
+CREATE TABLE table_name (
+	column1 data_type column_constraint,
+	column2 data_type column_constraint,
+	...
+);
+```
+
+Common categories and examples (PostgreSQL-centric):
+
+- Numeric: `INTEGER`, `SMALLINT`, `BIGINT`, `SERIAL` (auto-increment), `DECIMAL`/`NUMERIC`, `FLOAT`.
+- Character/string: `CHAR(n)`, `VARCHAR(n)`, `TEXT`.
+- Unicode/text (DB-specific): `NVARCHAR`, `NTEXT` (for some systems); PostgreSQL `VARCHAR`/`TEXT` already handle Unicode.
+- Date/time: `DATE`, `TIME`, `TIMESTAMP`, `TIMESTAMP WITH TIME ZONE`.
+- Boolean: `BOOLEAN` (`TRUE`/`FALSE`).
+- Binary: `BYTEA` (Postgres), `BLOB` (MySQL) for non-text data (images, audio).
+- Misc: `JSON`/`JSONB`, `XML`, `UUID`, `ARRAY`, etc.
+
+Notes on common types and examples:
+
+- `INTEGER` is the typical integer type (4 bytes). Use `SMALLINT`/`BIGINT` for smaller/larger ranges.
+- `SERIAL` in PostgreSQL creates an auto-incrementing integer column; MySQL uses `INT AUTO_INCREMENT`.
+- `VARCHAR(n)` sets a maximum length; use `TEXT` for unlimited length.
+- `TIMESTAMP` stores date+time; `TIMESTAMP WITH TIME ZONE` includes timezone information.
+
+Example table using common types:
+
+```sql
+CREATE TABLE animals (
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(100) NOT NULL,
+	species_id INTEGER REFERENCES species(id),
+	weight DECIMAL(6,2),
+	born DATE,
+	last_check TIMESTAMP WITH TIME ZONE,
+	is_endangered BOOLEAN DEFAULT FALSE
+);
+```
+
 #### How Do You Insert and View Data in a Table?
+
+
+
 #### What Are Primary and Foreign Keys in SQL, and How Do They Work?
 #### What Are the Different Types of Relationships in a Relational Database?
 #### What Are the Different Ways to Join Tables?
