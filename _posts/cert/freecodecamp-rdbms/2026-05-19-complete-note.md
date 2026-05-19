@@ -264,6 +264,58 @@ Notes:
 
 #### What Are Primary and Foreign Keys in SQL, and How Do They Work?
 
+Primary keys
+
+- Uniquely identify rows in a table. Must be unique and NOT NULL. A table can have only one primary key.
+- Example:
+
+```sql
+CREATE TABLE students (
+	student_id SERIAL PRIMARY KEY,
+	name VARCHAR(100)
+);
+```
+
+- Composite primary key (use when no single column is unique):
+
+```sql
+CREATE TABLE course_enrollments (
+	student_id INT,
+	course_id INT,
+	PRIMARY KEY (student_id, course_id)
+);
+```
+
+Foreign keys
+
+- A foreign key in one table references the primary key of another table and enforces referential integrity.
+- Example (customers → orders):
+
+```sql
+CREATE TABLE customers (
+	customer_id SERIAL PRIMARY KEY,
+	first_name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE orders (
+	order_id SERIAL PRIMARY KEY,
+	customer_id INTEGER REFERENCES customers(customer_id)
+);
+```
+
+- Foreign key rules: values must match an existing referenced primary-key value or be NULL (if allowed).
+- Use referential actions to control behavior on delete/update: `REFERENCES customers(customer_id) ON DELETE CASCADE` | `ON DELETE SET NULL` | `ON UPDATE CASCADE`.
+
+Best practices
+
+- Prefer surrogate keys (SERIAL, BIGSERIAL, UUID) for primary keys.
+- Index foreign key columns to speed joins.
+- Name constraints for clarity (e.g., `fk_orders_customer_id`).
+- Choose appropriate `ON DELETE`/`ON UPDATE` actions to avoid orphaned rows.
+
+Primary and foreign keys are the core of relational integrity: they link tables and keep data consistent.
+
+
 
 #### What Are the Different Types of Relationships in a Relational Database?
 #### What Are the Different Ways to Join Tables?
