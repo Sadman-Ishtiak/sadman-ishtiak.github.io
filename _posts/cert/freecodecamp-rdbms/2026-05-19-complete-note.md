@@ -151,6 +151,31 @@ Relational vs NoSQL: relational DBs enforce schemas and strong integrity; NoSQL 
 	- After install: open pgAdmin (GUI) or `psql` (CLI), connect with the superuser, create databases/users.
 
 #### What Is SQL, and How Can You Create a Database with Tables?
+SQL (Structured Query Language) — the standard for creating, querying, and managing relational databases. Statements end with a semicolon (`;`).
+
+Quick psql workflow:
+
+- Connect: `psql -U <username> -d <database_name>`
+- psql shows the current DB prompt (e.g., `my_database=#`).
+- Switch DB in psql: `\c my_database` (psql meta-command — no semicolon).
+
+Common SQL examples:
+
+```sql
+CREATE DATABASE my_database;
+-- \c my_database
+CREATE TABLE products (
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(255)
+);
+INSERT INTO products (name) VALUES ('Widget');
+SELECT * FROM products;
+```
+
+Tips:
+- Use snake_case for identifiers (e.g., `delivery_orders`).
+- `psql` backslash commands (like `\c`) are client shortcuts, not SQL.
+- For details, use `man psql` or the PostgreSQL docs.
 
 #### What Are the Basic Data Types in SQL?
 #### How Do You Insert and View Data in a Table?
