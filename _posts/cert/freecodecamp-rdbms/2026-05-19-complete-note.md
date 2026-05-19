@@ -460,7 +460,92 @@ Notes & tips
 
 Choose the JOIN that matches the set semantics you need; these patterns cover most querying needs.
 
+### PostgreSQL and SQL Review
+- Relational DBs store structured data in tables (rows = records, columns = fields) and enforce integrity via keys, types, and constraints.
+- Common uses: web apps, analytics, inventory, e-commerce, enterprise systems.
 
+Key concepts (at a glance)
+
+- Schema: tables, columns, types, constraints.
+- Primary key: unique, NOT NULL identifier (one per table).
+- Foreign key: references another table's PK; enforces referential integrity.
+- Normalization: reduce redundancy by splitting data into related tables.
+- ERD: diagram to model entities and relations.
+
+SQL quick reference
+
+- Select with filter and sort:
+
+```sql
+SELECT * FROM dogs WHERE age < 3 ORDER BY age DESC;
+```
+
+- Create table (example):
+
+```sql
+CREATE TABLE products (
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(255) NOT NULL,
+	price NUMERIC(10,2)
+);
+```
+
+- Insert / multi-row insert:
+
+```sql
+INSERT INTO products (name, price) VALUES ('Widget', 9.99);
+INSERT INTO dogs (name, age) VALUES ('Gino',3), ('Nora',2);
+```
+
+- Update / Delete:
+
+```sql
+UPDATE products SET price = price * 1.1 WHERE id = 1;
+DELETE FROM products WHERE id = 10;
+```
+
+Table & schema operations (common)
+
+- Add column: `ALTER TABLE tbl ADD COLUMN col TYPE;`
+- Drop column: `ALTER TABLE tbl DROP COLUMN col;`
+- Rename column: `ALTER TABLE tbl RENAME COLUMN old TO new;`
+- Drop table/database: `DROP TABLE tbl;` / `DROP DATABASE db;`
+
+Constraints & integrity
+
+- NOT NULL, UNIQUE, CHECK, PRIMARY KEY, FOREIGN KEY.
+- Add FK: `column INT REFERENCES other(id) ON DELETE CASCADE` (or SET NULL).
+- Composite PK for junction tables: `PRIMARY KEY (a_id, b_id)`.
+
+Data types cheat-sheet
+
+- Integers: `SMALLINT`, `INTEGER`, `BIGINT`, `SERIAL`/`BIGSERIAL` for auto-increment.
+- Decimal: `NUMERIC(p,s)` for exact money values.
+- Text: `VARCHAR(n)`, `TEXT`.
+- Date/time: `DATE`, `TIME`, `TIMESTAMP`, `TIMESTAMP WITH TIME ZONE`.
+- Boolean: `BOOLEAN`.
+- Binary/JSON: `BYTEA`, `JSON`, `JSONB`.
+
+psql / Postgres handy commands
+
+- Connect: `psql -U user -d dbname`  — exit: `\q`.
+- List DBs: `\l`  — list tables: `\d`  — describe table: `\d table_name`.
+- Switch DB inside psql: `\c other_db`.
+
+Design & practical tips
+
+- Use surrogate PKs (SERIAL/UUID) unless a natural key is stable.
+- Index FKs and columns used in WHERE/JOIN to improve performance.
+- Prefer `LEFT JOIN` rewrites over `RIGHT JOIN` for portability.
+- Use `EXPLAIN ANALYZE` to investigate slow queries.
+- Keep migrations idempotent and test schema changes on a staging DB.
+
+When to choose relational vs non-relational
+
+- Relational: structured data, strong integrity, complex joins, transactions.
+- NoSQL: flexible schemas, high write/read scale, denormalized models for specific use-cases.
+
+This short review collects the most-used commands, types, and design advice for PostgreSQL and SQL. Use the examples above as a quick reference while practising on `psql` or pgAdmin.
 
 ## Build a Celestial Bodies Database
 ## Build a Celestial Bodies Database
