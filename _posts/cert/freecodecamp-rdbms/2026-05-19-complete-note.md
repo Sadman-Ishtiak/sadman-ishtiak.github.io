@@ -125,8 +125,30 @@ Use `--help` or `man` to check syntax.
 - Values: `-w 50` or `--width=50`.
 - Use `--help` to check syntax.
 
-### Bash Commands Quiz
 ## SQL and PostgreSQL
+### Working with Relational Databases
+#### What Are Relational Databases, and How Do They Differ from Non-Relational Databases?
+A relational database stores structured data in tables (rows = records, columns = fields). Schemas define tables, columns, types, and constraints. Tables use primary keys (unique IDs) and foreign keys to link related records; SQL queries retrieve and join data across tables.
+
+Example: `animals` (id, name, species_id, age), `species` (id, name, status), `vet_records` (id, animal_id, date, notes) — link `vet_records` to `animals` via `animal_id`.
+
+Relational vs NoSQL: relational DBs enforce schemas and strong integrity; NoSQL stores (documents, key-value) are more flexible but trade off structure and constraints.
+
+#### What Are Some Common Relational Databases, and How Do You Install and Use Postgres?
+
+
+#### What Is SQL, and How Can You Create a Database with Tables?
+#### What Are the Basic Data Types in SQL?
+#### How Do You Insert and View Data in a Table?
+#### What Are Primary and Foreign Keys in SQL, and How Do They Work?
+#### What Are the Different Types of Relationships in a Relational Database?
+#### What Are the Different Ways to Join Tables?
+
+
+## Build a Celestial Bodies Database
+
+
+
 ## Build a Celestial Bodies Database
 ## Bash Scripting
 ## SQL and Bash
