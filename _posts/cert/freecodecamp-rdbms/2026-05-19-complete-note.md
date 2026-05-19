@@ -135,7 +135,37 @@ Example: `animals` (id, name, species_id, age), `species` (id, name, status), `v
 Relational vs NoSQL: relational DBs enforce schemas and strong integrity; NoSQL stores (documents, key-value) are more flexible but trade off structure and constraints.
 
 #### What Are Some Common Relational Databases, and How Do You Install and Use Postgres?
+- Applications: web apps, inventory/ERP, healthcare, e‑commerce, education, analytics.
 
+- Common RDBMS:
+	- MySQL — popular open-source, widely used for web apps.
+	- PostgreSQL — advanced open-source, strong integrity and extensibility.
+	- SQLite — lightweight, file-based, zero-configuration (good for small apps/tests).
+	- Microsoft SQL Server / Oracle — proprietary, enterprise-grade options.
+
+- Quick Postgres install (overview):
+	- Download from https://www.postgresql.org/ or use your OS package manager.
+	- Windows: run the installer, pick components (Server, pgAdmin, CLI), set superuser password, default port 5432.
+	- macOS: `brew install postgresql@<version>` or use the installer; start with `brew services start postgresql@<version>`.
+	- Linux: `sudo apt install postgresql` (Debian/Ubuntu) or `sudo dnf install postgresql-server` (Fedora), then init/start the service.
+	- After install: open pgAdmin (GUI) or `psql` (CLI), connect with the superuser, create databases/users.
+
+##### Questions
+0. Which of the following is NOT a common relational database?
+    - MySQL
+    - Node
+    - PostgreSQL
+    - SQLite
+0. PostgreSQL is known for its:
+    - Weak SQL support and limited features.
+    - Strong SQL support and powerful features.
+    - Exclusive use in small systems.
+    - Small developer community.
+0. Which of the following is an open source, lightweight, file-based relational database?
+    - Microsoft SQL Server
+    - PostgreSQL
+    - SQLite
+    - MySQL
 
 #### What Is SQL, and How Can You Create a Database with Tables?
 #### What Are the Basic Data Types in SQL?
