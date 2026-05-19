@@ -397,7 +397,69 @@ Design tips
 
 These relationship patterns cover most schema-design needs and make it easier to reason about joins, constraints, and indexing.
 
+
 #### What Are the Different Ways to Join Tables?
+JOINs combine related rows from two or more tables using an `ON` condition. Below are the common JOIN types with concise definitions, examples, and quick notes.
+
+- INNER JOIN — intersection (only matching rows).
+
+```sql
+SELECT p.product_id, p.product_name, s.sale_id, s.quantity
+FROM products p
+INNER JOIN sales s
+	ON p.product_id = s.product_id;
+```
+
+- LEFT JOIN (LEFT OUTER JOIN) — all rows from the left table plus matched rows from the right; unmatched right columns are NULL.
+
+```sql
+SELECT p.product_id, p.product_name, s.sale_id
+FROM products p
+LEFT JOIN sales s
+	ON p.product_id = s.product_id;
+```
+
+- RIGHT JOIN (RIGHT OUTER JOIN) — mirror of LEFT JOIN; less common and less portable; prefer rewriting with LEFT JOIN.
+
+- FULL OUTER JOIN — all rows from both tables; unmatched columns are NULL. (Postgres supports this directly.)
+
+```sql
+SELECT p.product_id, s.sale_id
+FROM products p
+FULL OUTER JOIN sales s
+	ON p.product_id = s.product_id;
+```
+
+- CROSS JOIN — Cartesian product (every row from A paired with every row from B). Use sparingly.
+
+```sql
+SELECT p.product_name, c.color
+FROM products p
+CROSS JOIN colors c;
+```
+
+- SELF JOIN — join a table to itself (use aliases). Useful for hierarchies.
+
+```sql
+SELECT e.name, m.name AS manager
+FROM employees e
+LEFT JOIN employees m
+	ON e.manager_id = m.id;
+```
+
+Quick comparison
+
+- INNER = intersection; LEFT = keep left rows; RIGHT = keep right rows; FULL = union with NULLs; CROSS = Cartesian product; SELF = same-table joins.
+
+Notes & tips
+
+- Index join columns for performance and use explicit column lists (avoid `SELECT *`).
+- Filter with `WHERE` after the JOIN to narrow results.
+- Use `EXPLAIN` / `EXPLAIN ANALYZE` to inspect query plans.
+- Watch for duplicate rows — use `DISTINCT`, aggregation, or proper keys when needed.
+
+Choose the JOIN that matches the set semantics you need; these patterns cover most querying needs.
+
 
 
 ## Build a Celestial Bodies Database
