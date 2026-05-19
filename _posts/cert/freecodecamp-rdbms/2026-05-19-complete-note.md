@@ -220,10 +220,51 @@ CREATE TABLE animals (
 ```
 
 #### How Do You Insert and View Data in a Table?
+Use `INSERT` to add rows and `SELECT` to retrieve them. SQL statements end with a semicolon (`;`).
 
+Example table:
 
+```sql
+CREATE TABLE dogs (
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(100),
+	age INTEGER
+);
+```
+
+Insert a single row (specify columns — safer):
+
+```sql
+INSERT INTO dogs (name, age)
+VALUES ('Gino', 3);
+```
+
+Insert multiple rows in one statement:
+
+```sql
+INSERT INTO dogs (name, age)
+VALUES
+	('Gino', 3),
+	('Nora', 2);
+```
+
+Query data examples:
+
+```sql
+SELECT * FROM dogs;
+SELECT name, age FROM dogs;
+SELECT * FROM dogs WHERE age < 3;
+SELECT age FROM dogs WHERE name = 'Gino';
+```
+
+Notes:
+- `id` auto-increments with `SERIAL`; omit it in `INSERT`.
+- Always quote string literals with single quotes.
+- In PostgreSQL use `RETURNING *` to return inserted rows (e.g., `INSERT ... RETURNING *;`).
 
 #### What Are Primary and Foreign Keys in SQL, and How Do They Work?
+
+
 #### What Are the Different Types of Relationships in a Relational Database?
 #### What Are the Different Ways to Join Tables?
 
