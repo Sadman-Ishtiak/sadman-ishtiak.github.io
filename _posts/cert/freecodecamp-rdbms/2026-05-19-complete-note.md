@@ -150,24 +150,8 @@ Relational vs NoSQL: relational DBs enforce schemas and strong integrity; NoSQL 
 	- Linux: `sudo apt install postgresql` (Debian/Ubuntu) or `sudo dnf install postgresql-server` (Fedora), then init/start the service.
 	- After install: open pgAdmin (GUI) or `psql` (CLI), connect with the superuser, create databases/users.
 
-##### Questions
-0. Which of the following is NOT a common relational database?
-    - MySQL
-    - Node
-    - PostgreSQL
-    - SQLite
-0. PostgreSQL is known for its:
-    - Weak SQL support and limited features.
-    - Strong SQL support and powerful features.
-    - Exclusive use in small systems.
-    - Small developer community.
-0. Which of the following is an open source, lightweight, file-based relational database?
-    - Microsoft SQL Server
-    - PostgreSQL
-    - SQLite
-    - MySQL
-
 #### What Is SQL, and How Can You Create a Database with Tables?
+
 #### What Are the Basic Data Types in SQL?
 #### How Do You Insert and View Data in a Table?
 #### What Are Primary and Foreign Keys in SQL, and How Do They Work?
