@@ -868,28 +868,367 @@ ALTER TABLE ONLY public.star
 ```
 ## Bash Scripting
 
+### Why Learn Bash Scripting?
 
-## SQL and Bash
+**Bash scripting** automates complex tasks by combining Bash commands in executable files. Key advantages:
 
+1. **Universally available** — Nearly every Unix environment has Bash (no runtime configuration needed like Node.js or Python)
+2. **System integration** — Direct access to all binary applications on the system (e.g., `doctl`, `rsync`, etc.)
+3. **Testable** — Code can be tested directly in the terminal (copy-paste portions to validate)
+4. **Powerful** — Full programming language with loops, conditions, functions, and variables
 
-## Build a World Cup Database
+### Example: NGINX Config Backup Script
 
+```bash
+#!/bin/bash
 
-## Build a Salon Appointment Scheduler
+servers=("prod" "dev")
 
+for server in "${servers[@]}"
+do
+  echo "Pulling $server"
+  rsync --archive --verbose $server:/etc/nginx/conf.d/server.conf configs/$server.conf
+done
+```
 
-## Git
+**Breakdown:**
+- Line 1: **Shebang** (`#!/bin/bash`) — tells system to use Bash interpreter
+- Line 3: **Array** of server names (prod = production, dev = development)
+- Line 5: **For loop** iterates through array; `servers[@]` expands to individual elements
+- Line 7: **Variable interpolation** (`$server`) substitutes current value
+- Line 8: **rsync** command pulls config files from remote servers
 
+---
 
-## Build a Periodic Table Database
+### Bash Scripting Fundamentals
+#### Variables & Assignment
 
+| Concept | Syntax | Example |
+|---------|--------|---------|
+| **Assignment** | `NAME=value` | `NAME="John"` |
+| **With spaces** | Use quotes | `MESSAGE="Hello World"` |
+| **Usage** | `$VARIABLE_NAME` | `echo $NAME` |
+| **Interpolation** | Inside strings | `echo "Name: $NAME"` |
+| **Scope** | Top-to-bottom | Variables only available after definition |
 
-## Build a Number Guessing Game
+**Key rules:**
+- No spaces around `=` (e.g., `VAR = value` ❌ is invalid)
+- Use quotes for values with spaces
+- Access with `$` prefix
 
+#### User Input & Comments
 
-## Relational Databases Review
+```bash
+read USERNAME
+echo "Hello $USERNAME"
 
+# Single-line comment
+NAME="John"  # Comment at end of line
 
-## Relational Databases Certification Exam
+: '
+Multi-line comment block
+Everything between quotes is ignored
+Useful for documentation
+'
+```
 
+#### Arrays
+
+| Operation | Syntax | Example |
+|-----------|--------|---------|
+| **Create** | `ARRAY=("val1" "val2")` | `RESPONSES=("Yes" "No" "Maybe")` |
+| **Access by index** | `${ARRAY[0]}` | `${RESPONSES[0]}` → `Yes` |
+| **All elements** | `${ARRAY[@]}` | `${RESPONSES[@]}` |
+| **Inspect** | `declare -p ARRAY` | Shows all elements & structure |
+| **Length** | `${#ARRAY[@]}` | Number of elements |
+
+**Example:**
+```bash
+RESPONSES=("Yes" "No" "Maybe" "Ask again later")
+echo ${RESPONSES[0]}      # Yes
+echo ${RESPONSES[@]}      # All elements: Yes No Maybe Ask again later
+```
+
+#### Functions
+
+| Aspect | Syntax |
+|--------|--------|
+| **Define** | `FUNC_NAME() { STATEMENTS; }` |
+| **Call** | `FUNC_NAME` |
+| **With arguments** | `FUNC_NAME arg1 arg2` |
+| **Access args** | `$1, $2, $3...` |
+| **All args** | `$@` (separate) or `$*` (combined) |
+
+**Example:**
+```bash
+GET_FORTUNE() {
+    if [[ ! $1 ]]; then
+        echo "Ask a yes or no question:"
+    else
+        echo "Try again. Make sure it ends with a question mark:"
+    fi
+    read QUESTION
+}
+
+GET_FORTUNE          # Call without args
+GET_FORTUNE "again"  # Call with arg
+```
+
+---
+
+### Control Flow & Conditionals
+
+#### Double Bracket Expressions `[[ ]]`
+
+Use for **string & file testing** with conditional logic.
+
+| Operator | Purpose | Examples |
+|----------|---------|----------|
+| `==` / `!=` | String equality | `[[ "apple" == "apple" ]]` |
+| `-eq` / `-ne` | Numeric equality | `[[ $age -eq 18 ]]` |
+| `-lt` / `-le` / `-gt` / `-ge` | Numeric comparisons | `[[ $score -lt 100 ]]` |
+| `<` / `>` | Lexicographic order | `[[ "apple" < "banana" ]]` |
+| `-f` / `-d` / `-e` | File tests | `[[ -f file.txt ]]` (file exists?) |
+| `-r` / `-w` / `-x` | Permissions | `[[ -x script.sh ]]` (executable?) |
+| `=~` | Regex match | `[[ $email =~ @domain\.com$ ]]` |
+| `&&` / `\|\|` | Logical AND / OR | `[[ $age -ge 18 && $age -le 65 ]]` |
+| `!` | Logical NOT | `[[ ! -f missing.txt ]]` |
+
+#### Double Parentheses Expressions `(( ))`
+
+Use for **arithmetic & numeric comparisons**.
+
+| Operator | Purpose | Examples |
+|----------|---------|----------|
+| `+` `-` `*` `/` `%` `**` | Arithmetic | `(( result = 10 + 5 ))` |
+| `=` `+=` `-=` `*=` `/=` `%=` | Assignment | `(( counter += 5 ))` |
+| `++` `--` | Increment/Decrement | `(( counter++ ))` |
+| `==` `!=` `<` `<=` `>` `>=` | Comparisons | `(( age >= 18 ))` |
+| `&&` `\|\|` `!` | Logical operators | `(( x > 0 && x < 100 ))` |
+| `?:` | Ternary operator | `(( result = (score >= 60) ? 1 : 0 ))` |
+
+#### If Statements
+
+```bash
+if [[ CONDITION ]]; then
+    echo "Condition is true"
+elif [[ OTHER_CONDITION ]]; then
+    echo "Other condition is true"
+else
+    echo "All conditions false"
+fi
+```
+
+**Example with BINGO game:**
+```bash
+if (( NUMBER <= 15 )); then
+    echo "B:$NUMBER"
+elif [[ $NUMBER -le 30 ]]; then
+    echo "I:$NUMBER"
+elif (( NUMBER < 46 )); then
+    echo "N:$NUMBER"
+elif [[ $NUMBER -lt 61 ]]; then
+    echo "G:$NUMBER"
+else
+    echo "O:$NUMBER"
+fi
+```
+
+---
+
+### Loops & Iteration
+
+| Loop Type | Syntax | Use Case |
+|-----------|--------|----------|
+| **While** | `while [[ COND ]]; do ... done` | Repeat while condition is true |
+| **Until** | `until [[ COND ]]; do ... done` | Repeat until condition becomes true |
+| **For (array)** | `for item in "${array[@]}"; do ... done` | Iterate through array |
+| **For (numeric)** | `for (( i=1; i<=5; i++ )); do ... done` | Numeric loop (C-style) |
+| **For (range)** | `for i in {1..5}; do ... done` | Range notation |
+
+**Examples:**
+```bash
+# While loop — countdown
+I=5
+while [[ $I -ge 0 ]]; do
+    echo $I
+    (( I-- ))
+    sleep 1
+done
+
+# Until loop — ask until question ends with ?
+until [[ $QUESTION =~ \?$ ]]; do
+    read QUESTION
+done
+
+# For loop — iterate array
+for server in "${servers[@]}"; do
+    echo "Processing $server"
+done
+
+# For loop — numeric
+for (( i=1; i<=5; i++ )); do
+    echo "Number: $i"
+done
+```
+
+---
+
+### Command Execution & Special Features
+
+#### Command Separation & Exit Status
+
+```bash
+# Run multiple commands; check status of last
+command1; command2
+echo $?  # Exit status of command2 (0=success, non-zero=failure)
+
+# Examples
+[[ 4 -ge 5 ]]; echo $?      # Outputs: 1 (false)
+[[ 4 -le 5 ]]; echo $?      # Outputs: 0 (true)
+```
+
+#### Command Substitution
+
+```bash
+# Capture output
+current_date=$(date)
+file_count=$(ls | wc -l)
+echo "Today is $current_date"
+echo "Found $file_count files"
+
+# Or use backticks (older syntax)
+current_date=`date`
+```
+
+#### Subshells
+
+```bash
+# Single parentheses create subshell (separate environment)
+( cd /tmp; echo "Current dir: $(pwd)" )
+# After subshell, original directory unchanged
+```
+
+#### Delays
+
+```bash
+sleep 3      # 3 seconds
+sleep 0.5    # 0.5 seconds (subsecond delays supported)
+```
+
+---
+
+### Random Numbers & Math
+
+```bash
+# Generate random number 0-32767
+NUMBER=$RANDOM
+
+# Random number in range 1-6 (dice)
+DICE=$(( RANDOM % 6 + 1 ))
+
+# Random 0-75
+BINGO=$(( RANDOM % 75 + 1 ))
+
+# Access random array element
+RESPONSES=("Yes" "No" "Maybe" "Outlook good" "Don't count on it" "Ask again later")
+N=$(( RANDOM % 6 ))
+echo ${RESPONSES[$N]}
+```
+
+---
+
+### Script Organization & Execution
+
+#### Script Structure (Best Practices)
+
+```bash
+#!/bin/bash
+
+# Comments explaining script purpose
+
+NAME="value"
+ARRAY=("item1" "item2")
+
+my_function() {
+    echo "Reusable code here"
+}
+
+# Main logic
+my_function
+echo "Script complete"
+```
+
+#### Script Permissions & Running
+
+| Method | Command | Requirements |
+|--------|---------|--------------|
+| **Bash interpreter** | `bash script.sh` | File readable |
+| **sh interpreter** | `sh script.sh` | File readable |
+| **Direct execute** | `./script.sh` | File must be executable (`chmod +x`) |
+
+**Check permissions:**
+```bash
+ls -l script.sh
+# Output: -rw-r--r-- means NOT executable (no x)
+# Output: -rwxr-xr-x means executable (has x)
+
+# Make executable
+chmod +x script.sh
+```
+
+#### Sequential Script Execution
+
+Create a master script to run multiple programs in sequence:
+
+```bash
+#!/bin/bash
+./setup.sh
+./interactive.sh
+./processing.sh
+./cleanup.sh
+```
+
+---
+
+### Environment Variables & Help
+
+#### Common Environment Variables
+
+| Variable | Purpose | Example |
+|----------|---------|---------|
+| `$RANDOM` | Random number 0-32767 | `NUM=$RANDOM` |
+| `$HOME` | User home directory | `/home/username` |
+| `$PATH` | Directories for executables | Search path for commands |
+| `$LANG` | System language setting | `en_US.UTF-8` |
+
+#### Getting Help
+
+| Command | Purpose |
+|---------|---------|
+| `help` | List all built-in commands |
+| `help COMMAND` | Info on built-in (e.g., `help if`) |
+| `man COMMAND` | Manual page for external command |
+| `COMMAND --help` | Quick help for many commands |
+| `type COMMAND` | Check if built-in, external, or alias |
+| `which COMMAND` | Show full path to executable |
+
+**Examples:**
+```bash
+help if                 # Info on if built-in
+man ls                  # Manual for ls command
+ls --help               # Help for ls
+type echo               # Is echo a built-in?
+which bash              # Where is bash installed?
+```
+
+---
+
+### Practical Tips
+
+- **Test locally:** Copy-paste small script portions into terminal to validate before running full script
+- **Use meaningful names:** Variables and functions should be descriptive (e.g., `BACKUP_DIR` not `bd`)
+- **Comment complex logic:** Future you (or others) will appreciate clear explanations
+- **Handle edge cases:** Check for file existence, empty inputs, etc. before processing
+- **Use set -e:** Add `set -e` to exit on first error (best practices for robust scripts)
 
