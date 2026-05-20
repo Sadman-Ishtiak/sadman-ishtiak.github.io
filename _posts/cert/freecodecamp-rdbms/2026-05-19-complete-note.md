@@ -1235,7 +1235,8 @@ which bash              # Where is bash installed?
 ## SQL and Bash
 ## Build a World Cup Database
 For the given task the data, `games.csv` is,
-```csv
+
+```text
 year,round,winner,opponent,winner_goals,opponent_goals
 2018,Final,France,Croatia,4,2
 2018,Third Place,Belgium,England,2,0
