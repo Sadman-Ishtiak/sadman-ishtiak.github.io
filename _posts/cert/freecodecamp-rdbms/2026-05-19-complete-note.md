@@ -1696,11 +1696,11 @@ ALTER TABLE ONLY public.games
 -- PostgreSQL database dump complete
 --
 ```
-
+<!-- 
 ## Build a Salon Appointment Scheduler
 ## Git
 ## Build a Periodic Table Database
 ## Build a Number Guessing Game
 ## Relational Databases Review
 ## Relational Databases Certification Exam
-
+ -->
