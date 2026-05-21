@@ -1,5 +1,5 @@
 ---
-title: "Docker — Containerization Notes"
+title: "Docker - Containerization Notes"
 date: 2026-05-21 00:00:00 +0600
 categories: [Docker, DevOps, Tutorials]
 tags: [docker, containers, images, dockerfile, nginx]
@@ -70,11 +70,11 @@ Images are built as layers (Dockerfile instructions produce new layers); the uni
 - Registry: public or private image storage.
 
 ### Common commands (quick reference)
-- `docker build -t name:tag .` — build image
-- `docker run --rm -it name:tag` — run interactive container
-- `docker ps -a` — list containers
-- `docker images` — list images
-- `docker pull name:tag` / `docker push name:tag` — exchange images with registry
+- `docker build -t name:tag .` - build image
+- `docker run --rm -it name:tag` - run interactive container
+- `docker ps -a` - list containers
+- `docker images` - list images
+- `docker pull name:tag` / `docker push name:tag` - exchange images with registry
 
 ### Security & best practices
 - Run processes as non-root inside containers when possible.
@@ -94,19 +94,19 @@ In short,Docker leverages kernel features (namespaces, cgroups, union filesystem
 Brief: Basic Linux CLI skills make working with Docker easier. Below are concise references and runnable examples.
 
 ### Quick reference
-- `whoami` — show current user
-- `echo 'text'` — print text
-- `ls -la` — list files (including hidden)
-- `cd <dir>` — change directory
-- `pwd` — print working directory
-- `cat <file>` — show file contents
-- `ps aux` — list processes
-- `touch <file>` — create an empty file
-- `mkdir <dir>` — create a directory
-- `rm <file>` / `rm -r <dir>` — remove file/directory
-- `cp <src> <dst>` — copy files
-- `mv <src> <dst>` — move/rename files
-- `nano <file>` / `vim <file>` — edit text files
+- `whoami` - show current user
+- `echo 'text'` - print text
+- `ls -la` - list files (including hidden)
+- `cd <dir>` - change directory
+- `pwd` - print working directory
+- `cat <file>` - show file contents
+- `ps aux` - list processes
+- `touch <file>` - create an empty file
+- `mkdir <dir>` - create a directory
+- `rm <file>` / `rm -r <dir>` - remove file/directory
+- `cp <src> <dst>` - copy files
+- `mv <src> <dst>` - move/rename files
+- `nano <file>` / `vim <file>` - edit text files
 
 ### Docker-related CLI examples
 ```bash
@@ -203,14 +203,14 @@ Notes: Use `--rm` for temporary containers, `-d` to run services in background, 
 Summary: A `Dockerfile` is a text recipe that defines how to build an image. Each instruction creates a new layer; Docker caches layers to speed up rebuilds.
 
 ### Common instructions
-- `FROM <image>` — base image
-- `WORKDIR /path` — set working directory
-- `COPY <src> <dst>` / `ADD` — copy files into the image
-- `RUN <cmd>` — run a command while building (creates a new layer)
-- `ENV KEY=VALUE` — set environment variables
-- `EXPOSE <port>` — document a port that the container listens on
-- `CMD [...]` / `ENTRYPOINT [...]` — default run command
-- `VOLUME` — declare mount points for persistent data
+- `FROM <image>` - base image
+- `WORKDIR /path` - set working directory
+- `COPY <src> <dst>` / `ADD` - copy files into the image
+- `RUN <cmd>` - run a command while building (creates a new layer)
+- `ENV KEY=VALUE` - set environment variables
+- `EXPOSE <port>` - document a port that the container listens on
+- `CMD [...]` / `ENTRYPOINT [...]` - default run command
+- `VOLUME` - declare mount points for persistent data
 
 ### Example Dockerfile (Python app)
 ```Dockerfile
