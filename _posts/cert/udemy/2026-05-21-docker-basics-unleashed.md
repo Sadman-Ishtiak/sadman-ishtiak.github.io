@@ -264,4 +264,4 @@ CMD ["nginx", "-g", "daemon off;"]
 
 Notes: Expose ports with `-p`, persist user content with volumes (`-v`), and keep the server process running in foreground (many images already do this). Use healthchecks and non-root users for production deployments.
 
-![Final Certification](/assets/images/UC-4f0e6669-6d6d-4d95-84db-221e84e25bb4.jpg)
+![Final Certification](assets/images/udemy/UC-4f0e6669-6d6d-4d95-84db-221e84e25bb4.jpg)
