@@ -40,11 +40,11 @@ Containerized stack:
 | |bins/lib|  |bins/lib|   |bins/lib|            |
 | +--------+  +--------+   +--------+            |
 +------------------------------------------------+
-| Docker Engine (container runtime)              |
+|      Docker Engine (container runtime)         |
 +------------------------------------------------+
-| Operating System (Host OS)                     |
+|         Operating System (Host OS)             |
 +------------------------------------------------+
-| Physical Server / VM                           |
+|            Physical Server / VM                |
 +------------------------------------------------+
 ```
 
