@@ -1,8 +1,8 @@
 ---
 title: "Docker - Containerization Notes"
 date: 2026-05-21 00:00:00 +0600
-categories: [Certification, Udemy]
-tags: [docker, containers, images, dockerfile, nginx]
+categories: [DevOps, Docker]
+tags: [docker, containers, images, dockerfile, nginx, udemy, certification, notes]
 description: "Concise Docker notes: images, containers, Dockerfiles, commands, and best practices."
 ---
 
