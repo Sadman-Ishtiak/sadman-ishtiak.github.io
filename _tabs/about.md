@@ -27,9 +27,7 @@ To stop the knowledge from leaking out, I've been collecting some official patch
 - **TryHackMe Enthusiast** – *Frequently spotted in various THM rooms, learning the ropes of ethical hacking and CTFs.*
 
 ### Udemy
-- **Docker Basics Unleashed** (May 2026) – *Mastering the art of containerization to deploy applications efficiently.*
-
-[Docker Certification](assets/images/udemy/UC-4f0e6669-6d6d-4d95-84db-221e84e25bb4.jpg)
+- **Docker Basics Unleashed** (May 2026) – *Mastering the art of containerization to deploy applications efficiently.* <a href="assets/images/udemy/UC-4f0e6669-6d6d-4d95-84db-221e84e25bb4.jpg" target="_blank">[Certificate]</a>
 
 ## Interests & Goals
 I'm particularly interested in **Computer Vision**, **Cybersecurity**, and **Low-level Programming**. Whether it's detecting objects in a video stream or reverse-engineering a binary, I love the challenge of figuring out how things work under the hood.
