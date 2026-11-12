@@ -2,198 +2,140 @@
 title: "LISP Programming and Symbolic Computation"
 date: 2026-10-23 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
-tags: [lisp, functional-programming, ai-lab]
-description: "Comprehensive academic notes on LISP Programming and Symbolic Computation from the Artificial Intelligence series."
+tags: [lisp, functional-programming, lab]
+description: "LISP basics: CAR/CDR/CONS, conditionals, recursion, and programs."
+excerpt: "LISP basics: CAR/CDR/CONS, conditionals, recursion, and programs."
 math: true
 ---
 
+{% raw %}
 # Introduction to LISP
-
-
-% ==================== Section 18.1 ====================
 
 ## LISP Overview
 
-
 **LISP** (LISt Processing) is the second-oldest high-level programming language, created by John McCarthy in 1958. It was designed for symbolic computation and has been the primary language for artificial intelligence research for decades.
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
-
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 LISP</strong>
-
+LISP
 
 **LISP** (LISt Processing) is a family of programming languages in which both code and data are represented as lists. The language treats programs as data structures that can be inspected, modified, and executed. Common Lisp is the most widely used dialect.
 
 </div>
 
-
-
 ### Key Features of LISP
 
-\begin{itemize}
-  \item **Symbolic computation:** LISP manipulates symbols and symbolic expressions, not just numeric values.
-  \item **Homoiconicity:** LISP code and data share the same representation (lists), enabling macros and metaprogramming.
-  \item **Automatic memory management:** LISP provides garbage collection, freeing the programmer from manual memory management.
-  \item **First-class functions:** Functions can be passed as arguments, returned as values, and stored in data structures.
-  \item **Interactive development:** The read---eval---print loop (REPL) allows incremental testing and debugging.
-  \item **Recursion as a control structure:** LISP relies on recursion rather than iteration as the primary looping mechanism.
-\end{itemize}
+- **Symbolic computation:** LISP manipulates symbols and symbolic expressions, not just numeric values.
+
+- **Homoiconicity:** LISP code and data share the same representation (lists), enabling macros and metaprogramming.
+
+- **Automatic memory management:** LISP provides garbage collection, freeing the programmer from manual memory management.
+
+- **First-class functions:** Functions can be passed as arguments, returned as values, and stored in data structures.
+
+- **Interactive development:** The read—eval—print loop (REPL) allows incremental testing and debugging.
+
+- **Recursion as a control structure:** LISP relies on recursion rather than iteration as the primary looping mechanism.
 
 ### LISP Syntax
 
 LISP syntax is based on **S-expressions** (Symbolic Expressions). An S-expression is either:
-\begin{itemize}
-  \item An **atom**: a number, symbol, or string (e.g., \texttt{42}, \texttt{hello}, \texttt{"AI"})
-  \item A **list**: a sequence of S-expressions enclosed in parentheses (e.g., \texttt{(+ 1 2)}, \texttt{(car '(a b c))})
-\end{itemize}
 
-[ht]
+- An **atom**: a number, symbol, or string (e.g., `42`, `hello`, `"AI"`)
 
-\begin{tikzpicture}[scale=1, transform shape]
-  \node[draw, fill=blue!10, rectangle, minimum width=5cm, minimum height=0.8cm, font=\small] (sexp) at (0,3) {**S-Expression**};
-  \node[draw, fill=green!10, rectangle, minimum width=2.5cm, minimum height=0.8cm, font=\small] (atom) at (-2.5,1.5) {**Atom**};
-  \node[draw, fill=yellow!10, rectangle, minimum width=2.5cm, minimum height=0.8cm, font=\small] (list) at (2.5,1.5) {**List**};
-  \draw[->, thick] (sexp.south) -- ++(0,-0.2) -| (atom.north);
-  \draw[->, thick] (sexp.south) -- ++(0,-0.2) -| (list.north);
+- A **list**: a sequence of S-expressions enclosed in parentheses (e.g., `(+ 1 2)`, `(car ’(a b c))`)
 
-  \node[draw, fill=red!10, rectangle, minimum width=1.3cm, minimum height=0.6cm, font=\small] (num) at (-4.7,-0.5) {Number};
-  \node[draw, fill=red!10, rectangle, minimum width=1.3cm, minimum height=0.6cm, font=\small] (sym) at (-2.5,-0.5) {Symbol};
-  \node[draw, fill=red!10, rectangle, minimum width=1.3cm, minimum height=0.6cm, font=\small] (str) at (-0.9,-0.5) {String};
-  \draw[->, thick] (atom.south) -- ++(0,-0.2) -| (num.north);
-  \draw[->, thick] (atom.south) -- ++(0,-0.2) -| (sym.north);
-  \draw[->, thick] (atom.south) -- ++(0,-0.2) -| (str.north);
+*Figure: LISP S-expression hierarchy.*
 
-  \node[draw, fill=red!10, rectangle, minimum width=1.8cm, minimum height=0.6cm, font=\small] (proper) at (1.2,-0.5) {Proper};
-  \node[draw, fill=red!10, rectangle, minimum width=1.8cm, minimum height=0.6cm, font=\small] (dotted) at (4.5,-0.5) {Dotted};
-  \draw[->, thick] (list.south) -- ++(0,-0.2) -| (proper.north);
-  \draw[->, thick] (list.south) -- ++(0,-0.2) -| (dotted.north);
-\end{tikzpicture}
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
-*Caption: LISP S-expression hierarchy.*
+LISP Expressions
 
+- **Atom:** `42` (number), `hello` (symbol), `"AI"` (string) — evaluate to themselves.
 
-\end{figure}
+- **List as function call:** `(+ 1 2)` evaluates to `3`.
 
+- **List as data (quoted):** `’(a b c)` evaluates to the list `(A B C)`.
 
-
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 LISP Expressions</strong>
-
-
-\begin{itemize}
-  \item **Atom:** \texttt{42} (number), \texttt{hello} (symbol), \texttt{"AI"} (string) --- evaluate to themselves.
-  \item **List as function call:** \texttt{(+ 1 2)} evaluates to \texttt{3}.
-  \item **List as data (quoted):** \texttt{'(a b c)} evaluates to the list \texttt{(A B C)}.
-  \item **Nested expression:** \texttt{(* (+ 2 3) (- 5 1))} evaluates to \texttt{20}.
-\end{itemize}
+- **Nested expression:** `(* (+ 2 3) (- 5 1))` evaluates to `20`.
 
 </div>
-
-
-
-% ==================== Section 18.2 ====================
 
 ## Basic List Manipulation Functions
 
+A **list** in LISP is the fundamental data structure. Lists are built from **cons cells** — pairs with two parts: the `car` (first element) and the `cdr` (rest of the list). The empty list is denoted `nil` or `()`.
 
-A **list** in LISP is the fundamental data structure. Lists are built from **cons cells** --- pairs with two parts: the \texttt{car} (first element) and the \texttt{cdr} (rest of the list). The empty list is denoted \texttt{nil} or \texttt{()}.
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+CAR and CDR
 
+`CAR` returns the first element of a list. `CDR` returns the list without its first element.
 
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 CAR and CDR</strong>
+- `(car list)` — first element
 
-
-\texttt{CAR} returns the first element of a list. \texttt{CDR} returns the list without its first element.
-\begin{itemize}
-  \item \texttt{(car list)} --- first element
-  \item \texttt{(cdr list)} --- the rest of the list (a list)
-\end{itemize}
+- `(cdr list)` — the rest of the list (a list)
 
 </div>
-
-
-
 
 ```lisp
 (car '(a b c d))
 (cdr '(a b c d))
 ```
 
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+CAR and CDR
 
+- `(car ’(a b c d))` $\rightarrow$ `A`
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 CAR and CDR</strong>
+- `(cdr ’(a b c d))` $\rightarrow$ `(B C D)`
 
+- `(car ’((a b) c d))` $\rightarrow$ `(A B)`
 
-\begin{itemize}
-  \item \texttt{(car '(a b c d))} $\rightarrow$ \texttt{A}
-  \item \texttt{(cdr '(a b c d))} $\rightarrow$ \texttt{(B C D)}
-  \item \texttt{(car '((a b) c d))} $\rightarrow$ \texttt{(A B)}
-  \item \texttt{(cdr '((a b) c d))} $\rightarrow$ \texttt{(C D)}
-\end{itemize}
+- `(cdr ’((a b) c d))` $\rightarrow$ `(C D)`
 
 </div>
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+CONS
 
+`CONS` constructs a new cons cell. It takes two arguments: the first becomes the `car` and the second becomes the `cdr` of the new cell.
 
+- `(cons x y)` — creates a pair `(x . y)`
 
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 CONS</strong>
-
-
-\texttt{CONS} constructs a new cons cell. It takes two arguments: the first becomes the \texttt{car} and the second becomes the \texttt{cdr} of the new cell.
-\begin{itemize}
-  \item \texttt{(cons x y)} --- creates a pair \texttt{(x . y)}
-  \item If \texttt{y} is a list, \texttt{cons} prepends \texttt{x} to \texttt{y}.
-\end{itemize}
+- If `y` is a list, `cons` prepends `x` to `y`.
 
 </div>
-
-
-
 
 ```lisp
 (cons 'a '(b c d))
 (cons 'a (cons 'b (cons 'c nil)))
 ```
 
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+CONS
 
+- `(cons ’a ’(b c d))` $\rightarrow$ `(A B C D)`
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 CONS</strong>
+- `(cons ’a ’b)` $\rightarrow$ `(A . B)` (dotted pair)
 
+- `(cons ’a nil)` $\rightarrow$ `(A)`
 
-\begin{itemize}
-  \item \texttt{(cons 'a '(b c d))} $\rightarrow$ \texttt{(A B C D)}
-  \item \texttt{(cons 'a 'b)} $\rightarrow$ \texttt{(A . B)} (dotted pair)
-  \item \texttt{(cons 'a nil)} $\rightarrow$ \texttt{(A)}
-  \item \texttt{(cons 1 (cons 2 (cons 3 nil)))} $\rightarrow$ \texttt{(1 2 3)}
-\end{itemize}
+- `(cons 1 (cons 2 (cons 3 nil)))` $\rightarrow$ `(1 2 3)`
 
 </div>
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+LIST
 
+`LIST` creates a list from its arguments. Unlike `cons` which builds pairs, `list` always produces a proper list.
 
-
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 LIST</strong>
-
-
-\texttt{LIST} creates a list from its arguments. Unlike \texttt{cons} which builds pairs, \texttt{list} always produces a proper list.
-\begin{itemize}
-  \item \texttt{(list arg1 arg2 ... argn)} --- creates a new list of n elements
-\end{itemize}
+- `(list arg1 arg2 ... argn)` — creates a new list of n elements
 
 </div>
-
-
-
 
 ```lisp
 (list 'a 'b 'c 'd)
@@ -201,859 +143,598 @@ A **list** in LISP is the fundamental data structure. Lists are built from **con
 (list 'a '(b c) 'd)
 ```
 
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+LIST
 
+- `(list ’a ’b ’c ’d)` $\rightarrow$ `(A B C D)`
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 LIST</strong>
+- `(list 1 2 3)` $\rightarrow$ `(1 2 3)`
 
+- `(list ’a ’(b c) ’d)` $\rightarrow$ `(A (B C) D)`
 
-\begin{itemize}
-  \item \texttt{(list 'a 'b 'c 'd)} $\rightarrow$ \texttt{(A B C D)}
-  \item \texttt{(list 1 2 3)} $\rightarrow$ \texttt{(1 2 3)}
-  \item \texttt{(list 'a '(b c) 'd)} $\rightarrow$ \texttt{(A (B C) D)}
-  \item \texttt{(list)} $\rightarrow$ \texttt{NIL}
-\end{itemize}
+- `(list)` $\rightarrow$ `NIL`
 
 </div>
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+APPEND
 
+`APPEND` concatenates two or more lists. It returns a new list containing the elements of all argument lists in order.
 
+- `(append list1 list2 ... listn)` — concatenates lists
 
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 APPEND</strong>
-
-
-\texttt{APPEND} concatenates two or more lists. It returns a new list containing the elements of all argument lists in order.
-\begin{itemize}
-  \item \texttt{(append list1 list2 ... listn)} --- concatenates lists
-  \item Arguments except the last are copied; the last is shared.
-\end{itemize}
+- Arguments except the last are copied; the last is shared.
 
 </div>
-
-
-
 
 ```lisp
 (append '(a b) '(c d))
 (append '(1 2) '(3 4) '(5 6))
 ```
 
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+APPEND
 
+- `(append ’(a b) ’(c d))` $\rightarrow$ `(A B C D)`
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 APPEND</strong>
+- `(append ’(1 2) ’(3 4) ’(5 6))` $\rightarrow$ `(1 2 3 4 5 6)`
 
-
-\begin{itemize}
-  \item \texttt{(append '(a b) '(c d))} $\rightarrow$ \texttt{(A B C D)}
-  \item \texttt{(append '(1 2) '(3 4) '(5 6))} $\rightarrow$ \texttt{(1 2 3 4 5 6)}
-  \item \texttt{(append '(a) '(b) nil '(c))} $\rightarrow$ \texttt{(A B C)}
-\end{itemize}
+- `(append ’(a) ’(b) nil ’(c))` $\rightarrow$ `(A B C)`
 
 </div>
-
-
-
-% ==================== Section 18.3 ====================
 
 ## Additional List Manipulation Functions
 
+LISP provides many built-in functions for common list operations. Table <a href="#tab:additional-list-functions" data-reference-type="ref" data-reference="tab:additional-list-functions">[tab:additional-list-functions]</a> summarises the most frequently used ones.
 
-LISP provides many built-in functions for common list operations. Table~\ref{tab:additional-list-functions} summarises the most frequently used ones.
+| **Function** | **Format**           | **Purpose**                           |
+|:-------------|:---------------------|:--------------------------------------|
+| LENGTH       | `(length list)`      | Returns the number of elements        |
+| REVERSE      | `(reverse list)`     | Returns a reversed copy of the list   |
+| MEMBER       | `(member item list)` | Tests membership; returns tail or nil |
+| NTH          | `(nth n list)`       | Returns the nth element (0-indexed)   |
+| LAST         | `(last list)`        | Returns the last cons cell            |
+| FIRST        | `(first list)`       | Synonym for car                       |
+| REST         | `(rest list)`        | Synonym for cdr                       |
+| BUTLAST      | `(butlast list)`     | Returns list without the last element |
 
-[ht]
+Additional list manipulation functions in LISP.
 
-\begin{tabular}{@{}lll@{}}
-\toprule
-**Function** & **Format** & **Purpose** \\
-\midrule
-LENGTH & \texttt{(length list)} & Returns the number of elements \\
-REVERSE & \texttt{(reverse list)} & Returns a reversed copy of the list \\
-MEMBER & \texttt{(member item list)} & Tests membership; returns tail or nil \\
-NTH & \texttt{(nth n list)} & Returns the nth element (0-indexed) \\
-LAST & \texttt{(last list)} & Returns the last cons cell \\
-FIRST & \texttt{(first list)} & Synonym for car \\
-REST & \texttt{(rest list)} & Synonym for cdr \\
-BUTLAST & \texttt{(butlast list)} & Returns list without the last element \\
-\bottomrule
-\end{tabular}
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+LENGTH
 
-*Caption: Additional list manipulation functions in LISP.*
+`LENGTH` returns the number of elements in a list.
 
-
-
-\end{table}
-
-
-
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 LENGTH</strong>
-
-
-\texttt{LENGTH} returns the number of elements in a list.
-\begin{itemize}
-  \item \texttt{(length list)} --- integer count of top-level elements
-\end{itemize}
+- `(length list)` — integer count of top-level elements
 
 </div>
-
-
-
 
 ```lisp
 (length '(a b c d))
 (length '())
 ```
 
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+LENGTH
 
+- `(length ’(a b c d))` $\rightarrow$ `4`
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 LENGTH</strong>
+- `(length ’())` $\rightarrow$ `0`
 
-
-\begin{itemize}
-  \item \texttt{(length '(a b c d))} $\rightarrow$ \texttt{4}
-  \item \texttt{(length '())} $\rightarrow$ \texttt{0}
-  \item \texttt{(length '((a b) c (d e)))} $\rightarrow$ \texttt{3}
-\end{itemize}
+- `(length ’((a b) c (d e)))` $\rightarrow$ `3`
 
 </div>
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+REVERSE
 
+`REVERSE` returns a new list with elements in reverse order. The original list is not modified.
 
-
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 REVERSE</strong>
-
-
-\texttt{REVERSE} returns a new list with elements in reverse order. The original list is not modified.
-\begin{itemize}
-  \item \texttt{(reverse list)} --- reversed copy of the list
-\end{itemize}
+- `(reverse list)` — reversed copy of the list
 
 </div>
-
-
-
 
 ```lisp
 (reverse '(a b c d))
 ```
 
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+REVERSE
 
+- `(reverse ’(a b c d))` $\rightarrow$ `(D C B A)`
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 REVERSE</strong>
-
-
-\begin{itemize}
-  \item \texttt{(reverse '(a b c d))} $\rightarrow$ \texttt{(D C B A)}
-  \item \texttt{(reverse '((a b) c d))} $\rightarrow$ \texttt{(D C (A B))}
-\end{itemize}
+- `(reverse ’((a b) c d))` $\rightarrow$ `(D C (A B))`
 
 </div>
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+MEMBER
 
+`MEMBER` tests whether an item appears in a list. If found, it returns the tail of the list starting from that item; otherwise it returns `nil`.
 
-
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 MEMBER</strong>
-
-
-\texttt{MEMBER} tests whether an item appears in a list. If found, it returns the tail of the list starting from that item; otherwise it returns \texttt{nil}.
-\begin{itemize}
-  \item \texttt{(member item list)} --- tail starting at item, or nil
-\end{itemize}
+- `(member item list)` — tail starting at item, or nil
 
 </div>
-
-
-
 
 ```lisp
 (member 'b '(a b c d))
 (member 'x '(a b c d))
 ```
 
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+MEMBER
 
+- `(member ’b ’(a b c d))` $\rightarrow$ `(B C D)`
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 MEMBER</strong>
+- `(member ’x ’(a b c d))` $\rightarrow$ `NIL`
 
-
-\begin{itemize}
-  \item \texttt{(member 'b '(a b c d))} $\rightarrow$ \texttt{(B C D)}
-  \item \texttt{(member 'x '(a b c d))} $\rightarrow$ \texttt{NIL}
-  \item \texttt{(member 3 '(1 2 3 4))} $\rightarrow$ \texttt{(3 4)}
-\end{itemize}
+- `(member 3 ’(1 2 3 4))` $\rightarrow$ `(3 4)`
 
 </div>
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+NTH
 
+`NTH` returns the nth element of a list using zero-based indexing. `(nth n list)` is equivalent to `(car (nthcdr n list))`.
 
-
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 NTH</strong>
-
-
-\texttt{NTH} returns the nth element of a list using zero-based indexing. \texttt{(nth n list)} is equivalent to \texttt{(car (nthcdr n list))}.
-\begin{itemize}
-  \item \texttt{(nth n list)} --- element at position n
-\end{itemize}
+- `(nth n list)` — element at position n
 
 </div>
-
-
-
 
 ```lisp
 (nth 0 '(a b c d))
 (nth 2 '(a b c d))
 ```
 
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+NTH
 
+- `(nth 0 ’(a b c d))` $\rightarrow$ `A`
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 NTH</strong>
+- `(nth 2 ’(a b c d))` $\rightarrow$ `C`
 
-
-\begin{itemize}
-  \item \texttt{(nth 0 '(a b c d))} $\rightarrow$ \texttt{A}
-  \item \texttt{(nth 2 '(a b c d))} $\rightarrow$ \texttt{C}
-  \item \texttt{(nth 5 '(a b c d))} $\rightarrow$ \texttt{NIL}
-\end{itemize}
+- `(nth 5 ’(a b c d))` $\rightarrow$ `NIL`
 
 </div>
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+LAST
 
+`LAST` returns the last cons cell of a list. For a proper list, this is the last element wrapped in a list of length 1.
 
-
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 LAST</strong>
-
-
-\texttt{LAST} returns the last cons cell of a list. For a proper list, this is the last element wrapped in a list of length 1.
-\begin{itemize}
-  \item \texttt{(last list)} --- returns the last cons cell
-\end{itemize}
+- `(last list)` — returns the last cons cell
 
 </div>
-
-
-
 
 ```lisp
 (last '(a b c d))
 (last '(1 2 3))
 ```
 
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+LAST
 
+- `(last ’(a b c d))` $\rightarrow$ `(D)`
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 LAST</strong>
+- `(last ’(1 2 3))` $\rightarrow$ `(3)`
 
+- `(last ’(a))` $\rightarrow$ `(A)`
 
-\begin{itemize}
-  \item \texttt{(last '(a b c d))} $\rightarrow$ \texttt{(D)}
-  \item \texttt{(last '(1 2 3))} $\rightarrow$ \texttt{(3)}
-  \item \texttt{(last '(a))} $\rightarrow$ \texttt{(A)}
-  \item \texttt{(last '())} $\rightarrow$ \texttt{NIL}
-\end{itemize}
+- `(last ’())` $\rightarrow$ `NIL`
 
 </div>
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+FIRST and REST
 
+`FIRST` is a synonym for `CAR` — it returns the first element of a list. `REST` is a synonym for `CDR` — it returns the list without its first element.
 
+- `(first list)` — first element (same as `car`)
 
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 FIRST and REST</strong>
-
-
-\texttt{FIRST} is a synonym for \texttt{CAR} --- it returns the first element of a list. \texttt{REST} is a synonym for \texttt{CDR} --- it returns the list without its first element.
-\begin{itemize}
-  \item \texttt{(first list)} --- first element (same as \texttt{car})
-  \item \texttt{(rest list)} --- the rest of the list (same as \texttt{cdr})
-\end{itemize}
+- `(rest list)` — the rest of the list (same as `cdr`)
 
 </div>
-
-
-
 
 ```lisp
 (first '(a b c d))
 (rest '(a b c d))
 ```
 
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+FIRST and REST
 
+- `(first ’(a b c d))` $\rightarrow$ `A`
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 FIRST and REST</strong>
+- `(rest ’(a b c d))` $\rightarrow$ `(B C D)`
 
+- `(first ’((1 2) 3 4))` $\rightarrow$ `(1 2)`
 
-\begin{itemize}
-  \item \texttt{(first '(a b c d))} $\rightarrow$ \texttt{A}
-  \item \texttt{(rest '(a b c d))} $\rightarrow$ \texttt{(B C D)}
-  \item \texttt{(first '((1 2) 3 4))} $\rightarrow$ \texttt{(1 2)}
-  \item \texttt{(rest '((1 2) 3 4))} $\rightarrow$ \texttt{(3 4)}
-\end{itemize}
+- `(rest ’((1 2) 3 4))` $\rightarrow$ `(3 4)`
 
 </div>
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+BUTLAST
 
+`BUTLAST` returns a list with the last element removed. The original list is not modified.
 
-
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 BUTLAST</strong>
-
-
-\texttt{BUTLAST} returns a list with the last element removed. The original list is not modified.
-\begin{itemize}
-  \item \texttt{(butlast list)} --- list without the last element
-\end{itemize}
+- `(butlast list)` — list without the last element
 
 </div>
-
-
-
 
 ```lisp
-(butlast '(a b c d))
-(butlast '(1 2 3))
-```
+(cons 'a '(b c d))
+(cons 'a (cons 'b (cons 'c nil)))
+```0
 
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+BUTLAST
 
+- `(butlast ’(a b c d))` $\rightarrow$ `(A B C)`
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 BUTLAST</strong>
+- `(butlast ’(1 2 3))` $\rightarrow$ `(1 2)`
 
+- `(butlast ’(a))` $\rightarrow$ `NIL`
 
-\begin{itemize}
-  \item \texttt{(butlast '(a b c d))} $\rightarrow$ \texttt{(A B C)}
-  \item \texttt{(butlast '(1 2 3))} $\rightarrow$ \texttt{(1 2)}
-  \item \texttt{(butlast '(a))} $\rightarrow$ \texttt{NIL}
-  \item \texttt{(butlast '())} $\rightarrow$ \texttt{NIL}
-\end{itemize}
+- `(butlast ’())` $\rightarrow$ `NIL`
 
 </div>
-
-
-
-% ==================== Section 18.4 ====================
 
 ## Conditional Constructs
 
-
 LISP provides **COND** and **IF** as the primary conditional constructs for decision-making in programs.
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+COND
 
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 COND</strong>
+`COND` is the general conditional construct. It evaluates a sequence of test–action pairs. Each pair is a list where the first element is a test expression and the remaining elements are actions. For the first test that evaluates to true (non-nil), the corresponding actions are evaluated and the last value is returned.
 
+- `(cond (test1 action1) (test2 action2) ... (t default))`
 
-\texttt{COND} is the general conditional construct. It evaluates a sequence of test--action pairs. Each pair is a list where the first element is a test expression and the remaining elements are actions. For the first test that evaluates to true (non-nil), the corresponding actions are evaluated and the last value is returned.
-\begin{itemize}
-  \item \texttt{(cond (test1 action1) (test2 action2) ... (t default))}
-  \item The symbol \texttt{t} is used for the default/else case.
-\end{itemize}
+- The symbol `t` is used for the default/else case.
 
 </div>
-
-
-
 
 ```lisp
-(setq x 5)
-(cond ((> x 0) 'positive)
-      ((< x 0) 'negative)
-      (t 'zero))
-```
+(cons 'a '(b c d))
+(cons 'a (cons 'b (cons 'c nil)))
+```1
 
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+COND
 
+- If `x = 5`: `(cond ((> x 0) ’positive) ((< x 0) ’negative) (t ’zero))` $\rightarrow$ `POSITIVE`
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 COND</strong>
+- If `x = -3`: same expression $\rightarrow$ `NEGATIVE`
 
-
-\begin{itemize}
-  \item If \texttt{x = 5}: \texttt{(cond ((> x 0) 'positive) ((< x 0) 'negative) (t 'zero))} $\rightarrow$ \texttt{POSITIVE}
-  \item If \texttt{x = -3}: same expression $\rightarrow$ \texttt{NEGATIVE}
-  \item If \texttt{x = 0}: same expression $\rightarrow$ \texttt{ZERO}
-\end{itemize}
+- If `x = 0`: same expression $\rightarrow$ `ZERO`
 
 </div>
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+IF
 
+`IF` is a simpler conditional that takes a test, a then-form, and an optional else-form.
 
+- `(if test then-form else-form)`
 
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 IF</strong>
-
-
-\texttt{IF} is a simpler conditional that takes a test, a then-form, and an optional else-form.
-\begin{itemize}
-  \item \texttt{(if test then-form else-form)}
-  \item If test evaluates to true (non-nil), then-form is evaluated; otherwise else-form is evaluated.
-\end{itemize}
+- If test evaluates to true (non-nil), then-form is evaluated; otherwise else-form is evaluated.
 
 </div>
-
-
-
 
 ```lisp
-(setq x 10)
-(if (> x 5) 'large 'small)
-(if (> x 15) 'large 'small)
-```
+(cons 'a '(b c d))
+(cons 'a (cons 'b (cons 'c nil)))
+```2
 
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+IF
 
+- `(if (> 10 5) ’yes ’no)` $\rightarrow$ `YES`
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 IF</strong>
+- `(if (> 3 5) ’yes ’no)` $\rightarrow$ `NO`
 
+- `(if ’() ’true ’false)` $\rightarrow$ `FALSE` (empty list is false)
 
-\begin{itemize}
-  \item \texttt{(if (> 10 5) 'yes 'no)} $\rightarrow$ \texttt{YES}
-  \item \texttt{(if (> 3 5) 'yes 'no)} $\rightarrow$ \texttt{NO}
-  \item \texttt{(if '() 'true 'false)} $\rightarrow$ \texttt{FALSE} (empty list is false)
-  \item \texttt{(if 42 'true 'false)} $\rightarrow$ \texttt{TRUE} (any non-nil is true)
-\end{itemize}
+- `(if 42 ’true ’false)` $\rightarrow$ `TRUE` (any non-nil is true)
 
 </div>
-
-
-
-% ==================== Section 18.5 ====================
 
 ## Recursion in LISP
 
-
 Recursion is the primary control mechanism in LISP. A recursive function calls itself with modified arguments until a base case is reached.
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
-
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 Recursion</strong>
-
+Recursion
 
 A **recursive function** is a function that calls itself. Every recursive function must have:
-\begin{itemize}
-  \item A **base case** that stops the recursion
-  \item A **recursive case** that reduces the problem toward the base case
-\end{itemize}
-In LISP, recursion naturally follows the structure of lists: operate on the \texttt{car}, then recurse on the \texttt{cdr}.
+
+- A **base case** that stops the recursion
+
+- A **recursive case** that reduces the problem toward the base case
+
+In LISP, recursion naturally follows the structure of lists: operate on the `car`, then recurse on the `cdr`.
 
 </div>
-
-
 
 The factorial function is the classic example of recursion:
 
-
 ```lisp
-(defun factorial (n)
-  (if (<= n 1)
-      1
-      (* n (factorial (- n 1)))))
-```
+(cons 'a '(b c d))
+(cons 'a (cons 'b (cons 'c nil)))
+```3
 
+<figure>
+<img src="/assets/images/ai-book/figures/book-003-p3.png" />
+<figcaption>Recursive flow for <code>(factorial 5)</code>.</figcaption>
+</figure>
 
-[htbp]
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+Factorial Execution Trace
 
+Evaluation of `(factorial 5)`:
 
-![](/assets/images/ai-book/figures/book-003-p3.png)
+1.  `(factorial 5)` $\rightarrow$ $5 \times$ `(factorial 4)`
 
+2.  `(factorial 4)` $\rightarrow$ $4 \times$ `(factorial 3)`
 
+3.  `(factorial 3)` $\rightarrow$ $3 \times$ `(factorial 2)`
 
-*Caption: Recursive flow for \texttt{(factorial 5)*
-.}
+4.  `(factorial 2)` $\rightarrow$ $2 \times$ `(factorial 1)`
 
-\end{figure}
+5.  `(factorial 1)` $\rightarrow$ $1$ (base case reached)
 
+6.  Unwinding: $2 \times 1 = 2$, $3 \times 2 = 6$, $4 \times 6 = 24$, $5 \times 24 = 120$
 
-
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 Factorial Execution Trace</strong>
-
-
-Evaluation of \texttt{(factorial 5)}:
-\begin{enumerate}
-  \item \texttt{(factorial 5)} $\rightarrow$ $5 \times$ \texttt{(factorial 4)}
-  \item \texttt{(factorial 4)} $\rightarrow$ $4 \times$ \texttt{(factorial 3)}
-  \item \texttt{(factorial 3)} $\rightarrow$ $3 \times$ \texttt{(factorial 2)}
-  \item \texttt{(factorial 2)} $\rightarrow$ $2 \times$ \texttt{(factorial 1)}
-  \item \texttt{(factorial 1)} $\rightarrow$ $1$ (base case reached)
-  \item Unwinding: $2 \times 1 = 2$, $3 \times 2 = 6$, $4 \times 6 = 24$, $5 \times 24 = 120$
-  \item Final result: \texttt{120}
-\end{enumerate}
+7.  Final result: `120`
 
 </div>
-
-
-
-% ==================== Section 18.6 ====================
 
 ## Practical Programs
 
-
-This section presents complete LISP programs that solve common computational problems. Each program is defined as a function using \texttt{defun}.
+This section presents complete LISP programs that solve common computational problems. Each program is defined as a function using `defun`.
 
 ### Area of a Circle
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
-
-
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 Area of a Circle</strong>
-
+Area of a Circle
 
 The area $A$ of a circle with radius $r$ is given by $A = \pi r^2$.
-\begin{itemize}
-  \item \texttt{(area-circle r)} --- returns $\pi r^2$ using $\pi \approx 3.1416$
-\end{itemize}
+
+- `(area-circle r)` — returns $\pi r^2$ using $\pi \approx 3.1416$
 
 </div>
-
-
-
 
 ```lisp
-(defun area-circle (r)
-  (* 3.1416 r r))
-```
+(cons 'a '(b c d))
+(cons 'a (cons 'b (cons 'c nil)))
+```4
 
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+Area of a Circle
 
+- `(area-circle 5)` $\rightarrow$ $3.1416 \times 5 \times 5 = 78.54$
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 Area of a Circle</strong>
-
-
-\begin{itemize}
-  \item \texttt{(area-circle 5)} $\rightarrow$ $3.1416 \times 5 \times 5 = 78.54$
-  \item \texttt{(area-circle 7)} $\rightarrow$ $3.1416 \times 7 \times 7 = 153.9384$
-\end{itemize}
+- `(area-circle 7)` $\rightarrow$ $3.1416 \times 7 \times 7 = 153.9384$
 
 </div>
-
-
 
 ### Area of a Triangle
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
-
-
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 Area of a Triangle</strong>
-
+Area of a Triangle
 
 The area $A$ of a triangle with base $b$ and height $h$ is $A = \frac{1}{2} b h$.
-\begin{itemize}
-  \item \texttt{(area-triangle b h)} --- returns $\frac{1}{2} \times b \times h$
-\end{itemize}
+
+- `(area-triangle b h)` — returns $\frac{1}{2} \times b \times h$
 
 </div>
-
-
-
 
 ```lisp
-(defun area-triangle (b h)
-  (* 0.5 b h))
-```
+(cons 'a '(b c d))
+(cons 'a (cons 'b (cons 'c nil)))
+```5
 
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+Area of a Triangle
 
+- `(area-triangle 10 5)` $\rightarrow$ $0.5 \times 10 \times 5 = 25.0$
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 Area of a Triangle</strong>
-
-
-\begin{itemize}
-  \item \texttt{(area-triangle 10 5)} $\rightarrow$ $0.5 \times 10 \times 5 = 25.0$
-  \item \texttt{(area-triangle 7 3)} $\rightarrow$ $0.5 \times 7 \times 3 = 10.5$
-\end{itemize}
+- `(area-triangle 7 3)` $\rightarrow$ $0.5 \times 7 \times 3 = 10.5$
 
 </div>
-
-
 
 ### Sum and Average of Numbers
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+Sum and Average
 
+Given a list of numbers, `sum-list` computes the total by recursively adding the first element to the sum of the rest. `average-list` divides the sum by the length of the list.
 
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 Sum and Average</strong>
+- `(sum-list lst)` — recursively computes the sum
 
-
-Given a list of numbers, \texttt{sum-list} computes the total by recursively adding the first element to the sum of the rest. \texttt{average-list} divides the sum by the length of the list.
-\begin{itemize}
-  \item \texttt{(sum-list lst)} --- recursively computes the sum
-  \item \texttt{(average-list lst)} --- computes the arithmetic mean
-\end{itemize}
+- `(average-list lst)` — computes the arithmetic mean
 
 </div>
-
-
-
 
 ```lisp
-(defun sum-list (lst)
-  (if (null lst)
-      0
-      (+ (car lst) (sum-list (cdr lst)))))
+(cons 'a '(b c d))
+(cons 'a (cons 'b (cons 'c nil)))
+```6
 
-(defun average-list (lst)
-  (/ (sum-list lst) (length lst)))
-```
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+Sum and Average
 
+- `(sum-list ’(10 20 30 40))` $\rightarrow$ $10 + 20 + 30 + 40 = 100$
 
+- `(average-list ’(10 20 30 40))` $\rightarrow$ $100 / 4 = 25.0$
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 Sum and Average</strong>
+- `(sum-list ’(5 15 25))` $\rightarrow$ $45$
 
-
-\begin{itemize}
-  \item \texttt{(sum-list '(10 20 30 40))} $\rightarrow$ $10 + 20 + 30 + 40 = 100$
-  \item \texttt{(average-list '(10 20 30 40))} $\rightarrow$ $100 / 4 = 25.0$
-  \item \texttt{(sum-list '(5 15 25))} $\rightarrow$ $45$
-  \item \texttt{(average-list '(5 15 25))} $\rightarrow$ $15.0$
-\end{itemize}
+- `(average-list ’(5 15 25))` $\rightarrow$ $15.0$
 
 </div>
-
-
 
 ### Maximum and Minimum of Numbers
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+Maximum and Minimum
 
+Given a list of numbers, `max-list` finds the largest element and `min-list` finds the smallest. Both use recursion to compare elements.
 
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 Maximum and Minimum</strong>
+- `(max-list lst)` — recursively finds the maximum
 
-
-Given a list of numbers, \texttt{max-list} finds the largest element and \texttt{min-list} finds the smallest. Both use recursion to compare elements.
-\begin{itemize}
-  \item \texttt{(max-list lst)} --- recursively finds the maximum
-  \item \texttt{(min-list lst)} --- recursively finds the minimum
-\end{itemize}
+- `(min-list lst)` — recursively finds the minimum
 
 </div>
-
-
-
 
 ```lisp
-(defun max-list (lst)
-  (if (null (cdr lst))
-      (car lst)
-      (max (car lst) (max-list (cdr lst)))))
+(cons 'a '(b c d))
+(cons 'a (cons 'b (cons 'c nil)))
+```7
 
-(defun min-list (lst)
-  (if (null (cdr lst))
-      (car lst)
-      (min (car lst) (min-list (cdr lst)))))
-```
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+Maximum and Minimum
 
+- `(max-list ’(34 78 12 56 90))` $\rightarrow$ `90`
 
+- `(min-list ’(34 78 12 56 90))` $\rightarrow$ `12`
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 Maximum and Minimum</strong>
+- `(max-list ’(-5 0 3 -1 8))` $\rightarrow$ `8`
 
-
-\begin{itemize}
-  \item \texttt{(max-list '(34 78 12 56 90))} $\rightarrow$ \texttt{90}
-  \item \texttt{(min-list '(34 78 12 56 90))} $\rightarrow$ \texttt{12}
-  \item \texttt{(max-list '(-5 0 3 -1 8))} $\rightarrow$ \texttt{8}
-  \item \texttt{(min-list '(-5 0 3 -1 8))} $\rightarrow$ \texttt{-5}
-\end{itemize}
+- `(min-list ’(-5 0 3 -1 8))` $\rightarrow$ `-5`
 
 </div>
-
-
 
 ### Factorial Computation
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+Factorial
 
+The factorial of a non-negative integer $n$, denoted $n!$, is the product of all positive integers from 1 to $n$. By definition, $0! = 1$. $$n! = \prod_{k=1}^{n} k = n \times (n-1) \times (n-2) \times \cdots \times 1$$
 
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 Factorial</strong>
-
-
-The factorial of a non-negative integer $n$, denoted $n!$, is the product of all positive integers from 1 to $n$. By definition, $0! = 1$.
-\[
-n! = \prod_{k=1}^{n} k = n \times (n-1) \times (n-2) \times \cdots \times 1
-\]
-\begin{itemize}
-  \item \texttt{(factorial n)} --- computes $n!$ recursively
-\end{itemize}
+- `(factorial n)` — computes $n!$ recursively
 
 </div>
-
-
-
 
 ```lisp
-(defun factorial (n)
-  (if (<= n 1)
-      1
-      (* n (factorial (- n 1)))))
-```
+(cons 'a '(b c d))
+(cons 'a (cons 'b (cons 'c nil)))
+```8
 
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+Factorial Computation
 
+- `(factorial 0)` $\rightarrow$ `1`
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 Factorial Computation</strong>
+- `(factorial 5)` $\rightarrow$ $5 \times 4 \times 3 \times 2 \times 1 = 120$
 
+- `(factorial 7)` $\rightarrow$ $7! = 5040$
 
-\begin{itemize}
-  \item \texttt{(factorial 0)} $\rightarrow$ \texttt{1}
-  \item \texttt{(factorial 5)} $\rightarrow$ $5 \times 4 \times 3 \times 2 \times 1 = 120$
-  \item \texttt{(factorial 7)} $\rightarrow$ $7! = 5040$
-  \item \texttt{(factorial 10)} $\rightarrow$ $10! = 3628800$
-\end{itemize}
+- `(factorial 10)` $\rightarrow$ $10! = 3628800$
 
 </div>
-
-
 
 ### Array Declaration and Access
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+Array Declaration and Access
 
+LISP provides the `make-array` function to create arrays. Elements are accessed and modified using `aref` and `setf`.
 
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 Array Declaration and Access</strong>
+- `(make-array ’(size))` — creates a one-dimensional array
 
+- `(aref array index)` — retrieves element at index
 
-LISP provides the \texttt{make-array} function to create arrays. Elements are accessed and modified using \texttt{aref} and \texttt{setf}.
-\begin{itemize}
-  \item \texttt{(make-array '(size))} --- creates a one-dimensional array
-  \item \texttt{(aref array index)} --- retrieves element at index
-  \item \texttt{(setf (aref array index) value)} --- assigns value to element
-\end{itemize}
+- `(setf (aref array index) value)` — assigns value to element
 
 </div>
-
-
-
 
 ```lisp
-(setq arr (make-array '(5)))
-(setf (aref arr 0) 10)
-(setf (aref arr 1) 20)
-(setf (aref arr 2) 30)
-(setf (aref arr 3) 40)
-(setf (aref arr 4) 50)
+(cons 'a '(b c d))
+(cons 'a (cons 'b (cons 'c nil)))
+```9
 
-(aref arr 0)
-(aref arr 2)
-```
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+Array Declaration and Access
 
+- `(aref arr 0)` $\rightarrow$ `10`
 
+- `(aref arr 2)` $\rightarrow$ `30`
 
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 Array Declaration and Access</strong>
+- `(aref arr 4)` $\rightarrow$ `50`
 
-
-\begin{itemize}
-  \item \texttt{(aref arr 0)} $\rightarrow$ \texttt{10}
-  \item \texttt{(aref arr 2)} $\rightarrow$ \texttt{30}
-  \item \texttt{(aref arr 4)} $\rightarrow$ \texttt{50}
-  \item \texttt{(setf (aref arr 0) 100)} then \texttt{(aref arr 0)} $\rightarrow$ \texttt{100}
-\end{itemize}
+- `(setf (aref arr 0) 100)` then `(aref arr 0)` $\rightarrow$ `100`
 
 </div>
-
-
 
 ### PutProp Function (Property Lists)
 
+<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
+PutProp and Property Lists
 
+**Property lists** (plists) allow associating key–value pairs with symbols. In Common Lisp, `get` retrieves a property value and `setf` with `get` assigns one. `PutProp` is the traditional name for assigning properties.
 
-<div style="border-left: 4px solid #1a5c9e; background-color: #f0f4f8; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>📖 PutProp and Property Lists</strong>
+- `(putprop symbol value property)` — assigns a property (traditional)
 
+- `(setf (get ’symbol ’property) value)` — Common Lisp equivalent
 
-**Property lists** (plists) allow associating key--value pairs with symbols. In Common Lisp, \texttt{get} retrieves a property value and \texttt{setf} with \texttt{get} assigns one. \texttt{PutProp} is the traditional name for assigning properties.
-\begin{itemize}
-  \item \texttt{(putprop symbol value property)} --- assigns a property (traditional)
-  \item \texttt{(setf (get 'symbol 'property) value)} --- Common Lisp equivalent
-  \item \texttt{(get 'symbol 'property)} --- retrieves the property value
-\end{itemize}
+- `(get ’symbol ’property)` — retrieves the property value
 
 </div>
-
-
-
 
 ```lisp
-;; Using setf with get (Common Lisp style)
-(setf (get 'person 'name) 'Alice)
-(setf (get 'person 'age) 25)
-(setf (get 'person 'city) 'Dhaka)
+(list 'a 'b 'c 'd)
+(list 1 2 3)
+(list 'a '(b c) 'd)
+```0
 
-(get 'person 'name)
-(get 'person 'age)
-(get 'person 'city)
+<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
-;; Using traditional putprop style
-(defun putprop (sym val prop)
-  (setf (get sym prop) val))
+PutProp Function
 
-(putprop 'book 'ai-intro 'title)
-(putprop 'book 'russell 'author)
-(get 'book 'title)
-(get 'book 'author)
-```
+- After `(setf (get ’person ’name) ’Alice)`: `(get ’person ’name)` $\rightarrow$ `ALICE`
 
+- After `(putprop ’book ’ai-intro ’title)`: `(get ’book ’title)` $\rightarrow$ `AI-INTRO`
 
-
-
-<div style="border-left: 4px solid #2e7d32; background-color: #e8f5e9; padding: 15px; margin: 20px 0; border-radius: 4px;">
-<strong>💡 PutProp Function</strong>
-
-
-\begin{itemize}
-  \item After \texttt{(setf (get 'person 'name) 'Alice)}:
-  \texttt{(get 'person 'name)} $\rightarrow$ \texttt{ALICE}
-  \item After \texttt{(putprop 'book 'ai-intro 'title)}:
-  \texttt{(get 'book 'title)} $\rightarrow$ \texttt{AI-INTRO}
-  \item Properties can be removed with \texttt{(remprop symbol property)}.
-\end{itemize}
+- Properties can be removed with `(remprop symbol property)`.
 
 </div>
 
-
+{% endraw %}
