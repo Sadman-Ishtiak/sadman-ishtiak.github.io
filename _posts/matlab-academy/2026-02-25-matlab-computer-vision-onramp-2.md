@@ -1,6 +1,6 @@
 ---
 title: Computer Vision Onramp - Part 2 - Image Features and Matching
-date: 2026-01-30 00:00:00 +0600
+date: 2026-02-25 00:00:00 +0600
 categories: [Matlab Academy, Computer Vision]
 tags: [matlab, computer-vision, features]
 description: "Detecting and extracting distinctive patterns (features) from images."

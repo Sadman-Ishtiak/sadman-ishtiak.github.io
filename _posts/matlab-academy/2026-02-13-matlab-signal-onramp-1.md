@@ -1,6 +1,6 @@
 ---
 title: "Matlab Signal Onramp course notes - Part 1: Generating Signals"
-date: 2026-01-20 00:00:00 +0600
+date: 2026-02-13 00:00:00 +0600
 categories: [Matlab Academy, Matlab Signal Processing]
 tags: [matlab, signal-processing, learning]
 description: "Introduction to Signal Processing and generating synthetic signals in MATLAB."

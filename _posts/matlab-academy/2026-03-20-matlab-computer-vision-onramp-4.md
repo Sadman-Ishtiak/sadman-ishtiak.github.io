@@ -1,6 +1,6 @@
 ---
 title: Computer Vision Onramp - Part 4 - Training and Postprocessing
-date: 2026-02-05 00:00:00 +0600
+date: 2026-03-20 00:00:00 +0600
 categories: [Matlab Academy, Computer Vision]
 tags: [matlab, training, postprocessing]
 description: "Training an ACF detector and refining results with thresholding and NMS."

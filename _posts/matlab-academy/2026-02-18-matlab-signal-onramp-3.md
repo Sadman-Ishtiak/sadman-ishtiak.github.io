@@ -1,6 +1,6 @@
 ---
 title: "Matlab Signal Onramp course notes - Part 3: Preprocessing & Aligning"
-date: 2026-01-23 00:00:00 +0600
+date: 2026-02-18 00:00:00 +0600
 categories: [Matlab Academy, Matlab Signal Processing]
 tags: [matlab, signal-processing, learning]
 description: "Standardizing signals through resampling, region extraction, and alignment."

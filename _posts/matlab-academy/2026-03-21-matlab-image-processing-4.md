@@ -1,6 +1,6 @@
 ---
 title: "Matlab Image Processing Onramp: Classification & Certification"
-date: 2026-02-06 00:00:00 +0600
+date: 2026-03-21 00:00:00 +0600
 categories: [Matlab Academy, Matlab Image Processing]
 tags: [matlab, image-processing, learning, certificate]
 description: "Finalizing the receipt classification algorithm using batch processing and earning the completion certificate."

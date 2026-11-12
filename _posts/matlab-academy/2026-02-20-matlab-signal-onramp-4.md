@@ -1,6 +1,6 @@
 ---
 title: "Matlab Signal Onramp course notes - Part 4: Spectral & Time-Frequency Analysis"
-date: 2026-01-25 00:00:00 +0600
+date: 2026-02-20 00:00:00 +0600
 categories: [Matlab Academy, Matlab Signal Processing]
 tags: [matlab, signal-processing, learning]
 description: "Decomposing signals into frequency components using Fourier transforms and spectrograms."

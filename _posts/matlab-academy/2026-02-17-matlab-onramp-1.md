@@ -1,6 +1,6 @@
 ---
 title: Matlab Onramp course notes - Part 1 Basics & Environment
-date: 2026-01-22 00:00:00 +0600
+date: 2026-02-17 00:00:00 +0600
 categories: [Matlab Academy, Matlab]
 tags: [matlab, learning]
 description: "Studying the self paced course in matlab academy for academic work - Part 1"

@@ -1,6 +1,6 @@
 ---
 title: Computer Vision Onramp - Part 5 - Object Tracking and Kalman Filters
-date: 2026-02-07 00:00:00 +0600
+date: 2026-03-22 00:00:00 +0600
 categories: [Matlab Academy, Computer Vision]
 tags: [matlab, tracking, kalman-filter]
 description: "Finalizing the tracking workflow and earning the course certificate."

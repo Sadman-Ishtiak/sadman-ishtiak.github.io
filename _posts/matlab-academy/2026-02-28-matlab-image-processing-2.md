@@ -1,6 +1,6 @@
 ---
 title: "Matlab Image Processing Onramp: Image Segmentation"
-date: 2026-02-02 00:00:00 +0600
+date: 2026-02-28 00:00:00 +0600
 categories: [Matlab Academy, Matlab Image Processing]
 tags: [matlab, image-processing, learning]
 description: "Learn how to separate text from background in receipt images using thresholding and binary image processing."

@@ -1,6 +1,6 @@
 ---
 title: Computer Vision Onramp - Part 1 - Course Overview and Video Data
-date: 2026-01-28 00:00:00 +0600
+date: 2026-02-23 00:00:00 +0600
 categories: [Matlab Academy, Computer Vision]
 tags: [matlab, learning, computer-vision]
 description: "An introduction to computer vision and setting up video readers in MATLAB."

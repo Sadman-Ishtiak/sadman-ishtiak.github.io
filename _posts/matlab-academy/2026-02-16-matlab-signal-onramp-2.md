@@ -1,6 +1,6 @@
 ---
 title: "Matlab Signal Onramp course notes - Part 2: Data Import & Signal Analyzer"
-date: 2026-01-21 00:00:00 +0600
+date: 2026-02-16 00:00:00 +0600
 categories: [Matlab Academy, Matlab Signal Processing]
 tags: [matlab, signal-processing, learning]
 description: "Importing seismic data and using the Signal Analyzer app for exploratory analysis."

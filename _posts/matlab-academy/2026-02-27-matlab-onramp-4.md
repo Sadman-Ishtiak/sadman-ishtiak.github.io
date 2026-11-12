@@ -1,6 +1,6 @@
 ---
 title: Matlab Onramp course notes - Part 4 Programming & Projects
-date: 2026-02-01 03:00:00 +0600
+date: 2026-02-27 00:00:00 +0600
 categories: [Matlab Academy, Matlab]
 tags: [matlab, learning]
 description: "Studying the self paced course in matlab academy for academic work - Part 4"

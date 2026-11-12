@@ -1,6 +1,6 @@
 ---
 title: "Matlab Image Processing Onramp: Preprocessing and Postprocessing"
-date: 2026-02-04 00:00:00 +0600
+date: 2026-03-19 00:00:00 +0600
 categories: [Matlab Academy, Matlab Image Processing]
 tags: [matlab, image-processing, learning]
 description: "Techniques to improve image segmentation including noise filtering, background subtraction, and morphological operations."

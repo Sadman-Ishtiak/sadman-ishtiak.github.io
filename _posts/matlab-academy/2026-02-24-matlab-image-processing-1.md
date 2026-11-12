@@ -1,6 +1,6 @@
 ---
 title: "Matlab Image Processing Onramp: Introduction & Working with Images"
-date: 2026-01-29 00:00:00 +0600
+date: 2026-02-24 00:00:00 +0600
 categories: [Matlab Academy, Matlab Image Processing]
 tags: [matlab, image-processing, learning]
 description: "Introduction to image processing workflow in MATLAB, including importing, displaying, and adjusting contrast of images."

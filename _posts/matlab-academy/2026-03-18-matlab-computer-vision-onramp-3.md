@@ -1,6 +1,6 @@
 ---
 title: Computer Vision Onramp - Part 3 - Ground Truth Data
-date: 2026-02-03 00:00:00 +0600
+date: 2026-03-18 00:00:00 +0600
 categories: [Matlab Academy, Computer Vision]
 tags: [matlab, ai, labeling]
 description: "Preparing ground truth data for training object detectors."
