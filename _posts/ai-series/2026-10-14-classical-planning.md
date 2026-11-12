@@ -15,7 +15,7 @@ Planning is the process of devising a sequence of actions to achieve a goal. Unl
 
 ## Definition of Classical Planning
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Classical Planning
 
@@ -23,7 +23,7 @@ A **classical planning** problem is defined by an initial state, a set of action
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Planning vs. Problem-Solving
 
@@ -33,7 +33,7 @@ Classical planning differs from search-based problem-solving (Chapter <a href="
 
 ### PDDL
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 PDDL (Planning Domain Definition Language)
 
@@ -41,7 +41,7 @@ PDDL (Planning Domain Definition Language)
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 PDDL State vs. First-Order Logic
 
@@ -49,7 +49,7 @@ In PDDL, $Poor \land Unknown$ represents a state using database semantics: $Poor
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Action Schema
 
@@ -74,7 +74,7 @@ An action $a$ is **applicable** in state $s$ if $s \models \text{Precond}(a)$.
 <figcaption>Planning as a search process: actions transform states until the goal is reached.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Air Cargo Transport
 
@@ -93,7 +93,7 @@ Solution: `[Load(C`$_1$`, P`$_1$`, SFO), Fly(P`$_1$`, SFO, JFK), Unload(C`$_1$`,
 
 ### The Blocks World
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Blocks World
 
@@ -113,7 +113,7 @@ Action(MoveToTable(b, x),
   EFFECT:  On(b, Table) $\land$ Clear(x) $\land$ $\lnot$On(b, x))
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Building a Three-Block Tower
 
@@ -123,7 +123,7 @@ Initial: $On(A, Table)$, $On(B, Table)$, $On(C, A)$, $Clear(B)$, $Clear(C)$. Goa
 
 ### Complexity of Classical Planning
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 PlanSAT and Bounded PlanSAT
 
@@ -131,7 +131,7 @@ PlanSAT and Bounded PlanSAT
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 PlanSAT in Blocks World
 
@@ -143,7 +143,7 @@ For the blocks world, PlanSAT is in P (a plan always exists for any solvable goa
 
 ### Forward (Progression) Search
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Forward Search (Progression)
 
@@ -155,10 +155,10 @@ Forward search suffers from two problems: (1) it explores many irrelevant action
 
 <figure>
 <img src="/assets/images/ai-book/figures/book-003-p28.png" />
-<figcaption>Forward (progression) search expands from the initial state <span class="math inline"><em>S</em><sub>0</sub></span> by applying all applicable actions, generating successor states until a goal is found. The branching factor equals the number of applicable actions in each state.</figcaption>
+<figcaption>Forward (progression) search expands from the initial state $S_0$ by applying all applicable actions, generating successor states until a goal is found. The branching factor equals the number of applicable actions in each state.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Forward Search in Air Cargo
 
@@ -168,7 +168,7 @@ With 10 airports, 50 planes, and 200 packages, the average branching factor is a
 
 ### Backward (Regression) Search
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Backward Search (Regression)
 
@@ -180,7 +180,7 @@ $$g' = (g - \text{Add}(a)) \cup \text{Precond}(a)$$
 
 Backward search has a lower branching factor because only actions **relevant** to the goal are considered. An action is relevant if at least one of its effects unifies with a goal literal, and no effect negates a goal literal.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Backward Search for ISBN Purchase
 
@@ -190,7 +190,7 @@ Goal: `Own(0136042597)` with action `Buy(i)` effect `Own(i)`. Regress over `Buy(
 
 ### Heuristics for Planning
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Ignore Preconditions Heuristic
 
@@ -198,7 +198,7 @@ The **ignore preconditions** heuristic drops all preconditions from actions, mak
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Ignore Preconditions for 8-Puzzle
 
@@ -206,7 +206,7 @@ In the sliding-tile puzzle, removing the preconditions $Blank(s_2) \land Adjacen
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Ignore Delete Lists Heuristic
 
@@ -214,7 +214,7 @@ The **ignore delete lists** heuristic removes all negative literals from action 
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Ignore Delete Lists on Blocks World
 
@@ -227,7 +227,7 @@ In blocks world, moving block A onto B has the effect $On(A,B) \land Clear(Table
 <figcaption>The ignore-delete-lists heuristic produces a landscape with no local minima, making hill-climbing effective. From Hoffmann (2005).</figcaption>
 </figure>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 State Abstraction
 
@@ -235,7 +235,7 @@ State Abstraction
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Subgoal Independence Assumption
 
@@ -243,7 +243,7 @@ The **subgoal independence assumption** estimates the cost of a conjunction of s
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Subgoal Independence in Blocks World
 
@@ -253,7 +253,7 @@ Goal: $On(A,B) \land On(B,C)$. Solving $On(A,B)$ independently might give plan $
 
 ## Planning Graphs
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Planning Graph
 
@@ -261,7 +261,7 @@ A **planning graph** is a directed, leveled graph that approximates the reachabl
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Planning Graph for Have Cake
 
@@ -269,7 +269,7 @@ In the Have Cake/Eat Cake problem ($S_0$: $Have(Cake), \neg Eaten(Cake)$), the p
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Persistence Action
 
@@ -277,7 +277,7 @@ A **persistence action** (or no-op) for a literal $C$ has precondition $C$ and e
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Persistence in Planning Graphs
 
@@ -285,7 +285,7 @@ In the Have Cake graph, $Have(Cake)$ persists from $S_0$ to $S_1$ via a persiste
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Mutual Exclusion (Mutex)
 
@@ -301,7 +301,7 @@ Two literals are mutex if one is the negation of the other, or if every pair of 
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Mutex in Spare Tire Problem
 
@@ -311,12 +311,12 @@ In the spare tire planning graph, $PutOn(Spare, Axle)$ and $Remove(Flat, Axle)$ 
 
 <figure>
 <img src="/assets/images/ai-book/figures/book-010-p15.png" />
-<figcaption>The planning graph for the “Have Cake and Eat Cake Too” problem up to level S<span class="math inline"><sub>2</sub></span>. Rectangles are actions, small squares are persistence actions. Gray curved lines indicate mutex links.</figcaption>
+<figcaption>The planning graph for the “Have Cake and Eat Cake Too” problem up to level S$_2$. Rectangles are actions, small squares are persistence actions. Gray curved lines indicate mutex links.</figcaption>
 </figure>
 
 ### Heuristics from Planning Graphs
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Level Cost
 
@@ -332,7 +332,7 @@ For conjunctions of goals, three heuristics can be derived:
 
 - **Set-level:** first level where all goal literals appear with no mutexes between any pair (admissible, dominates max-level).
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Heuristics for “Have Cake and Eat Cake Too”
 
@@ -350,7 +350,7 @@ The set-level heuristic gives the correct value of 2.
 
 ### The GRAPHPLAN Algorithm
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 GRAPHPLAN
 
@@ -365,7 +365,7 @@ The extraction phase is a backward search from the goal at the final level $S_n$
 <figcaption>GRAPHPLAN alternates between graph expansion and plan extraction. If extraction fails and the graph has leveled off, the problem is unsolvable within the current horizon.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 GRAPHPLAN on the Spare Tire Problem
 
@@ -375,7 +375,7 @@ Initial: $At(Spare, Trunk) \land At(Flat, Axle)$. Goal: $At(Spare, Axle)$. Actio
 
 Planning graphs have monotonic properties: literals and actions increase monotonically (once present, they persist), while mutexes decrease monotonically (once resolved, they stay resolved). These ensure termination.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Serial Planning Graph
 
@@ -387,7 +387,7 @@ A **serial planning graph** is a planning graph with the restriction that each a
 
 ### Planning as Boolean Satisfiability (SATPlan)
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 SATPlan
 
@@ -403,7 +403,7 @@ A SAT solver then finds a satisfying assignment, which corresponds to a plan.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 SATPlan Translation Step
 
@@ -419,12 +419,12 @@ Precondition: Fly(P$_1$, SFO, JFK)$^t$ $\Rightarrow$ At(P$_1$, SFO)$^t$ $\land$ 
 
 <figure>
 <img src="/assets/images/ai-book/figures/book-005-p2.png" />
-<figcaption>SATPlan workflow: a planning problem is translated to SAT for a bounded horizon <span class="math inline"><em>k</em></span>. If the SAT solver returns unsatisfiable, <span class="math inline"><em>k</em></span> is increased and the process repeats.</figcaption>
+<figcaption>SATPlan workflow: a planning problem is translated to SAT for a bounded horizon $k$. If the SAT solver returns unsatisfiable, $k$ is increased and the process repeats.</figcaption>
 </figure>
 
 ### Planning as First-Order Deduction: Situation Calculus
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Situation Calculus
 
@@ -432,7 +432,7 @@ Situation Calculus
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Situations in the Wumpus World
 
@@ -440,7 +440,7 @@ Starting from $S_0$ (initial wumpus world), $Result(S_0, Forward)$ is the situat
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Possibility Axiom
 
@@ -450,7 +450,7 @@ A **possibility axiom** specifies when an action can be executed: $\Phi(s) \Righ
 
 Each fluent is described by a **successor-state axiom**: $$Poss(a, s) \Rightarrow (F(Result(a, s)) \Leftrightarrow a = \text{ActionCausesF} \lor (F(s) \land a \neq \text{ActionCausesNotF}))$$
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Situation Calculus for Wumpus World
 
@@ -464,7 +464,7 @@ A bounded planning problem can be encoded as a CSP: at each time step, a single 
 
 ### Partial-Order Planning
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Partial-Order Planning (POP)
 
@@ -472,7 +472,7 @@ Partial-Order Planning (POP)
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 POP vs. Total-Order Planning
 
@@ -480,7 +480,7 @@ In the spare tire problem, a total-order planner must choose either $Remove(Spar
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Least Commitment
 
@@ -493,7 +493,7 @@ The **least commitment** principle: when fixing a flaw, make only the minimum co
 <figcaption>A partially ordered plan for the spare tire problem. The two Remove actions can be executed in either order, as long as both complete before PutOn.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Spare Tire as Partial-Order Plan
 
@@ -503,7 +503,7 @@ The POP starts with an empty plan (Start $\to$ Finish). The goal $At(Spare, Axle
 
 ### Serializable Subgoals and the Sussman Anomaly
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Serializable Subgoals
 
@@ -511,7 +511,7 @@ A problem has **serializable subgoals** if there exists an order of subgoals suc
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Serializable Subgoals in the Spare Tire Problem
 
@@ -519,7 +519,7 @@ The spare tire problem has serializable subgoals: achieve $At(Spare, Trunk)$ fir
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Sussman Anomaly
 
@@ -532,7 +532,7 @@ The **Sussman anomaly** is a blocks-world problem where subgoals $On(A, B)$ and 
 <figcaption>The Sussman anomaly: neither ordering works. Only interleaved planning (moving C to table, then B onto C, then A onto B) achieves both subgoals.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Non-Serializable Subgoals
 
@@ -546,7 +546,7 @@ Neither ordering works — the subgoals are non-serializable, proving the need f
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solving the Sussman Anomaly
 
@@ -556,7 +556,7 @@ Initial: $On(C, A) \land On(Table, B)$. Goal: $On(A, B) \land On(B, C)$. An inte
 
 ## Analysis of Planning Approaches
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Planning Approaches Comparison
 
@@ -588,7 +588,7 @@ Several major approaches to automated planning exist:
 
 Top-Performing Planning Systems in the International Planning Competition
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 FF Planner in Practice
 

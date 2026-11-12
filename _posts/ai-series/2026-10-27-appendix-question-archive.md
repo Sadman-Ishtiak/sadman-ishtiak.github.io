@@ -15,7 +15,7 @@ This appendix collects past examination papers for the Artificial Intelligence c
 
 ## Final Exam 2022 (Session 2018–2019)
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 1
 
@@ -26,7 +26,7 @@ d) What are the various agents for artificial intelligence?
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 1
 
@@ -42,7 +42,7 @@ Solution 1
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 2
 
@@ -53,7 +53,7 @@ d) What is Knowledge Manipulation? Why it is important?
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 2
 
@@ -87,7 +87,7 @@ Solution 2
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 3
 
@@ -98,7 +98,7 @@ d) Show the difference between propositional and FOPL.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 3
 
@@ -135,7 +135,7 @@ Alternatively with predicates: $\forall x \big( \text{Employee}(x) \land \text{W
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 4
 
@@ -145,7 +145,7 @@ c) Draw and describe the basic structure of rule based expert system.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 4
 
@@ -169,7 +169,7 @@ Block diagram of TMS:
 
 **b)** **Knowledge** is justified true belief – facts, information, and skills acquired through experience or education. In AI, it is the encoded information used by intelligent systems.
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 4 (cont.)
 
@@ -216,7 +216,7 @@ Solution 4 (cont.)
         |  IF-THEN rules)  |
         +------------------+
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 4 (cont.)
 
@@ -224,7 +224,7 @@ The **Inference Engine** applies rules from the Knowledge Base to facts in the W
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 5
 
@@ -234,7 +234,7 @@ c) What do you mean by problem solution? Explain the structure of a state space.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 5
 
@@ -284,7 +284,7 @@ Solution 5
 
 **c)** A **problem solution** is a sequence of actions that transforms an initial state into a goal state. In AI, finding a solution is the task of a problem-solving agent.
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 5 (cont.)
 
@@ -308,7 +308,7 @@ The state space forms a **graph** where nodes are states and edges are actions. 
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 6
 
@@ -319,7 +319,7 @@ d) Explain Model based Reflex Agent.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 6
 
@@ -353,7 +353,7 @@ The **agent function** maps percept sequences to actions: $$f: \mathcal{P}^* \to
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 7
 
@@ -364,7 +364,7 @@ d) What is Depth-First Search? Explain the algorithm with figure.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 7
 
@@ -412,7 +412,7 @@ Solution 7
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 7 (cont.)
 
@@ -439,7 +439,7 @@ DFS has space complexity $O(bm)$ where $b$ is branching factor and $m$ is maximu
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 8
 
@@ -450,7 +450,7 @@ iii) Inference and Learning in Intelligent system
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 8
 
@@ -464,7 +464,7 @@ Solution 8
 
 ## Lab Examination (Prolog + LISP Problems)
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Prolog Problem 1
 
@@ -472,7 +472,7 @@ Write a Prolog program to find the GPA of a student.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution – Prolog Problem 1
 
@@ -499,7 +499,7 @@ Query: `gpa(rahim, G).` returns `G = 3.72727...`
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Prolog Problem 2
 
@@ -507,7 +507,7 @@ A Prolog program to find nth number of Fibonacci series.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution – Prolog Problem 2
 
@@ -528,7 +528,7 @@ Query: `fib(7, F).` returns `F = 13`.
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Prolog Problem 3
 
@@ -536,7 +536,7 @@ A Prolog program to calculate factorial of a number.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution – Prolog Problem 3
 
@@ -554,7 +554,7 @@ Query: `factorial(5, F).` returns `F = 120`.
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Prolog Problem 4
 
@@ -562,7 +562,7 @@ A Prolog program to find GCD and LCM of two numbers.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution – Prolog Problem 4
 
@@ -587,7 +587,7 @@ Query: `lcm(12, 18, L).` returns `L = 36`.
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Prolog Problem 5
 
@@ -595,7 +595,7 @@ Write a Prolog program for a cyclic graph that will find path between two vertic
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution – Prolog Problem 5
 
@@ -626,7 +626,7 @@ Query: `find_path(a, e, P).` returns `P = [a, b, d, e]`.
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Prolog Problem 6
 
@@ -634,7 +634,7 @@ Prolog programs for file handling.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution – Prolog Problem 6
 
@@ -668,7 +668,7 @@ Solution – Prolog Problem 6
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Prolog Problem 7
 
@@ -676,7 +676,7 @@ Implement Breadth First Search Algorithm.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution – Prolog Problem 7
 
@@ -705,7 +705,7 @@ Query: `bfs(a, g, P).` returns `P = [g, c, a]` (shortest path from a to g).
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Prolog Problem 8
 
@@ -713,7 +713,7 @@ Implementation of Depth First Search Algorithm.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution – Prolog Problem 8
 
@@ -733,7 +733,7 @@ The only difference from BFS is the order of append: DFS prepends new paths to t
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Prolog Problem 9
 
@@ -741,7 +741,7 @@ Implementation of A\* Search Algorithm.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution – Prolog Problem 9
 
@@ -761,7 +761,7 @@ A\* selects the node with the smallest $f(n) = g(n) + h(n)$ value, where $g(n)$ 
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 LISP Problem 10
 
@@ -769,7 +769,7 @@ Write a LISP program for finding the area of a Circle.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution – LISP Problem 10
 
@@ -789,7 +789,7 @@ Test: `(area-circle 5)` returns `78.53981633974483`.
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 LISP Problem 11
 
@@ -797,7 +797,7 @@ Write a LISP program for finding the area of a Triangle.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution – LISP Problem 11
 
@@ -817,7 +817,7 @@ Test: `(area-triangle 10 5)` returns `25.0`.
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 LISP Problem 12
 
@@ -825,7 +825,7 @@ Write a LISP program for finding the average and sum of some numbers.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution – LISP Problem 12
 
@@ -846,7 +846,7 @@ Test: `(average ’(10 20 30 40))` returns `25`.
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 LISP Problem 13
 
@@ -854,7 +854,7 @@ Write a LISP program for declaring an Array and access the elements of the array
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution – LISP Problem 13
 
@@ -874,7 +874,7 @@ Test: `(access-array my-array 1 1)` returns `5`.
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 LISP Problem 14
 
@@ -882,7 +882,7 @@ Write a LISP program for finding the outputs of all basic LIST manipulation func
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution – LISP Problem 14
 
@@ -900,7 +900,7 @@ Solution – LISP Problem 14
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 LISP Problem 15
 
@@ -908,7 +908,7 @@ Write a LISP program for finding the outputs of all additional LIST manipulation
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution – LISP Problem 15
 
@@ -926,7 +926,7 @@ Solution – LISP Problem 15
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 LISP Problem 16
 
@@ -934,7 +934,7 @@ Write a LISP program for finding the maximum and minimum of some numbers.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution – LISP Problem 16
 
@@ -955,7 +955,7 @@ Test: `(my-min ’(34 78 12 56 90 23))` returns `12`.
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 LISP Problem 17
 
@@ -963,7 +963,7 @@ Write a LISP program for finding the outputs of Putprop function.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution – LISP Problem 17
 
@@ -990,7 +990,7 @@ Output:
 
 ## Final Exam 2024 (Session 2019–20)
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 1
 
@@ -1000,7 +1000,7 @@ c) Current world is now experiencing with the new inventions of AI. Most of the 
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 1
 
@@ -1070,7 +1070,7 @@ Solution 1
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 2
 
@@ -1080,7 +1080,7 @@ c) How the following statement might be written in FOPL: (i) “All employees ea
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 2
 
@@ -1119,7 +1119,7 @@ This is equivalent to saying that the implication $(S_1 \land S_2 \land \dots \l
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 3
 
@@ -1133,7 +1133,7 @@ d) Since R is a relation. How you can be characterised R with relational propert
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 3
 
@@ -1198,7 +1198,7 @@ An **equivalence relation** is reflexive, symmetric, and transitive. A **partial
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 4
 
@@ -1208,7 +1208,7 @@ c) How recursion is used in LISP? Write an example of LISP where recursion is us
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 4
 
@@ -1329,7 +1329,7 @@ Solution 4
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 5
 
@@ -1339,7 +1339,7 @@ c) Describe the implementation of Frame Structures with property lists.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 5
 
@@ -1402,7 +1402,7 @@ Property lists provide a flexible, dynamic way to implement frame-based knowledg
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 6
 
@@ -1412,7 +1412,7 @@ c) Write the algorithm of Best First Search and explain its working principles.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 6
 
@@ -1478,7 +1478,7 @@ Solution 6
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 7
 
@@ -1487,7 +1487,7 @@ b) What are the differences between memorization and direct instruction?
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 7
 
@@ -1539,7 +1539,7 @@ The learner acquires knowledge from the environment (teacher or data), stores it
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 8
 
@@ -1548,7 +1548,7 @@ b) Define Expert System. Write down the characteristics of an expert system. Dra
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 8
 
@@ -1627,7 +1627,7 @@ The **user interface** handles interaction. The **inference engine** applies rul
 
 ## Final Exam 2024 (Session 2020–2021)
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 1
 
@@ -1638,7 +1638,7 @@ d) Briefly explain knowledge organization and knowledge manipulation.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 1
 
@@ -1704,7 +1704,7 @@ Solution 1
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 2
 
@@ -1714,7 +1714,7 @@ c) What do you mean by script? Write a script on organizing ICPC in your campus.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 2
 
@@ -1804,7 +1804,7 @@ Solution 2
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 3
 
@@ -1814,7 +1814,7 @@ c) Explain model based reflex agent with suitable diagram?
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 3
 
@@ -1871,7 +1871,7 @@ The agent maintains an **internal state** that models the unobservable parts of 
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 4
 
@@ -1882,7 +1882,7 @@ d) Explain Modus Ponens and Substitution rules with example.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 4
 
@@ -1917,15 +1917,15 @@ Solution 4
 **Proof by truth table** for $P \land (Q \lor R) \equiv (P \land Q) \lor (P \land R)$:
 
 | $P$ | $Q$ | $R$ | $Q \lor R$ | $P \land (Q \lor R)$ | $P \land Q$ | $P \land R$ | $(P \land Q) \lor (P \land R)$ |
-|:---:|:---:|:---:|:----------:|:--------------------:|:-----------:|:-----------:|:------------------------------:|
-|  T  |  T  |  T  |     T      |          T           |      T      |      T      |               T                |
-|  T  |  T  |  F  |     T      |          T           |      T      |      F      |               T                |
-|  T  |  F  |  T  |     T      |          T           |      F      |      T      |               T                |
-|  T  |  F  |  F  |     F      |          F           |      F      |      F      |               F                |
-|  F  |  T  |  T  |     T      |          F           |      F      |      F      |               F                |
-|  F  |  T  |  F  |     T      |          F           |      F      |      F      |               F                |
-|  F  |  F  |  T  |     T      |          F           |      F      |      F      |               F                |
-|  F  |  F  |  F  |     F      |          F           |      F      |      F      |               F                |
+|:----|:----|:----|:-----------|:---------------------|:------------|:------------|:-------------------------------|
+| T   | T   | T   | T          | T                    | T           | T           | T                              |
+| T   | T   | F   | T          | T                    | T           | F           | T                              |
+| T   | F   | T   | T          | T                    | F           | T           | T                              |
+| T   | F   | F   | F          | F                    | F           | F           | F                              |
+| F   | T   | T   | T          | F                    | F           | F           | F                              |
+| F   | T   | F   | T          | F                    | F           | F           | F                              |
+| F   | F   | T   | T          | F                    | F           | F           | F                              |
+| F   | F   | F   | F          | F                    | F           | F           | F                              |
 
 Both sides have identical truth values, proving equivalence.
 
@@ -1941,7 +1941,7 @@ Both sides have identical truth values, proving equivalence.
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 5
 
@@ -1951,7 +1951,7 @@ c) Discuss the potential problems of hill climbing method.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 5
 
@@ -1987,7 +1987,7 @@ Solution 5
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 6
 
@@ -1997,7 +1997,7 @@ c) What are the differences and similarities between computer vision and human v
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 6
 
@@ -2062,7 +2062,7 @@ The **Inference Engine** cycles through: (1) Match rule conditions against facts
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 7
 
@@ -2072,7 +2072,7 @@ c) Before implementation of clustering problems, what are the questions must be 
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 7
 
@@ -2135,7 +2135,7 @@ For minimum risk, incorporate a **loss function** $\lambda(\omega_i \mid \omega_
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Question 8
 
@@ -2145,7 +2145,7 @@ c) What are the key components of Robot? Explain with suitable diagram.
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution 8
 

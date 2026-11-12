@@ -19,7 +19,7 @@ Classical planning representations cannot express how long an action takes or wh
 
 ### Representing Temporal and Resource Constraints
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Job-Shop Scheduling Problem
 
@@ -33,7 +33,7 @@ The **makespan** is the total duration of the plan.
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Aggregation
 
@@ -41,7 +41,7 @@ Aggregation
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Aggregation in the Car Assembly Problem
 
@@ -56,7 +56,7 @@ Figure <a href="#fig:job-shop" data-reference-type="ref" data-reference="fig:jo
 <figcaption>A job-shop scheduling problem for assembling two cars. Each action has a duration; some consume resources (lug nuts), others occupy reusable resources (hoists, wheel stations, inspectors).</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Resource Declaration in PDDL
 
@@ -77,7 +77,7 @@ The notation $A \prec B$ means action $A$ must precede action $B$.
 
 ### Solving Scheduling Problems
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Critical Path Method (CPM)
 
@@ -97,12 +97,12 @@ The **slack** of action $A$ is $LS(A) - ES(A)$. Actions with zero slack lie on t
 
 <figure>
 <img src="/assets/images/ai-book/figures/book-006-p2.png" />
-<figcaption>Critical path analysis for the car assembly problem. Each action is labeled <span class="math inline">[<em>E</em><em>S</em>, <em>L</em><em>S</em>]</span>. The critical path (bold arrows) is <span>AE2 <span class="math inline">→</span> AW2 <span class="math inline">→</span> I2</span> with makespan 85 minutes.</figcaption>
+<figcaption>Critical path analysis for the car assembly problem. Each action is labeled $[ES, LS]$. The critical path (bold arrows) is <span>AE2 $\to$ AW2 $\to$ I2</span> with makespan 85 minutes.</figcaption>
 </figure>
 
 The CPM algorithm runs in $O(Nb)$ where $N$ is the number of actions and $b$ is the maximum branching factor.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Slack Calculation for AddWheels$_1$
 
@@ -110,7 +110,7 @@ For the car assembly problem, action AddWheels$_1$ follows AddEngine$_1$ (durati
 
 </div>
 
-<div style="border-left:4px solid #ef6c00;background:#fff3e0;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #ef6c00;background:#fff3e0;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Resource Constraints Make Scheduling NP-Hard
 
@@ -118,7 +118,7 @@ Without resource constraints, finding a minimum-duration schedule is easy (linea
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Minimum Slack Algorithm
 
@@ -126,7 +126,7 @@ The **minimum slack algorithm** is a heuristic for scheduling with resource cons
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Minimum Slack Applied to Car Assembly
 
@@ -144,7 +144,7 @@ The algorithm picks AddEngine$_2$ (slack 0) first at $t=0$. It occupies the sing
 
 <figure>
 <img src="/assets/images/ai-book/figures/book-008-p6.png" />
-<figcaption>A solution with resource constraints for the car assembly problem. The engine hoist is a bottleneck: AddEngine<span class="math inline"><sub>1</sub></span> and AddEngine<span class="math inline"><sub>2</sub></span> cannot overlap, making the makespan 115 minutes.</figcaption>
+<figcaption>A solution with resource constraints for the car assembly problem. The engine hoist is a bottleneck: AddEngine$_1$ and AddEngine$_2$ cannot overlap, making the makespan 115 minutes.</figcaption>
 </figure>
 
 ## Hierarchical Planning
@@ -153,7 +153,7 @@ Human planning operates at multiple levels of abstraction. A two-week Hawaii vac
 
 ### High-Level Actions
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Hierarchical Task Network (HTN) Planning
 
@@ -174,7 +174,7 @@ A high-level plan achieves the goal if **at least one** of its implementations a
 <figcaption>Two refinements for the HLA Go(Home, SFO). The first uses driving and a shuttle; the second uses a taxi.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 HLA Refinements for Go(Home, SFO)
 
@@ -190,7 +190,7 @@ The HLAs embody knowledge about how to do things: buying milk, sitting down, or 
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Recursive Refinement for Vacuum Navigation
 
@@ -210,7 +210,7 @@ Refinement(Navigate([a,b], [x,y]),
 
 ### Searching for Primitive Solutions
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Hierarchical Search
 
@@ -230,7 +230,7 @@ where $d$ is the solution depth in primitive actions, $b$ is the branching facto
 <figcaption>Hierarchical search space. The planner searches over refinement trees, not primitive action sequences. This reduces exponential blowup.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 O-PLAN at Hitachi
 
@@ -244,7 +244,7 @@ Refining HLAs all the way to primitives before checking plan validity is wastefu
 
 ### Hierarchical Lookahead
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Hierarchical Lookahead
 
@@ -254,7 +254,7 @@ Hierarchical Lookahead
 
 By extending angelic semantics to track costs (not just reachability), the agent can compute optimistic and pessimistic cost bounds for abstract plans. A plan whose optimistic cost exceeds the current best known cost can be pruned without refinement. This mirrors human deliberation: we plan vacations at an abstract level (“fly to Hawaii, spend two days on each island, fly back”) and only refine the promising options.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Hierarchical Lookahead for Cleaning a House
 
@@ -262,7 +262,7 @@ Consider a robot cleaning a multi-room house. At the abstract level, it consider
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Downward Refinement Property
 
@@ -270,7 +270,7 @@ A set of HLA descriptions satisfies the **downward refinement property** if ever
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Downward Refinement in the Vacuum World
 
@@ -278,7 +278,7 @@ Consider an HLA $\text{CleanRoom}(r)$ that claims to make a room clean without s
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Demonic vs. Angelic Nondeterminism
 
@@ -298,10 +298,10 @@ This is a much weaker condition than the demonic requirement (where *every* memb
 
 <figure>
 <img src="/assets/images/ai-book/figures/book-008-p6.png" />
-<figcaption>Reachable sets under angelic semantics. The reachable set of <span class="math inline">[<em>h</em><sub>1</sub>, <em>h</em><sub>2</sub>]</span> intersects the goal set, so the plan achieves the goal. Under demonic semantics, the plan would fail because not <em>all</em> implementations reach the goal.</figcaption>
+<figcaption>Reachable sets under angelic semantics. The reachable set of $[h_1, h_2]$ intersects the goal set, so the plan achieves the goal. Under demonic semantics, the plan would fail because not <em>all</em> implementations reach the goal.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Optimistic and Pessimistic Descriptions
 
@@ -317,7 +317,7 @@ When the exact reachable set is too complex to compute, we use approximations: $
 
 The ANGELIC-SEARCH algorithm (Figure 11.8 in AIMA) uses these approximations to commit to or reject high-level plans without refining them to primitives. For the vacuum world cleaning problem, ANGELIC-SEARCH scales approximately linearly in the number of squares, while HIERARCHICAL-SEARCH remains exponential and plain BFS cannot handle even two $2 \times 2$ rooms.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Angelic Description of Go(Home, SFO)
 
@@ -335,7 +335,7 @@ The $\lozenge$ symbol means “possibly, if the agent so chooses.” The HLA may
 
 The real world is partially observable, nondeterministic, and unknown. We extend planning using three approaches: sensorless (conformant) planning, contingent planning with sensing, and online replanning.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Percept Schema
 
@@ -357,7 +357,7 @@ Percept(Color(can, c),
 
 Consider the **paint-and-furniture problem**: we have a chair and a table that must match in color, two cans of paint of unknown color, and only the table is initially in view.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Paint Problem Domain
 
@@ -382,7 +382,7 @@ Action(LookAt(x),
 
 ### Sensorless (Conformant) Planning
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Sensorless Planning
 
@@ -400,7 +400,7 @@ $$[\text{RemoveLid}(C_1), \text{Paint}(\text{Chair}, C_1), \text{Paint}(\text{Ta
 
 This **coerces** the chair and table to the same color, even though the agent never learns what that color is.
 
-<div style="border-left:4px solid #ef6c00;background:#fff3e0;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #ef6c00;background:#fff3e0;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Conditional Effects Break 1-CNF
 
@@ -416,7 +416,7 @@ Solutions to the wiggliness problem include:
 
 - Using a lazy representation: “initial belief state $b_0$ then actions $[a_1,\dots,a_m]$” and checking goals via SAT.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Belief State Progression
 
@@ -430,7 +430,7 @@ Goal satisfied with $c = C(C_1)$.
 
 ### Contingent Planning
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Contingent Plan
 
@@ -438,7 +438,7 @@ A **contingent plan** includes conditional branches based on percepts. The agent
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Contingent Plan for Paint Problem
 
@@ -461,7 +461,7 @@ AND–OR search over belief states (as in Section <a href="#sec:and-or-trees" d
 
 ### Online Replanning
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Execution Monitoring
 
@@ -477,10 +477,10 @@ Execution Monitoring
 
 <figure>
 <img src="/assets/images/ai-book/figures/book-009-p22.png" />
-<figcaption>Replanning: the agent expects to be at state <span class="math inline"><em>E</em></span> but observes state <span class="math inline"><em>O</em></span>. It repairs by finding a path from <span class="math inline"><em>O</em></span> to some point <span class="math inline"><em>P</em></span> on the original plan, then continues to <span class="math inline"><em>G</em></span>.</figcaption>
+<figcaption>Replanning: the agent expects to be at state $E$ but observes state $O$. It repairs by finding a path from $O$ to some point $P$ on the original plan, then continues to $G$.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Sources of Planning Failure
 
@@ -496,7 +496,7 @@ Sources of Planning Failure
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Replanning in the Paint World
 
@@ -516,7 +516,7 @@ After painting the chair, if the agent perceives the chair is still not the righ
 
 ## Multiagent Planning
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Multiagent Planning Problem
 
@@ -532,7 +532,7 @@ A **multiagent planning problem** involves multiple actors in the same environme
 
 ### Planning with Multiple Simultaneous Actions
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Joint Action
 
@@ -546,7 +546,7 @@ The key challenge is representing **interactions**. Two enhancements to PDDL han
 
 2.  A **concurrent action list** specifies which combinations are allowed.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Doubles Tennis Problem
 
@@ -572,7 +572,7 @@ Without a concurrent action list, both agents might hit the ball simultaneously 
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Carry Action (Requires Two Agents)
 
@@ -592,7 +592,7 @@ The Carry action requires two agents to act simultaneously.
 
 When each agent plans independently, the challenge is **coordination**: ensuring that agents choose compatible joint plans.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Coordination Mechanisms
 
@@ -609,7 +609,7 @@ Coordination Mechanisms
 <figcaption>Coordination problem in doubles tennis. Both agents must agree on compatible roles to achieve the goal.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 BOID Architecture and Emergent Behavior
 
@@ -625,7 +625,7 @@ From these simple local rules, **emergent behavior** arises: the flock flies as 
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Ant Colony Coordination
 

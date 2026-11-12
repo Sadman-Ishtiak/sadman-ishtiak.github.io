@@ -17,7 +17,7 @@ Chapter <a href="#ch:solving-problems-searching" data-reference-type="ref" data
 
 Local search algorithms operate on a single current state (or a small number of states) and move only to neighbors. They do not keep paths in memory. This gives two key advantages: very little memory (usually constant) and the ability to find reasonable solutions in large or continuous state spaces where systematic algorithms are unsuitable.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Optimization Problem
 
@@ -35,7 +35,7 @@ $$\text{If elevation = cost: find global minimum} \qquad
 
 ### Hill-Climbing Search
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Hill-Climbing Search (Steepest Ascent)
 
@@ -43,7 +43,7 @@ A local search algorithm that continually moves in the direction of increasing v
 
 </div>
 
-<div style="border-left:4px solid #0277bd;background:#e1f5fe;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #0277bd;background:#e1f5fe;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Hill-Climbing Pseudocode
 
@@ -79,7 +79,7 @@ Hill climbing does not maintain a search tree. The data structure for the curren
 
 - **Random-restart hill climbing:** Conducts a series of hill-climbing searches from randomly generated initial states until a goal is found. Trivially complete with probability approaching 1.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 8-Queens Example
 
@@ -89,7 +89,7 @@ In the 8-queens problem, the heuristic cost function $h$ is the number of attack
 
 ### Simulated Annealing
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Simulated Annealing
 
@@ -103,7 +103,7 @@ $$P(\text{accept}) = e^{\Delta E / T}$$
 
 where $\Delta E$ is the change in value (negative for bad moves) and $T$ is the current temperature. If the schedule lowers $T$ slowly enough, the algorithm will find a global optimum with probability approaching 1.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Metallurgy Analogy
 
@@ -113,7 +113,7 @@ In metallurgy, annealing heats metal to a high temperature and then gradually co
 
 ### Local Beam Search
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Local Beam Search
 
@@ -127,7 +127,7 @@ Unlike running $k$ random restarts in parallel (independent searches), local bea
 
 ### Genetic Algorithms
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Genetic Algorithm (GA)
 
@@ -152,7 +152,7 @@ $$\text{Fitness(8-queens)} = \text{number of nonattacking pairs of queens} \quad
 
 - **Schema:** A substring pattern (e.g., 246\*\*\*\*\*) describing a subset of states. Schemata with above-average fitness grow in the population over time.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 8-Queens GA Example
 
@@ -167,7 +167,7 @@ Population of 4 states: 24748552 (fitness 24), 32752411 (fitness 23), 24415124 (
 
 ## Local Search in Continuous Spaces
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Continuous Optimization
 
@@ -185,7 +185,7 @@ Many real-world environments are continuous — states are defined by an $n$-dim
 
 $$\mathbf{x} \leftarrow \mathbf{x} + \alpha \nabla f(\mathbf{x})$$
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Gradient
 
@@ -205,7 +205,7 @@ The gradient $\nabla f$ is a vector of partial derivatives giving the magnitude 
 
 $$\mathbf{x} \leftarrow \mathbf{x} - \mathbf{H}_f^{-1}(\mathbf{x}) \nabla f(\mathbf{x})$$
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Constrained Optimization
 
@@ -213,7 +213,7 @@ An optimization problem with hard constraints on variable values. **Linear progr
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Airport Siting Problem
 
@@ -223,7 +223,7 @@ Place three new airports anywhere in Romania to minimize the sum of squared dist
 
 ## Searching with Nondeterministic Actions
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Contingency Plan (Strategy)
 
@@ -241,7 +241,7 @@ In the erratic vacuum world, the Suck action is nondeterministic:
 
 Instead of a single RESULT function, we use a RESULTS function that returns a set of possible outcome states.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Erratic Vacuum Contingency Plan
 
@@ -251,7 +251,7 @@ Starting in state 1 (both squares dirty, agent in left square): $$[\text{Suck}, 
 
 ### AND–OR Search Trees
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 AND–OR Search Tree
 
@@ -274,7 +274,7 @@ A solution is a subtree that (1) has a goal node at every leaf, (2) specifies on
 
 In the slippery vacuum world, movement actions sometimes fail. There are no acyclic solutions, but a **cyclic solution** exists: keep trying Right until it works.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Cyclic Plan (Slippery Vacuum World)
 
@@ -284,7 +284,7 @@ $$[\text{Suck}, L_1: \text{Right}, \text{if State} = 5 \text{ then } L_1 \text{ 
 
 ## Searching with Partial Observations
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Belief State
 
@@ -299,7 +299,7 @@ The **belief state** represents the set of possible physical states the agent mi
 
 ### Searching with No Observation (Sensorless Search)
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Sensorless (Conformant) Problem
 
@@ -309,7 +309,7 @@ A problem where the agent receives no percepts at all. Despite having no sensors
 
 **Key insight:** The agent can **coerce** the world into a goal state by finding an action sequence that works regardless of the actual initial state.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Sensorless Vacuum World
 
@@ -336,7 +336,7 @@ $$\begin{aligned}
                                             & \quad \text{ and } o \in \text{POSSIBLE-PERCEPTS}(\text{PREDICT}(b, a)) \}
     \end{aligned}$$
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Recursive State Estimation
 
@@ -344,7 +344,7 @@ Maintaining the belief state over time is called **monitoring**, **filtering**, 
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Robot Localization
 
@@ -354,7 +354,7 @@ A robot with sonar sensors in a maze receives percept NSW (obstacles to north, w
 
 ## Online Search Agents and Unknown Environments
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Offline vs. Online Search
 
@@ -371,7 +371,7 @@ Offline vs. Online Search
 
 The agent knows only: ACTIONS(s), step-cost function $c(s, a, s')$, and GOAL-TEST(s). It cannot determine RESULT(s, a) without actually being in $s$ and doing $a$.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Competitive Ratio
 
@@ -379,7 +379,7 @@ The ratio of the cost of the path the agent actually travels to the cost of the 
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Dead End and Safely Explorability
 
@@ -391,7 +391,7 @@ A **dead end** is a state from which no goal state is reachable. A state space i
 
 **Online DFS agent:** Uses depth-first exploration. Stores results in a table RESULT\[s, a\]. Backtracks physically to the previous state. Works only in reversible state spaces.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 LRTA\* (Learning Real-Time A\*)
 
@@ -399,7 +399,7 @@ An online local search agent that stores a current best estimate $H(s)$ of the c
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Optimism Under Uncertainty
 
@@ -409,7 +409,7 @@ LRTA\* assumes that actions not yet tried lead immediately to the goal with the 
 
 **Random walk:** Selects randomly from available actions. Eventually finds a goal in any finite space, but can be exponentially slow in some environments.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 LRTA\* Example
 
@@ -421,7 +421,7 @@ In a one-dimensional state space, the agent starts with heuristic estimates. Whe
 
 Online agents learn a map of the environment by recording action outcomes. LRTA\* acquires more accurate cost estimates through local updating rules. These updates eventually converge to exact values, making pure hill climbing an optimal strategy.
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Exam-Style Question
 
@@ -429,7 +429,7 @@ Explain the difference between local search and systematic search. Why is local 
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution
 

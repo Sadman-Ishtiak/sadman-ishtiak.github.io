@@ -15,32 +15,32 @@ This appendix collects key comparison and reference tables for the major topics 
 
 ## Uninformed Search Comparison
 
-<div class="tabular">
+| **Algorithm**                                                                                             | **Complete?** | **Optimal?**  | **Time Complexity**                    | **Space Complexity**                   | **Data Structure** |
+|:----------------------------------------------------------------------------------------------------------|:--------------|:--------------|:---------------------------------------|:---------------------------------------|:-------------------|
+| BFS                                                                                                       | Yes           | Yes$^\dagger$ | $O(b^d)$                               | $O(b^d)$                               | FIFO Queue         |
+| UCS                                                                                                       | Yes           | Yes           | $O(b^{1+\lfloor C^*/\epsilon\rfloor})$ | $O(b^{1+\lfloor C^*/\epsilon\rfloor})$ | Priority Queue     |
+| DFS                                                                                                       | No            | No            | $O(b^m)$                               | $O(bm)$                                | LIFO Stack         |
+| DLS                                                                                                       | No$^\ddagger$ | No            | $O(b^\ell)$                            | $O(b\ell)$                             | LIFO Stack         |
+| IDS                                                                                                       | Yes           | Yes$^\dagger$ | $O(b^d)$                               | $O(bd)$                                | LIFO Stack         |
+| Bidirectional                                                                                             | Yes           | Yes$^\dagger$ | $O(b^{d/2})$                           | $O(b^{d/2})$                           | Two Queues         |
+| $^\dagger$ Only if all step costs are equal.                                                              |               |               |                                        |                                        |                    |
+| $^\ddagger$ Yes if $\ell \geq d$, but $\ell$ is typically not known in advance.                           |               |               |                                        |                                        |                    |
+| Note: All entries assume **graph search** (with explored set). Tree search may have different properties. |               |               |                                        |                                        |                    |
 
-lYYYYc **Algorithm** & **Complete?** & **Optimal?** & **Time Complexity** & **Space Complexity** & **Data Structure**  
-BFS & Yes & Yes$^\dagger$ & $O(b^d)$ & $O(b^d)$ & FIFO Queue  
-UCS & Yes & Yes & $O(b^{1+\lfloor C^*/\epsilon\rfloor})$ & $O(b^{1+\lfloor C^*/\epsilon\rfloor})$ & Priority Queue  
-DFS & No & No & $O(b^m)$ & $O(bm)$ & LIFO Stack  
-DLS & No$^\ddagger$ & No & $O(b^\ell)$ & $O(b\ell)$ & LIFO Stack  
-IDS & Yes & Yes$^\dagger$ & $O(b^d)$ & $O(bd)$ & LIFO Stack  
-Bidirectional & Yes & Yes$^\dagger$ & $O(b^{d/2})$ & $O(b^{d/2})$ & Two Queues  
-  
-  
-
-</div>
+Comparison of uninformed (blind) search strategies. $b$ is the branching factor, $d$ is the solution depth, $m$ is the maximum search depth, $\ell$ is the depth limit for DLS, $C^*$ is the optimal cost, and $\epsilon$ is the minimum step cost.
 
 ## Informed Search Comparison
 
-<div class="tabularx">
+| **Algorithm**                                                           | **Heuristic Use**    | **Complete?** | **Optimal?**  | **Time Complexity** | **Space Complexity** |
+|:------------------------------------------------------------------------|:---------------------|:--------------|:--------------|:--------------------|:---------------------|
+| Greedy Best-First                                                       | $f(n) = h(n)$        | No            | No            | $O(b^m)$            | $O(b^m)$             |
+| A\*                                                                     | $f(n) = g(n) + h(n)$ | Yes           | Yes$^\dagger$ | $O(b^{\Delta})$     | $O(b^{\Delta})$      |
+| IDA\*                                                                   | $f$-cost cutoff      | Yes           | Yes$^\dagger$ | $O(b^d)$            | $O(bd)$              |
+| RBFS                                                                    | $f(n) = g(n) + h(n)$ | Yes           | Yes$^\dagger$ | $O(n^2)$ worst      | $O(bd)$              |
+| $^\dagger$ With an admissible (never-overestimating) heuristic.         |                      |               |               |                     |                      |
+| A\* requires consistency (monotonicity) for optimality in graph search. |                      |               |               |                     |                      |
 
-lZcccX **Algorithm** & **Heuristic Use** & **Complete?** & **Optimal?** & **Time Complexity** & **Space Complexity**  
-Greedy Best-First & $f(n) = h(n)$ & No & No & $O(b^m)$ & $O(b^m)$  
-A\* & $f(n) = g(n) + h(n)$ & Yes & Yes$^\dagger$ & $O(b^{\Delta})$ & $O(b^{\Delta})$  
-IDA\* & $f$-cost cutoff & Yes & Yes$^\dagger$ & $O(b^d)$ & $O(bd)$  
-RBFS & $f(n) = g(n) + h(n)$ & Yes & Yes$^\dagger$ & $O(n^2)$ worst & $O(bd)$  
-  
-
-</div>
+Comparison of informed (heuristic) search strategies. $b$ is the branching factor, $d$ is the solution depth, $m$ is the maximum search depth, and $\Delta$ is the relative error of the heuristic.
 
 ## Logical Equivalence Laws
 
@@ -88,30 +88,23 @@ Key inference rules for propositional logic. The horizontal bar notation $\frac{
 
 ## FOL vs. Propositional Logic Comparison
 
-<div class="tabularx">
+| **Feature**                | **Propositional Logic**                                                                                                          | **First-Order Logic**                                                                                                                       |
+|:---------------------------|:---------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------|
+| Syntax                     | Atomic sentences (proposition symbols $P, Q, \dots$) and logical connectives ($\neg, \land, \lor, \Rightarrow, \Leftrightarrow$) | Terms (constants, variables, functions), atomic sentences (predicates with terms), connectives, and quantifiers ($\forall$, $\exists$)      |
+| Semantics                  | Truth assignment to proposition symbols; $2^n$ possible models for $n$ symbols                                                   | Domain (nonempty set of objects) with interpretation mapping constants $\to$ objects, predicates $\to$ relations, functions $\to$ functions |
+| Ontological Commitment     | Facts (truth values)                                                                                                             | Facts, objects, relations, and functions                                                                                                    |
+| Epistemological Commitment | True, false, or unknown                                                                                                          | True, false, or unknown                                                                                                                     |
+| Expressiveness             | Cannot represent objects, relations, or general statements; each fact requires a separate symbol                                 | Can represent objects, relations, properties, and quantified statements concisely                                                           |
+| Quantifiers                | None                                                                                                                             | Universal ($\forall$) and existential ($\exists$) quantifiers over objects                                                                  |
+| Variables                  | No variables                                                                                                                     | Variables with binding by quantifiers; substitutions for inference                                                                          |
+| Compositionality           | Yes (truth-functional)                                                                                                           | Yes                                                                                                                                         |
+| Decidability               | **Decidable**: entailment can always be determined (truth tables or theorem proving)                                             | **Semidecidable**: if a sentence is entailed, a proof will eventually be found; if not, the algorithm may never terminate                   |
+| Inference                  | Truth tables, resolution, DPLL, WalkSAT; complete decision procedures exist                                                      | Generalized Modus Ponens, resolution with unification, forward/backward chaining; refutation-complete for Horn clauses                      |
+| Complexity                 | SAT is NP-complete; Horn clause entailment is $O(n)$                                                                             | Entailment is undecidable in the general case; Datalog (function-free Horn) is decidable                                                    |
+| Frame Problem              | Requires explicit frame axioms or successor-state axioms for each fluent                                                         | Same, but quantified axioms are more concise; e.g., $\forall a, s \; \neg(\text{adjacent}(a, \text{pit}))$                                  |
+| Typical Use                | Simple reasoning tasks, SAT-based planning, Wumpus world, circuit verification                                                   | Complex domains, knowledge representation, mathematical reasoning, natural language semantics, database queries                             |
+| Example Statement          | $B_{1,1} \Leftrightarrow (P_{1,2} \lor P_{2,1})$                                                                                 | $\forall s \; \text{Breezy}(s) \Leftrightarrow \exists r \; \text{Adjacent}(r, s) \land \text{Pit}(r)$                                      |
 
-M\>
-
-X\>
-
-X
-
-**Feature** & **Propositional Logic** & **First-Order Logic**  
-Syntax & Atomic sentences (proposition symbols $P, Q, \dots$) and logical connectives ($\neg, \land, \lor, \Rightarrow, \Leftrightarrow$) & Terms (constants, variables, functions), atomic sentences (predicates with terms), connectives, and quantifiers ($\forall$, $\exists$)  
-Semantics & Truth assignment to proposition symbols; $2^n$ possible models for $n$ symbols & Domain (nonempty set of objects) with interpretation mapping constants $\to$ objects, predicates $\to$ relations, functions $\to$ functions  
-Ontological Commitment & Facts (truth values) & Facts, objects, relations, and functions  
-Epistemological Commitment & True, false, or unknown & True, false, or unknown  
-Expressiveness & Cannot represent objects, relations, or general statements; each fact requires a separate symbol & Can represent objects, relations, properties, and quantified statements concisely  
-Quantifiers & None & Universal ($\forall$) and existential ($\exists$) quantifiers over objects  
-Variables & No variables & Variables with binding by quantifiers; substitutions for inference  
-Compositionality & Yes (truth-functional) & Yes  
-Decidability & **Decidable**: entailment can always be determined (truth tables or theorem proving) & **Semidecidable**: if a sentence is entailed, a proof will eventually be found; if not, the algorithm may never terminate  
-Inference & Truth tables, resolution, DPLL, WalkSAT; complete decision procedures exist & Generalized Modus Ponens, resolution with unification, forward/backward chaining; refutation-complete for Horn clauses  
-Complexity & SAT is NP-complete; Horn clause entailment is $O(n)$ & Entailment is undecidable in the general case; Datalog (function-free Horn) is decidable  
-Frame Problem & Requires explicit frame axioms or successor-state axioms for each fluent & Same, but quantified axioms are more concise; e.g., $\forall a, s \; \neg(\text{adjacent}(a, \text{pit}))$  
-Typical Use & Simple reasoning tasks, SAT-based planning, Wumpus world, circuit verification & Complex domains, knowledge representation, mathematical reasoning, natural language semantics, database queries  
-Example Statement & $B_{1,1} \Leftrightarrow (P_{1,2} \lor P_{2,1})$ & $\forall s \; \text{Breezy}(s) \Leftrightarrow \exists r \; \text{Adjacent}(r, s) \land \text{Pit}(r)$  
-
-</div>
+Comparison of Propositional Logic and First-Order Logic across key dimensions.
 
 {% endraw %}

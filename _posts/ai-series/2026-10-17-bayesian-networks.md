@@ -15,7 +15,7 @@ Logical agents from Chapters 7–9 use a black-and-white view: every sentence i
 
 ## Acting Under Uncertainty
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Uncertainty
 
@@ -33,7 +33,7 @@ Uncertainty arises from **laziness** (too much work to list all antecedents/cons
 
 Instead of logical certainty, we use **degrees of belief** expressed as probabilities. For a dental patient: $$P(\text{cavity} \mid \text{toothache}) = 0.6$$ This means: out of all situations indistinguishable from current knowledge, the patient has a cavity in 60% of them. The statement does not contradict later updating (e.g., $P(\text{cavity} \mid \text{toothache} \land \neg\text{catch}) = 0.4$).
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Decision Theory
 
@@ -48,7 +48,7 @@ Decision theory = probability theory + utility theory. An agent is rational iff 
 
 ## Basic Probability Notation
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Probability Basics
 
@@ -68,7 +68,7 @@ $$P(a \mid b) = \frac{P(a \land b)}{P(b)} \quad \text{when } P(b) > 0$$
 
 A **random variable** has a **domain** of possible values. Boolean variables use abbreviations: $a$ for $A = \text{true}$, $\neg a$ for $A = \text{false}$. The **probability distribution** $P(X)$ gives probabilities for all values of $X$. The **joint probability distribution** $P(X_1, \dots, X_n)$ gives probabilities for all combinations.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Kolmogorov’s Axioms
 
@@ -80,7 +80,7 @@ $$\begin{aligned}
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Probability of a Disjunction
 
@@ -90,7 +90,7 @@ If $P(\text{cavity}) = 0.2$, $P(\text{toothache}) = 0.1$, and $P(\text{cavity} \
 
 ## Inference Using Full Joint Distributions
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Full Joint Probability Distribution
 
@@ -99,38 +99,38 @@ A table that gives the probability of every combination of values for all random
 </div>
 
 <figure>
-<table>
+<table markdown="1">
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"></td>
-<td colspan="2" style="text-align: center;">toothache</td>
-<td colspan="2" style="text-align: center;"><span class="math inline">¬</span>toothache</td>
+<td colspan="2" style="text-align: left;">toothache</td>
+<td colspan="2" style="text-align: left;">$\neg$toothache</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"></td>
-<td style="text-align: center;">catch</td>
-<td style="text-align: center;"><span class="math inline">¬</span>catch</td>
-<td style="text-align: center;">catch</td>
-<td style="text-align: center;"><span class="math inline">¬</span>catch</td>
+<td style="text-align: left;">catch</td>
+<td style="text-align: left;">$\neg$catch</td>
+<td style="text-align: left;">catch</td>
+<td style="text-align: left;">$\neg$catch</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">cavity</td>
-<td style="text-align: center;">0.108</td>
-<td style="text-align: center;">0.012</td>
-<td style="text-align: center;">0.072</td>
-<td style="text-align: center;">0.008</td>
+<td style="text-align: left;">0.108</td>
+<td style="text-align: left;">0.012</td>
+<td style="text-align: left;">0.072</td>
+<td style="text-align: left;">0.008</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><span class="math inline">¬</span>cavity</td>
-<td style="text-align: center;">0.016</td>
-<td style="text-align: center;">0.064</td>
-<td style="text-align: center;">0.144</td>
-<td style="text-align: center;">0.576</td>
+<td style="text-align: left;">$\neg$cavity</td>
+<td style="text-align: left;">0.016</td>
+<td style="text-align: left;">0.064</td>
+<td style="text-align: left;">0.144</td>
+<td style="text-align: left;">0.576</td>
 </tr>
 </tbody>
 </table>
-<p><span class="math inline"><em>P</em>(cavity) = 0.108 + 0.012 + 0.072 + 0.008 = 0.2</span><br />
-<span class="math inline">$P(\text{cavity} \mid \text{toothache}) = \dfrac{0.108 + 0.012}{0.108 + 0.012 + 0.016 + 0.064} = 0.6$</span></p>
+<p>$P(\text{cavity}) = 0.108 + 0.012 + 0.072 + 0.008 = 0.2$<br />
+$P(\text{cavity} \mid \text{toothache}) = \dfrac{0.108 + 0.012}{0.108 + 0.012 + 0.016 + 0.064} = 0.6$</p>
 <figcaption>Full joint distribution for the Toothache, Cavity, Catch world.</figcaption>
 </figure>
 
@@ -142,7 +142,7 @@ A table that gives the probability of every combination of values for all random
 
 For a query variable $X$, evidence $E=e$, and unobserved variables $Y$: $$P(X \mid e) = \alpha P(X, e) = \alpha \sum_{y \in Y} P(X, e, y)$$ where $\alpha = 1/P(e)$ is a normalization constant.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Inference from Full Joint
 
@@ -159,7 +159,7 @@ The full joint approach is impractical for $n > 100$ ($2^{100}$ entries). We nee
 
 ## Independence
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Absolute Independence
 
@@ -176,7 +176,7 @@ Absolute independence allows factoring the joint distribution into smaller piece
 
 ### Conditional Independence
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Conditional Independence
 
@@ -186,7 +186,7 @@ Two variables $X$ and $Y$ are **conditionally independent** given a third variab
 
 Conditional independence is more common than absolute independence. For example, and are not absolutely independent, but they *are* conditionally independent given : once we know whether there is a cavity, the probe catch gives no additional information about the toothache.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Conditional Independence in Dentistry
 
@@ -199,7 +199,7 @@ P(\text{Toothache}, \text{Catch}, \text{Cavity}) &= P(\text{Toothache} \mid \tex
 
 ## Bayes’ Rule and Its Use
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Bayes’ Rule
 
@@ -211,7 +211,7 @@ Bayes’ rule is most useful in the **causal** $\to$ **diagnostic** direction: $
 
 Causal knowledge $P(\text{effect} \mid \text{cause})$ is more robust: it reflects the underlying mechanism and does not change when the base rate of the cause changes.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Meningitis Diagnosis
 
@@ -223,7 +223,7 @@ A doctor knows: $P(\text{stiff neck} \mid \text{meningitis}) = 0.7$, $P(\text{me
 
 When we have multiple evidence variables, we use the conditional independence assumption (naive Bayes): $$P(\text{Cause} \mid \text{Effect}_1, \dots, \text{Effect}_n) = \alpha \, P(\text{Cause}) \prod_{i=1}^{n} P(\text{Effect}_i \mid \text{Cause})$$
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Naive Bayes Model
 
@@ -233,7 +233,7 @@ A probability model that assumes all effect variables are conditionally independ
 
 ## Bayesian Networks
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Bayesian Network
 
@@ -279,7 +279,7 @@ The full joint distribution is: $$P(B, E, A, J, M) = P(B) \, P(E) \, P(A \mid B,
 
 4.  **Efficient inference:** Algorithms like Variable Elimination and Belief Propagation exploit the network structure for tractable inference.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Inference in the Burglary Network
 

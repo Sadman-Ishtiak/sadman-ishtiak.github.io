@@ -15,7 +15,7 @@ math: true
 
 Prolog does not have traditional looping constructs (for, while). Instead, iteration is achieved through **RECURSION** – a predicate calls itself with a modified argument until a base case is reached.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Recursive Loop
 
@@ -32,7 +32,7 @@ testloop(N) :-
     testloop(M).
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Counting Down
 
@@ -52,7 +52,7 @@ The cut in the base case ensures that once `N = 0` is reached, Prolog does not a
 
 ## Menu-Driven Programs
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Menu-Driven Program
 
@@ -83,7 +83,7 @@ menu :-
     ).
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Running the Menu
 
@@ -105,7 +105,7 @@ The menu loops indefinitely (no exit option in this version). Each choice recalc
 
 ## Tree Traversal
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Tree Traversal
 
@@ -131,7 +131,7 @@ route(A, B) :- edge(A, B).
 <figcaption>Tree represented by <code>edge/2</code> predicates</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Tree Traversal Example
 
@@ -158,7 +158,7 @@ The query `route(a, g)` succeeds because there is a path `a `$\rightarrow$` c `$
 
 Trees do not contain cycles, but general graphs do. When traversing a graph, Prolog can enter infinite loops by following a cycle repeatedly. To avoid this, we maintain a **VISITED LIST** of nodes already seen.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Visited List
 
@@ -183,7 +183,7 @@ nextRoute(A, B, Visited) :-
     ).
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Cycle Avoidance
 
@@ -203,7 +203,7 @@ Without the visited list, the path `a `$\rightarrow$` b `$\rightarrow$` d `$\rig
 
 ### Tree vs. Graph Traversal
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Tree vs Graph Traversal
 
@@ -235,7 +235,7 @@ traverse(A, B, Visited) :-
 
 Tree traversal vs. graph traversal comparison
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 When to Use Each
 
@@ -247,7 +247,7 @@ Use **tree traversal** when the data structure is guaranteed acyclic (e.g., fami
 
 ### DFA Simulation
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Deterministic Finite Automaton (DFA)
 
@@ -278,7 +278,7 @@ trans(S, [A|B]) :-
     trans(S1, B).
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 DFA Simulation
 
@@ -298,7 +298,7 @@ The DFA starts in state 0 and processes each symbol. After reading `a b b`, it e
 
 ### NFA Simulation
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Nondeterministic Finite Automaton (NFA)
 
@@ -306,7 +306,7 @@ A **NONDETERMINISTIC FINITE AUTOMATON (NFA)** allows multiple possible transitio
 
 </div>
 
-*Figure: NFA that accepts <span class="math inline"><em>a</em>(<em>a</em> + <em>b</em>)<sup>*</sup><em>b</em></span>*
+*Figure: NFA that accepts $a(a+b)^*b$*
 
 ```prolog
 ?- testloop(5).
@@ -318,7 +318,7 @@ Number : 1
 true
 ```1
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 NFA Simulation
 
@@ -340,7 +340,7 @@ The NFA explores multiple transition paths. Prolog’s backtracking finds the pa
 
 ### Writing to Files
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Writing to a File
 
@@ -358,7 +358,7 @@ Number : 1
 true
 ```3
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 File Writing
 
@@ -368,7 +368,7 @@ After running `write_to_file.`, the file `mfile.txt` contains the text `Start`. 
 
 ### Reading from Files
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Reading from a File
 
@@ -386,7 +386,7 @@ Number : 1
 true
 ```4
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 File Reading and Copying
 
@@ -396,7 +396,7 @@ File Reading and Copying
 
 ### Stream Control and Redirection
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Stream Control
 
@@ -414,7 +414,7 @@ Number : 1
 true
 ```5
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Stream Redirection in Action
 

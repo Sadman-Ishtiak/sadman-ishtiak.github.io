@@ -15,7 +15,7 @@ In which we define effective procedures for answering questions posed in first-o
 
 ## Propositional vs. First-Order Inference
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Universal Instantiation (UI)
 
@@ -23,7 +23,7 @@ Universal Instantiation (UI)
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Universal Instantiation
 
@@ -37,7 +37,7 @@ From the axiom “All greedy kings are evil”: $$\forall x \; \text{King}(x) \l
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Existential Instantiation (EI)
 
@@ -45,7 +45,7 @@ Existential Instantiation (EI)
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Existential Instantiation
 
@@ -53,7 +53,7 @@ From the sentence “There exists a crown on John’s head”: $$\exists x \; \t
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Inferential Equivalence
 
@@ -61,7 +61,7 @@ Two knowledge bases are **inferentially equivalent** if they are satisfiable exa
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Inferential Equivalence
 
@@ -73,7 +73,7 @@ Consider the KB: $$\exists x \; \text{King}(x), \quad \text{King}(\text{John}) \
 
 First-order inference can be reduced to propositional inference by applying UI to replace universally quantified sentences with all possible ground instantiations. If the knowledge base contains no function symbols, the set of ground terms is finite. With function symbols, the set is infinite, but **Herbrand’s theorem** (1930) guarantees that if a sentence is entailed, there is a proof involving only a finite subset of ground instantiations.
 
-<div style="border-left:4px solid #ef6c00;background:#fff3e0;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #ef6c00;background:#fff3e0;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Semidecidability
 
@@ -97,7 +97,7 @@ Comparison of Propositional vs. First-Order Inference
 
 Propositionalization is inefficient because it generates many irrelevant sentences (as shown in Table <a href="#tab:pl-vs-fol-inference" data-reference-type="ref" data-reference="tab:pl-vs-fol-inference">[tab:pl-vs-fol-inference]</a>, unification becomes a central requirement). **Lifting** raises Modus Ponens from ground propositional logic to first-order logic, making only the substitutions required for the inference.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Generalized Modus Ponens (GMP)
 
@@ -111,10 +111,10 @@ $$\text{GMP:} \quad \frac{\text{King}(\text{John}), \quad \text{Greedy}(\text{Jo
 
 <figure>
 <img src="/assets/images/ai-book/figures/book-008-p6.png" />
-<figcaption>Lifted inference via Generalized Modus Ponens. The rule, quantified over all <span class="math inline"><em>x</em></span>, is instantiated for John without generating all possible groundings.</figcaption>
+<figcaption>Lifted inference via Generalized Modus Ponens. The rule, quantified over all $x$, is instantiated for John without generating all possible groundings.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Generalized Modus Ponens
 
@@ -122,7 +122,7 @@ Suppose we know everyone is greedy: $$\forall y \; \text{Greedy}(y)$$ Then to co
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Unification
 
@@ -137,7 +137,7 @@ The **Most General Unifier (MGU)** is the unique unifier (up to renaming) that p
 <figcaption>The unification algorithm. Expressions are compared side-by-side, building up a substitution.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Unification Examples
 
@@ -162,7 +162,7 @@ The last unification fails because $x$ cannot simultaneously equal John and Eliz
 
 Unification examples
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Standardizing Apart
 
@@ -170,7 +170,7 @@ Standardizing Apart
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Standardizing Apart
 
@@ -178,7 +178,7 @@ Without standardizing apart: $$\textsc{Unify}(\text{Knows}(\text{John}, x), \tex
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Occur Check
 
@@ -186,7 +186,7 @@ The **occur check** verifies that a variable does not occur inside the term bein
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Occur Check
 
@@ -194,7 +194,7 @@ $S(x)$ cannot unify with $S(S(x))$ because $x$ occurs inside $S(x)$. The substit
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Predicate Indexing and Subsumption Lattice
 
@@ -202,7 +202,7 @@ Predicate Indexing and Subsumption Lattice
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Subsumption Lattice
 
@@ -214,7 +214,7 @@ The ground fact $\text{Employs}(\text{IBM}, \text{Richard})$ subsumes all of the
 
 Forward chaining applies Modus Ponens in the forward direction, starting from known atomic sentences and adding new conclusions until no further inferences can be made.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 First-Order Definite Clauses
 
@@ -230,7 +230,7 @@ Greedy(y)
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Definite Clause Examples
 
@@ -244,7 +244,7 @@ Datalog restricts these further by disallowing function symbols, keeping only co
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Datalog
 
@@ -252,7 +252,7 @@ Datalog
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Datalog vs. Full FOL
 
@@ -265,7 +265,7 @@ Datalog is decidable; full FOL is semidecidable.
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Forward Chaining Algorithm
 
@@ -280,7 +280,7 @@ Figure <a href="#fig:forward-chaining-flow" data-reference-type="ref" data-refe
 <figcaption>Proof tree for the crime example. Initial facts are at the bottom, inferred facts in the middle, and the conclusion at the top.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Forward Chaining: Crime Example
 
@@ -303,7 +303,7 @@ Iteration 2: Rule (1) adds $\text{Criminal}(\text{West})$.
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 RETE Algorithm
 
@@ -311,7 +311,7 @@ The **RETE algorithm** preprocesses rules into a dataflow network. Variable bind
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 RETE Network Example
 
@@ -326,7 +326,7 @@ RETE builds a root node for $\text{A}(x)$ shared by both rules. When a new $\tex
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Fire Alarm Example (Forward Chaining)
 
@@ -341,7 +341,7 @@ Forward chaining triggers the rule because both premises are satisfied, concludi
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Deductive Databases and Magic Set
 
@@ -349,7 +349,7 @@ Deductive Databases and Magic Set
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Magic Set Rewriting
 
@@ -367,7 +367,7 @@ Only facts relevant to $\text{West}$ are derived during forward chaining.
 
 Backward chaining works backward from the goal, chaining through rules to find known facts that support the proof.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Backward Chaining Algorithm
 
@@ -388,7 +388,7 @@ Figure <a href="#fig:backward-chaining-flow" data-reference-type="ref" data-ref
 <figcaption>Proof tree constructed by backward chaining for the crime example. The tree is read depth-first, left to right. Bindings are shown next to each subgoal.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Logic Programming and Prolog
 
@@ -400,7 +400,7 @@ Prolog executes programs through depth-first backward chaining with clauses trie
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Prolog Program and Query
 
@@ -416,7 +416,7 @@ Query `?- criminal(west).` Prolog searches depth-first through the clauses, back
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Choice Point, Trail, Continuation
 
@@ -430,7 +430,7 @@ Backward chaining uses several implementation mechanisms:
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Backtracking in Prolog
 
@@ -457,7 +457,7 @@ Query `?- grandparent(john, alice).`
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Tabled Logic Programming
 
@@ -465,7 +465,7 @@ Tabled Logic Programming
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Tabled vs. Non-Tabled Evaluation
 
@@ -487,7 +487,7 @@ Tabling makes evaluation complete for Datalog programs.
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Constraint Logic Programming (CLP)
 
@@ -495,7 +495,7 @@ Constraint Logic Programming (CLP)
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 CLP: Triangle Constraints
 
@@ -505,7 +505,7 @@ Query $\text{triangle}(3,4,Z)$ yields the constraint $7 \ge Z \ge 1$, not a sing
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Student Exam Example (Backward Chaining)
 
@@ -530,7 +530,7 @@ Prolog uses **database semantics** (unique names assumption, closed-world assump
 
 Resolution is a complete inference procedure for first-order logic that works by refutation: proving $KB \models \alpha$ by showing $KB \land \neg\alpha$ is unsatisfiable.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 CNF for First-Order Logic
 
@@ -554,7 +554,7 @@ Conversion procedure:
 
 $$\forall x [\forall y \; \text{Animal}(y) \Rightarrow \text{Loves}(x,y)] \Rightarrow [\exists y \; \text{Loves}(y,x)]$$ converts to CNF: $$[\text{Animal}(F(x)) \lor \text{Loves}(G(z),x)] \land [\neg\text{Loves}(x,F(x)) \lor \text{Loves}(G(z),x)]$$
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 CNF Conversion Example
 
@@ -576,7 +576,7 @@ The result is two CNF clauses ready for resolution.
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Binary Resolution Rule
 
@@ -584,7 +584,7 @@ The **binary resolution rule** for first-order clauses is a lifted version of pr
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Resolution Proof: Crime Example
 
@@ -606,7 +606,7 @@ Resolution proceeds along a single spine: resolving the negated goal with clause
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Answer Literal
 
@@ -614,7 +614,7 @@ To answer existential queries (e.g., “Who killed the cat?”), an **answer lit
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Answer Literal: Who Killed the Cat?
 
@@ -630,7 +630,7 @@ The answer literal survives as the result.
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Refutation Completeness
 
@@ -644,7 +644,7 @@ Resolution is **refutation-complete**: if a set of clauses is unsatisfiable, res
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Refutation Proof: Simple Example
 
@@ -664,7 +664,7 @@ Resolution derived a contradiction, therefore $KB \models P(A)$.
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Herbrand Universe and Saturation
 
@@ -672,7 +672,7 @@ The **Herbrand universe** of a clause set $S$ is the set of all ground terms con
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Herbrand Universe Construction
 
@@ -688,7 +688,7 @@ If $S$ is unsatisfiable, some finite subset of the Herbrand base is propositiona
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Demodulation and Paramodulation
 
@@ -700,7 +700,7 @@ Demodulation and Paramodulation
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Demodulation Rewriting
 
@@ -714,7 +714,7 @@ Paramodulation generalizes this: the equality may appear as a non-unit literal r
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Resolution Strategies
 
@@ -730,7 +730,7 @@ Several strategies improve resolution efficiency:
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Resolution Strategy Comparison
 
@@ -748,7 +748,7 @@ All strategies eventually derive $\bot$, but the search spaces differ drasticall
 
 ## Rule-Based Systems
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Rule-Based System
 
@@ -767,7 +767,7 @@ A **rule-based system** is an AI system that makes decisions using a predefined 
 <figcaption>Architecture of a rule-based system. The inference engine matches rules against working memory and derives new facts.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Rule-Based System Examples
 

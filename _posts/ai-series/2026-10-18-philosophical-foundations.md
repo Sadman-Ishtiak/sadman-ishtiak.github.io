@@ -15,7 +15,7 @@ math: true
 
 The debate about whether machines can think is as old as computing itself. Philosophers distinguish two questions: can machines *act* intelligently, and can they *really* think? The first is the **WEAK AI HYPOTHESIS**; the second is the **STRONG AI HYPOTHESIS**.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Weak AI Hypothesis
 
@@ -27,7 +27,7 @@ The **WEAK AI HYPOTHESIS** asserts that machines could possibly act *as if* they
 
 Alan Turing (1950) rejected the vague question “Can machines think?” and replaced it with a behavioural test. The **TURING TEST** measures intelligence by conversation: a machine passes if an interrogator cannot distinguish it from a human after five minutes of typed dialogue. Turing conjectured that by the year 2000 a computer with $10^9$ units of storage would fool a judge 30% of the time.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Turing Test
 
@@ -44,7 +44,7 @@ Turing anticipated many objections: the argument from disability (machines canno
 
 The **LOEBNER PRIZE** competition, held annually since 1991, implements a Turing Test–like contest. Early chatbots such as ELIZA, MGONZ, and CYBERLOVER have fooled unsuspecting interlocutors, but no program has yet passed the full test against a sophisticated judge.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Turing Test in Practice
 
@@ -64,7 +64,7 @@ Computer scientist Edsger Dijkstra (1984) dismissed the question “Can machines
 
 John Searle (1980) proposed the **CHINESE ROOM** thought experiment to argue that running a program is not sufficient for understanding.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Chinese Room Argument
 
@@ -89,7 +89,7 @@ Critics offer the **SYSTEMS REPLY**: the person in the room is like a single CPU
 <figcaption>The Chinese Room: the person manipulates symbols syntactically without any semantic understanding of Chinese.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Chinese Room — Key Objections
 
@@ -105,7 +105,7 @@ Chinese Room — Key Objections
 
 The **STRONG AI HYPOTHESIS** asserts that machines that act intelligently are actually thinking — they have real minds, not just simulations of minds.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Strong AI Hypothesis
 
@@ -117,7 +117,7 @@ The **STRONG AI HYPOTHESIS** asserts that a machine that behaves intelligently w
 
 The **MIND–BODY PROBLEM** asks how mental states relate to physical states. Three major positions have emerged:
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Dualism
 
@@ -125,7 +125,7 @@ Dualism
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Physicalism (Materialism)
 
@@ -133,7 +133,7 @@ Physicalism (Materialism)
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Functionalism
 
@@ -150,7 +150,7 @@ Functionalism
 
 Three concepts lie at the heart of the strong AI debate:
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Consciousness, Qualia, and Intentionality
 
@@ -169,7 +169,7 @@ Consciousness, Qualia, and Intentionality
 
 The **BRAIN REPLACEMENT EXPERIMENT** (Moravec, 1988) illustrates functionalism: if neurons are replaced one-by-one with electronic equivalents that preserve input–output behaviour, does consciousness remain? Functionalists say yes; biological naturalists (Searle) say no, because the special causal powers of neurons would be lost.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Strong AI — Thought Experiments
 
@@ -185,7 +185,7 @@ Strong AI — Thought Experiments
 
 AI technology, like any powerful technology, carries ethical risks. Researchers must consider not only whether we *can* build intelligent machines, but whether we *should*.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Ethical Issues in AI
 
@@ -218,7 +218,7 @@ Summary of ethical issues in AI development.
 
 Weizenbaum (1976) warned that AI could make people feel like automata, eroding their sense of uniqueness. Autonomous systems are already widespread: the U.S. military deployed over 5,000 autonomous aircraft and 12,000 autonomous ground vehicles in Iraq. The risk of over-reliance on such systems is significant.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Real-World Ethical Concerns
 
@@ -238,7 +238,7 @@ Real-World Ethical Concerns
 
 The long-term goal of AI research is **ARTIFICIAL GENERAL INTELLIGENCE** (AGI) — a system that can perform any intellectual task that a human can.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 AGI and Superintelligence
 
@@ -254,7 +254,7 @@ This leads to the **ALIGNMENT PROBLEM**: how do we ensure that an AGI’s goals 
 
 This leads to the **ALIGNMENT PROBLEM**: how do we ensure that an AGI’s goals remain aligned with human values as it grows more intelligent? Asimov’s three laws of robotics illustrate the difficulty — they conflict in concrete situations (the “selenium circle” paradox).
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 The Alignment Problem
 
@@ -269,7 +269,7 @@ Example: a utility function designed to minimise human suffering might conclude 
 <figcaption>The path from narrow AI to superintelligence and the technological singularity.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Future of AI — Key Debates
 

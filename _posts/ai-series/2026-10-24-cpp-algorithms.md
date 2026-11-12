@@ -15,7 +15,7 @@ This chapter presents complete C++ implementations of the core AI algorithms cov
 
 ## BFS Implementation in C++
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Breadth-First Search (BFS)
 
@@ -74,7 +74,7 @@ int main() {
 }
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 BFS Example
 
@@ -92,7 +92,7 @@ BFS visits node 0 first, then its neighbours 1 and 2, then the neighbours of 1 (
 
 ## DFS Implementation in C++
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Depth-First Search (DFS)
 
@@ -171,7 +171,7 @@ int main() {
 }
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 DFS Example
 
@@ -190,7 +190,7 @@ DFS visits 0, then immediately descends into 1, then 3 (deepest along the first 
 
 ## A\* Search Implementation in C++
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 A\* Search Algorithm
 
@@ -204,7 +204,7 @@ A\* is **optimal** when $h(n)$ is **admissible** (never overestimates the true c
 
 <figure>
 <img src="/assets/images/ai-book/figures/book-003-p12.png" />
-<figcaption>A* search on a weighted graph. Each edge shows <span class="math inline">(<em>g</em>, <em>h</em>)</span> values. The algorithm expands nodes with the lowest <span class="math inline"><em>f</em></span>-value first.</figcaption>
+<figcaption>A* search on a weighted graph. Each edge shows $(g, h)$ values. The algorithm expands nodes with the lowest $f$-value first.</figcaption>
 </figure>
 
 ```cpp
@@ -278,7 +278,7 @@ int main() {
 }
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 A\* Search Example
 
@@ -318,7 +318,7 @@ The program reads a binary string and reports whether it is accepted.
 
 ### DFA for Strings Starting with “101”
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Language: Strings Starting with “101”
 
@@ -377,7 +377,7 @@ int main() {
 }
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 DFA for “101” Prefix
 
@@ -398,7 +398,7 @@ The DFA moves from $q_0 \xrightarrow{1} q_1 \xrightarrow{0} q_2 \xrightarrow{1} 
 
 ### DFA for Strings with “1 Followed by 0”
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Language: Strings Containing “10”
 
@@ -454,7 +454,7 @@ int main() {
 }
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 DFA for “10” Substring
 
@@ -475,7 +475,7 @@ Once the DFA reads a “1” (state $q_1$) and then a “0” (transition to $q_
 
 ### DFA for Odd Number of 0’s or/and Even Number of 1’s
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Language: Odd 0’s or Even 1’s
 
@@ -502,7 +502,7 @@ Accepting states are those where the number of 0’s is odd **or** the number of
 BFS traversal starting from node 0: 0 1 2 3 4 5 6
 ```0
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 DFA for Parity Conditions
 

@@ -15,7 +15,7 @@ In which we discuss the nature of agents, perfect or otherwise, the diversity of
 
 ## Agents and Environments
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Agent
 
@@ -23,7 +23,7 @@ An **agent** is anything that can be viewed as perceiving its environment throug
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Percept and Percept Sequence
 
@@ -31,7 +31,7 @@ A **percept** is the agent’s perceptual input at any given instant. An agent�
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Agent Function and Agent Program
 
@@ -50,7 +50,7 @@ where $\mathcal{P}$ is the set of possible percepts and $\mathcal{A}$ is the set
 
 An agent’s choice of action at any instant can depend on the entire percept sequence observed to date, but not on anything it hasn’t perceived. The agent function is an abstract mathematical description; the agent program is a concrete implementation running within some physical system.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Types of Agents
 
@@ -62,7 +62,7 @@ Types of Agents
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Vacuum-Cleaner World
 
@@ -88,7 +88,7 @@ The notion of an agent is a tool for analyzing systems, not an absolute characte
 
 ## Good Behavior: The Concept of Rationality
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Rational Agent
 
@@ -100,7 +100,7 @@ $$a^* = \operatorname{argmax}_{a \in \mathcal{A}} \mathbb{E}\big[P(s) \mid \text
 
 where $P(s)$ is the performance measure evaluating environment state $s$, and $\mathbb{E}$ denotes expected value.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Performance Measure
 
@@ -122,7 +122,7 @@ What is rational at any given time depends on:
 
 4.  The agent’s **percept sequence** to date.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Rational Vacuum Agent
 
@@ -142,7 +142,7 @@ The agent that sucks when dirty and moves otherwise is rational under these cond
 
 ### Omniscience, Learning, and Autonomy
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Omniscience vs. Information Gathering
 
@@ -150,7 +150,7 @@ An **omniscient** agent knows the actual outcome of its actions. Omniscience is 
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Exploration and Learning
 
@@ -158,7 +158,7 @@ Exploration and Learning
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Autonomy
 
@@ -166,7 +166,7 @@ An agent is **autonomous** to the extent that its behavior depends on its own ex
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Rationality vs. Perfection
 
@@ -174,7 +174,7 @@ Crossing a street when no traffic is visible is rational – the expected outcom
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Learning in the Sphex Wasp
 
@@ -184,7 +184,7 @@ The sphex wasp follows a fixed plan: dig burrow, sting caterpillar, drag it in, 
 
 ## The Nature of Environments
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Task Environment
 
@@ -219,7 +219,7 @@ PEAS descriptions for various agent types
 
 Task environments can be categorized along seven key dimensions. These dimensions determine the appropriate agent design and the applicability of different AI techniques.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Environment Classifications
 
@@ -249,7 +249,7 @@ The seven dichotomies categorize environments along these dimensions:
 
 If an agent’s sensors give it access to the complete state of the environment at each point in time, the environment is **fully observable**. Otherwise, it is **partially observable**. An environment with no sensors at all is **unobservable**. Fully observable environments are convenient because the agent need not maintain internal state.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Observability Examples
 
@@ -265,7 +265,7 @@ Observability Examples
 
 A **single-agent** environment contains only one agent making decisions. A **multiagent** environment contains other agents whose behavior affects performance. Multiagent environments can be **competitive** (e.g., chess) or **cooperative** (e.g., taxi driving where avoiding collisions benefits all).
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Agent Count Examples
 
@@ -281,7 +281,7 @@ Agent Count Examples
 
 If the next state of the environment is completely determined by the current state and the agent’s action, the environment is **deterministic**. Otherwise, it is **stochastic**. An environment is **uncertain** if it is not fully observable or not deterministic. **Nondeterministic** environments describe possible outcomes without probabilities.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Determinism Examples
 
@@ -297,7 +297,7 @@ Determinism Examples
 
 In an **episodic** environment, each episode is independent; the next episode does not depend on previous actions. In a **sequential** environment, current decisions affect all future decisions.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Episodicity Examples
 
@@ -311,7 +311,7 @@ Episodicity Examples
 
 If the environment can change while the agent is deliberating, it is **dynamic**. Otherwise, it is **static**. In a **semidynamic** environment, the environment itself does not change, but the agent’s performance score does.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Dynamics Examples
 
@@ -327,7 +327,7 @@ Dynamics Examples
 
 The **discrete/continuous** distinction applies to states, time, percepts, and actions. Discrete environments have a finite number of distinct states; continuous environments have smoothly varying values.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Discreteness Examples
 
@@ -341,7 +341,7 @@ Discreteness Examples
 
 In a **known** environment, the outcomes of all actions are given. In an **unknown** environment, the agent must learn how the world works. This distinction refers to the agent’s state of knowledge, not the environment itself.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Known-ness Examples
 
@@ -353,18 +353,18 @@ A known environment can be partially observable (solitaire – I know the rules 
 
 </div>
 
-| Task Environment    | Observable | Agents | Deterministic |  Episodic  |   Static    |  Discrete  |
-|:--------------------|:----------:|:------:|:-------------:|:----------:|:-----------:|:----------:|
-| Crossword puzzle    |   Fully    | Single | Deterministic | Sequential |   Static    |  Discrete  |
-| Chess (with clock)  |   Fully    | Multi  | Deterministic | Sequential | Semidynamic |  Discrete  |
-| Poker               | Partially  | Multi  |  Stochastic   | Sequential |   Static    |  Discrete  |
-| Backgammon          |   Fully    | Multi  |  Stochastic   | Sequential |   Static    |  Discrete  |
-| Taxi driving        | Partially  | Multi  |  Stochastic   | Sequential |   Dynamic   | Continuous |
-| Medical diagnosis   | Partially  | Single |  Stochastic   | Sequential |   Dynamic   | Continuous |
-| Image analysis      |   Fully    | Single | Deterministic |  Episodic  | Semidynamic | Continuous |
-| Part-picking robot  | Partially  | Single |  Stochastic   |  Episodic  |   Dynamic   | Continuous |
-| Refinery controller | Partially  | Single |  Stochastic   | Sequential |   Dynamic   | Continuous |
-| Interactive tutor   | Partially  | Multi  |  Stochastic   | Sequential |   Dynamic   |  Discrete  |
+| Task Environment    | Observable | Agents | Deterministic | Episodic   | Static      | Discrete   |
+|:--------------------|:-----------|:-------|:--------------|:-----------|:------------|:-----------|
+| Crossword puzzle    | Fully      | Single | Deterministic | Sequential | Static      | Discrete   |
+| Chess (with clock)  | Fully      | Multi  | Deterministic | Sequential | Semidynamic | Discrete   |
+| Poker               | Partially  | Multi  | Stochastic    | Sequential | Static      | Discrete   |
+| Backgammon          | Fully      | Multi  | Stochastic    | Sequential | Static      | Discrete   |
+| Taxi driving        | Partially  | Multi  | Stochastic    | Sequential | Dynamic     | Continuous |
+| Medical diagnosis   | Partially  | Single | Stochastic    | Sequential | Dynamic     | Continuous |
+| Image analysis      | Fully      | Single | Deterministic | Episodic   | Semidynamic | Continuous |
+| Part-picking robot  | Partially  | Single | Stochastic    | Episodic   | Dynamic     | Continuous |
+| Refinery controller | Partially  | Single | Stochastic    | Sequential | Dynamic     | Continuous |
+| Interactive tutor   | Partially  | Multi  | Stochastic    | Sequential | Dynamic     | Discrete   |
 
 Properties of selected task environments
 
@@ -372,7 +372,7 @@ The hardest environment type is: partially observable, multiagent, stochastic, s
 
 ## The Structure of Agents
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Agent Program and Architecture
 
@@ -386,7 +386,7 @@ We outline five basic kinds of agent programs that embody the principles underly
 
 ### Simple Reflex Agents
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Simple Reflex Agent
 
@@ -408,7 +408,7 @@ A **simple reflex agent** selects actions based solely on the current percept, i
 	return action
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Simple Reflex Vacuum Agent
 
@@ -430,7 +430,7 @@ Simple reflex agents are limited: they work only if the environment is fully obs
 
 ### Model-Based Reflex Agents
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Model-Based Reflex Agent
 
@@ -455,7 +455,7 @@ A **model-based reflex agent** maintains **internal state** that depends on the 
 	return action
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Model-Based Taxi Agent
 
@@ -465,7 +465,7 @@ A taxi driver uses internal state to track vehicles that are temporarily out of 
 
 ### Goal-Based Agents
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Goal-Based Agent
 
@@ -492,7 +492,7 @@ A **goal-based agent** combines a model of the world with **goal information** t
 
 Goal-based agents search through possible action sequences to find one that achieves the goal. This search can be computationally expensive, but it provides enormous flexibility.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Goal-Based Taxi Agent
 
@@ -502,7 +502,7 @@ At a junction, the taxi can turn left, turn right, or go straight. The correct d
 
 ### Utility-Based Agents
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Utility-Based Agent
 
@@ -514,7 +514,7 @@ $$EU(a) = \sum_{s'} P(s' \mid a, s) \cdot U(s')$$
 
 The agent selects $a^* = \operatorname{argmax}_a EU(a)$.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Utility Function
 
@@ -536,7 +536,7 @@ The **utility function** $U(s)$ internalizes the performance measure. If the int
 <figcaption>A model-based, utility-based agent</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Utility-Based Taxi Agent
 
@@ -546,7 +546,7 @@ Goals provide a binary distinction (happy vs. unhappy), but utility allows compa
 
 ### Learning Agents
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Learning Agent
 
@@ -559,7 +559,7 @@ A **learning agent** improves its performance over time. It has four conceptual 
 <figcaption>A general learning agent</figcaption>
 </figure>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Learning Agent Components
 
@@ -573,7 +573,7 @@ Learning Agent Components
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Learning Taxi Agent
 
@@ -583,7 +583,7 @@ The taxi drives using its performance element. After a sharp left turn across th
 
 ## Knowledge Representation Concepts
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Three Levels of Representation
 
@@ -596,7 +596,7 @@ Agent components can represent the environment along an axis of increasing compl
 <figcaption>Three ways to represent states and transitions: (a) atomic, (b) factored, (c) structured</figcaption>
 </figure>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Atomic Representation
 
@@ -604,7 +604,7 @@ In an **atomic representation**, each state of the world is indivisible – it h
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Atomic Representation Example
 
@@ -612,7 +612,7 @@ For the route-finding problem, each state is simply the name of a city (e.g., Ar
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Factored Representation
 
@@ -620,7 +620,7 @@ A **factored representation** splits each state into a fixed set of **variables*
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Factored Representation Example
 
@@ -628,7 +628,7 @@ A taxi’s state might include variables: location (GPS coordinates), fuel level
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Structured Representation
 
@@ -636,7 +636,7 @@ A **structured representation** describes objects and their relationships explic
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Structured Representation Example
 

@@ -15,7 +15,7 @@ math: true
 
 The field of **ARTIFICIAL INTELLIGENCE** (AI) has organised around four competing approaches. They differ along two dimensions: human–centered vs. rational–centered, and focus on thought vs. action.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Intelligence and Artificial Intelligence
 
@@ -41,7 +41,7 @@ The **LAWS OF THOUGHT** tradition, dating to Aristotle’s syllogisms, holds tha
 
 The **RATIONAL AGENT** approach defines AI as designing agents that act to achieve the best expected outcome. This is the broadest approach: it subsumes logical reasoning when deduction is the best action, but also allows heuristic search, probabilistic inference, and learning.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Rationality
 
@@ -55,7 +55,7 @@ An agent’s expected utility for action $a$ is: $$U(a) = \sum_{o \in O} P(o \mi
 
 AI now overwhelmingly adopts the rational–agent view. It best unifies logic, probability, learning, and engineering: any method that produces optimal outcomes is welcome, regardless of whether it mimics human cognition. This book follows the rational–agent approach.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Examples of AI Systems
 
@@ -95,7 +95,7 @@ Foundational disciplines and their contributions to AI.
 
 **Linguistics** analysed language structure. Chomsky’s generative grammars and the Chomsky hierarchy classified formal languages, while Shannon’s information theory quantified communication and entropy.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Foundations in Practice
 
@@ -151,7 +151,7 @@ AI systems now match or exceed human performance in many narrow domains:
 
 - **EXPERT SYSTEMS:** Diagnostic tools in medicine, fault detection in manufacturing, credit scoring in finance.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 State–of–the–Art AI
 
@@ -167,7 +167,7 @@ State–of–the–Art AI
 
 ## AI as Science vs. Engineering
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 AI as Science vs. Engineering
 
@@ -179,7 +179,7 @@ AI as Science vs. Engineering
 
 The two goals often reinforce each other. A scientific insight into how humans solve a problem can inspire a better algorithm; conversely, engineering constraints reveal which cognitive assumptions are tractable. This book treats both perspectives, but emphasises the scientific principles that generalise across applications.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Science vs. Engineering in Practice
 
@@ -193,7 +193,7 @@ Science vs. Engineering in Practice
 
 Knowledge is the foundation of intelligent behaviour. AI systems represent knowledge so that they can reason, plan, and learn.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Knowledge and Related Concepts
 
@@ -223,7 +223,7 @@ Knowledge is classified along several dimensions:
 
 AI must represent all these types. Representing knowledge is the central problem of **KNOWLEDGE REPRESENTATION**, the subject of Chapters 11 and 12.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Knowledge Types in AI Systems
 
@@ -239,7 +239,7 @@ Knowledge Types in AI Systems
 
 **MACHINE LEARNING**, **ARTIFICIAL INTELLIGENCE**, and **data science** overlap but are distinct fields.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 AI, Machine Learning, and Data Science
 
@@ -255,7 +255,7 @@ AI, Machine Learning, and Data Science
 
 Historically, AI emphasised symbolic reasoning; ML emerged from statistics and pattern recognition. Modern AI integrates both: an autonomous vehicle uses ML for perception (object detection) and symbolic reasoning for planning (route selection). Data Science provides the infrastructure for collecting, cleaning, and interpreting the data that fuels learning.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Distinguishing the Three Fields
 

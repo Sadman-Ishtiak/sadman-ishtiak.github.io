@@ -15,7 +15,7 @@ In which we examine the problems that arise when we try to plan ahead in a world
 
 ## Games
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Game
 
@@ -29,7 +29,7 @@ A **game** in AI is a structured competitive environment with:
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Zero-Sum Game
 
@@ -37,7 +37,7 @@ A **zero-sum game** is one where the total payoff to all players is the same for
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Perfect Information
 
@@ -69,7 +69,7 @@ A game is formally defined as a search problem with these elements:
 <figcaption>A partial game tree for tic-tac-toe. Nodes represent board states; edges show moves labeled X or O. Terminal states are evaluated by the utility function.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Elements of a Game: Tic-Tac-Toe
 
@@ -99,7 +99,7 @@ The branching factor starts at 9 and decreases. The full tree has $9! = 362{,}88
 
 ## Optimal Decisions in Games
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Minimax Algorithm
 
@@ -118,10 +118,10 @@ $$\text{MINIMAX}(s) =
 
 <figure>
 <img src="/assets/images/ai-book/figures/book-005-p19.png" />
-<figcaption>A two-ply game tree showing minimax values. MAX’s best move is <span class="math inline"><em>a</em><sub>1</sub></span> (value 3), because MIN will force the worst outcome for MAX. Dotted branches at C are pruned by alpha-beta.</figcaption>
+<figcaption>A two-ply game tree showing minimax values. MAX’s best move is $a_1$ (value 3), because MIN will force the worst outcome for MAX. Dotted branches at C are pruned by alpha-beta.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Minimax Example
 
@@ -172,7 +172,7 @@ Optimal play: MAX plays $a_1$, MIN responds $b_1$, utility = 3.
 
 For games with three or more players, we replace the single utility value with a **vector** of values $\langle v_A, v_B, v_C \rangle$. At each node, the player whose turn it is chooses the move that maximizes their own component of the vector.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Three-Player Game
 
@@ -184,7 +184,7 @@ Multiplayer games naturally lead to **alliances**: if A and B are weak and C is 
 
 ## Alpha-Beta Pruning
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Alpha-Beta Pruning
 
@@ -204,7 +204,7 @@ Two parameters are maintained along each path:
 
 - **Alpha cutoff** at a MIN node: if $v \leq \alpha$, prune remaining branches (MAX would never allow this).
 
-*Figure: Alpha-beta pruning applied to the two-ply tree. After evaluating B (value 3), <span class="math inline"><em>α</em> = 3</span>. At C, the first leaf gives 2, so <span class="math inline"><em>β</em> = 2</span>. Since <span class="math inline"><em>α</em> ≥ <em>β</em></span>, the remaining children of C are pruned.*
+*Figure: Alpha-beta pruning applied to the two-ply tree. After evaluating B (value 3), $\alpha=3$. At C, the first leaf gives 2, so $\beta=2$. Since $\alpha \geq \beta$, the remaining children of C are pruned.*
 
 ```text
 	function ALPHA-BETA-SEARCH(state) returns an action
@@ -256,7 +256,7 @@ The effectiveness of alpha-beta depends on examining the best moves first. Techn
 
 A **transposition** occurs when different sequences of moves lead to the same position. A **transposition table** caches evaluated positions in a hash table, avoiding redundant recomputation. This can double the reachable search depth in chess.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Transposition in Chess
 
@@ -266,7 +266,7 @@ The sequences \[a1, b1, a2, b2\] and \[a2, b2, a1, b1\] both result in the same 
 
 ## Imperfect Real-Time Decisions
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Evaluation Function
 
@@ -274,7 +274,7 @@ An **evaluation function** EVAL(s) estimates the expected utility of a state fro
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Cutoff Test
 
@@ -299,7 +299,7 @@ $$\text{EVAL}(s) = w_1 f_1(s) + w_2 f_2(s) + \cdots + w_n f_n(s) = \sum_{i=1}^n 
 
 where $w_i$ is a weight and $f_i$ is a feature (e.g., piece count in chess).
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Material Evaluation in Chess
 
@@ -315,7 +315,7 @@ A position with one extra pawn typically gives a 72% chance of winning. Three ex
 
 ### Cutting Off Search
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Quiescence Search
 
@@ -323,7 +323,7 @@ Quiescence Search
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Horizon Effect
 
@@ -331,7 +331,7 @@ The **horizon effect** occurs when delaying tactics push an unavoidable bad even
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Horizon Effect in Chess
 
@@ -357,7 +357,7 @@ A black bishop is doomed but Black can check the white king repeatedly with pawn
 
 ## Stochastic Games
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Stochastic Games
 
@@ -365,7 +365,7 @@ Stochastic Games
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Expectiminimax
 
@@ -386,7 +386,7 @@ $$\text{EE}(s) =
 <figcaption>A game tree with chance nodes (circles). The value of a chance node is the weighted average of its children’s values.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Backgammon
 
@@ -406,7 +406,7 @@ In backgammon, dice are rolled at the start of each turn. White has 21 distinct 
 
 ## Partially Observable Games
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Imperfect Information
 
@@ -424,7 +424,7 @@ Kriegspiel is chess where each player sees only their own pieces. A referee anno
 
 - “Check by \[direction\]” — if the king is in check.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Kriegspiel KRK Endgame
 
@@ -472,7 +472,7 @@ For large numbers of deals (e.g., $\binom{26}{13} = 10{,}400{,}600$ in bridge), 
 
 State-of-the-art game programs and how they work.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Deep Blue vs. Kasparov (1997)
 
@@ -508,7 +508,7 @@ Rather than searching, some game programs rely on precomputed lookup tables. In 
 
 Heuristic minimax assumes leaf evaluations are exact, but they are estimates with error. When evaluations have independent errors with standard deviation $\sigma$, the minimax choice may be wrong.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Minimax Error
 
@@ -544,7 +544,7 @@ Humans play games using **goal-directed reasoning** (planning) rather than brute
 
 - The standard alpha-beta approach dominates tournament play, but alternative methods (MCTS, RL) have surpassed it in specific domains.
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Exam-Style Question
 
@@ -559,7 +559,7 @@ $$\text{Root} \rightarrow
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution
 

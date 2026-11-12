@@ -15,7 +15,7 @@ In which we design agents that can form representations of a complex world, use 
 
 ## Knowledge-Based Agents
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Knowledge Base (KB)
 
@@ -23,7 +23,7 @@ A **knowledge base** is a set of **sentences**. Each sentence is expressed in a 
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Inference
 
@@ -35,7 +35,7 @@ Inference
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Knowledge Level vs. Implementation Level
 
@@ -50,7 +50,7 @@ At the **knowledge level**, we specify only what the agent knows and what its go
 
 A knowledge-based agent program maintains a knowledge base (KB) and a counter $t$ indicating time. Given a percept, it constructs a percept sentence, tells the KB, asks for the best action, tells the KB the chosen action, and returns it.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 KB-Agent Pseudocode
 
@@ -74,7 +74,7 @@ The **declarative approach** builds an agent by TELLing it what it needs to know
 <figcaption>Two approaches to building knowledge-based agents. Declarative: TELL the agent what it needs to know. Procedural: encode behavior as code. Modern agents combine both.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Declarative vs. Procedural
 
@@ -90,7 +90,7 @@ The declarative approach is more flexible: the same knowledge works for any quer
 
 ## The Wumpus World
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Wumpus World
 
@@ -111,12 +111,12 @@ The wumpus environment is **discrete**, **static**, **single-agent**, **sequenti
 
 <figure>
 <img src="/assets/images/ai-book/figures/book-007-p5.png" />
-<figcaption>A typical wumpus world. The agent starts at <span class="math inline">[1, 1]</span> facing right.</figcaption>
+<figcaption>A typical wumpus world. The agent starts at $[1,1]$ facing right.</figcaption>
 </figure>
 
 The agent explores the world, using logical reasoning to infer safe squares. For example, no breeze in $[1,1]$ means $[1,2]$ and $[2,1]$ are safe. A breeze in $[2,1]$ suggests a pit in $[2,2]$ or $[3,1]$. A stench in $[1,2]$ implies the wumpus is nearby.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Wumpus Agent Trajectory
 
@@ -134,7 +134,7 @@ Wumpus Agent Trajectory
 
 ## Logic
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Syntax and Semantics
 
@@ -142,7 +142,7 @@ Syntax and Semantics
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Model and Satisfaction
 
@@ -150,7 +150,7 @@ A **model** $m$ is a mathematical abstraction that fixes the truth or falsehood 
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Entailment
 
@@ -158,7 +158,7 @@ Entailment
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Inference, Soundness, Completeness
 
@@ -177,7 +177,7 @@ $$\text{KB} \vdash_i \alpha \quad\text{means}\quad \text{inference algorithm } i
 <figcaption>The correspondence between world and representation. Sentences represent aspects of the real world; reasoning constructs new sentences that correspond to new aspects that actually follow.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Grounding
 
@@ -190,7 +190,7 @@ Grounding
 <figcaption>Hierarchy of logical systems ordered by expressiveness.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Entailment in Wumpus World
 
@@ -200,7 +200,7 @@ KB = rules of wumpus world + percepts (no breeze in $[1,1]$, breeze in $[2,1]$).
 
 ## Propositional Logic: A Very Simple Logic
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Propositional Logic
 
@@ -208,7 +208,7 @@ Propositional Logic
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Syntax of Propositional Logic
 
@@ -229,59 +229,59 @@ Operator precedence (highest to lowest): $\neg, \land, \lor, \Rightarrow, \Leftr
 </div>
 
 <figure>
-<table>
+<table markdown="1">
 <thead>
 <tr class="header">
-<th style="text-align: center;"><span class="math inline"><em>P</em></span></th>
-<th style="text-align: center;"><span class="math inline"><em>Q</em></span></th>
-<th style="text-align: center;"><span class="math inline">¬<em>P</em></span></th>
-<th style="text-align: center;"><span class="math inline"><em>P</em> ∧ <em>Q</em></span></th>
-<th style="text-align: center;"><span class="math inline"><em>P</em> ∨ <em>Q</em></span></th>
-<th style="text-align: center;"><span class="math inline"><em>P</em> ⇒ <em>Q</em></span></th>
-<th style="text-align: center;"><span class="math inline"><em>P</em> ⇔ <em>Q</em></span></th>
-<th style="text-align: center;"></th>
+<th style="text-align: left;">$P$</th>
+<th style="text-align: left;">$Q$</th>
+<th style="text-align: left;">$\neg P$</th>
+<th style="text-align: left;">$P \land Q$</th>
+<th style="text-align: left;">$P \lor Q$</th>
+<th style="text-align: left;">$P \Rightarrow Q$</th>
+<th style="text-align: left;">$P \Leftrightarrow Q$</th>
+<th style="text-align: left;"></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;"></td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;"></td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;"></td>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;">T</td>
-<td style="text-align: center;"></td>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;">F</td>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;">T</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -290,7 +290,7 @@ Operator precedence (highest to lowest): $\neg, \land, \lor, \Rightarrow, \Leftr
 
 A **model** in propositional logic simply fixes the truth value (true or false) for every proposition symbol. For $n$ symbols, there are $2^n$ possible models. The truth of any complex sentence is computed recursively from its components.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Tautology, Contradiction, Contingency
 
@@ -307,7 +307,7 @@ Tautology, Contradiction, Contingency
 <figcaption>Classification of propositional sentences by truth in models. Every sentence is either valid (true in all models), unsatisfiable (false in all models), or contingent (true in some, false in others).</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Wumpus World Knowledge Base
 
@@ -331,7 +331,7 @@ R_5 &: B_{2,1}
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Model Checking Inference
 
@@ -341,7 +341,7 @@ Model Checking Inference
 
 ## Propositional Theorem Proving
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Logical Equivalence, Validity, Satisfiability
 
@@ -358,7 +358,7 @@ Logical Equivalence, Validity, Satisfiability
 The **deduction theorem**: $\alpha \models \beta$ iff $(\alpha \Rightarrow \beta)$ is valid. Also: $\alpha \models \beta$ iff $(\alpha \land \neg\beta)$ is unsatisfiable (**reductio ad absurdum** or proof by contradiction).
 
 <figure>
-<table>
+<table markdown="1">
 <thead>
 <tr class="header">
 <th style="text-align: left;"><strong>Name</strong></th>
@@ -368,38 +368,38 @@ The **deduction theorem**: $\alpha \models \beta$ iff $(\alpha \Rightarrow \beta
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Modus Ponens</td>
-<td style="text-align: left;"><span class="math inline">$\displaystyle\frac{\alpha \Rightarrow \beta,\quad \alpha}{\beta}$</span></td>
+<td style="text-align: left;">$\displaystyle\frac{\alpha \Rightarrow \beta,\quad \alpha}{\beta}$</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Modus Tollens</td>
-<td style="text-align: left;"><span class="math inline">$\displaystyle\frac{\alpha \Rightarrow \beta,\quad \neg\beta}{\neg\alpha}$</span></td>
+<td style="text-align: left;">$\displaystyle\frac{\alpha \Rightarrow \beta,\quad \neg\beta}{\neg\alpha}$</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">And-Elimination</td>
-<td style="text-align: left;"><span class="math inline">$\displaystyle\frac{\alpha \land \beta}{\alpha}$</span></td>
+<td style="text-align: left;">$\displaystyle\frac{\alpha \land \beta}{\alpha}$</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">And-Introduction</td>
-<td style="text-align: left;"><span class="math inline">$\displaystyle\frac{\alpha,\quad \beta}{\alpha \land \beta}$</span></td>
+<td style="text-align: left;">$\displaystyle\frac{\alpha,\quad \beta}{\alpha \land \beta}$</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Or-Introduction</td>
-<td style="text-align: left;"><span class="math inline">$\displaystyle\frac{\alpha}{\alpha \lor \beta}$</span></td>
+<td style="text-align: left;">$\displaystyle\frac{\alpha}{\alpha \lor \beta}$</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Unit Resolution</td>
-<td style="text-align: left;"><span class="math inline">$\displaystyle\frac{\ell_1 \lor \cdots \lor \ell_k,\quad m}{\ell_1 \lor \cdots \lor \ell_{i-1} \lor \ell_{i+1} \lor \cdots \lor \ell_k}$</span></td>
+<td style="text-align: left;">$\displaystyle\frac{\ell_1 \lor \cdots \lor \ell_k,\quad m}{\ell_1 \lor \cdots \lor \ell_{i-1} \lor \ell_{i+1} \lor \cdots \lor \ell_k}$</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Full Resolution</td>
-<td style="text-align: left;"><span class="math inline">$\displaystyle\frac{\ell_1 \lor \cdots \lor \ell_k,\quad m_1 \lor \cdots \lor m_n}{\ell_1 \lor \cdots \lor \ell_{i-1} \lor \ell_{i+1} \lor \cdots \lor \ell_k \lor m_1 \lor \cdots \lor m_{j-1} \lor m_{j+1} \lor \cdots \lor m_n}$</span></td>
+<td style="text-align: left;">$\displaystyle\frac{\ell_1 \lor \cdots \lor \ell_k,\quad m_1 \lor \cdots \lor m_n}{\ell_1 \lor \cdots \lor \ell_{i-1} \lor \ell_{i+1} \lor \cdots \lor \ell_k \lor m_1 \lor \cdots \lor m_{j-1} \lor m_{j+1} \lor \cdots \lor m_n}$</td>
 </tr>
 </tbody>
 </table>
-<figcaption>Key inference rules for propositional logic. Complementary literals <span class="math inline">ℓ<sub><em>i</em></sub></span> and <span class="math inline"><em>m</em><sub><em>j</em></sub></span> cancel in resolution.</figcaption>
+<figcaption>Key inference rules for propositional logic. Complementary literals $\ell_i$ and $m_j$ cancel in resolution.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Standard Logical Equivalences
 
@@ -422,7 +422,7 @@ $$\begin{aligned}
 
 ### Resolution
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Conjunctive Normal Form (CNF)
 
@@ -442,10 +442,10 @@ Conjunctive Normal Form (CNF)
 
 <figure>
 <img src="/assets/images/ai-book/figures/book-003-p3.png" />
-<figcaption>Resolution algorithm flow. To prove <span class="math inline"><em>K</em><em>B</em> ⊨ <em>α</em></span>, show <span class="math inline"><em>K</em><em>B</em> ∧ ¬<em>α</em></span> is unsatisfiable by deriving the empty clause.</figcaption>
+<figcaption>Resolution algorithm flow. To prove $KB \models \alpha$, show $KB \land \neg\alpha$ is unsatisfiable by deriving the empty clause.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Wumpus Resolution Proof
 
@@ -473,7 +473,7 @@ R_{10} &: \neg P_{1,2} \land \neg P_{2,1}
 
 ### Horn Clauses and Definite Clauses
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Horn and Definite Clauses
 
@@ -492,7 +492,7 @@ Horn clauses are closed under resolution. Entailment with Horn clauses is decida
 <figcaption>Classification of propositional clauses by form.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Forward Chaining
 
@@ -514,7 +514,7 @@ Rules: $A \land B \Rightarrow L$, $A \land P \Rightarrow L$, $B \land L \Rightar
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Backward Chaining
 
@@ -546,7 +546,7 @@ Backward chaining touches only relevant facts, making it more efficient for spec
 
 ## Effective Propositional Model Checking
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 SAT Problem
 
@@ -561,7 +561,7 @@ The **SAT problem** is the problem of determining whether a propositional senten
 
 ### DPLL
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 DPLL Algorithm
 
@@ -580,7 +580,7 @@ The **DPLL** (Davis–Putnam–Logemann–Loveland) algorithm is a complete, bac
 <figcaption>DPLL algorithm flow. At each step: check termination, apply pure symbol heuristic, apply unit clause heuristic, then branch on a symbol.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 DPLL Trace
 
@@ -610,7 +610,7 @@ Consider clauses: $(A \lor B) \land (A \lor \neg C) \land (\neg B \lor \neg C)$.
 
 ### WalkSAT
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 WalkSAT
 
@@ -626,10 +626,10 @@ WalkSAT is sound (finds model if one exists with enough time) but not complete (
 
 <figure>
 <img src="/assets/images/ai-book/figures/book-007-p30.png" />
-<figcaption>WalkSAT algorithm flow. With probability <span class="math inline"><em>p</em></span> perform random walk, otherwise min-conflicts.</figcaption>
+<figcaption>WalkSAT algorithm flow. With probability $p$ perform random walk, otherwise min-conflicts.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 WalkSAT Trace
 
@@ -655,7 +655,7 @@ Clauses: $(A \lor B) \land (\neg A \lor \neg B) \land (A \lor \neg B)$. Random a
 
 - Hardest random 3-SAT instances cluster near the satisfiability threshold ($m/n \approx 4.26$).
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Satisfiability Threshold Conjecture
 
@@ -671,7 +671,7 @@ For random $k$-CNF sentences with $n$ symbols and $m$ clauses, there exists a th
 
 ## Agents Based on Propositional Logic
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Fluent and Atemporal Variable
 
@@ -679,7 +679,7 @@ A **fluent** is an aspect of the world that changes over time, indexed by time s
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Frame Problem
 
@@ -695,7 +695,7 @@ $$F^{t+1} \Leftrightarrow ActionCausesF^t \lor (F^t \land \neg ActionCausesNotF^
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Successor-State Axiom for HaveArrow
 
@@ -708,7 +708,7 @@ $$HaveArrow^{t+1} \Leftrightarrow (HaveArrow^t \land \neg Shoot^t)$$ The arrow i
 <figcaption>Hybrid agent architecture for the wumpus world. The agent combines logical inference for state estimation with A* search for route planning.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Hybrid Wumpus Agent Logic
 
@@ -756,7 +756,7 @@ The hybrid agent maintains a 1-CNF belief state (conjunction of literals) as a *
 <figcaption>Three types of agents based on propositional logic, from simplest (reflex) to most complex (SATPlan).</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Three PL Agent Types
 
@@ -770,7 +770,7 @@ Three PL Agent Types
 
 ### SATPlan
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 SATPlan
 
@@ -780,7 +780,7 @@ SATPlan
 
 ## Reasoning in Propositional Logic
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Deductive Reasoning
 
@@ -788,7 +788,7 @@ Deductive Reasoning
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Inductive Reasoning
 
@@ -796,7 +796,7 @@ Inductive Reasoning
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Abductive Reasoning
 
@@ -809,7 +809,7 @@ Abductive Reasoning
 <figcaption>Three types of reasoning in propositional logic.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Knights and Knaves Puzzle
 
@@ -831,7 +831,7 @@ On an island, knights always tell the truth and knaves always lie. You meet two 
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Exam Question
 
@@ -839,7 +839,7 @@ What are the drawbacks of propositional logic?
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution
 
@@ -855,7 +855,7 @@ Solution
 
 </div>
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Exam Question
 
@@ -863,7 +863,7 @@ What are the components of a knowledge base system? Explain with a suitable diag
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution
 

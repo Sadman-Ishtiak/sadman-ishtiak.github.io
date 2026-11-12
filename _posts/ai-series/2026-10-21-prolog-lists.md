@@ -15,7 +15,7 @@ math: true
 
 A list in Prolog is a sequence of elements enclosed in square brackets. The empty list is written as `[]`. Internally, a list is represented as a binary tree where the head is the first element and the tail is the rest of the list.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Head and Tail
 
@@ -42,7 +42,7 @@ H = [1, 2]
 T = [3, 4]
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 List Decomposition
 
@@ -62,7 +62,7 @@ Query: `print_all([apple, banana, cherry]).` prints each fruit on a separate lin
 
 ### Membership
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 List Membership
 
@@ -75,7 +75,7 @@ list_member(X, [X|_]).
 list_member(X, [_|TAIL]) :- list_member(X, TAIL).
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Membership Queries
 
@@ -98,7 +98,7 @@ The third query demonstrates backtracking: Prolog finds all elements one by one.
 
 ### Length Calculation
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 List Length
 
@@ -113,7 +113,7 @@ list_length([_|TAIL], N) :-
     N is N1 + 1.
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Length in Action
 
@@ -129,7 +129,7 @@ N = 0
 
 ### Concatenation
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 List Concatenation
 
@@ -143,7 +143,7 @@ list_concat([X1|L1], L2, [X1|L3]) :-
     list_concat(L1, L2, L3).
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Concatenation Examples
 
@@ -161,7 +161,7 @@ The predicate can also be used to split a list by leaving the third argument unb
 
 ### Deletion
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Deletion from a List
 
@@ -176,7 +176,7 @@ list_delete(X, [Y|L2], [Y|L1]) :-
     list_delete(X, L2, L1).
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Deletion Examples
 
@@ -192,7 +192,7 @@ Only the first occurrence is removed.
 
 ### Insertion
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Insertion into a List
 
@@ -206,7 +206,7 @@ H = [1, 2]
 T = [3, 4]
 ```1
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Insertion Examples
 
@@ -226,7 +226,7 @@ Treating lists as sets (ignoring order and duplicates), Prolog can compute union
 
 ### Set Union
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Set Union
 
@@ -240,7 +240,7 @@ H = [1, 2]
 T = [3, 4]
 ```3
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Union Example
 
@@ -256,7 +256,7 @@ The element `a` appears only in the first set; `b` and `c` are common and not du
 
 ### Set Intersection
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Set Intersection
 
@@ -270,7 +270,7 @@ H = [1, 2]
 T = [3, 4]
 ```5
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Intersection Example
 
@@ -286,7 +286,7 @@ Only `b` and `d` are common to both sets.
 
 ## Bubble Sort
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Bubble Sort
 
@@ -300,7 +300,7 @@ H = [1, 2]
 T = [3, 4]
 ```7
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Bubble Sort in Action
 

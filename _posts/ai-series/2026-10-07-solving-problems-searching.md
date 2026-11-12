@@ -15,7 +15,7 @@ Search is the fundamental mechanism by which an intelligent agent can deliberate
 
 ## Problem-Solving Agents
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Problem-Solving Agent
 
@@ -50,7 +50,7 @@ The agent carries out the actions in the solution, one by one. In the simplest c
 
 Abstraction is crucial for making problem-solving tractable. A **valid abstraction** preserves the essential structure — any action that is possible in the abstracted world must be possible to implement in the real world, and any solution found in the abstract space must be executable in the concrete world.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Abstraction in Travel Planning
 
@@ -64,7 +64,7 @@ Search problems fall into two broad categories: **toy problems** that illustrate
 
 ### Toy Problems
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Toy Problem
 
@@ -85,7 +85,7 @@ This is the running example used throughout AIMA. The agent is in Arad, Romania,
 
 A two-square environment in which a vacuum cleaner can move left, move right, or suck dirt. The goal is to clean all squares. This problem is useful for comparing how different search strategies handle a small state space ($2^2 \times 2^2 = 16$ states counting dirt positions and the agent’s location).
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Vacuum World States
 
@@ -111,7 +111,7 @@ Place eight queens on a chessboard so that no two attack each other. In the **in
 
 ### Real-World Problems
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Real-World Problem
 
@@ -133,7 +133,7 @@ Predict the three-dimensional structure of a protein from its amino acid sequenc
 
 ## Searching for Solutions
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Search Tree
 
@@ -164,7 +164,7 @@ Each node in the search tree contains:
 
 ### Tree Search vs. Graph Search
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Tree Search
 
@@ -172,7 +172,7 @@ A search algorithm that explores the search tree without checking for repeated s
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Graph Search
 
@@ -180,7 +180,7 @@ A search algorithm that maintains an **explored set** (or **closed list**) of st
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Repeated States in the Romania Problem
 
@@ -200,7 +200,7 @@ come in three varieties:
 
 ### Pseudocode
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 General Search Algorithm
 
@@ -241,7 +241,7 @@ function graph-search(problem, frontier) returns a solution or failure
 
 ## Uninformed Search Strategies
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Uninformed (Blind) Search
 
@@ -251,7 +251,7 @@ Search that has no information about the number of steps or cost from a state to
 
 ### Breadth-First Search (BFS)
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Breadth-First Search
 
@@ -283,7 +283,7 @@ function bfs(problem) returns a solution or failure
         frontier $\leftarrow$ insert(child, frontier)
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 BFS on Romania
 
@@ -301,7 +301,7 @@ BFS finds the shallowest goal — Fagaras $\to$ Bucharest at depth 3 (Arad, Sib
 
 ### Uniform-Cost Search (UCS)
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Uniform-Cost Search
 
@@ -336,7 +336,7 @@ function ucs(problem) returns a solution or failure
 
 ### Depth-First Search (DFS)
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Depth-First Search
 
@@ -369,7 +369,7 @@ function dfs(problem) returns a solution or failure
 
 ### Depth-Limited Search (DLS)
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Depth-Limited Search
 
@@ -386,7 +386,7 @@ The depth limit $\ell$ is knowledge about the problem. If $\ell$ is set too low,
 
 ### Iterative Deepening Search (IDS)
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Iterative Deepening Search
 
@@ -409,7 +409,7 @@ function ids(problem) returns a solution or failure
       return result
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 IDS on a Binary Tree
 
@@ -429,7 +429,7 @@ Total: 15 nodes. BFS would generate $1 + 2 + 4 + 8 = 15$ nodes as well. The spac
 
 ### Bidirectional Search
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Bidirectional Search
 
@@ -461,7 +461,7 @@ Comparison of uninformed search strategies. $b$ is the branching factor, $d$ is 
 
 ## Informed (Heuristic) Search Strategies
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Informed (Heuristic) Search
 
@@ -469,7 +469,7 @@ Search that uses **domain-specific knowledge** — a heuristic function $h(n)$ �
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Heuristic Function
 
@@ -483,7 +483,7 @@ For the Romania problem, the straight-line distance heuristic $h_{\text{SLD}}(n)
 
 ### Greedy Best-First Search
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Greedy Best-First Search
 
@@ -498,7 +498,7 @@ $$\begin{aligned}
 \text{Complete: } \text{No} &\qquad \text{Optimal: } \text{No}
 \end{aligned}$$
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Greedy Best-First on Romania
 
@@ -516,7 +516,7 @@ The path Arad $\to$ Sibiu $\to$ Fagaras $\to$ Bucharest has cost 450. While the
 
 ### A\* Search
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 A\* Search
 
@@ -549,7 +549,7 @@ function astar(problem) returns a solution or failure
         replace frontier node with child
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 A\* on Romania
 
@@ -571,7 +571,7 @@ A\* finds the optimal path Arad $\to$ Sibiu $\to$ R. Vilcea $\to$ Pitesti $\to$ 
 
 ### Iterative Deepening A\* (IDA\*)
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Iterative Deepening A\* (IDA\*)
 
@@ -587,7 +587,7 @@ $$\text{Space: } O(bd) \qquad
 
 ### Recursive Best-First Search (RBFS)
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Recursive Best-First Search (RBFS)
 
@@ -603,7 +603,7 @@ A heuristic function is the bridge between uninformed and informed search. The q
 
 ### Admissibility and Consistency
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Admissible Heuristic
 
@@ -613,7 +613,7 @@ A heuristic $h(n)$ is **admissible** if it never overestimates the true cost to 
 
 Admissibility is the key property that guarantees A\* optimality. The straight-line distance $h_{\text{SLD}}$ is admissible for road networks because Euclidean distance never exceeds the shortest driving route.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Consistent (Monotonic) Heuristic
 
@@ -621,7 +621,7 @@ A heuristic $h(n)$ is **consistent** (or **monotonic**) if for every node $n$ an
 
 </div>
 
-<div style="border-left:4px solid #0277bd;background:#e1f5fe;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #0277bd;background:#e1f5fe;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Properties
 
@@ -631,7 +631,7 @@ Every consistent heuristic is admissible, but not every admissible heuristic is 
 
 ### Effective Branching Factor
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Effective Branching Factor ($b^*$)
 
@@ -643,7 +643,7 @@ A measure of heuristic quality. If A\* expands $N$ nodes and the optimal solutio
 
 A powerful technique for deriving admissible heuristics is to define a **relaxed problem** — a simplified version of the original problem in which some constraints are removed. The cost of an optimal solution in the relaxed problem is a lower bound on the cost in the original problem, and hence an admissible heuristic.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Relaxation for the 8-Puzzle
 
@@ -659,7 +659,7 @@ Both $h_1$ and $h_2$ (Manhattan distance) are admissible. For the 8-puzzle, $h_2
 
 ### Pattern Databases
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Pattern Database (PDB)
 
@@ -671,7 +671,7 @@ Pattern databases produce very accurate heuristics. For the 15-puzzle, a combina
 
 ### Heuristic Domination
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Domination
 
@@ -681,7 +681,7 @@ If $h_1(n) \leq h_2(n) \leq h^*(n)$ for all nodes $n$, then $h_2$ **dominates** 
 
 In the 8-puzzle: $h_1$ (misplaced tiles, 0–8) $\leq$ $h_2$ (Manhattan distance, 0–22) $\leq$ $h^*$ (true optimal cost, up to 31). A\* with $h_2$ consistently expands fewer nodes than A\* with $h_1$.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Heuristic Comparison for the 8-Puzzle
 

@@ -15,7 +15,7 @@ In which we notice that the world is blessed with many objects, some of which ar
 
 ## Representation Revisited
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Compositionality
 
@@ -23,7 +23,7 @@ A language is **compositional** if the meaning of a sentence is a function of th
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Ambiguity
 
@@ -33,7 +33,7 @@ Ambiguity
 
 Propositional logic has three desirable properties: it is **declarative** (meaning depends on a truth relation between sentences and possible worlds), **compositional**, and it handles partial information using disjunction and negation. However, it lacks the expressive power to concisely describe environments with many objects.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Limitation of Propositional Logic
 
@@ -41,7 +41,7 @@ In the wumpus world, we had to write a separate rule for each square: $$B_{1,1} 
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Object, Relation, Function, Property
 
@@ -62,7 +62,7 @@ In FOL, the world consists of:
 <figcaption>The three kinds of symbols in first-order logic map to the three kinds of things in the world: objects, relations, and functions.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Ontological Commitment
 
@@ -78,7 +78,7 @@ The **ontological commitment** of a logic is what it assumes about the nature of
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Epistemological Commitment
 
@@ -92,13 +92,13 @@ The **epistemological commitment** of a logic is what an agent can believe about
 
 </div>
 
-| Language            |      Ontological Commitment      |  Epistemological Commitment  |
-|:--------------------|:--------------------------------:|:----------------------------:|
-| Propositional logic |              facts               |      true/false/unknown      |
-| First-order logic   |    facts, objects, relations     |      true/false/unknown      |
-| Temporal logic      | facts, objects, relations, times |      true/false/unknown      |
-| Probability theory  |              facts               | degree of belief $\in [0,1]$ |
-| Fuzzy logic         |    facts with degree of truth    |     known interval value     |
+| Language            | Ontological Commitment           | Epistemological Commitment   |
+|:--------------------|:---------------------------------|:-----------------------------|
+| Propositional logic | facts                            | true/false/unknown           |
+| First-order logic   | facts, objects, relations        | true/false/unknown           |
+| Temporal logic      | facts, objects, relations, times | true/false/unknown           |
+| Probability theory  | facts                            | degree of belief $\in [0,1]$ |
+| Fuzzy logic         | facts with degree of truth       | known interval value         |
 
 Formal languages and their ontological and epistemological commitments
 
@@ -114,7 +114,7 @@ Formal languages and their ontological and epistemological commitments
 
 ### Temporal Logic vs. First-Order Logic
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Temporal Logic
 
@@ -126,7 +126,7 @@ FOL describes a static world—it asserts what is true at a given moment but can
 
 The choice between FOL and temporal logic depends on the domain: static domains (family trees, mathematical theorems) are well served by FOL; dynamic domains (planning, protocols, reactive systems) benefit from temporal logic’s explicit time operators.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 FOL vs. Temporal Logic
 
@@ -142,7 +142,7 @@ The temporal version captures change—kings are born as princes and become king
 
 ## Syntax and Semantics of First-Order Logic
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Domain and Domain Elements
 
@@ -150,7 +150,7 @@ The **domain** of a model is the set of objects (or **domain elements**) it cont
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Constant, Predicate, and Function Symbols
 
@@ -168,7 +168,7 @@ Each predicate and function symbol has an **arity** that fixes the number of arg
 
 An **interpretation** maps constant symbols to objects, predicate symbols to relations on those objects, and function symbols to functions on those objects.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Interpretation Example
 
@@ -186,7 +186,7 @@ A model with objects: Richard the Lionheart, King John, their left legs, and a c
 
 ### Terms and Atomic Sentences
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Term
 
@@ -194,7 +194,7 @@ A **term** is a logical expression that refers to an object. Constant symbols ar
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Terms and Their References
 
@@ -210,7 +210,7 @@ Every term, no matter how complex, denotes exactly one object in the domain.
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Atomic Sentence
 
@@ -218,7 +218,7 @@ An **atomic sentence** (or **atom**) is formed from a predicate symbol optionall
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Atomic Sentence Truth Conditions
 
@@ -242,7 +242,7 @@ Then:
 
 ### Quantifiers
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Universal Quantifier
 
@@ -250,7 +250,7 @@ $\forall x \; P$ means $P$ is true for **every** object $x$. The natural connect
 
 </div>
 
-<div style="border-left:4px solid #ef6c00;background:#fff3e0;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #ef6c00;background:#fff3e0;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Common Mistake
 
@@ -259,7 +259,7 @@ $\forall x \; King(x) \land Person(x)$ means “Everything is a king and a perso
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Universal Quantifier Examples
 
@@ -269,7 +269,7 @@ Universal Quantifier Examples
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Existential Quantifier
 
@@ -277,7 +277,7 @@ $\exists x \; P$ means $P$ is true for **at least one** object $x$. The natural 
 
 </div>
 
-<div style="border-left:4px solid #ef6c00;background:#fff3e0;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #ef6c00;background:#fff3e0;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Common Mistake
 
@@ -286,7 +286,7 @@ $\exists x \; Crown(x) \Rightarrow OnHead(x, John)$ is true if any object is not
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Existential Quantifier Examples
 
@@ -323,7 +323,7 @@ When quantifiers are mixed, order matters critically: $$\forall x \; \exists y \
 
 Nested quantifier patterns
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Nested Quantifier Example
 
@@ -339,7 +339,7 @@ These are **not** logically equivalent.
 
 ### Equality Symbol
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Equality
 
@@ -347,7 +347,7 @@ The **equality symbol** ($=$) signifies that two terms refer to the same object:
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Using Equality
 
@@ -363,7 +363,7 @@ Equality lets us count, distinguish, and identify objects—something impossible
 
 ### Database Semantics
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Database Semantics
 
@@ -379,7 +379,7 @@ This semantics is used in database systems and logic programming (Prolog).
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Standard Semantics vs. Database Semantics
 
@@ -395,7 +395,7 @@ Database semantics trades expressiveness for efficiency: query answering becomes
 
 ## Using First-Order Logic
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Assertion, Query, Goal
 
@@ -407,7 +407,7 @@ Sentences are added to a knowledge base using **TELL** (called **assertions**). 
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Substitution and Binding List
 
@@ -427,7 +427,7 @@ Substitution and Binding List
 
 English to FOL translation patterns
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 English to FOL Examples
 
@@ -441,7 +441,7 @@ English to FOL Examples
 
 ### Definition, Theorem, and Peano Axioms
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Definition and Theorem
 
@@ -449,7 +449,7 @@ A **definition** is an axiom of the form $\forall x, y \; P(x,y) \Leftrightarrow
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Peano Axioms (Natural Numbers)
 
@@ -470,7 +470,7 @@ Addition is defined as repeated application of the successor function.
 
 ## Knowledge Engineering in First-Order Logic
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Knowledge Engineering
 
@@ -494,7 +494,7 @@ Knowledge Engineering
 
 7.  **Debug the KB**: fix missing or incorrect axioms.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Ontology
 
@@ -504,7 +504,7 @@ An **ontology** is a particular theory of the nature of being or existence. The 
 
 ### Diagnostic vs. Causal Rules
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Diagnostic Rule vs. Causal Rule
 
@@ -527,7 +527,7 @@ The digital circuit domain illustrates the knowledge engineering process. Consid
 
 - Behavior: $\forall g \; Gate(g) \land Type(g) = AND \Rightarrow (Signal(Out(1,g)) = 0 \Leftrightarrow \exists n \; Signal(In(n,g)) = 0)$
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Circuit Verification Query
 
@@ -543,7 +543,7 @@ Answers: $\{i_1/1, i_2/1, i_3/0\}$, $\{i_1/1, i_2/0, i_3/1\}$, $\{i_1/0, i_2/1, 
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Higher-Order Logic
 
@@ -573,7 +573,7 @@ Logical equivalences in FOL
 
 ### Relational Properties
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Relational Properties
 
@@ -599,15 +599,15 @@ A binary relation $R$ can be characterized by the following properties:
 </figure>
 
 | Relation               | Reflexive | Symmetric | Transitive | Antisymmetric |
-|:-----------------------|:---------:|:---------:|:----------:|:-------------:|
-| Equality ($=$)         |    Yes    |    Yes    |    Yes     |      Yes      |
-| $\leq$ (less or equal) |    Yes    |    No     |    Yes     |      Yes      |
-| Sibling                |    No     |    Yes    |     No     |      No       |
-| Ancestor               |    No     |    No     |    Yes     |      No       |
+|:-----------------------|:----------|:----------|:-----------|:--------------|
+| Equality ($=$)         | Yes       | Yes       | Yes        | Yes           |
+| $\leq$ (less or equal) | Yes       | No        | Yes        | Yes           |
+| Sibling                | No        | Yes       | No         | No            |
+| Ancestor               | No        | No        | Yes        | No            |
 
 Properties of common relations
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Characterizing a Relation
 
@@ -625,7 +625,7 @@ If all three hold, $R$ is an equivalence relation that partitions the domain int
 
 ## Knowledge Representation in FOL
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Knowledge Representation in FOL
 
@@ -652,7 +652,7 @@ owns(nono, m1).
 missile(m1).
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Proof that Colonel West is a Criminal
 
@@ -690,7 +690,7 @@ Therefore $criminal(West)$ is true.
 
 - FOL reasoning is **semidecidable**: if a sentence is entailed, a proof will eventually be found; but if not, the algorithm may never terminate.
 
-<div style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #f57f17;background:#fffde7;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Exam Question
 
@@ -706,7 +706,7 @@ Translate the following sentences into First-Order Logic:
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#f1f8e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Solution
 

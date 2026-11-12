@@ -15,7 +15,7 @@ math: true
 
 Prolog (short for **PROGRAMMING IN LOGIC**) is a declarative programming language based on first-order logic. Unlike imperative languages (C, Java, Python) where the programmer specifies *how* to compute a result, Prolog focuses on *what* the result should be. The programmer declares facts and rules, and Prolog’s built-in inference engine finds the answer automatically.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Prolog
 
@@ -23,7 +23,7 @@ Prolog
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Declarative Programming
 
@@ -33,7 +33,7 @@ Declarative Programming
 
 Prolog is restricted to **HORN CLAUSES** – a subset of first-order logic where each clause has at most one positive literal. This restriction guarantees efficient, goal-directed inference.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Horn Clause
 
@@ -46,7 +46,7 @@ A **HORN CLAUSE** is a logical clause with at most one positive literal (the hea
 <figcaption>Prolog belongs to the logic programming sub-branch of the declarative paradigm.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Prolog in Practice
 
@@ -68,7 +68,7 @@ Popular Prolog implementations include SWI-Prolog, GNU Prolog, and SICStus Prolo
 
 A Prolog program consists of **CLAUSES**. There are two types: **FACTS** (unconditionally true) and **RULES** (conditionally true).
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Facts and Rules
 
@@ -99,7 +99,7 @@ The comma `,` between goals means **CONJUNCTION** – all goals must succeed. Th
 > `friend(X, Y) :- likes(X, Z), likes(Y, Z).`  
 > “X is a friend of Y if X likes Z and Y like the same Z.”
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Facts and Rules in Action
 
@@ -121,7 +121,7 @@ Query: `friends(ali, X).` produces `X = bob`.
 
 Once facts and rules are loaded into Prolog, we ask questions using **QUERIES**. A query is a goal (or conjunction of goals) that Prolog attempts to satisfy.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Query
 
@@ -160,7 +160,7 @@ X = anthony ;
 X = bruce.
 ```
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Running Queries
 
@@ -176,7 +176,7 @@ Press `a` (SWI-Prolog) to see all solutions at once.
 
 ### Family Relationships
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Family Relationships
 
@@ -205,7 +205,7 @@ brotherof(X, Y) :- parentof(Z, X), male(X), parentof(Z, Y).
 
 **Explanation:** `siblingof(X, Y)` is true if there exists a parent Z such that Z is a parent of both X and Y. `brotherof(X, Y)` adds the condition that X is male.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Family Relationships
 
@@ -231,7 +231,7 @@ Output:
 
 ### Printing a List of Items
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Loop-over-Failure Pattern
 
@@ -254,7 +254,7 @@ products :- item(X), write(X), nl, fail.
 
 **Explanation:** `products` first binds X to `tshirt`, writes it, then `fail` forces backtracking. Prolog backtracks to `item(X)` and binds X to the next item. This repeats until all items are exhausted, then the rule fails silently.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Printing Items
 
@@ -277,7 +277,7 @@ The `false.` at the end is normal – it signals that Prolog exhausted all alter
 
 ### Maximum of Two Numbers
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Comparison Operators in Prolog
 
@@ -294,7 +294,7 @@ max(X, Y, Y) :- Y > X.
 
 **Explanation:** Two rules define `max/3`. The first rule succeeds if X is greater than or equal to Y, unifying the third argument with X. The second rule handles the case where Y is greater than X.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Maximum of Two Numbers
 
@@ -320,7 +320,7 @@ Output:
 
 ### GPA Lookup
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Interactive I/O Predicates
 
@@ -345,7 +345,7 @@ result :- write('Enter student name:'),
 
 **Explanation:** The `result` predicate prompts the user, reads a name, looks up the GPA from the facts, and prints it. If the name is not found, Prolog reports `false`.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 GPA Lookup
 
@@ -364,7 +364,7 @@ The period `.` after the entered name is required (Prolog expects a term termina
 
 ### Student-Professor Relationships
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Joining Facts via Shared Variables
 
@@ -389,7 +389,7 @@ professor(X, Y) :- teaches(X, Z), studies(Y, Z).
 
 **Explanation:** `professor(X, Y)` is true if X teaches a course Z and Y studies that same course Z. The variable Z unifies both clauses, linking professors to students via shared courses.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Student-Professor Relationships
 
@@ -419,7 +419,7 @@ Prolog uses the `is/2` operator to evaluate arithmetic expressions. Unlike funct
 
 ### Fibonacci Series
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Recursion in Prolog
 
@@ -438,7 +438,7 @@ friends(X, Y) :- likes(X, Z), likes(Y, Z).
 
 **Explanation:** Base cases: `fib(1,1)` and `fib(2,1)`. The recursive rule computes $n-1$ and $n-2$, recurses on both, then sums the results using `is/2`. Without the `N > 2` guard, the recursion would loop indefinitely.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Fibonacci Series
 
@@ -461,7 +461,7 @@ Output:
 
 ### Factorial
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Accumulator Pattern
 
@@ -480,7 +480,7 @@ friends(X, Y) :- likes(X, Z), likes(Y, Z).
 
 **Explanation:** The base case `fact(0,1)` stops the recursion. The recursive rule decrements N, recurses, then multiplies the result by N. This is a natural recursion (not tail-recursive); each call pushes a stack frame.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Factorial
 
@@ -503,7 +503,7 @@ Output:
 
 ### GCD and LCM
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Euclidean Algorithm
 
@@ -522,7 +522,7 @@ friends(X, Y) :- likes(X, Z), likes(Y, Z).
 
 **Explanation:** The base case states that $\gcd(X, 0) = X$. The recursive rule computes $X \bmod Y$ and recurses with $(Y, R)$. The `lcm` rule first computes the GCD, then uses the formula to find the LCM.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 GCD and LCM
 
@@ -548,7 +548,7 @@ Output:
 
 ### Cube of a Number
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Read-Process Loop
 
@@ -567,7 +567,7 @@ friends(X, Y) :- likes(X, Z), likes(Y, Z).
 
 **Explanation:** `cube` prompts the user and reads a value. `process(stop)` uses the cut (`!`) to terminate when the user types `stop`. Otherwise, `process(N)` computes $N^3$, prints it, and calls `cube` again to continue the loop.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Cube of a Number
 
@@ -589,7 +589,7 @@ The program loops until `stop` is entered.
 
 A predicate can be defined by multiple rules, each representing an alternative way to satisfy it. Prolog tries each rule in order; if one fails, it backtracks to the next.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Multiple Rules (Disjunction by Backtracking)
 
@@ -606,7 +606,7 @@ friends(X, Y) :- likes(X, Z), likes(Y, Z).
 
 **Explanation:** `dark/1` succeeds if the argument is black, brown, or gray. Each rule represents an alternative condition. The query `?- dark(X).` enumerates all animals that satisfy at least one of the three colour conditions.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Satisfying a List of Goals
 
@@ -637,7 +637,7 @@ Output:
 
 The **CUT** (`!`) is a built-in predicate that prunes backtracking. It commits Prolog to the choices made so far. Once a cut is encountered, Prolog cannot backtrack past it.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Cut (!/0)
 
@@ -664,7 +664,7 @@ friends(X, Y) :- likes(X, Z), likes(Y, Z).
 
 The cut-fail combination defines negation by elimination: if the goal P succeeds, cut then fail causes the entire call to fail. If P fails, the second clause succeeds.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Cuts and Control
 
@@ -691,7 +691,7 @@ Output:
 
 </div>
 
-<div style="border-left:4px solid #ef6c00;background:#fff3e0;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #ef6c00;background:#fff3e0;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Warning: Green vs. Red Cuts
 
@@ -699,7 +699,7 @@ A **GREEN CUT** only improves efficiency; removing it does not change the progra
 
 </div>
 
-<div style="border-left:4px solid #0277bd;background:#e1f5fe;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #0277bd;background:#e1f5fe;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Cut-Fail Combination
 

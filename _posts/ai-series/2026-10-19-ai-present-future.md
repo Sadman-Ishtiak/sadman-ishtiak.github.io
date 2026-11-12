@@ -24,7 +24,7 @@ At the heart of any agent is its **representation** of the world. Three types of
 <figcaption>Three types of representation used by AI agents: atomic (indivisible states), factored (attribute–value vectors), and structured (objects with relations).</figcaption>
 </figure>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Atomic Representation
 
@@ -32,7 +32,7 @@ An **atomic representation** treats each state as an indivisible whole with no i
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Factored Representation
 
@@ -40,7 +40,7 @@ A **factored representation** decomposes each state into a set of variables (att
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Structured Representation
 
@@ -48,7 +48,7 @@ A **structured representation** explicitly represents objects and relationships 
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Representation Examples
 
@@ -82,7 +82,7 @@ A complete agent cannot rely on any single decision-making method. Reflex respon
 
 ### Hybrid Architecture
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Hybrid Architecture
 
@@ -97,7 +97,7 @@ Compilation is the process by which declarative knowledge at the deliberative le
 <figcaption>A hybrid architecture showing two decision components. The knowledge-based deliberation component feeds compiled decision rules into the reflex system via compilation (explanation-based learning).</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Hybrid Architecture in Practice
 
@@ -107,7 +107,7 @@ Hybrid Architecture in Practice
 
 ### Anytime Algorithm
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Anytime Algorithm
 
@@ -120,7 +120,7 @@ An **anytime algorithm** is an algorithm whose output quality improves gradually
 <figcaption>Quality–time trade-off for an anytime algorithm. The algorithm can be interrupted at any point and return the best result found so far.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Anytime Algorithms
 
@@ -132,7 +132,7 @@ Anytime Algorithms
 
 ### Decision-Theoretic Metareasoning
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Decision-Theoretic Metareasoning
 
@@ -147,7 +147,7 @@ Decision-Theoretic Metareasoning
 
 Metareasoning techniques can be used to design better search algorithms and to guarantee the anytime property. **Metalevel reinforcement learning** provides another avenue: computations that lead to better decisions are reinforced, while those with no effect are penalized, avoiding the myopia of simple value-of-information calculations.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Decision-Theoretic Metareasoning
 
@@ -161,7 +161,7 @@ Decision-Theoretic Metareasoning
 
 ### Reflective Architecture
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Reflective Architecture
 
@@ -176,7 +176,7 @@ In a reflective architecture, the agent can reason about which computation to pe
 <figcaption>A reflective architecture with metalevel reasoning. The metalevel monitors and controls the object-level reasoning, allocating computational resources based on the joint state of the environment and the agent’s own computation.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Metareasoning for a Taxi Driver
 
@@ -188,7 +188,7 @@ A taxi-driving agent sees an accident ahead and must decide whether to brake or 
 
 Dreyfus (1992) likened AI’s progress to climbing a tree to reach the moon—one can report steady progress all the way to the top of the tree, but the goal was the moon. In this section we examine four possible specifications for what AI should optimize.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Perfect Rationality
 
@@ -196,7 +196,7 @@ A **perfectly rational agent** acts at every instant in such a way as to maximiz
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Calculative Rationality
 
@@ -204,7 +204,7 @@ A **calculatively rational agent** eventually returns what would have been the r
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Bounded Rationality
 
@@ -212,7 +212,7 @@ Bounded Rationality
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Bounded Optimality
 
@@ -220,7 +220,7 @@ Bounded Optimality
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Asymptotic Bounded Optimality
 
@@ -238,7 +238,7 @@ Asymptotic Bounded Optimality
 
 Comparison of Rationality Concepts
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Four Rationalities for a Chess-Playing Program
 
@@ -256,7 +256,7 @@ The traditional AI approach starts with calculative rationality and makes ad-hoc
 
 ## What If AI Does Succeed?
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Implications of AI Success
 
@@ -275,7 +275,7 @@ The question “What if AI succeeds?” parallels the literary theorist’s ques
 <figcaption>The relationship between the degree of AI success and societal impact. Each threshold brings qualitatively different consequences.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Positive and Negative Implications
 

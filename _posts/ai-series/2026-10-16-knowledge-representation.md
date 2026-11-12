@@ -17,7 +17,7 @@ The previous chapters described the technology for knowledge-based agents: synta
 
 In toy domains, the choice of representation is not critical. Complex domains such as Internet shopping or driving a car require more general and flexible representations. Creating these representations, concentrating on general concepts such as Events, Time, Physical Objects, and Beliefs, is called **ONTOLOGICAL ENGINEERING**.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Upper Ontology
 
@@ -38,7 +38,7 @@ The general framework of concepts is drawn with general concepts at the top and 
 <figcaption>The upper ontology of the world. Each link indicates that the lower concept is a specialisation of the upper one.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Categories and Objects in Ontological Engineering
 
@@ -52,7 +52,7 @@ A general-purpose ontology has two distinguishing characteristics:
 
 - In demanding domains, different areas of knowledge must be unified because reasoning may involve several areas simultaneously.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Upper Ontology Examples
 
@@ -68,7 +68,7 @@ Upper Ontology Examples
 
 The organisation of objects into categories is a vital part of knowledge representation. Interaction with the world occurs at the level of individual objects, but much reasoning takes place at the level of categories.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Category and Reification
 
@@ -76,7 +76,7 @@ A **CATEGORY** is a class or collection of objects that share common properties.
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Subcategory and Inheritance
 
@@ -84,7 +84,7 @@ A **SUBCATEGORY** is a category that is a subset of another category. We write $
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Taxonomy
 
@@ -94,7 +94,7 @@ A **TAXONOMY** (or taxonomic hierarchy) is a hierarchical organisation of catego
 
 *Figure: A taxonomic hierarchy showing subcategory relationships.*
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Disjoint, Exhaustive Decomposition, and Partition
 
@@ -110,7 +110,7 @@ is a disjoint exhaustive decomposition: $Partition(\{Males, Females\}, Animals)$
 
 $$Disjoint(s) \iff (\forall c_1, c_2 \; c_1 \in s \land c_2 \in s \land c_1 \neq c_2 \Rightarrow Intersection(c_1, c_2) = \{\})$$ $$ExhaustiveDecomposition(s, c) \iff (\forall i \; i \in c \iff \exists c_2 \; c_2 \in s \land i \in c_2)$$ $$Partition(s, c) \iff Disjoint(s) \land ExhaustiveDecomposition(s, c)$$
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Composite Object and Bunch
 
@@ -118,7 +118,7 @@ A **COMPOSITE OBJECT** is an object composed of parts held together by structura
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Natural Kinds and Measure
 
@@ -126,7 +126,7 @@ Natural Kinds and Measure
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Count Nouns vs. Mass Nouns
 
@@ -134,7 +134,7 @@ Count Nouns vs. Mass Nouns
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Categories and Objects Examples
 
@@ -156,7 +156,7 @@ Categories and Objects Examples
 
 Actions and events change the world over time. While situation calculus handles discrete, instantaneous actions, event calculus provides a more general formalism.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Event Calculus
 
@@ -179,7 +179,7 @@ $$Happens(e, (t_1, t_2)) \land Initiates(e, f, t_1) \land \neg Clipped(f, (t_1, 
 <figcaption>Event calculus predicates and their relationships.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Discrete Events, Process, and Liquid Event
 
@@ -198,7 +198,7 @@ is another name for liquid events. **SPATIAL SUBSTANCE** refers to physical stuf
 
 **CONCEPTUAL DEPENDENCY (CD)**, developed by Roger Schank, is a representation scheme for natural language meaning. It decomposes actions into a small set of primitive actions.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Conceptual Dependency
 
@@ -206,7 +206,7 @@ Conceptual Dependency
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 CD Primitive Actions
 
@@ -234,7 +234,7 @@ CD defines a small set of **PRIMITIVE ACTIONS** from which all other actions are
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Ontological Building Blocks of CD
 
@@ -255,7 +255,7 @@ CD uses four basic **ONTOLOGICAL BUILDING BLOCKS**:
 <figcaption>The four ontological building blocks of Conceptual Dependency and their subcomponents.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 CD Representation Examples
 
@@ -280,7 +280,7 @@ CD Representation Examples
 
 Agents need knowledge about beliefs – both their own and those of others. This enables reasoning about what others know, planning communication, and controlling inference.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Propositional Attitude
 
@@ -288,7 +288,7 @@ A **PROPOSITIONAL ATTITUDE** is a mental state that an agent has toward a propos
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Referential Transparency
 
@@ -296,7 +296,7 @@ Referential Transparency
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Modal Logic and Possible Worlds
 
@@ -306,10 +306,10 @@ Modal Logic and Possible Worlds
 
 <figure>
 <img src="/assets/images/ai-book/figures/book-012-p15.png" />
-<figcaption>Possible worlds with accessibility relations <span class="math inline"><em>K</em><sub><em>A</em></sub></span> (agent A) and <span class="math inline"><em>K</em><sub><em>B</em></sub></span> (agent B). Each world is accessible from itself (shown by loops).</figcaption>
+<figcaption>Possible worlds with accessibility relations $K_A$ (agent A) and $K_B$ (agent B). Each world is accessible from itself (shown by loops).</figcaption>
 </figure>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Logical Omniscience
 
@@ -319,7 +319,7 @@ Logical Omniscience
 
 ### Scripts
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Scripts
 
@@ -342,7 +342,7 @@ A **SCRIPT** is a structured representation of a stereotypical sequence of event
 <figcaption>Components of a script structure.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 ICPC Organising Script
 
@@ -374,7 +374,7 @@ Script for organising an ICPC (International Collegiate Programming Contest) at 
 
 Categories are the primary building blocks of large-scale knowledge representation. Two closely related families of systems support category reasoning: semantic networks and description logics.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Multiple Inheritance and Default Value
 
@@ -382,7 +382,7 @@ Multiple Inheritance and Default Value
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Overriding
 
@@ -390,7 +390,7 @@ Overriding
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Description Logic
 
@@ -405,7 +405,7 @@ Description Logic
 
 ### Frame Structures
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Frame Structures
 
@@ -428,7 +428,7 @@ Key elements:
 <figcaption>Example of a frame structure for a Student concept with slots for attributes.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Frame Structure Example
 
@@ -461,7 +461,7 @@ In LISP, property lists implement frame-like structures:
 
 ### Associative Networks
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Associative Networks
 
@@ -471,7 +471,7 @@ An **ASSOCIATIVE NETWORK** is a graph representation of knowledge where nodes re
 
 ### Truth Maintenance Systems (TMS)
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Truth Maintenance System
 
@@ -484,7 +484,7 @@ A **TRUTH MAINTENANCE SYSTEM (TMS)** manages knowledge updates and belief revisi
 <figcaption>Architecture of a Truth Maintenance System interacting with a Problem Solver.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Problem Solver with TMS
 
@@ -492,7 +492,7 @@ The **PROBLEM SOLVER** generates new inferences and communicates them to the TMS
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 SL, JTMS, and ATMS
 
@@ -507,7 +507,7 @@ represents all hypothetical states simultaneously. Each sentence has a label con
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 TMS Example
 
@@ -527,7 +527,7 @@ Given KB: $\{P, P \Rightarrow Q\}$:
 
 Most real-world knowledge has exceptions. Default reasoning allows agents to jump to conclusions in the absence of contrary evidence.
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Nonmonotonicity
 
@@ -535,7 +535,7 @@ Nonmonotonicity
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Circumscription
 
@@ -543,7 +543,7 @@ Circumscription
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Model Preference and Prioritized Circumscription
 
@@ -551,7 +551,7 @@ Model Preference and Prioritized Circumscription
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Default Logic
 
@@ -564,7 +564,7 @@ Default Logic
 <figcaption>Default reasoning with multiple extensions in the Nixon diamond.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Belief Revision
 
@@ -572,7 +572,7 @@ Belief Revision
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Default Reasoning Examples
 
@@ -586,7 +586,7 @@ Default Reasoning Examples
 
 ## Expert Systems
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Expert System
 
@@ -611,7 +611,7 @@ An **EXPERT SYSTEM** is a computer system that emulates the decision-making abil
 <figcaption>Rule-based expert system structure showing major components and their interactions.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Expert System Applications
 
@@ -627,7 +627,7 @@ Expert System Applications
 
 ## Knowledge Engineering and Techniques
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Knowledge Acquisition
 
@@ -645,7 +645,7 @@ Knowledge Acquisition
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Learning Types
 
@@ -663,7 +663,7 @@ Learning from explicit teaching. A teacher provides knowledge in a structured fo
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Factors Affecting Learning Performance
 
@@ -683,7 +683,7 @@ Key factors that affect learning performance:
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Knowledge Engineering Examples
 
@@ -699,7 +699,7 @@ Knowledge Engineering Examples
 
 ## Pattern Recognition
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Pattern Recognition
 
@@ -712,7 +712,7 @@ Pattern Recognition
 <figcaption>Pattern recognition pipeline showing stages from sensing to decision.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Decision-Theoretic Classification
 
@@ -720,7 +720,7 @@ Decision-Theoretic Classification
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Clustering
 
@@ -728,7 +728,7 @@ Clustering
 
 </div>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Pattern Recognition Examples
 
@@ -742,7 +742,7 @@ Pattern Recognition Examples
 
 ## Computer Vision vs. Human Vision
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Computer Vision
 
@@ -763,7 +763,7 @@ Computer Vision
 
 Comparison between Computer Vision and Human Vision.
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Vision System Strengths
 
@@ -779,7 +779,7 @@ Vision System Strengths
 
 ## Robotics
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Robotics Engineering
 
@@ -789,7 +789,7 @@ Robotics Engineering
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Asimov’s Three Laws of Robotics
 
@@ -803,7 +803,7 @@ Isaac Asimov proposed three fundamental laws governing robot behaviour:
 
 </div>
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Key Components of a Robot
 
@@ -824,7 +824,7 @@ The four essential components of a robot:
 <figcaption>Key components of a robot and their interactions.</figcaption>
 </figure>
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Robotics Examples
 
@@ -842,7 +842,7 @@ Robotics Examples
 
 ## The Internet Shopping World
 
-<div style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Internet Shopping Agent
 
@@ -885,7 +885,7 @@ RelevantChain(start, end, query) \iff & (start = end) \; \lor \\
 & \quad RelevantChain(u, end, query))
 \end{aligned}$$
 
-<div style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
+<div markdown="1" style="border-left:4px solid #2e7d32;background:#e8f5e9;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
 Shopping Agent Example
 
