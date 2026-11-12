@@ -1,6 +1,6 @@
 ---
 title: "Adversarial Search and Games"
-date: 2026-10-09 00:00:00 +0600
+date: 2026-03-27 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [ai, games, minimax, alpha-beta]
 description: "Minimax, alpha-beta pruning, expectiminimax, and famous game-playing programs."

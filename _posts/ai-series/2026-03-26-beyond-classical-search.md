@@ -1,6 +1,6 @@
 ---
 title: "Beyond Classical Search"
-date: 2026-10-08 00:00:00 +0600
+date: 2026-03-26 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [ai, local-search, simulated-annealing, genetic]
 description: "Local search, continuous optimization, nondeterministic and partial-observation search."

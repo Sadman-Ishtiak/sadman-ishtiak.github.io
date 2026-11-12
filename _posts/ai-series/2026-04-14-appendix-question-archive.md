@@ -1,6 +1,6 @@
 ---
 title: "Appendix B: Exam Question Archive"
-date: 2026-10-27 00:00:00 +0600
+date: 2026-04-14 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [exam, questions, archive]
 description: "Past final and lab exam questions with solutions."

@@ -1,6 +1,6 @@
 ---
 title: "Classical Planning"
-date: 2026-10-14 00:00:00 +0600
+date: 2026-04-01 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [ai, planning, pddl, graphplan]
 description: "PDDL, planning as search, planning graphs, and SATPlan."

@@ -1,6 +1,6 @@
 ---
 title: "Appendix C: Summary Tables and Reference"
-date: 2026-10-28 00:00:00 +0600
+date: 2026-04-15 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [summary, reference, tables]
 description: "One-page comparison tables for search, logic, and inference."

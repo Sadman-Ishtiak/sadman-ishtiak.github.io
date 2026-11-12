@@ -1,6 +1,6 @@
 ---
 title: "Solving Problems by Searching"
-date: 2026-10-07 00:00:00 +0600
+date: 2026-03-25 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [ai, search, bfs, dfs, a-star]
 description: "Uninformed and informed search: BFS, UCS, DFS, IDS, greedy, and A*."

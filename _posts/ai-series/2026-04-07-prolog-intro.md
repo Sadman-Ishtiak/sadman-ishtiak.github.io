@@ -1,6 +1,6 @@
 ---
 title: "Prolog Programming: Introduction"
-date: 2026-10-20 00:00:00 +0600
+date: 2026-04-07 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [prolog, logic-programming, lab]
 description: "Facts, rules, queries, arithmetic, and recursion in Prolog."

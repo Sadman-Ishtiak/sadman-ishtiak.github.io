@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Artificial Intelligence"
-date: 2026-10-05 00:00:00 +0600
+date: 2026-03-23 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [ai, introduction, agents]
 description: "Start here: what AI is, the four approaches, its foundations, and a brief history."

@@ -1,6 +1,6 @@
 ---
 title: "LISP Programming and Symbolic Computation"
-date: 2026-10-23 00:00:00 +0600
+date: 2026-04-10 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [lisp, functional-programming, lab]
 description: "LISP basics: CAR/CDR/CONS, conditionals, recursion, and programs."

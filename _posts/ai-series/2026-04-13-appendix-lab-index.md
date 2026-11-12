@@ -1,6 +1,6 @@
 ---
 title: "Appendix A: Lab Index and Cross-Reference"
-date: 2026-10-26 00:00:00 +0600
+date: 2026-04-13 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [appendix, lab, reference]
 description: "Cross-reference of lab experiments to book chapters."

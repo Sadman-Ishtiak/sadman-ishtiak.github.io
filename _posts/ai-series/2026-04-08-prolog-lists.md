@@ -1,6 +1,6 @@
 ---
 title: "Prolog Programming: Lists and Operations"
-date: 2026-10-21 00:00:00 +0600
+date: 2026-04-08 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [prolog, lists, lab]
 description: "List representation and the classic list/set operations."

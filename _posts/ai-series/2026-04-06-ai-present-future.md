@@ -1,6 +1,6 @@
 ---
 title: "AI: The Present and Future"
-date: 2026-10-19 00:00:00 +0600
+date: 2026-04-06 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [ai, future, agi, rationality]
 description: "Agent components, architectures, and where AI is heading."

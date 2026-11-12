@@ -1,6 +1,6 @@
 ---
 title: "Advanced Prolog: Graphs, Automata and Files"
-date: 2026-10-22 00:00:00 +0600
+date: 2026-04-09 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [prolog, graphs, dfa, lab]
 description: "Trees, graphs, DFA/NFA simulation, and file handling."

@@ -1,6 +1,6 @@
 ---
 title: "Philosophical Foundations of AI"
-date: 2026-10-18 00:00:00 +0600
+date: 2026-04-05 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [ai, philosophy, ethics, consciousness]
 description: "Weak/strong AI, the Turing test, Chinese Room, ethics, and the future."

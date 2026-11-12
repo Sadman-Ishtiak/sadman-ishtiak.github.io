@@ -1,6 +1,6 @@
 ---
 title: "First-Order Logic"
-date: 2026-10-12 00:00:00 +0600
+date: 2026-03-30 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [ai, fol, quantifiers, knowledge-representation]
 description: "FOL syntax, semantics, quantifiers, and knowledge engineering."

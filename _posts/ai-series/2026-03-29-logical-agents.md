@@ -1,6 +1,6 @@
 ---
 title: "Logical Agents and Propositional Logic"
-date: 2026-10-11 00:00:00 +0600
+date: 2026-03-29 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [ai, logic, propositional, knowledge]
 description: "Knowledge bases, the wumpus world, propositional logic, and inference."

@@ -1,6 +1,6 @@
 ---
 title: "Knowledge Representation and Ontologies"
-date: 2026-10-16 00:00:00 +0600
+date: 2026-04-03 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [ai, ontology, expert-systems, robotics]
 description: "Categories, events, mental objects, expert systems, and robotics."

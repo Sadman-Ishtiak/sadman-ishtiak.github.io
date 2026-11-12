@@ -1,6 +1,6 @@
 ---
 title: "Quantifying Uncertainty and Bayesian Networks"
-date: 2026-10-17 00:00:00 +0600
+date: 2026-04-04 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [ai, probability, bayesian-networks]
 description: "Probability, Bayes' rule, and Bayesian networks."

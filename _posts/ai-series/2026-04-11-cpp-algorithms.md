@@ -1,6 +1,6 @@
 ---
 title: "C++ AI Implementations: Search and DFA"
-date: 2026-10-24 00:00:00 +0600
+date: 2026-04-11 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [cpp, algorithms, dfa, lab]
 description: "BFS, DFS, A*, and DFA construction in C++."

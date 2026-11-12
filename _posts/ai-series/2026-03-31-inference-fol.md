@@ -1,6 +1,6 @@
 ---
 title: "Inference in First-Order Logic"
-date: 2026-10-13 00:00:00 +0600
+date: 2026-03-31 00:00:00 +0600
 categories: [Artificial Intelligence, Academic Notes]
 tags: [ai, inference, unification, resolution]
 description: "Unification, forward/backward chaining, and resolution."
