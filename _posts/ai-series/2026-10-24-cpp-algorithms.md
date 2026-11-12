@@ -24,7 +24,7 @@ Breadth-First Search (BFS)
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-014-p2.png" />
+<img src="/assets/images/ai-book/figures/book-014-p2.png" alt="BFS traversal order on a sample graph. Nodes are visited level by level." />
 <figcaption>BFS traversal order on a sample graph. Nodes are visited level by level.</figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ int main() {
 
 BFS Example
 
-**Graph:** The graph shown in Figure <a href="#fig:cpp-bfs" data-reference-type="ref" data-reference="fig:cpp-bfs">[fig:cpp-bfs]</a> with 7 nodes.
+**Graph:** The graph shown in Figure [fig:cpp-bfs] with 7 nodes.
 
 **Output:**
 
@@ -101,7 +101,7 @@ Depth-First Search (DFS)
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p3.png" />
+<img src="/assets/images/ai-book/figures/book-003-p3.png" alt="DFS traversal order on the same graph. DFS plunges deep before backtracking." />
 <figcaption>DFS traversal order on the same graph. DFS plunges deep before backtracking.</figcaption>
 </figure>
 
@@ -175,7 +175,7 @@ int main() {
 
 DFS Example
 
-**Graph:** The same graph as the BFS example (Figure <a href="#fig:cpp-dfs" data-reference-type="ref" data-reference="fig:cpp-dfs">[fig:cpp-dfs]</a>).
+**Graph:** The same graph as the BFS example (Figure [fig:cpp-dfs]).
 
 **Output:**
 
@@ -203,7 +203,7 @@ A\* is **optimal** when $h(n)$ is **admissible** (never overestimates the true c
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p12.png" />
+<img src="/assets/images/ai-book/figures/book-003-p12.png" alt="A* search on a weighted graph. Each edge shows \((g, h)\) values. The algorithm expands nodes with the lowest \(f\)-value first." />
 <figcaption>A* search on a weighted graph. Each edge shows $(g, h)$ values. The algorithm expands nodes with the lowest $f$-value first.</figcaption>
 </figure>
 
@@ -282,7 +282,7 @@ int main() {
 
 A\* Search Example
 
-**Graph:** Nodes S(0), A(1), B(2), C(3), G(4) with edge costs as shown in Figure <a href="#fig:cpp-astar" data-reference-type="ref" data-reference="fig:cpp-astar">[fig:cpp-astar]</a>. Heuristic $h(n) = |n - goal|$ (Manhattan distance).
+**Graph:** Nodes S(0), A(1), B(2), C(3), G(4) with edge costs as shown in Figure [fig:cpp-astar]. Heuristic $h(n) = |n - goal|$ (Manhattan distance).
 
 **Output:**
 
@@ -327,7 +327,7 @@ The language $L = \{ w \in \{0,1\}^* \mid w \text{ starts with } 101 \}$ accepts
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-008-p6.png" />
+<img src="/assets/images/ai-book/figures/book-008-p6.png" alt="DFA for the language of strings starting with “101”." />
 <figcaption>DFA for the language of strings starting with “101”.</figcaption>
 </figure>
 
@@ -407,7 +407,7 @@ The language $L = \{ w \in \{0,1\}^* \mid w \text{ contains the substring } 10 \
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-004-p2.png" />
+<img src="/assets/images/ai-book/figures/book-004-p2.png" alt="DFA for strings containing “10” as a substring." />
 <figcaption>DFA for strings containing “10” as a substring.</figcaption>
 </figure>
 
@@ -494,7 +494,7 @@ Accepting states are those where the number of 0’s is odd **or** the number of
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-025-p1.png" />
+<img src="/assets/images/ai-book/figures/book-025-p1.png" alt="DFA for odd number of 0’s or even number of 1’s. Accepting states are shaded." />
 <figcaption>DFA for odd number of 0’s or even number of 1’s. Accepting states are shaded.</figcaption>
 </figure>
 

@@ -46,7 +46,7 @@ A game has **perfect information** if both players know the full state of the ga
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p21.png" />
+<img src="/assets/images/ai-book/figures/book-003-p21.png" alt="Classification of games by information and determinism. Each type requires a different search algorithm." />
 <figcaption>Classification of games by information and determinism. Each type requires a different search algorithm.</figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ A game is formally defined as a search problem with these elements:
 - $\text{UTILITY}(s, p)$: The **utility function** (or payoff function) giving the numeric outcome for player $p$ at terminal state $s$. In chess: +1 for win, 0 for loss, $\frac12$ for draw.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p12.png" />
+<img src="/assets/images/ai-book/figures/book-003-p12.png" alt="A partial game tree for tic-tac-toe. Nodes represent board states; edges show moves labeled X or O. Terminal states are evaluated by the utility function." />
 <figcaption>A partial game tree for tic-tac-toe. Nodes represent board states; edges show moves labeled X or O. Terminal states are evaluated by the utility function.</figcaption>
 </figure>
 
@@ -117,7 +117,7 @@ $$\text{MINIMAX}(s) =
     \end{cases}$$
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-005-p19.png" />
+<img src="/assets/images/ai-book/figures/book-005-p19.png" alt="A two-ply game tree showing minimax values. MAX’s best move is \(a_1\) (value 3), because MIN will force the worst outcome for MAX. Dotted branches at C are pruned by alpha-beta." />
 <figcaption>A two-ply game tree showing minimax values. MAX’s best move is $a_1$ (value 3), because MIN will force the worst outcome for MAX. Dotted branches at C are pruned by alpha-beta.</figcaption>
 </figure>
 
@@ -125,7 +125,7 @@ $$\text{MINIMAX}(s) =
 
 Minimax Example
 
-Consider the tree in Figure <a href="#fig:minimax-tree" data-reference-type="ref" data-reference="fig:minimax-tree">[fig:minimax-tree]</a>:
+Consider the tree in Figure [fig:minimax-tree]:
 
 1.  Leaf nodes B1, B2, B3 have values 3, 12, 8. MIN at node B chooses 3.
 
@@ -382,7 +382,7 @@ $$\text{EE}(s) =
     \end{cases}$$ where $r$ represents a random event (e.g., dice roll) and $P(r)$ is its probability.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-005-p40.png" />
+<img src="/assets/images/ai-book/figures/book-005-p40.png" alt="A game tree with chance nodes (circles). The value of a chance node is the weighted average of its children’s values." />
 <figcaption>A game tree with chance nodes (circles). The value of a chance node is the weighted average of its children’s values.</figcaption>
 </figure>
 

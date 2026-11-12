@@ -127,7 +127,7 @@ route(A, B) :- edge(A, B).
 ```
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-009-p6.png" />
+<img src="/assets/images/ai-book/figures/book-009-p6.png" alt="Tree represented by edge/2 predicates" />
 <figcaption>Tree represented by <code>edge/2</code> predicates</figcaption>
 </figure>
 
@@ -256,7 +256,7 @@ A **DETERMINISTIC FINITE AUTOMATON (DFA)** is a finite state machine with a uniq
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p3.png" />
+<img src="/assets/images/ai-book/figures/book-003-p3.png" alt="DFA that accepts strings ending with b" />
 <figcaption>DFA that accepts strings ending with <code>b</code></figcaption>
 </figure>
 

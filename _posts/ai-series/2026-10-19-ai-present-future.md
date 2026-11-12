@@ -11,16 +11,16 @@ math: true
 {% raw %}
 # AI: The Present and Future
 
-In this concluding chapter, we step back from the technical details of individual components and ask where the field of AI stands, where it is heading, and whether the rational-agent approach is the right path. Section <a href="#sec:agent-components" data-reference-type="ref" data-reference="sec:agent-components">[sec:agent-components]</a> surveys the known and missing pieces for each agent component. Section <a href="#sec:agent-architectures" data-reference-type="ref" data-reference="sec:agent-architectures">[sec:agent-architectures]</a> examines overarching agent architectures. Section <a href="#sec:right-direction" data-reference-type="ref" data-reference="sec:right-direction">[sec:right-direction]</a> asks whether designing rational agents is the right goal. Section <a href="#sec:if-succeeds" data-reference-type="ref" data-reference="sec:if-succeeds">[sec:if-succeeds]</a> considers the implications of AI succeeding.
+In this concluding chapter, we step back from the technical details of individual components and ask where the field of AI stands, where it is heading, and whether the rational-agent approach is the right path. Section [sec:agent-components] surveys the known and missing pieces for each agent component. Section [sec:agent-architectures] examines overarching agent architectures. Section [sec:right-direction] asks whether designing rational agents is the right goal. Section [sec:if-succeeds] considers the implications of AI succeeding.
 
 ## Agent Components
 
-Chapter <a href="#ch:intelligent-agents" data-reference-type="ref" data-reference="ch:intelligent-agents">[ch:intelligent-agents]</a> presented several agent designs composed of interacting components. To assess progress, we examine the utility-based agent (the most general design) and evaluate the state of the art for each component: sensors, state tracking, projection, utility, and learning.
+Chapter [ch:intelligent-agents] presented several agent designs composed of interacting components. To assess progress, we examine the utility-based agent (the most general design) and evaluate the state of the art for each component: sensors, state tracking, projection, utility, and learning.
 
-At the heart of any agent is its **representation** of the world. Three types of representation have been used throughout this book—each comes with a different trade-off between expressiveness and computational efficiency. Figure <a href="#fig:representation-types" data-reference-type="ref" data-reference="fig:representation-types">[fig:representation-types]</a> illustrates the three types.
+At the heart of any agent is its **representation** of the world. Three types of representation have been used throughout this book—each comes with a different trade-off between expressiveness and computational efficiency. Figure [fig:representation-types] illustrates the three types.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-006-p2.png" />
+<img src="/assets/images/ai-book/figures/book-006-p2.png" alt="Three types of representation used by AI agents: atomic (indivisible states), factored (attribute–value vectors), and structured (objects with relations)." />
 <figcaption>Three types of representation used by AI agents: atomic (indivisible states), factored (attribute–value vectors), and structured (objects with relations).</figcaption>
 </figure>
 
@@ -28,7 +28,7 @@ At the heart of any agent is its **representation** of the world. Three types of
 
 Atomic Representation
 
-An **atomic representation** treats each state as an indivisible whole with no internal structure visible to the reasoning algorithm. Problems are solved by searching over state transitions. This is the representation used in Chapters <a href="#ch:solving-problems-searching" data-reference-type="ref" data-reference="ch:solving-problems-searching">[ch:solving-problems-searching]</a> and <a href="#ch:adversarial-search" data-reference-type="ref" data-reference="ch:adversarial-search">[ch:adversarial-search]</a> (search algorithms and game trees).
+An **atomic representation** treats each state as an indivisible whole with no internal structure visible to the reasoning algorithm. Problems are solved by searching over state transitions. This is the representation used in Chapters [ch:solving-problems-searching] and [ch:adversarial-search] (search algorithms and game trees).
 
 </div>
 
@@ -36,7 +36,7 @@ An **atomic representation** treats each state as an indivisible whole with no i
 
 Factored Representation
 
-A **factored representation** decomposes each state into a set of variables (attributes) each with a value. This is used in constraint satisfaction (Chapter <a href="#ch:csp" data-reference-type="ref" data-reference="ch:csp">[ch:csp]</a>), propositional logic (Chapter <a href="#ch:logical-agents" data-reference-type="ref" data-reference="ch:logical-agents">[ch:logical-agents]</a>), and classical planning (Chapter <a href="#ch:classical-planning" data-reference-type="ref" data-reference="ch:classical-planning">[ch:classical-planning]</a>).
+A **factored representation** decomposes each state into a set of variables (attributes) each with a value. This is used in constraint satisfaction (Chapter [ch:csp]), propositional logic (Chapter [ch:logical-agents]), and classical planning (Chapter [ch:classical-planning]).
 
 </div>
 
@@ -44,7 +44,7 @@ A **factored representation** decomposes each state into a set of variables (att
 
 Structured Representation
 
-A **structured representation** explicitly represents objects and relationships among them. This is the ontological commitment of first-order logic (Chapter <a href="#ch:first-order-logic" data-reference-type="ref" data-reference="ch:first-order-logic">[ch:first-order-logic]</a>). It is the most expressive but computationally most demanding.
+A **structured representation** explicitly represents objects and relationships among them. This is the ontological commitment of first-order logic (Chapter [ch:first-order-logic]). It is the most expressive but computationally most demanding.
 
 </div>
 
@@ -52,7 +52,7 @@ A **structured representation** explicitly represents objects and relationships 
 
 Representation Examples
 
-- **Atomic:** In the Romania driving problem (Chapter <a href="#ch:solving-problems-searching" data-reference-type="ref" data-reference="ch:solving-problems-searching">[ch:solving-problems-searching]</a>), each city name like <span class="sans-serif">Arad</span> or <span class="sans-serif">Bucharest</span> is an atomic state—there is no way to ask “is <span class="sans-serif">Arad</span> larger than <span class="sans-serif">Bucharest</span>?” from the representation alone.
+- **Atomic:** In the Romania driving problem (Chapter [ch:solving-problems-searching]), each city name like <span class="sans-serif">Arad</span> or <span class="sans-serif">Bucharest</span> is an atomic state—there is no way to ask “is <span class="sans-serif">Arad</span> larger than <span class="sans-serif">Bucharest</span>?” from the representation alone.
 
 - **Factored:** A taxi-driving agent’s state might be $\langle loc{=}Airport, speed{=}30, fuel{=}half \rangle$. Each variable is accessible to reasoning but the relationship “the truck towing the car is behind us” is not directly representable.
 
@@ -62,13 +62,13 @@ Representation Examples
 
 ### Keeping Track of the World
 
-The agent must maintain an internal state that reflects the true state of the environment. Chapter <a href="#ch:solving-problems-searching" data-reference-type="ref" data-reference="ch:solving-problems-searching">[ch:solving-problems-searching]</a> showed how to track atomic state; Chapter <a href="#ch:logical-agents" data-reference-type="ref" data-reference="ch:logical-agents">[ch:logical-agents]</a> extended this to factored (propositional) representations; Chapter <a href="#ch:first-order-logic" data-reference-type="ref" data-reference="ch:first-order-logic">[ch:first-order-logic]</a> extended to first-order logic; and Chapter <a href="#ch:inference-fol" data-reference-type="ref" data-reference="ch:inference-fol">[ch:inference-fol]</a> described logical inference.
+The agent must maintain an internal state that reflects the true state of the environment. Chapter [ch:solving-problems-searching] showed how to track atomic state; Chapter [ch:logical-agents] extended this to factored (propositional) representations; Chapter [ch:first-order-logic] extended to first-order logic; and Chapter [ch:inference-fol] described logical inference.
 
 Current algorithms track low-level predicates reliably (e.g., “the cup is on the table”) but struggle with high-level actions (e.g., “Dr. Russell is having tea with Dr. Norvig while discussing plans”). The combination of probability and first-order logic promises to help, but defining general reusable representation schemes for complex domains remains an open challenge.
 
 ### Projecting, Evaluating, and Selecting Courses of Action
 
-The difficulty here is that real-world activities—having a conversation, driving to the airport—consist of thousands or millions of primitive steps. Imposing **hierarchical structure** on behavior is the only known way humans cope. Chapter <a href="#ch:planning-real-world" data-reference-type="ref" data-reference="ch:planning-real-world">[ch:planning-real-world]</a> described hierarchical planning (HTN), and hierarchical reinforcement learning has begun combining these ideas with decision-theoretic techniques. POMDP algorithms, however, still mainly use the atomic representation of Chapter <a href="#ch:solving-problems-searching" data-reference-type="ref" data-reference="ch:solving-problems-searching">[ch:solving-problems-searching]</a>, leaving substantial work ahead.
+The difficulty here is that real-world activities—having a conversation, driving to the airport—consist of thousands or millions of primitive steps. Imposing **hierarchical structure** on behavior is the only known way humans cope. Chapter [ch:planning-real-world] described hierarchical planning (HTN), and hierarchical reinforcement learning has begun combining these ideas with decision-theoretic techniques. POMDP algorithms, however, still mainly use the atomic representation of Chapter [ch:solving-problems-searching], leaving substantial work ahead.
 
 ### Utility and Learning
 
@@ -90,10 +90,10 @@ A **hybrid architecture** combines multiple decision-making components—typical
 
 </div>
 
-Compilation is the process by which declarative knowledge at the deliberative level is converted into compiled, efficient representations that feed the reflex level. This is the purpose of **explanation-based learning** (Chapter <a href="#ch:inference-fol" data-reference-type="ref" data-reference="ch:inference-fol">[ch:inference-fol]</a>). Architectures such as <span class="smallcaps">Soar</span> and <span class="smallcaps">Theo</span> save away a generalized version of every deliberatively solved problem for use by the reflex component.
+Compilation is the process by which declarative knowledge at the deliberative level is converted into compiled, efficient representations that feed the reflex level. This is the purpose of **explanation-based learning** (Chapter [ch:inference-fol]). Architectures such as <span class="smallcaps">Soar</span> and <span class="smallcaps">Theo</span> save away a generalized version of every deliberatively solved problem for use by the reflex component.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-002-p15.png" />
+<img src="/assets/images/ai-book/figures/book-002-p15.png" alt="A hybrid architecture showing two decision components. The knowledge-based deliberation component feeds compiled decision rules into the reflex system via compilation (explanation-based learning)." />
 <figcaption>A hybrid architecture showing two decision components. The knowledge-based deliberation component feeds compiled decision rules into the reflex system via compilation (explanation-based learning).</figcaption>
 </figure>
 
@@ -116,7 +116,7 @@ An **anytime algorithm** is an algorithm whose output quality improves gradually
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-019-p4.png" />
+<img src="/assets/images/ai-book/figures/book-019-p4.png" alt="Quality–time trade-off for an anytime algorithm. The algorithm can be interrupted at any point and return the best result found so far." />
 <figcaption>Quality–time trade-off for an anytime algorithm. The algorithm can be interrupted at any point and return the best result found so far.</figcaption>
 </figure>
 
@@ -141,7 +141,7 @@ Decision-Theoretic Metareasoning
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-008-p6.png" />
+<img src="/assets/images/ai-book/figures/book-008-p6.png" alt="Decision-theoretic metareasoning: the metalevel evaluates the expected value of information for each candidate computation and selects the one that maximises net benefit." />
 <figcaption>Decision-theoretic metareasoning: the metalevel evaluates the expected value of information for each candidate computation and selects the one that maximises net benefit.</figcaption>
 </figure>
 
@@ -172,7 +172,7 @@ A **reflective architecture** enables deliberation about the computational entit
 In a reflective architecture, the agent can reason about which computation to perform next, how much time to spend on a reasoning step, and whether the current algorithm is appropriate. The theoretical foundation combines the environment state and the computational state into a single joint state space.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-010-p3.png" />
+<img src="/assets/images/ai-book/figures/book-010-p3.png" alt="A reflective architecture with metalevel reasoning. The metalevel monitors and controls the object-level reasoning, allocating computational resources based on the joint state of the environment and the agent’s own computation." />
 <figcaption>A reflective architecture with metalevel reasoning. The metalevel monitors and controls the object-level reasoning, allocating computational resources based on the joint state of the environment and the agent’s own computation.</figcaption>
 </figure>
 
@@ -271,7 +271,7 @@ The question “What if AI succeeds?” parallels the literary theorist’s ques
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-005-p2.png" />
+<img src="/assets/images/ai-book/figures/book-005-p2.png" alt="The relationship between the degree of AI success and societal impact. Each threshold brings qualitatively different consequences." />
 <figcaption>The relationship between the degree of AI success and societal impact. Each threshold brings qualitatively different consequences.</figcaption>
 </figure>
 

@@ -38,7 +38,7 @@ A machine passes the **TURING TEST** if, during a five-minute typed conversation
 Turing anticipated many objections: the argument from disability (machines cannot be kind, fall in love, make mistakes), the mathematical objection (Gödel’s incompleteness theorem), and the argument from informality of behaviour. He rebutted each. Many supposed disabilities have since been achieved — computers make mistakes, play chess, grade essays, and diagnose diseases better than humans.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p3.png" />
+<img src="/assets/images/ai-book/figures/book-003-p3.png" alt="Turing Test setup: an interrogator communicates via typed messages with either a human or a machine respondent, and must decide which is which." />
 <figcaption>Turing Test setup: an interrogator communicates via typed messages with either a human or a machine respondent, and must decide which is which.</figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ Searle’s argument rests on four axioms:
 Critics offer the **SYSTEMS REPLY**: the person in the room is like a single CPU — the entire system (person + rule book + paper) does understand Chinese. Searle counters that no part of the system has understanding, so the whole cannot either. Others note that the argument is an **INTUITION PUMP** — it amplifies prior beliefs but does not settle the debate.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-004-p2.png" />
+<img src="/assets/images/ai-book/figures/book-004-p2.png" alt="The Chinese Room: the person manipulates symbols syntactically without any semantic understanding of Chinese." />
 <figcaption>The Chinese Room: the person manipulates symbols syntactically without any semantic understanding of Chinese.</figcaption>
 </figure>
 
@@ -142,7 +142,7 @@ Functionalism
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-005-p2.png" />
+<img src="/assets/images/ai-book/figures/book-005-p2.png" alt="Three philosophical positions on the mind–body problem." />
 <figcaption>Three philosophical positions on the mind–body problem.</figcaption>
 </figure>
 
@@ -163,7 +163,7 @@ Consciousness, Qualia, and Intentionality
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-007-p2.png" />
+<img src="/assets/images/ai-book/figures/book-007-p2.png" alt="Three key concepts in the Strong AI debate: consciousness, qualia, and intentionality. Together they define what it means for a machine to really think." />
 <figcaption>Three key concepts in the Strong AI debate: consciousness, qualia, and intentionality. Together they define what it means for a machine to <em>really</em> think.</figcaption>
 </figure>
 
@@ -265,7 +265,7 @@ Example: a utility function designed to minimise human suffering might conclude 
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p3.png" />
+<img src="/assets/images/ai-book/figures/book-003-p3.png" alt="The path from narrow AI to superintelligence and the technological singularity." />
 <figcaption>The path from narrow AI to superintelligence and the technological singularity.</figcaption>
 </figure>
 

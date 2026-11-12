@@ -81,7 +81,7 @@ Entailment in first-order logic is **semidecidable**: Algorithms exist that say 
 
 </div>
 
-Table <a href="#tab:pl-vs-fol-inference" data-reference-type="ref" data-reference="tab:pl-vs-fol-inference">[tab:pl-vs-fol-inference]</a> summarises the differences between propositional and first-order inference.
+Table [tab:pl-vs-fol-inference] summarises the differences between propositional and first-order inference.
 
 | Property        | Propositional Logic      | First-Order Logic      |
 |:----------------|:-------------------------|:-----------------------|
@@ -95,7 +95,7 @@ Comparison of Propositional vs. First-Order Inference
 
 ## Unification and Lifting
 
-Propositionalization is inefficient because it generates many irrelevant sentences (as shown in Table <a href="#tab:pl-vs-fol-inference" data-reference-type="ref" data-reference="tab:pl-vs-fol-inference">[tab:pl-vs-fol-inference]</a>, unification becomes a central requirement). **Lifting** raises Modus Ponens from ground propositional logic to first-order logic, making only the substitutions required for the inference.
+Propositionalization is inefficient because it generates many irrelevant sentences (as shown in Table [tab:pl-vs-fol-inference], unification becomes a central requirement). **Lifting** raises Modus Ponens from ground propositional logic to first-order logic, making only the substitutions required for the inference.
 
 <div markdown="1" style="border-left:4px solid #1a5c9e;background:#f0f4f8;padding:14px 18px;margin:18px 0;border-radius:6px;">
 
@@ -110,7 +110,7 @@ GMP combines And-Introduction, Universal Elimination, and Modus Ponens into a si
 $$\text{GMP:} \quad \frac{\text{King}(\text{John}), \quad \text{Greedy}(\text{John}), \quad \forall x \; \text{King}(x) \land \text{Greedy}(x) \Rightarrow \text{Evil}(x)}{\text{Evil}(\text{John})}$$
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-008-p6.png" />
+<img src="/assets/images/ai-book/figures/book-008-p6.png" alt="Lifted inference via Generalized Modus Ponens. The rule, quantified over all \(x\), is instantiated for John without generating all possible groundings." />
 <figcaption>Lifted inference via Generalized Modus Ponens. The rule, quantified over all $x$, is instantiated for John without generating all possible groundings.</figcaption>
 </figure>
 
@@ -133,7 +133,7 @@ The **Most General Unifier (MGU)** is the unique unifier (up to renaming) that p
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p3.png" />
+<img src="/assets/images/ai-book/figures/book-003-p3.png" alt="The unification algorithm. Expressions are compared side-by-side, building up a substitution." />
 <figcaption>The unification algorithm. Expressions are compared side-by-side, building up a substitution.</figcaption>
 </figure>
 
@@ -271,12 +271,12 @@ Forward Chaining Algorithm
 
 FOL-FC-ASK starts from known facts and triggers all rules whose premises are satisfied, adding conclusions. The process repeats until the query is answered or no new facts are added. A fact is “new” only if it is not a renaming of an existing fact. The algorithm reaches a **fixed point** when no new inferences are possible.
 
-Figure <a href="#fig:forward-chaining-flow" data-reference-type="ref" data-reference="fig:forward-chaining-flow">[fig:forward-chaining-flow]</a> shows the overall forward chaining process, while Figure <a href="#fig:forward-chaining-crime" data-reference-type="ref" data-reference="fig:forward-chaining-crime">[fig:forward-chaining-crime]</a> gives the concrete proof tree for the crime example.
+Figure [fig:forward-chaining-flow] shows the overall forward chaining process, while Figure [fig:forward-chaining-crime] gives the concrete proof tree for the crime example.
 
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-009-p11.png" />
+<img src="/assets/images/ai-book/figures/book-009-p11.png" alt="Proof tree for the crime example. Initial facts are at the bottom, inferred facts in the middle, and the conclusion at the top." />
 <figcaption>Proof tree for the crime example. Initial facts are at the bottom, inferred facts in the middle, and the conclusion at the top.</figcaption>
 </figure>
 
@@ -379,12 +379,12 @@ FOL-BC-ASK proves a goal by finding a clause whose right-hand side unifies with 
 
 Backward chaining acts as a **generator**, returning multiple possible results.
 
-Figure <a href="#fig:backward-chaining-flow" data-reference-type="ref" data-reference="fig:backward-chaining-flow">[fig:backward-chaining-flow]</a> shows the backward chaining process, and Figure <a href="#fig:backward-chaining-crime" data-reference-type="ref" data-reference="fig:backward-chaining-crime">[fig:backward-chaining-crime]</a> shows the proof tree for the crime example.
+Figure [fig:backward-chaining-flow] shows the backward chaining process, and Figure [fig:backward-chaining-crime] shows the proof tree for the crime example.
 
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-009-p17.png" />
+<img src="/assets/images/ai-book/figures/book-009-p17.png" alt="Proof tree constructed by backward chaining for the crime example. The tree is read depth-first, left to right. Bindings are shown next to each subgoal." />
 <figcaption>Proof tree constructed by backward chaining for the crime example. The tree is read depth-first, left to right. Bindings are shown next to each subgoal.</figcaption>
 </figure>
 
@@ -763,7 +763,7 @@ A **rule-based system** is an AI system that makes decisions using a predefined 
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p3.png" />
+<img src="/assets/images/ai-book/figures/book-003-p3.png" alt="Architecture of a rule-based system. The inference engine matches rules against working memory and derives new facts." />
 <figcaption>Architecture of a rule-based system. The inference engine matches rules against working memory and derives new facts.</figcaption>
 </figure>
 

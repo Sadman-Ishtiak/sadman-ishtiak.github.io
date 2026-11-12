@@ -58,7 +58,7 @@ In FOL, the world consists of:
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-008-p7.png" />
+<img src="/assets/images/ai-book/figures/book-008-p7.png" alt="The three kinds of symbols in first-order logic map to the three kinds of things in the world: objects, relations, and functions." />
 <figcaption>The three kinds of symbols in first-order logic map to the three kinds of things in the world: objects, relations, and functions.</figcaption>
 </figure>
 
@@ -306,7 +306,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-008-p9.png" />
+<img src="/assets/images/ai-book/figures/book-008-p9.png" alt="Classification of first-order logic sentences." />
 <figcaption>Classification of first-order logic sentences.</figcaption>
 </figure>
 
@@ -513,7 +513,7 @@ A **diagnostic rule** goes from observed effects to hidden causes: $$\forall s \
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-009-p6.png" />
+<img src="/assets/images/ai-book/figures/book-009-p6.png" alt="Diagnostic rules infer causes from effects; causal rules predict effects from causes." />
 <figcaption>Diagnostic rules infer causes from effects; causal rules predict effects from causes.</figcaption>
 </figure>
 
@@ -594,7 +594,7 @@ A binary relation $R$ can be characterized by the following properties:
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-002-p1.png" />
+<img src="/assets/images/ai-book/figures/book-002-p1.png" alt="Classification of relational properties. Equivalence relations are symmetric, reflexive, and transitive. Partial orders are reflexive, antisymmetric, and transitive." />
 <figcaption>Classification of relational properties. Equivalence relations are symmetric, reflexive, and transitive. Partial orders are reflexive, antisymmetric, and transitive.</figcaption>
 </figure>
 
@@ -674,7 +674,7 @@ Therefore $criminal(West)$ is true.
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-009-p17.png" />
+<img src="/assets/images/ai-book/figures/book-009-p17.png" alt="Forward chaining proof that Colonel West is a criminal. Arrows show inference steps from rules and facts to the conclusion." />
 <figcaption>Forward chaining proof that Colonel West is a criminal. Arrows show inference steps from rules and facts to the conclusion.</figcaption>
 </figure>
 

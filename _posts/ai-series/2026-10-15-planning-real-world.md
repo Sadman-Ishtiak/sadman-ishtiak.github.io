@@ -11,7 +11,7 @@ math: true
 {% raw %}
 # Planning and Acting in the Real World
 
-Classical planning (Chapter <a href="#ch:classical-planning" data-reference-type="ref" data-reference="ch:classical-planning">[ch:classical-planning]</a>) assumes a fully observable, deterministic, static, single-agent environment. The real world is far more complex: actions take time, consume resources, can be decomposed hierarchically, may fail or have uncertain outcomes, and are executed alongside other agents. This chapter extends planning to handle these realities.
+Classical planning (Chapter [ch:classical-planning]) assumes a fully observable, deterministic, static, single-agent environment. The real world is far more complex: actions take time, consume resources, can be decomposed hierarchically, may fail or have uncertain outcomes, and are executed alongside other agents. This chapter extends planning to handle these realities.
 
 ## Time, Schedules, and Resources
 
@@ -49,10 +49,10 @@ Without aggregation, representing 2 inspectors would require named entities Insp
 
 </div>
 
-Figure <a href="#fig:job-shop" data-reference-type="ref" data-reference="fig:job-shop">[fig:job-shop]</a> shows a typical job-shop scheduling problem: assembling two cars.
+Figure [fig:job-shop] shows a typical job-shop scheduling problem: assembling two cars.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-011-p2.png" />
+<img src="/assets/images/ai-book/figures/book-011-p2.png" alt="A job-shop scheduling problem for assembling two cars. Each action has a duration; some consume resources (lug nuts), others occupy reusable resources (hoists, wheel stations, inspectors)." />
 <figcaption>A job-shop scheduling problem for assembling two cars. Each action has a duration; some consume resources (lug nuts), others occupy reusable resources (hoists, wheel stations, inspectors).</figcaption>
 </figure>
 
@@ -96,7 +96,7 @@ LS(A) = \min_{B \succ A} \big( LS(B) - Duration(A) \big)$$
 The **slack** of action $A$ is $LS(A) - ES(A)$. Actions with zero slack lie on the critical path.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-006-p2.png" />
+<img src="/assets/images/ai-book/figures/book-006-p2.png" alt="Critical path analysis for the car assembly problem. Each action is labeled \([ES, LS]\). The critical path (bold arrows) is AE2 \(\to\) AW2 \(\to\) I2 with makespan 85 minutes." />
 <figcaption>Critical path analysis for the car assembly problem. Each action is labeled $[ES, LS]$. The critical path (bold arrows) is <span>AE2 $\to$ AW2 $\to$ I2</span> with makespan 85 minutes.</figcaption>
 </figure>
 
@@ -143,7 +143,7 @@ The algorithm picks AddEngine$_2$ (slack 0) first at $t=0$. It occupies the sing
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-008-p6.png" />
+<img src="/assets/images/ai-book/figures/book-008-p6.png" alt="A solution with resource constraints for the car assembly problem. The engine hoist is a bottleneck: AddEngine\(_1\) and AddEngine\(_2\) cannot overlap, making the makespan 115 minutes." />
 <figcaption>A solution with resource constraints for the car assembly problem. The engine hoist is a bottleneck: AddEngine$_1$ and AddEngine$_2$ cannot overlap, making the makespan 115 minutes.</figcaption>
 </figure>
 
@@ -170,7 +170,7 @@ Hierarchical Task Network (HTN) Planning
 A high-level plan achieves the goal if **at least one** of its implementations achieves the goal. The agent chooses which implementation to execute.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-004-p31.png" />
+<img src="/assets/images/ai-book/figures/book-004-p31.png" alt="Two refinements for the HLA Go(Home, SFO). The first uses driving and a shuttle; the second uses a taxi." />
 <figcaption>Two refinements for the HLA Go(Home, SFO). The first uses driving and a shuttle; the second uses a taxi.</figcaption>
 </figure>
 
@@ -218,7 +218,7 @@ Hierarchical Search
 
 </div>
 
-The HIERARCHICAL-SEARCH algorithm uses breadth-first search over refinement depth (see Figure <a href="#fig:htn-search-space" data-reference-type="ref" data-reference="fig:htn-search-space">[fig:htn-search-space]</a> for the search space structure). The computational benefit is dramatic:
+The HIERARCHICAL-SEARCH algorithm uses breadth-first search over refinement depth (see Figure [fig:htn-search-space] for the search space structure). The computational benefit is dramatic:
 
 $$\text{Nonhierarchical: } O(b^d) \qquad
 \text{Hierarchical: } O(r^{(d-1)/(k-1)})$$
@@ -226,7 +226,7 @@ $$\text{Nonhierarchical: } O(b^d) \qquad
 where $d$ is the solution depth in primitive actions, $b$ is the branching factor of primitive actions, $r$ is the number of refinements per HLA, and $k$ is the number of subactions per refinement. When $r$ is small and $k$ is large, hierarchical search takes the $k$th root of the nonhierarchical cost.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-004-p2.png" />
+<img src="/assets/images/ai-book/figures/book-004-p2.png" alt="Hierarchical search space. The planner searches over refinement trees, not primitive action sequences. This reduces exponential blowup." />
 <figcaption>Hierarchical search space. The planner searches over refinement trees, not primitive action sequences. This reduces exponential blowup.</figcaption>
 </figure>
 
@@ -297,7 +297,7 @@ $$\text{Reach}(s_0, [h_1, \dots, h_m]) \cap \text{Goal} \neq \emptyset$$
 This is a much weaker condition than the demonic requirement (where *every* member of the reachable set must be a goal state).
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-008-p6.png" />
+<img src="/assets/images/ai-book/figures/book-008-p6.png" alt="Reachable sets under angelic semantics. The reachable set of \([h_1, h_2]\) intersects the goal set, so the plan achieves the goal. Under demonic semantics, the plan would fail because not all implementations reach the goal." />
 <figcaption>Reachable sets under angelic semantics. The reachable set of $[h_1, h_2]$ intersects the goal set, so the plan achieves the goal. Under demonic semantics, the plan would fail because not <em>all</em> implementations reach the goal.</figcaption>
 </figure>
 
@@ -351,7 +351,7 @@ Percept(Color(can, c),
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p3.png" />
+<img src="/assets/images/ai-book/figures/book-003-p3.png" alt="Percept schema filters raw observations into structured percepts. The schema defines preconditions that determine when a percept is available." />
 <figcaption>Percept schema filters raw observations into structured percepts. The schema defines preconditions that determine when a percept is available.</figcaption>
 </figure>
 
@@ -457,7 +457,7 @@ The agent maintains its belief state as a logical formula during execution and e
 
 </div>
 
-AND–OR search over belief states (as in Section <a href="#sec:and-or-trees" data-reference-type="ref" data-reference="sec:and-or-trees">[sec:and-or-trees]</a>) generates contingent plans.
+AND–OR search over belief states (as in Section [sec:and-or-trees]) generates contingent plans.
 
 ### Online Replanning
 
@@ -476,7 +476,7 @@ Execution Monitoring
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-009-p22.png" />
+<img src="/assets/images/ai-book/figures/book-009-p22.png" alt="Replanning: the agent expects to be at state \(E\) but observes state \(O\). It repairs by finding a path from \(O\) to some point \(P\) on the original plan, then continues to \(G\)." />
 <figcaption>Replanning: the agent expects to be at state $E$ but observes state $O$. It repairs by finding a path from $O$ to some point $P$ on the original plan, then continues to $G$.</figcaption>
 </figure>
 
@@ -605,7 +605,7 @@ Coordination Mechanisms
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-009-p6.png" />
+<img src="/assets/images/ai-book/figures/book-009-p6.png" alt="Coordination problem in doubles tennis. Both agents must agree on compatible roles to achieve the goal." />
 <figcaption>Coordination problem in doubles tennis. Both agents must agree on compatible roles to achieve the goal.</figcaption>
 </figure>
 
@@ -644,7 +644,7 @@ The colony learns over its decades-long lifespan, even though individual ants li
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-002-p1.png" />
+<img src="/assets/images/ai-book/figures/book-002-p1.png" alt="Emergent behavior: individual agents following simple local rules (cohesion, separation, alignment) produce a coherent flock without central coordination." />
 <figcaption>Emergent behavior: individual agents following simple local rules (cohesion, separation, alignment) produce a coherent flock without central coordination.</figcaption>
 </figure>
 

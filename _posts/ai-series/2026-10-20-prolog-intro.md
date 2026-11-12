@@ -42,7 +42,7 @@ A **HORN CLAUSE** is a logical clause with at most one positive literal (the hea
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-014-p2.png" />
+<img src="/assets/images/ai-book/figures/book-014-p2.png" alt="Prolog belongs to the logic programming sub-branch of the declarative paradigm." />
 <figcaption>Prolog belongs to the logic programming sub-branch of the declarative paradigm.</figcaption>
 </figure>
 

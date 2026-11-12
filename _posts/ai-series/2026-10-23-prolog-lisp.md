@@ -188,7 +188,7 @@ APPEND
 
 ## Additional List Manipulation Functions
 
-LISP provides many built-in functions for common list operations. Table <a href="#tab:additional-list-functions" data-reference-type="ref" data-reference="tab:additional-list-functions">[tab:additional-list-functions]</a> summarises the most frequently used ones.
+LISP provides many built-in functions for common list operations. Table [tab:additional-list-functions] summarises the most frequently used ones.
 
 | **Function** | **Format**           | **Purpose**                           |
 |:-------------|:---------------------|:--------------------------------------|
@@ -487,7 +487,7 @@ The factorial function is the classic example of recursion:
 ```3
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p3.png" />
+<img src="/assets/images/ai-book/figures/book-003-p3.png" alt="Recursive flow for (factorial 5)." />
 <figcaption>Recursive flow for <code>(factorial 5)</code>.</figcaption>
 </figure>
 

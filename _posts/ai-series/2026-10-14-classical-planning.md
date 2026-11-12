@@ -11,7 +11,7 @@ math: true
 {% raw %}
 # Classical Planning
 
-Planning is the process of devising a sequence of actions to achieve a goal. Unlike search-based problem-solving (Chapter <a href="#ch:solving-problems-searching" data-reference-type="ref" data-reference="ch:solving-problems-searching">[ch:solving-problems-searching]</a>), which uses atomic state representations, planning uses a **factored representation** where each state is described by a set of variables. This makes it possible to derive domain-independent heuristics automatically.
+Planning is the process of devising a sequence of actions to achieve a goal. Unlike search-based problem-solving (Chapter [ch:solving-problems-searching]), which uses atomic state representations, planning uses a **factored representation** where each state is described by a set of variables. This makes it possible to derive domain-independent heuristics automatically.
 
 ## Definition of Classical Planning
 
@@ -27,7 +27,7 @@ A **classical planning** problem is defined by an initial state, a set of action
 
 Planning vs. Problem-Solving
 
-Classical planning differs from search-based problem-solving (Chapter <a href="#ch:solving-problems-searching" data-reference-type="ref" data-reference="ch:solving-problems-searching">[ch:solving-problems-searching]</a>) by using factored state representations (variables) instead of atomic states. This enables automatic derivation of heuristics. For example, in the air cargo domain, a single action schema $Fly(p, from, to)$ replaces $4Tn^2$ ground actions that a propositional agent would need.
+Classical planning differs from search-based problem-solving (Chapter [ch:solving-problems-searching]) by using factored state representations (variables) instead of atomic states. This enables automatic derivation of heuristics. For example, in the air cargo domain, a single action schema $Fly(p, from, to)$ replaces $4Tn^2$ ground actions that a propositional agent would need.
 
 </div>
 
@@ -70,7 +70,7 @@ $$\text{Result}(s, a) = (s - \text{Del}(a)) \cup \text{Add}(a)$$
 An action $a$ is **applicable** in state $s$ if $s \models \text{Precond}(a)$.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p51.png" />
+<img src="/assets/images/ai-book/figures/book-003-p51.png" alt="Planning as a search process: actions transform states until the goal is reached." />
 <figcaption>Planning as a search process: actions transform states until the goal is reached.</figcaption>
 </figure>
 
@@ -147,14 +147,14 @@ For the blocks world, PlanSAT is in P (a plan always exists for any solvable goa
 
 Forward Search (Progression)
 
-**Forward search** starts at the initial state and applies applicable actions to generate successor states, searching forward toward the goal. It uses the standard search algorithms from Chapter <a href="#ch:solving-problems-searching" data-reference-type="ref" data-reference="ch:solving-problems-searching">[ch:solving-problems-searching]</a> with a heuristic function.
+**Forward search** starts at the initial state and applies applicable actions to generate successor states, searching forward toward the goal. It uses the standard search algorithms from Chapter [ch:solving-problems-searching] with a heuristic function.
 
 </div>
 
 Forward search suffers from two problems: (1) it explores many irrelevant actions (e.g., 10 billion ground `Buy` actions for ISBNs), and (2) the branching factor is huge (up to 10,450 actions per state in air cargo with 10 airports).
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p28.png" />
+<img src="/assets/images/ai-book/figures/book-003-p28.png" alt="Forward (progression) search expands from the initial state \(S_0\) by applying all applicable actions, generating successor states until a goal is found. The branching factor equals the number of applicable actions in each state." />
 <figcaption>Forward (progression) search expands from the initial state $S_0$ by applying all applicable actions, generating successor states until a goal is found. The branching factor equals the number of applicable actions in each state.</figcaption>
 </figure>
 
@@ -202,7 +202,7 @@ The **ignore preconditions** heuristic drops all preconditions from actions, mak
 
 Ignore Preconditions for 8-Puzzle
 
-In the sliding-tile puzzle, removing the preconditions $Blank(s_2) \land Adjacent(s_1, s_2)$ from the Slide action lets any tile move to any space in one step. The relaxed solution length is the number of misplaced tiles — the trivial $h_1$ heuristic from Chapter <a href="#ch:solving-problems-searching" data-reference-type="ref" data-reference="ch:solving-problems-searching">[ch:solving-problems-searching]</a>.
+In the sliding-tile puzzle, removing the preconditions $Blank(s_2) \land Adjacent(s_1, s_2)$ from the Slide action lets any tile move to any space in one step. The relaxed solution length is the number of misplaced tiles — the trivial $h_1$ heuristic from Chapter [ch:solving-problems-searching].
 
 </div>
 
@@ -223,7 +223,7 @@ In blocks world, moving block A onto B has the effect $On(A,B) \land Clear(Table
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-010-p13.png" />
+<img src="/assets/images/ai-book/figures/book-010-p13.png" alt="The ignore-delete-lists heuristic produces a landscape with no local minima, making hill-climbing effective. From Hoffmann (2005)." />
 <figcaption>The ignore-delete-lists heuristic produces a landscape with no local minima, making hill-climbing effective. From Hoffmann (2005).</figcaption>
 </figure>
 
@@ -310,7 +310,7 @@ In the spare tire planning graph, $PutOn(Spare, Axle)$ and $Remove(Flat, Axle)$ 
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-010-p15.png" />
+<img src="/assets/images/ai-book/figures/book-010-p15.png" alt="The planning graph for the “Have Cake and Eat Cake Too” problem up to level S\(_2\). Rectangles are actions, small squares are persistence actions. Gray curved lines indicate mutex links." />
 <figcaption>The planning graph for the “Have Cake and Eat Cake Too” problem up to level S$_2$. Rectangles are actions, small squares are persistence actions. Gray curved lines indicate mutex links.</figcaption>
 </figure>
 
@@ -361,7 +361,7 @@ GRAPHPLAN
 The extraction phase is a backward search from the goal at the final level $S_n$ to the initial state $S_0$. At each level $S_i$, the algorithm selects a conflict-free subset of actions from $A_{i-1}$ whose effects cover the current goals, then recurses on the preconditions.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-002-p1.png" />
+<img src="/assets/images/ai-book/figures/book-002-p1.png" alt="GRAPHPLAN alternates between graph expansion and plan extraction. If extraction fails and the graph has leveled off, the problem is unsolvable within the current horizon." />
 <figcaption>GRAPHPLAN alternates between graph expansion and plan extraction. If extraction fails and the graph has leveled off, the problem is unsolvable within the current horizon.</figcaption>
 </figure>
 
@@ -418,7 +418,7 @@ Precondition: Fly(P$_1$, SFO, JFK)$^t$ $\Rightarrow$ At(P$_1$, SFO)$^t$ $\land$ 
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-005-p2.png" />
+<img src="/assets/images/ai-book/figures/book-005-p2.png" alt="SATPlan workflow: a planning problem is translated to SAT for a bounded horizon \(k\). If the SAT solver returns unsatisfiable, \(k\) is increased and the process repeats." />
 <figcaption>SATPlan workflow: a planning problem is translated to SAT for a bounded horizon $k$. If the SAT solver returns unsatisfiable, $k$ is increased and the process repeats.</figcaption>
 </figure>
 
@@ -489,7 +489,7 @@ The **least commitment** principle: when fixing a flaw, make only the minimum co
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-007-p2.png" />
+<img src="/assets/images/ai-book/figures/book-007-p2.png" alt="A partially ordered plan for the spare tire problem. The two Remove actions can be executed in either order, as long as both complete before PutOn." />
 <figcaption>A partially ordered plan for the spare tire problem. The two Remove actions can be executed in either order, as long as both complete before PutOn.</figcaption>
 </figure>
 
@@ -528,7 +528,7 @@ The **Sussman anomaly** is a blocks-world problem where subgoals $On(A, B)$ and 
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-010-p3.png" />
+<img src="/assets/images/ai-book/figures/book-010-p3.png" alt="The Sussman anomaly: neither ordering works. Only interleaved planning (moving C to table, then B onto C, then A onto B) achieves both subgoals." />
 <figcaption>The Sussman anomaly: neither ordering works. Only interleaved planning (moving C to table, then B onto C, then A onto B) achieves both subgoals.</figcaption>
 </figure>
 

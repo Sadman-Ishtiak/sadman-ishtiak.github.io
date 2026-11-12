@@ -42,7 +42,7 @@ Decision theory = probability theory + utility theory. An agent is rational iff 
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-002-p18.png" />
+<img src="/assets/images/ai-book/figures/book-002-p18.png" alt="A decision-theoretic agent. The belief state holds probabilities of world states. Given the belief state, the agent predicts outcomes and picks the action with highest expected utility." />
 <figcaption>A decision-theoretic agent. The belief state holds probabilities of world states. Given the belief state, the agent predicts outcomes and picks the action with highest expected utility.</figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ For a query variable $X$, evidence $E=e$, and unobserved variables $Y$: $$P(X
 
 Inference from Full Joint
 
-From Figure <a href="#fig:full-joint" data-reference-type="ref" data-reference="fig:full-joint">[fig:full-joint]</a>: $$\begin{aligned}
+From Figure [fig:full-joint]: $$\begin{aligned}
 P(\text{cavity} \mid \text{toothache}) &= \alpha P(\text{Cavity}, \text{toothache}) \\
 &= \alpha \big[P(\text{cavity},\text{toothache},\text{catch}) + P(\text{cavity},\text{toothache},\neg\text{catch})\big] \\
 &= \alpha [\langle 0.108, 0.016 \rangle + \langle 0.012, 0.064 \rangle] \\
@@ -170,7 +170,7 @@ Propositions $a$ and $b$ are independent iff: $$P(a \mid b) = P(a) \quad\text{or
 Absolute independence allows factoring the joint distribution into smaller pieces, dramatically reducing the number of parameters. Unfortunately, clean separation of entire variable sets is rare in practice.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-014-p2.png" />
+<img src="/assets/images/ai-book/figures/book-014-p2.png" alt="Absolute independence allows decomposing a large joint distribution. Weather is independent of dental problems, so the 32-element table factors into an 8-element and a 4-element table." />
 <figcaption>Absolute independence allows decomposing a large joint distribution. Weather is independent of dental problems, so the 32-element table factors into an 8-element and a 4-element table.</figcaption>
 </figure>
 
@@ -254,7 +254,7 @@ The network encodes the full joint distribution as: $$P(X_1, \dots, X_n) = \prod
 The graph topology specifies conditional independence: each node is conditionally independent of its non-descendants given its parents. This is the **local semantics** of Bayesian networks.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-014-p2.png" />
+<img src="/assets/images/ai-book/figures/book-014-p2.png" alt="A simple Bayesian network. Weather is independent of all other variables; Toothache and Catch are conditionally independent given Cavity. The absence of a direct link between Toothache and Catch encodes this conditional independence." />
 <figcaption>A simple Bayesian network. Weather is independent of all other variables; Toothache and Catch are conditionally independent given Cavity. The absence of a direct link between Toothache and Catch encodes this conditional independence.</figcaption>
 </figure>
 
@@ -263,7 +263,7 @@ The graph topology specifies conditional independence: each node is conditionall
 The classic example from Judea Pearl:
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-005-p2.png" />
+<img src="/assets/images/ai-book/figures/book-005-p2.png" alt="The burglary alarm Bayesian network. Burglary and Earthquake are parents of Alarm. JohnCalls and MaryCalls depend only on Alarm. Each node has a CPT quantifying the influence of its parents." />
 <figcaption>The burglary alarm Bayesian network. Burglary and Earthquake are parents of Alarm. JohnCalls and MaryCalls depend only on Alarm. Each node has a CPT quantifying the influence of its parents.</figcaption>
 </figure>
 

@@ -34,7 +34,7 @@ An **UPPER ONTOLOGY** is a general-purpose framework of concepts that organises 
 The general framework of concepts is drawn with general concepts at the top and specific concepts below.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p3.png" />
+<img src="/assets/images/ai-book/figures/book-003-p3.png" alt="The upper ontology of the world. Each link indicates that the lower concept is a specialisation of the upper one." />
 <figcaption>The upper ontology of the world. Each link indicates that the lower concept is a specialisation of the upper one.</figcaption>
 </figure>
 
@@ -175,7 +175,7 @@ Event Calculus
 $$Happens(e, (t_1, t_2)) \land Initiates(e, f, t_1) \land \neg Clipped(f, (t_1, t)) \land t_1 < t \Rightarrow T(f, t)$$ $$Happens(e, (t_1, t_2)) \land Terminates(e, f, t_1) \land \neg Restored(f, (t_1, t)) \land t_1 < t \Rightarrow \neg T(f, t)$$
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-002-p1.png" />
+<img src="/assets/images/ai-book/figures/book-002-p1.png" alt="Event calculus predicates and their relationships." />
 <figcaption>Event calculus predicates and their relationships.</figcaption>
 </figure>
 
@@ -251,7 +251,7 @@ CD uses four basic **ONTOLOGICAL BUILDING BLOCKS**:
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-002-p1.png" />
+<img src="/assets/images/ai-book/figures/book-002-p1.png" alt="The four ontological building blocks of Conceptual Dependency and their subcomponents." />
 <figcaption>The four ontological building blocks of Conceptual Dependency and their subcomponents.</figcaption>
 </figure>
 
@@ -305,7 +305,7 @@ Modal Logic and Possible Worlds
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-012-p15.png" />
+<img src="/assets/images/ai-book/figures/book-012-p15.png" alt="Possible worlds with accessibility relations \(K_A\) (agent A) and \(K_B\) (agent B). Each world is accessible from itself (shown by loops)." />
 <figcaption>Possible worlds with accessibility relations $K_A$ (agent A) and $K_B$ (agent B). Each world is accessible from itself (shown by loops).</figcaption>
 </figure>
 
@@ -338,7 +338,7 @@ A **SCRIPT** is a structured representation of a stereotypical sequence of event
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-001-p1.png" />
+<img src="/assets/images/ai-book/figures/book-001-p1.png" alt="Components of a script structure." />
 <figcaption>Components of a script structure.</figcaption>
 </figure>
 
@@ -399,7 +399,7 @@ Description Logic
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-012-p19.png" />
+<img src="/assets/images/ai-book/figures/book-012-p19.png" alt="Components of a semantic network reasoning system." />
 <figcaption>Components of a semantic network reasoning system.</figcaption>
 </figure>
 
@@ -424,7 +424,7 @@ Key elements:
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-008-p6.png" />
+<img src="/assets/images/ai-book/figures/book-008-p6.png" alt="Example of a frame structure for a Student concept with slots for attributes." />
 <figcaption>Example of a frame structure for a Student concept with slots for attributes.</figcaption>
 </figure>
 
@@ -480,7 +480,7 @@ A **TRUTH MAINTENANCE SYSTEM (TMS)** manages knowledge updates and belief revisi
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-002-p1.png" />
+<img src="/assets/images/ai-book/figures/book-002-p1.png" alt="Architecture of a Truth Maintenance System interacting with a Problem Solver." />
 <figcaption>Architecture of a Truth Maintenance System interacting with a Problem Solver.</figcaption>
 </figure>
 
@@ -560,7 +560,7 @@ Default Logic
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p3.png" />
+<img src="/assets/images/ai-book/figures/book-003-p3.png" alt="Default reasoning with multiple extensions in the Nixon diamond." />
 <figcaption>Default reasoning with multiple extensions in the Nixon diamond.</figcaption>
 </figure>
 
@@ -607,7 +607,7 @@ An **EXPERT SYSTEM** is a computer system that emulates the decision-making abil
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-023-p3.png" />
+<img src="/assets/images/ai-book/figures/book-023-p3.png" alt="Rule-based expert system structure showing major components and their interactions." />
 <figcaption>Rule-based expert system structure showing major components and their interactions.</figcaption>
 </figure>
 
@@ -708,7 +708,7 @@ Pattern Recognition
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-002-p1.png" />
+<img src="/assets/images/ai-book/figures/book-002-p1.png" alt="Pattern recognition pipeline showing stages from sensing to decision." />
 <figcaption>Pattern recognition pipeline showing stages from sensing to decision.</figcaption>
 </figure>
 
@@ -820,7 +820,7 @@ The four essential components of a robot:
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-025-p1.png" />
+<img src="/assets/images/ai-book/figures/book-025-p1.png" alt="Key components of a robot and their interactions." />
 <figcaption>Key components of a robot and their interactions.</figcaption>
 </figure>
 

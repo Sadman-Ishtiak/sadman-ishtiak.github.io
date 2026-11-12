@@ -44,7 +44,7 @@ At the **knowledge level**, we specify only what the agent knows and what its go
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-007-p2.png" />
+<img src="/assets/images/ai-book/figures/book-007-p2.png" alt="Architecture of a knowledge-based agent. The agent tells the KB what it perceives, asks the KB what to do, and tells the KB the action it chose." />
 <figcaption>Architecture of a knowledge-based agent. The agent tells the KB what it perceives, asks the KB what to do, and tells the KB the action it chose.</figcaption>
 </figure>
 
@@ -70,7 +70,7 @@ function KB-AGENT(percept) returns an action
 The **declarative approach** builds an agent by TELLing it what it needs to know, rather than writing procedural code. A successful agent often combines both declarative and procedural elements.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p3.png" />
+<img src="/assets/images/ai-book/figures/book-003-p3.png" alt="Two approaches to building knowledge-based agents. Declarative: TELL the agent what it needs to know. Procedural: encode behavior as code. Modern agents combine both." />
 <figcaption>Two approaches to building knowledge-based agents. Declarative: TELL the agent what it needs to know. Procedural: encode behavior as code. Modern agents combine both.</figcaption>
 </figure>
 
@@ -110,7 +110,7 @@ PEAS description of the wumpus world
 The wumpus environment is **discrete**, **static**, **single-agent**, **sequential**, and **partially observable**.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-007-p5.png" />
+<img src="/assets/images/ai-book/figures/book-007-p5.png" alt="A typical wumpus world. The agent starts at \([1,1]\) facing right." />
 <figcaption>A typical wumpus world. The agent starts at $[1,1]$ facing right.</figcaption>
 </figure>
 
@@ -173,7 +173,7 @@ $$\text{KB} \vdash_i \alpha \quad\text{means}\quad \text{inference algorithm } i
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-002-p1.png" />
+<img src="/assets/images/ai-book/figures/book-002-p1.png" alt="The correspondence between world and representation. Sentences represent aspects of the real world; reasoning constructs new sentences that correspond to new aspects that actually follow." />
 <figcaption>The correspondence between world and representation. Sentences represent aspects of the real world; reasoning constructs new sentences that correspond to new aspects that actually follow.</figcaption>
 </figure>
 
@@ -186,7 +186,7 @@ Grounding
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p3.png" />
+<img src="/assets/images/ai-book/figures/book-003-p3.png" alt="Hierarchy of logical systems ordered by expressiveness." />
 <figcaption>Hierarchy of logical systems ordered by expressiveness.</figcaption>
 </figure>
 
@@ -303,7 +303,7 @@ Tautology, Contradiction, Contingency
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-007-p11.png" />
+<img src="/assets/images/ai-book/figures/book-007-p11.png" alt="Classification of propositional sentences by truth in models. Every sentence is either valid (true in all models), unsatisfiable (false in all models), or contingent (true in some, false in others)." />
 <figcaption>Classification of propositional sentences by truth in models. Every sentence is either valid (true in all models), unsatisfiable (false in all models), or contingent (true in some, false in others).</figcaption>
 </figure>
 
@@ -441,7 +441,7 @@ Conjunctive Normal Form (CNF)
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p3.png" />
+<img src="/assets/images/ai-book/figures/book-003-p3.png" alt="Resolution algorithm flow. To prove \(KB \models \alpha\), show \(KB \land \neg\alpha\) is unsatisfiable by deriving the empty clause." />
 <figcaption>Resolution algorithm flow. To prove $KB \models \alpha$, show $KB \land \neg\alpha$ is unsatisfiable by deriving the empty clause.</figcaption>
 </figure>
 
@@ -488,7 +488,7 @@ Horn clauses are closed under resolution. Entailment with Horn clauses is decida
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p3.png" />
+<img src="/assets/images/ai-book/figures/book-003-p3.png" alt="Classification of propositional clauses by form." />
 <figcaption>Classification of propositional clauses by form.</figcaption>
 </figure>
 
@@ -555,7 +555,7 @@ The **SAT problem** is the problem of determining whether a propositional senten
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-018-p4.png" />
+<img src="/assets/images/ai-book/figures/book-018-p4.png" alt="Classification of SAT solving approaches. Complete algorithms (DPLL) can prove unsatisfiability; incomplete algorithms (WalkSAT) cannot." />
 <figcaption>Classification of SAT solving approaches. Complete algorithms (DPLL) can prove unsatisfiability; incomplete algorithms (WalkSAT) cannot.</figcaption>
 </figure>
 
@@ -576,7 +576,7 @@ The **DPLL** (Davis–Putnam–Logemann–Loveland) algorithm is a complete, bac
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-003-p3.png" />
+<img src="/assets/images/ai-book/figures/book-003-p3.png" alt="DPLL algorithm flow. At each step: check termination, apply pure symbol heuristic, apply unit clause heuristic, then branch on a symbol." />
 <figcaption>DPLL algorithm flow. At each step: check termination, apply pure symbol heuristic, apply unit clause heuristic, then branch on a symbol.</figcaption>
 </figure>
 
@@ -625,7 +625,7 @@ WalkSAT is sound (finds model if one exists with enough time) but not complete (
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-007-p30.png" />
+<img src="/assets/images/ai-book/figures/book-007-p30.png" alt="WalkSAT algorithm flow. With probability \(p\) perform random walk, otherwise min-conflicts." />
 <figcaption>WalkSAT algorithm flow. With probability $p$ perform random walk, otherwise min-conflicts.</figcaption>
 </figure>
 
@@ -704,7 +704,7 @@ $$HaveArrow^{t+1} \Leftrightarrow (HaveArrow^t \land \neg Shoot^t)$$ The arrow i
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-007-p37.png" />
+<img src="/assets/images/ai-book/figures/book-007-p37.png" alt="Hybrid agent architecture for the wumpus world. The agent combines logical inference for state estimation with A* search for route planning." />
 <figcaption>Hybrid agent architecture for the wumpus world. The agent combines logical inference for state estimation with A* search for route planning.</figcaption>
 </figure>
 
@@ -752,7 +752,7 @@ The hybrid agent maintains a 1-CNF belief state (conjunction of literals) as a *
 - **Precondition axioms** and **action exclusion axioms** prevent spurious SATPlan solutions with illegal or simultaneous actions.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-024-p2.png" />
+<img src="/assets/images/ai-book/figures/book-024-p2.png" alt="Three types of agents based on propositional logic, from simplest (reflex) to most complex (SATPlan)." />
 <figcaption>Three types of agents based on propositional logic, from simplest (reflex) to most complex (SATPlan).</figcaption>
 </figure>
 
@@ -762,7 +762,7 @@ Three PL Agent Types
 
 - **Reflex agent**: condition–action rules directly map percepts to actions. No internal state. E.g., “If breeze, turn away.”
 
-- **Hybrid agent**: logical KB for state estimation + A\* search for planning. E.g., the HYBRID-WUMPUS-AGENT (Figure <a href="#fig:hybrid-agent" data-reference-type="ref" data-reference="fig:hybrid-agent">[fig:hybrid-agent]</a>).
+- **Hybrid agent**: logical KB for state estimation + A\* search for planning. E.g., the HYBRID-WUMPUS-AGENT (Figure [fig:hybrid-agent]).
 
 - **Planning agent (SATPlan)**: formulates the entire planning problem as a SAT instance and uses a SAT solver to find a plan. Finds shortest plan by iterating $t = 0, 1, \dots, T_{max}$.
 
@@ -805,7 +805,7 @@ Abductive Reasoning
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-007-p11.png" />
+<img src="/assets/images/ai-book/figures/book-007-p11.png" alt="Three types of reasoning in propositional logic." />
 <figcaption>Three types of reasoning in propositional logic.</figcaption>
 </figure>
 
@@ -879,7 +879,7 @@ A knowledge base system consists of:
 
 - **Knowledge Acquisition**: mechanism to add domain knowledge.
 
-See Figure <a href="#fig:kb-agent" data-reference-type="ref" data-reference="fig:kb-agent">[fig:kb-agent]</a> for the architecture diagram.
+See Figure [fig:kb-agent] for the architecture diagram.
 
 </div>
 

@@ -13,23 +13,23 @@ math: true
 
 ## Cross-Reference: Lab Experiments to Book Chapters
 
-Table <a href="#tab:lab-chapter-mapping" data-reference-type="ref" data-reference="tab:lab-chapter-mapping">[tab:lab-chapter-mapping]</a> maps each laboratory experiment from the AI Lab course (CSE 406) to the relevant theory chapters in this book.
+Table [tab:lab-chapter-mapping] maps each laboratory experiment from the AI Lab course (CSE 406) to the relevant theory chapters in this book.
 
 | **Exp.** | **Experiment**          | **Topics Covered**                                                              | **Chapter**                                                                                                              |
 |:---------|:------------------------|:--------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------|
-| 01       | SWI-Prolog Intro        | Facts, rules, queries; family; printing; max; GPA; Fibonacci; factorial         | Ch. <a href="#ch:prolog-intro" data-reference-type="ref" data-reference="ch:prolog-intro">[ch:prolog-intro]</a>          |
-| 02       | Prolog Rules/Arithmetic | Cube of number; list of goals; GCD/LCM                                          | Ch. <a href="#ch:prolog-intro" data-reference-type="ref" data-reference="ch:prolog-intro">[ch:prolog-intro]</a>          |
-| 03       | Prolog Lists            | Membership, length, concat, delete, insert; set union/intersection; bubble sort | Ch. <a href="#ch:prolog-lists" data-reference-type="ref" data-reference="ch:prolog-lists">[ch:prolog-lists]</a>          |
-| 04       | Loops, Trees, DFA       | Recursive loops; menus; tree traversal; DFA simulation                          | Ch. <a href="#ch:prolog-advanced" data-reference-type="ref" data-reference="ch:prolog-advanced">[ch:prolog-advanced]</a> |
-| 05       | NFA Simulation          | Nondeterministic FA; multiple transitions; word acceptance                      | Ch. <a href="#ch:prolog-advanced" data-reference-type="ref" data-reference="ch:prolog-advanced">[ch:prolog-advanced]</a> |
-| 06       | Cyclic Graphs           | Path finding; visited-list cycle avoidance                                      | Ch. <a href="#ch:prolog-advanced" data-reference-type="ref" data-reference="ch:prolog-advanced">[ch:prolog-advanced]</a> |
-| 07       | File Handling           | `tell`/`told`; `see`/`seen`; stream control                                     | Ch. <a href="#ch:prolog-advanced" data-reference-type="ref" data-reference="ch:prolog-advanced">[ch:prolog-advanced]</a> |
+| 01       | SWI-Prolog Intro        | Facts, rules, queries; family; printing; max; GPA; Fibonacci; factorial         | Ch. [ch:prolog-intro]          |
+| 02       | Prolog Rules/Arithmetic | Cube of number; list of goals; GCD/LCM                                          | Ch. [ch:prolog-intro]          |
+| 03       | Prolog Lists            | Membership, length, concat, delete, insert; set union/intersection; bubble sort | Ch. [ch:prolog-lists]          |
+| 04       | Loops, Trees, DFA       | Recursive loops; menus; tree traversal; DFA simulation                          | Ch. [ch:prolog-advanced] |
+| 05       | NFA Simulation          | Nondeterministic FA; multiple transitions; word acceptance                      | Ch. [ch:prolog-advanced] |
+| 06       | Cyclic Graphs           | Path finding; visited-list cycle avoidance                                      | Ch. [ch:prolog-advanced] |
+| 07       | File Handling           | `tell`/`told`; `see`/`seen`; stream control                                     | Ch. [ch:prolog-advanced] |
 
 Lab experiments and corresponding book chapters
 
 ## Prolog Programs (Index Items 11–20)
 
-Table <a href="#tab:prolog-programs" data-reference-type="ref" data-reference="tab:prolog-programs">[tab:prolog-programs]</a> lists the Prolog programs from the lab index.
+Table [tab:prolog-programs] lists the Prolog programs from the lab index.
 
 | **\#** | **Program**          | **Description**                                                                                                 |
 |:-------|:---------------------|:----------------------------------------------------------------------------------------------------------------|
@@ -48,7 +48,7 @@ Prolog programs (lab index items 11–20)
 
 ## LISP Programs (Index Items 1–5)
 
-Table <a href="#tab:lisp-programs" data-reference-type="ref" data-reference="tab:lisp-programs">[tab:lisp-programs]</a> lists the LISP programs from the lab index.
+Table [tab:lisp-programs] lists the LISP programs from the lab index.
 
 | **\#** | **Program**             | **Description**                                                                       |
 |:-------|:------------------------|:--------------------------------------------------------------------------------------|
@@ -62,7 +62,7 @@ LISP programs (lab index items 1–5)
 
 ## C++ Programs (Index Items 8–10, 23–25)
 
-Table <a href="#tab:cpp-programs" data-reference-type="ref" data-reference="tab:cpp-programs">[tab:cpp-programs]</a> lists the C++ programs from the lab index.
+Table [tab:cpp-programs] lists the C++ programs from the lab index.
 
 | **\#** | **Program**             | **Description**                                                              |
 |:-------|:------------------------|:-----------------------------------------------------------------------------|

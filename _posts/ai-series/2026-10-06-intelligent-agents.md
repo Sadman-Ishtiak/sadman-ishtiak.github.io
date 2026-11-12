@@ -44,7 +44,7 @@ $$f : \mathcal{P}^* \rightarrow \mathcal{A}$$
 where $\mathcal{P}$ is the set of possible percepts and $\mathcal{A}$ is the set of possible actions.
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-002-p2.png" />
+<img src="/assets/images/ai-book/figures/book-002-p2.png" alt="Agents interact with environments through sensors and actuators." />
 <figcaption>Agents interact with environments through sensors and actuators.</figcaption>
 </figure>
 
@@ -395,7 +395,7 @@ A **simple reflex agent** selects actions based solely on the current percept, i
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-002-p16.png" />
+<img src="/assets/images/ai-book/figures/book-002-p16.png" alt="Schematic diagram of a simple reflex agent" />
 <figcaption>Schematic diagram of a simple reflex agent</figcaption>
 </figure>
 
@@ -422,7 +422,7 @@ The vacuum agent program:
 	
 ```
 
-This program implements the agent function from the vacuum world table in Section <a href="#sec:agents-environments" data-reference-type="ref" data-reference="sec:agents-environments">[sec:agents-environments]</a>. It ignores percept history, reducing the table from $4^T$ entries to just $4$ rules.
+This program implements the agent function from the vacuum world table in Section [sec:agents-environments]. It ignores percept history, reducing the table from $4^T$ entries to just $4$ rules.
 
 </div>
 
@@ -439,7 +439,7 @@ A **model-based reflex agent** maintains **internal state** that depends on the 
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-002-p18.png" />
+<img src="/assets/images/ai-book/figures/book-002-p18.png" alt="A model-based reflex agent with internal state" />
 <figcaption>A model-based reflex agent with internal state</figcaption>
 </figure>
 
@@ -474,7 +474,7 @@ A **goal-based agent** combines a model of the world with **goal information** t
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-002-p19.png" />
+<img src="/assets/images/ai-book/figures/book-002-p19.png" alt="A model-based, goal-based agent" />
 <figcaption>A model-based, goal-based agent</figcaption>
 </figure>
 
@@ -532,7 +532,7 @@ The **utility function** $U(s)$ internalizes the performance measure. If the int
 ```
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-002-p21.png" />
+<img src="/assets/images/ai-book/figures/book-002-p21.png" alt="A model-based, utility-based agent" />
 <figcaption>A model-based, utility-based agent</figcaption>
 </figure>
 
@@ -555,7 +555,7 @@ A **learning agent** improves its performance over time. It has four conceptual 
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-002-p22-fig.png" />
+<img src="/assets/images/ai-book/figures/book-002-p22-fig.png" alt="A general learning agent" />
 <figcaption>A general learning agent</figcaption>
 </figure>
 
@@ -592,7 +592,7 @@ Agent components can represent the environment along an axis of increasing compl
 </div>
 
 <figure>
-<img src="/assets/images/ai-book/figures/book-002-p24.png" />
+<img src="/assets/images/ai-book/figures/book-002-p24.png" alt="Three ways to represent states and transitions: (a) atomic, (b) factored, (c) structured" />
 <figcaption>Three ways to represent states and transitions: (a) atomic, (b) factored, (c) structured</figcaption>
 </figure>
 
