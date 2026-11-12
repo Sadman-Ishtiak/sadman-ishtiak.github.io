@@ -1,6 +1,6 @@
 ---
 title: Solving CSES.fi problems one by one and explainations of them 
-date: 2025-10-31 00:00:00 +0600
+date: 2025-11-01 00:00:00 +0600
 categories: [Competitive Programming, CSES]
 tags: [cses.fi, cp, implementation]     # TAG names should always be lowercase
 description: "Solutions and explainations of the problems in cses.fi"

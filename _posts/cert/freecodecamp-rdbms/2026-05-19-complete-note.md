@@ -2,7 +2,7 @@
 title: Complete Note on the Relational Database Management System (RDBMS) - FreeCodeCamp Certification
 date: 2026-05-19 00:00:00 +0600
 categories: [Database, FreeCodeCamp]
-tags: [RDBMS, FreeCodeCamp, Certification, Database Management]
+tags: [RDBMS, FreeCodeCamp, certification, Database Management]
 description: "Complete note on the Relational Database Management System (RDBMS) for FreeCodeCamp certification."
 math: true
 ---
