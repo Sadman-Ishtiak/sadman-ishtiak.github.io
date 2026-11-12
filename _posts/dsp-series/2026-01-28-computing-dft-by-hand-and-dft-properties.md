@@ -1,19 +1,9 @@
 ---
-title: Computing DFT by Hand and DFT Properties
+title: "Computing DFT by Hand and DFT Properties"
 date: 2026-01-28 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- dft
-- fft
-- frequency-analysis
-- academic
-- cse409
-- cse410
-- jkkniu
-description: '| Property | Formula |'
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'dft', 'fft', 'frequency-analysis', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## DFT Properties (Circular, Not Linear!)'
 math: true
 ---
 ## DFT Properties (Circular, Not Linear!)

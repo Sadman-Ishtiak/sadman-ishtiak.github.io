@@ -1,18 +1,9 @@
 ---
-title: 'Time Scaling: Compression and Expansion'
+title: "Time Scaling: Compression and Expansion"
 date: 2026-01-15 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- time-domain
-- signal-operations
-- academic
-- cse409
-- cse410
-- jkkniu
-description: Time scaling changes the **rate** at which samples are taken.
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'time-domain', 'signal-operations', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Time Scaling: Compression and Expansion'
 math: true
 ---
 ## Time Scaling: Compression and Expansion

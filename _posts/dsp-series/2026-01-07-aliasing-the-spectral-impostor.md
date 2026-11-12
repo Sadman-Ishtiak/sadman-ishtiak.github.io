@@ -1,19 +1,9 @@
 ---
-title: 'Aliasing: The Spectral Impostor'
+title: "Aliasing: The Spectral Impostor"
 date: 2026-01-07 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- sampling
-- aliasing
-- nyquist
-- academic
-- cse409
-- cse410
-- jkkniu
-description: 'Given $x(t)$ and sampling frequency $F_s$, the discrete sequence is:'
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'sampling', 'aliasing', 'nyquist', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## From Sampling Frequency to Discrete Sequence'
 math: true
 ---
 ## From Sampling Frequency to Discrete Sequence

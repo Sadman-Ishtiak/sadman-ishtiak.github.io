@@ -1,19 +1,9 @@
 ---
-title: Covariance, Correlation, and Real-World Examples
+title: "Covariance, Correlation, and Real-World Examples"
 date: 2026-01-19 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- statistics
-- signal-analysis
-- academic
-- cse409
-- cse410
-- jkkniu
-description: $$\text{Cov}(x, y) = \frac{1}{N} \sum_{n=0}^{N-1} (x[n] - \mu_x)(y[n]
-  - \mu_y)$$
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'statistics', 'signal-analysis', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Cross-Signal Statistics: Relationships'
 math: true
 ---
 ## Cross-Signal Statistics: Relationships

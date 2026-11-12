@@ -1,20 +1,9 @@
 ---
-title: Discrete-Time Systems and Classification
+title: "Discrete-Time Systems and Classification"
 date: 2026-01-20 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- lti-systems
-- convolution
-- academic
-- cse409
-- cse410
-- jkkniu
-description: A **discrete-time system** transforms an input sequence $x[n]$ into an
-  output sequence
-$y[n]$: ''
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'lti-systems', 'convolution', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## What Is a Discrete-Time System?'
 math: true
 ---
 ## What Is a Discrete-Time System?

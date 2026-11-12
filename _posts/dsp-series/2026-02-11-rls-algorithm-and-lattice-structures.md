@@ -1,20 +1,9 @@
 ---
-title: RLS Algorithm and Lattice Structures
+title: "RLS Algorithm and Lattice Structures"
 date: 2026-02-11 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- adaptive-filters
-- lms
-- rls
-- echo-cancellation
-- academic
-- cse409
-- cse410
-- jkkniu
-description: '**Minimizes weighted sum of squared errors:**'
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'adaptive-filters', 'lms', 'rls', 'echo-cancellation', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## RLS Algorithm (Recursive Least Squares)'
 math: true
 ---
 ## RLS Algorithm (Recursive Least Squares)

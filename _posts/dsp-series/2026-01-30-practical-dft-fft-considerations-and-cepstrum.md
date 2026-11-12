@@ -1,19 +1,9 @@
 ---
-title: Practical FFT Considerations and Cepstrum
+title: "Practical DFT/FFT Considerations and Cepstrum"
 date: 2026-01-30 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- dft
-- fft
-- frequency-analysis
-- academic
-- cse409
-- cse410
-- jkkniu
-description: '- Appending zeros to $x[n]$ before DFT'
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'dft', 'fft', 'frequency-analysis', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Practical DFT/FFT Considerations'
 math: true
 ---
 ## Practical DFT/FFT Considerations

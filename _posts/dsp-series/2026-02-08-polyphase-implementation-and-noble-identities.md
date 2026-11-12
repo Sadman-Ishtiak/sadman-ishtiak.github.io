@@ -1,20 +1,9 @@
 ---
-title: Polyphase Implementation and Noble Identities
+title: "Polyphase Implementation and Noble Identities"
 date: 2026-02-08 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- multirate
-- decimation
-- interpolation
-- polyphase
-- academic
-- cse409
-- cse410
-- jkkniu
-description: '**Cascade:** Interpolate by $L$ \u2192 Decimate by $M$'
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'multirate', 'decimation', 'interpolation', 'polyphase', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Sample Rate Conversion by Rational Factor $L/M$'
 math: true
 ---
 ## Sample Rate Conversion by Rational Factor $L/M$

@@ -1,21 +1,9 @@
 ---
-title: 'MATLAB for DSP: Signal Generation and FFT'
+title: "MATLAB for DSP: Signal Generation and FFT"
 date: 2026-02-04 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- matlab
-- lab
-- fft
-- filter-design
-- academic
-- cse409
-- cse410
-- jkkniu
-description: MATLAB (and Octave/Python) is the **lingua franca** of DSP prototyping.
-  The lab exercises\
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'matlab', 'lab', 'fft', 'filter-design', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Why MATLAB for DSP?'
 math: true
 ---
 ## Why MATLAB for DSP?

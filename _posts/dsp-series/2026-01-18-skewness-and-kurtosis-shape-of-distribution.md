@@ -1,18 +1,9 @@
 ---
-title: 'Skewness and Kurtosis: Shape of Distribution'
+title: "Skewness and Kurtosis: Shape of Distribution"
 date: 2026-01-18 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- statistics
-- signal-analysis
-- academic
-- cse409
-- cse410
-- jkkniu
-description: $$\text{Skewness} = \frac{1}{N \sigma_x^3} \sum_{n=0}^{N-1} (x[n] - \mu_x)^3$$
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'statistics', 'signal-analysis', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Third and Fourth Order: Shape of Distribution'
 math: true
 ---
 ## Third and Fourth Order: Shape of Distribution

@@ -1,18 +1,9 @@
 ---
-title: 'The DSP Pipeline: From Analog to Digital'
+title: "The DSP Pipeline: From Analog to Digital"
 date: 2026-01-04 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- signals
-- fundamentals
-- academic
-- cse409
-- cse410
-- jkkniu
-description: '```'
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'signals', 'fundamentals', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## The DSP Pipeline'
 math: true
 ---
 ## The DSP Pipeline

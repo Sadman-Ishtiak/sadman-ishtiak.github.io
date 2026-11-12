@@ -1,18 +1,9 @@
 ---
-title: Pole-Zero Analysis and Stability
+title: "Pole-Zero Analysis and Stability"
 date: 2026-01-25 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- z-transform
-- poles-zeros
-- academic
-- cse409
-- cse410
-- jkkniu
-description: 'For an LTI system with impulse response $h[n]$:'
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'z-transform', 'poles-zeros', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## System Function $H(z)$ and Pole-Zero Analysis'
 math: true
 ---
 ## System Function $H(z)$ and Pole-Zero Analysis

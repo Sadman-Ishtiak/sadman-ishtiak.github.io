@@ -1,19 +1,9 @@
 ---
-title: Digital vs Analog Signal Processing Advantages
+title: "Digital vs Analog Signal Processing Advantages"
 date: 2026-01-03 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- signals
-- fundamentals
-- academic
-- cse409
-- cse410
-- jkkniu
-description: '**Yes.** A digital photograph is a two-dimensional signal $I(x,y)$ where
-  $x$ and'
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'signals', 'fundamentals', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Is a Digital Photo of Einstein a Signal?'
 math: true
 ---
 ## Is a Digital Photo of Einstein a Signal?

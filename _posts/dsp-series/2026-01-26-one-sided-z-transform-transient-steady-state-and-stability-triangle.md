@@ -1,18 +1,9 @@
 ---
-title: Inverse Z-Transform Methods and Advanced Topics
+title: "One-Sided Z-Transform, Transient/Steady-State, and Stability Triangle"
 date: 2026-01-26 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- z-transform
-- poles-zeros
-- academic
-- cse409
-- cse410
-- jkkniu
-description: 'For rational $X(z) = \frac{N(z)}{D(z)}$, factor denominator and expand:'
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'z-transform', 'poles-zeros', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Inverse Z-Transform Methods'
 math: true
 ---
 ## Inverse Z-Transform Methods

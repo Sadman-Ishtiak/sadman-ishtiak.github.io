@@ -1,20 +1,9 @@
 ---
-title: Complete Filter Design Workflow in MATLAB
+title: "Complete Filter Design Workflow in MATLAB"
 date: 2026-02-06 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- matlab
-- lab
-- fft
-- filter-design
-- academic
-- cse409
-- cse410
-- jkkniu
-description: '```matlab'
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'matlab', 'lab', 'fft', 'filter-design', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Complete Filter Design & Analysis Workflow'
 math: true
 ---
 ## Complete Filter Design & Analysis Workflow

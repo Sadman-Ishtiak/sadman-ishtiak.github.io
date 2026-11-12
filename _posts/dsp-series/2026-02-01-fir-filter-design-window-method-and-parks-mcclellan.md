@@ -1,19 +1,9 @@
 ---
-title: 'FIR Filter Design: Window Method and Parks-McClellan'
+title: "FIR Filter Design: Window Method and Parks-McClellan"
 date: 2026-02-01 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- filter-design
-- fir
-- iir
-- academic
-- cse409
-- cse410
-- jkkniu
-description: 1. Start with ideal frequency response $H_d(e^{j\omega})$ (brick-wall)
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'filter-design', 'fir', 'iir', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## FIR Filter Design: Window Method'
 math: true
 ---
 ## FIR Filter Design: Window Method

@@ -1,20 +1,9 @@
 ---
-title: 'Z-Transform: Definition, ROC, and Transform Pairs'
+title: "Z-Transform: Definition, ROC, and Transform Pairs"
 date: 2026-01-23 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- z-transform
-- poles-zeros
-- academic
-- cse409
-- cse410
-- jkkniu
-description: The **Z-transform** is to discrete-time signals what the **Laplace transform**
-  is
-to continuous-time signals. It converts: ''
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'z-transform', 'poles-zeros', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Why Do We Need Another Transform?'
 math: true
 ---
 ## Why Do We Need Another Transform?

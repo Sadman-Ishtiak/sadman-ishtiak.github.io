@@ -1,22 +1,9 @@
 ---
-title: 'Adaptive Filters: LMS and NLMS Algorithms'
+title: "Adaptive Filters: LMS and NLMS Algorithms"
 date: 2026-02-10 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- adaptive-filters
-- lms
-- rls
-- echo-cancellation
-- academic
-- cse409
-- cse410
-- jkkniu
-description: '**Fixed filters** need known signal/noise statistics. **Adaptive filters**
-  adjust'
-coefficients in real-time when: ''
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'adaptive-filters', 'lms', 'rls', 'echo-cancellation', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Why Adaptive Filters?'
 math: true
 ---
 ## Why Adaptive Filters?

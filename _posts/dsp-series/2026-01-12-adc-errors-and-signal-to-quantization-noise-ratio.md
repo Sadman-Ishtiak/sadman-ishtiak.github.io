@@ -1,18 +1,9 @@
 ---
-title: ADC Errors and Signal-to-Quantization-Noise Ratio
+title: "ADC Errors and Signal-to-Quantization-Noise Ratio"
 date: 2026-01-12 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- quantization
-- adc
-- academic
-- cse409
-- cse410
-- jkkniu
-description: '| Aspect | Sampling | Quantization |'
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'quantization', 'adc', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Quantization vs. Sampling: "Opposite" Operations'
 math: true
 ---
 ## Quantization vs. Sampling: "Opposite" Operations

@@ -1,18 +1,9 @@
 ---
-title: Folding, Combined Operations, and Block Diagrams
+title: "Folding, Combined Operations, and Block Diagrams"
 date: 2026-01-16 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- time-domain
-- signal-operations
-- academic
-- cse409
-- cse410
-- jkkniu
-description: $$y[n] = x[-n]$$
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'time-domain', 'signal-operations', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Folding / Time Reversal'
 math: true
 ---
 ## Folding / Time Reversal

@@ -1,19 +1,9 @@
 ---
-title: Special IIR Filters, Structures, and Finite Word-Length
+title: "Special IIR Filters, Structures, and Finite Word-Length"
 date: 2026-02-03 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- filter-design
-- fir
-- iir
-- academic
-- cse409
-- cse410
-- jkkniu
-description: 'Narrowband bandpass with pole near unit circle at $z = re^{\pm j\omega_0}$:'
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'filter-design', 'fir', 'iir', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Special IIR Filter Types (Proakis 5.4)'
 math: true
 ---
 ## Special IIR Filter Types (Proakis 5.4)

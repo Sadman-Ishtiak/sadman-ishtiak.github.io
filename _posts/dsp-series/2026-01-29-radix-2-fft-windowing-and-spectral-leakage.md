@@ -1,19 +1,9 @@
 ---
-title: Radix-2 FFT, Windowing, and Spectral Leakage
+title: "Radix-2 FFT, Windowing, and Spectral Leakage"
 date: 2026-01-29 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- dft
-- fft
-- frequency-analysis
-- academic
-- cse409
-- cse410
-- jkkniu
-description: '- $N$ outputs \xD7 $N$ multiplications each = **$O(N^2)$ operations**'
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'dft', 'fft', 'frequency-analysis', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## The FFT: Why It''s Revolutionary'
 math: true
 ---
 ## The FFT: Why It's Revolutionary

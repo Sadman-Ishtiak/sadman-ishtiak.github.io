@@ -1,19 +1,9 @@
 ---
-title: 'Quantization Error: Derivation and Numerical Example'
+title: "Quantization Error: Derivation and Numerical Example"
 date: 2026-01-10 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- quantization
-- adc
-- academic
-- cse409
-- cse410
-- jkkniu
-description: 'The difference between input and quantized output is the **quantization
-  error** $e[n]$:'
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'quantization', 'adc', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Quantization Error: The Inevitable Distortion'
 math: true
 ---
 ## Quantization Error: The Inevitable Distortion

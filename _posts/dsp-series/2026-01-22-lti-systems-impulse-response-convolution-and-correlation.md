@@ -1,20 +1,9 @@
 ---
-title: 'LTI Systems: Impulse Response, Convolution, and Correlation'
+title: "LTI Systems: Impulse Response, Convolution, and Correlation"
 date: 2026-01-22 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- lti-systems
-- convolution
-- academic
-- cse409
-- cse410
-- jkkniu
-description: When a system is **both Linear and Time-Invariant**, it unlocks a complete
-  mathematical
-toolkit: ''
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'lti-systems', 'convolution', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Why LTI Systems Are Special'
 math: true
 ---
 ## Why LTI Systems Are Special

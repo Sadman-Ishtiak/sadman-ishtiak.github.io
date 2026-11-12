@@ -1,19 +1,9 @@
 ---
-title: 'Signal Operations: Amplitude Domain'
+title: "Signal Operations: Amplitude Domain"
 date: 2026-01-13 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- time-domain
-- signal-operations
-- academic
-- cse409
-- cse410
-- jkkniu
-description: Before we transform signals to frequency domains or filter them, we manipulate
-  them
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'time-domain', 'signal-operations', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Why Time-Domain Operations Matter'
 math: true
 ---
 ## Why Time-Domain Operations Matter

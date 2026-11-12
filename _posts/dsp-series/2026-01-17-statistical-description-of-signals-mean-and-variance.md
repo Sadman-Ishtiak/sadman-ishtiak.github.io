@@ -1,19 +1,9 @@
 ---
-title: 'Statistical Description of Signals: Mean and Variance'
+title: "Statistical Description of Signals: Mean and Variance"
 date: 2026-01-17 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- statistics
-- signal-analysis
-- academic
-- cse409
-- cse410
-- jkkniu
-description: Most real-world signals\u2014speech, EEG, seismic, radar\u2014are **random**
-  (non-deterministic).\
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'statistics', 'signal-analysis', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Why Statistics in DSP?'
 math: true
 ---
 ## Why Statistics in DSP?

@@ -1,19 +1,9 @@
 ---
-title: 'DTFT, DFT, and FFT: The Frequency Domain Trinity'
+title: "DTFT, DFT, and FFT: The Frequency Domain Trinity"
 date: 2026-01-27 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- dft
-- fft
-- frequency-analysis
-- academic
-- cse409
-- cse410
-- jkkniu
-description: '| Transform | Input | Output | Use Case |'
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'dft', 'fft', 'frequency-analysis', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## The Frequency Domain Trinity'
 math: true
 ---
 ## The Frequency Domain Trinity

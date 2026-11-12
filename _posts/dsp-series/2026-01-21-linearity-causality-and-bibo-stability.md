@@ -1,18 +1,9 @@
 ---
-title: Linearity, Causality, and BIBO Stability
+title: "Linearity, Causality, and BIBO Stability"
 date: 2026-01-21 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- lti-systems
-- convolution
-- academic
-- cse409
-- cse410
-- jkkniu
-description: '**Test:** If $y[n] = \mathcal{T}\{x[n]\}$, then for any delay $k$:'
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'lti-systems', 'convolution', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## 2. Time-Invariance (Shift-Invariance)'
 math: true
 ---
 ## 2. Time-Invariance (Shift-Invariance)

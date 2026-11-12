@@ -1,18 +1,9 @@
 ---
-title: 'Time Shifting: Delay and Advance'
+title: "Time Shifting: Delay and Advance"
 date: 2026-01-14 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- time-domain
-- signal-operations
-- academic
-- cse409
-- cse410
-- jkkniu
-description: $$y[n] = x[n - k], \quad k > 0$$
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'time-domain', 'signal-operations', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Time Shifting: Delay and Advance'
 math: true
 ---
 ## Time Shifting: Delay and Advance

@@ -1,18 +1,9 @@
 ---
-title: Z-Transform Properties and Convolution
+title: "Z-Transform Properties and Convolution"
 date: 2026-01-24 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- z-transform
-- poles-zeros
-- academic
-- cse409
-- cse410
-- jkkniu
-description: '| Property | Time Domain | Z-Domain |'
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'z-transform', 'poles-zeros', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Z-Transform Properties'
 math: true
 ---
 ## Z-Transform Properties

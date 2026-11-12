@@ -1,20 +1,9 @@
 ---
-title: 'Applications: Echo Cancellation, Noise Cancellation, Beamforming'
+title: "Applications: Echo Cancellation, Noise Cancellation, Beamforming"
 date: 2026-02-12 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- adaptive-filters
-- lms
-- rls
-- echo-cancellation
-- academic
-- cse409
-- cse410
-- jkkniu
-description: '```'
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'adaptive-filters', 'lms', 'rls', 'echo-cancellation', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Applications'
 math: true
 ---
 ## Applications

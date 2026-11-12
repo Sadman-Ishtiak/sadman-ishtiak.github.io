@@ -1,19 +1,9 @@
 ---
-title: 'IIR Filter Design: Bilinear Transform and Analog Prototypes'
+title: "IIR Filter Design: Bilinear Transform and Analog Prototypes"
 date: 2026-02-02 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- filter-design
-- fir
-- iir
-- academic
-- cse409
-- cse410
-- jkkniu
-description: 1. Design **analog prototype** (Butterworth, Chebyshev, Elliptic)
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'filter-design', 'fir', 'iir', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## IIR Filter Design: Bilinear Transform'
 math: true
 ---
 ## IIR Filter Design: Bilinear Transform

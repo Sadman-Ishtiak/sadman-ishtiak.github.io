@@ -1,19 +1,9 @@
 ---
-title: 'Finding Minimum Sampling Rate: Worked Examples'
+title: "Finding Minimum Sampling Rate: Worked Examples"
 date: 2026-01-06 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- sampling
-- aliasing
-- nyquist
-- academic
-- cse409
-- cse410
-- jkkniu
-description: $$x(t) = 5\cos(2\pi \cdot 1000 t)$$
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'sampling', 'aliasing', 'nyquist', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Finding the Minimum Sampling Rate: Worked Examples'
 math: true
 ---
 ## Finding the Minimum Sampling Rate: Worked Examples

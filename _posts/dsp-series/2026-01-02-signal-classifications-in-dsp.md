@@ -1,20 +1,9 @@
 ---
-title: Signal Classifications in DSP
+title: "Signal Classifications in DSP"
 date: 2026-01-02 00:00:00 +0600
-categories:
-- Academic
-- Digital Signal Processing
-tags:
-- dsp
-- signals
-- fundamentals
-- academic
-- cse409
-- cse410
-- jkkniu
-description: Before we can process signals, we must understand their nature. Signals
-  fall into
-several fundamental categories: ''
+categories: ['Academic', 'Digital Signal Processing']
+tags: ['dsp', 'signals', 'fundamentals', 'academic', 'cse409', 'cse410', 'jkkniu']
+description: '## Signal Classification: The Taxonomy of DSP'
 math: true
 ---
 ## Signal Classification: The Taxonomy of DSP
