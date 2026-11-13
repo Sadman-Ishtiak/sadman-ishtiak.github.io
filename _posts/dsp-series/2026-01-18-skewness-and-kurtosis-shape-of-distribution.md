@@ -1,7 +1,7 @@
 ---
 title: "Skewness and Kurtosis: Shape of Distribution"
 date: 2026-01-18 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'statistics', 'signal-analysis', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## Third and Fourth Order: Shape of Distribution'
 math: true

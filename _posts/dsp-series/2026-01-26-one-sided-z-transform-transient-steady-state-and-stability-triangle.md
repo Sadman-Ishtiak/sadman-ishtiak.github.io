@@ -1,7 +1,7 @@
 ---
 title: "One-Sided Z-Transform, Transient/Steady-State, and Stability Triangle"
 date: 2026-01-26 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'z-transform', 'poles-zeros', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## Inverse Z-Transform Methods'
 math: true
@@ -14,7 +14,7 @@ For rational $X(z) = \frac{N(z)}{D(z)}$, factor denominator and expand:
 
 $$\frac{X(z)}{z} = \frac{A_1}{z-p_1} + \frac{A_2}{z-p_2} + \dots$$
 
-Then use pairs: $\frac{1}{1-az^{-1}} \leftrightarrow a^n u[n]$ (for $|z| > |a|$)
+Then use pairs: $\frac{1}{1-az^{-1}} \leftrightarrow a^n u[n]$ (for $\vert z\vert > \vert a\vert $)
 
 **Critical:** ROC determines causal vs anti-causal terms!
 
@@ -42,10 +42,10 @@ This is the **DTFT** (Discrete-Time Fourier Transform).
 
 | Condition | Result |
 |---|---|
-| ROC includes $|z|=1$ | DTFT exists = $X(e^{j\omega})$ |
-| ROC excludes $|z|=1$ | DTFT does not exist (or is periodic impulse train) |
+| ROC includes $\vert z\vert =1$ | DTFT exists = $X(e^{j\omega})$ |
+| ROC excludes $\vert z\vert =1$ | DTFT does not exist (or is periodic impulse train) |
 
-**DFT** is the sampled DTFT: $X[k] = X(e^{j\omega})\big|_{\omega=2\pi k/N}$
+**DFT** is the sampled DTFT: $X[k] = X(e^{j\omega})\big\vert _{\omega=2\pi k/N}$
 
 ---
 
@@ -72,7 +72,7 @@ This is the **DTFT** (Discrete-Time Fourier Transform).
 2. $H(z) = \frac{Y(z)}{X(z)} = \frac{1 + z^{-1}}{1 - 0.5 z^{-1}} = \frac{z+1}{z-0.5}$
 3. **Zero:** $z = -1$ (on unit circle → notch at $\omega=\pi$)
 4. **Pole:** $z = 0.5$ (inside unit circle → **stable**)
-5. ROC: $|z| > 0.5$ (causal)
+5. ROC: $\vert z\vert > 0.5$ (causal)
 6. Inverse: $H(z) = \frac{z}{z-0.5} + \frac{1}{z-0.5} = \frac{z}{z-0.5} + 0.5\frac{1}{1-0.5z^{-1}}$
    - $h[n] = (0.5)^n u[n] + 0.5 (0.5)^{n-1} u[n-1]$
    - $h[0] = 1$, $h[n] = 1.5(0.5)^n$ for $n \ge 1$
@@ -148,7 +148,7 @@ $$Y(z) = \sum \frac{A_k}{1-p_k z^{-1}} + \text{(forced response terms)}$$
 
 | Component | Time Domain | Behavior |
 |---|---|---|
-| **Natural/Transient** | $\sum A_k p_k^n u[n]$ | Decays if $|p_k|<1$ |
+| **Natural/Transient** | $\sum A_k p_k^n u[n]$ | Decays if $\vert p_k\vert <1$ |
 | **Forced/Steady-State** | Matches input form | Persists as long as input |
 
 ### Example
@@ -195,9 +195,9 @@ Output contains terms: $A n^b p^n u[n]$ where $b$ = pole multiplicity - 1
 
 | Pole Location | Behavior |
 |---|---|
-| $|p| < 1$ | Decays to 0 (exponential dominates polynomial) |
-| $|p| = 1$ | **Unbounded** (e.g., step input to integrator $H(z)=1/(1-z^{-1})$ → ramp) |
-| $|p| > 1$ | Grows unbounded |
+| $\vert p\vert < 1$ | Decays to 0 (exponential dominates polynomial) |
+| $\vert p\vert = 1$ | **Unbounded** (e.g., step input to integrator $H(z)=1/(1-z^{-1})$ → ramp) |
+| $\vert p\vert > 1$ | Grows unbounded |
 
 **BIBO stability requires ALL system poles strictly inside unit circle.** Poles on unit circle = marginally stable (only useful for digital oscillators).
 

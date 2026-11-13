@@ -1,7 +1,7 @@
 ---
 title: "Statistical Description of Signals: Mean and Variance"
 date: 2026-01-17 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'statistics', 'signal-analysis', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## Why Statistics in DSP?'
 math: true

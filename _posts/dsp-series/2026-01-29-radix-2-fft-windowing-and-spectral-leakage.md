@@ -1,7 +1,7 @@
 ---
 title: "Radix-2 FFT, Windowing, and Spectral Leakage"
 date: 2026-01-29 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'dft', 'fft', 'frequency-analysis', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## The FFT: Why It''s Revolutionary'
 math: true

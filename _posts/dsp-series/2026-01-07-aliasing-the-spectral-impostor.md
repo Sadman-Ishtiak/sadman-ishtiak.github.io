@@ -1,7 +1,7 @@
 ---
 title: "Aliasing: The Spectral Impostor"
 date: 2026-01-07 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'sampling', 'aliasing', 'nyquist', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## From Sampling Frequency to Discrete Sequence'
 math: true
@@ -43,7 +43,7 @@ $$F_{\text{alias}} = |F - k F_s| \quad \text{for integer } k \text{ such that } 
 ### Example: 60 Hz Power-Line Hum
 - Signal contains 60 Hz interference
 - Sampled at $F_s = 100$ Hz (below Nyquist rate of 120 Hz)
-- Alias: $|60 - 100| = 40$ Hz
+- Alias: $\vert 60 - 100\vert = 40$ Hz
 - The 60 Hz hum appears as a 40 Hz artifact in the digital signal!
 
 ---

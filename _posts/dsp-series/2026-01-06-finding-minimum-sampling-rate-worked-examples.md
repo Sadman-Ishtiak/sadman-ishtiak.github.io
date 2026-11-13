@@ -1,7 +1,7 @@
 ---
 title: "Finding Minimum Sampling Rate: Worked Examples"
 date: 2026-01-06 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'sampling', 'aliasing', 'nyquist', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## Finding the Minimum Sampling Rate: Worked Examples'
 math: true

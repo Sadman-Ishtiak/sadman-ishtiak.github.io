@@ -1,7 +1,7 @@
 ---
 title: "Polyphase Implementation and Noble Identities"
 date: 2026-02-08 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'multirate', 'decimation', 'interpolation', 'polyphase', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## Sample Rate Conversion by Rational Factor $L/M$'
 math: true

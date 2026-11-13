@@ -1,7 +1,7 @@
 ---
 title: "Adaptive Filters: LMS and NLMS Algorithms"
 date: 2026-02-10 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'adaptive-filters', 'lms', 'rls', 'echo-cancellation', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## Why Adaptive Filters?'
 math: true
@@ -41,7 +41,7 @@ Applications: Channel equalization, echo cancellation, noise cancellation, syste
 - **Desired**: $d[n]$ (target signal + noise, or training sequence)
 - **Output**: $y[n] = \mathbf{w}^T[n] \mathbf{x}[n]$
 - **Error**: $e[n] = d[n] - y[n]$
-- **Goal**: Minimize $E[e^2[n]]$ or $|e[n]|$
+- **Goal**: Minimize $E[e^2[n]]$ or $\vert e[n]\vert $
 
 ---
 

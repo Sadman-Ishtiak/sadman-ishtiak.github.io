@@ -1,7 +1,7 @@
 ---
 title: "How to Avoid Aliasing: Anti-Aliasing Filters and DAQ"
 date: 2026-01-08 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'sampling', 'aliasing', 'nyquist', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## How to Avoid Aliasing'
 math: true

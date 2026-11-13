@@ -1,7 +1,7 @@
 ---
 title: "Quantization: Discretizing the Amplitude Axis"
 date: 2026-01-09 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'quantization', 'adc', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## The Second Half of Digitization'
 math: true

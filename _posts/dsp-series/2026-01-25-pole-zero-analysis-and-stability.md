@@ -1,7 +1,7 @@
 ---
 title: "Pole-Zero Analysis and Stability"
 date: 2026-01-25 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'z-transform', 'poles-zeros', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## System Function $H(z)$ and Pole-Zero Analysis'
 math: true
@@ -29,9 +29,9 @@ $$H(z) = \frac{\sum_{k=0}^{M} b_k z^{-k}}{\sum_{k=0}^{N} a_k z^{-k}} = \frac{B(z
 
 | Pole Location | System |
 |---|---|
-| **All poles inside unit circle** ($|z| < 1$) | **Stable** (causal) |
-| **Any pole outside unit circle** ($|z| > 1$) | **Unstable** |
-| **Poles on unit circle** ($|z| = 1$) | **Marginally stable** (oscillatory) |
+| **All poles inside unit circle** ($\vert z\vert < 1$) | **Stable** (causal) |
+| **Any pole outside unit circle** ($\vert z\vert > 1$) | **Unstable** |
+| **Poles on unit circle** ($\vert z\vert = 1$) | **Marginally stable** (oscillatory) |
 
 ### Zero Locations → Frequency Response Shaping
 

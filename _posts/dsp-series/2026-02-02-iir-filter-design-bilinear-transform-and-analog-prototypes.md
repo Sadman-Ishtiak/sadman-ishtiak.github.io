@@ -1,7 +1,7 @@
 ---
 title: "IIR Filter Design: Bilinear Transform and Analog Prototypes"
 date: 2026-02-02 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'filter-design', 'fir', 'iir', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## IIR Filter Design: Bilinear Transform'
 math: true

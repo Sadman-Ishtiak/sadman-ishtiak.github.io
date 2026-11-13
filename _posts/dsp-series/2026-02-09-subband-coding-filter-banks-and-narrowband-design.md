@@ -1,7 +1,7 @@
 ---
 title: "Subband Coding, Filter Banks, and Narrowband Design"
 date: 2026-02-09 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'multirate', 'decimation', 'interpolation', 'polyphase', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## Applications of Multirate DSP (Proakis 11.9)'
 math: true

@@ -1,7 +1,7 @@
 ---
 title: "What Is a Signal? The Foundation of DSP"
 date: 2026-01-01 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'signals', 'fundamentals', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## The Ubiquitous Nature of Signals'
 math: true

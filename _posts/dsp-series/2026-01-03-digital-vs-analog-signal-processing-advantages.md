@@ -1,7 +1,7 @@
 ---
 title: "Digital vs Analog Signal Processing Advantages"
 date: 2026-01-03 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'signals', 'fundamentals', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## Is a Digital Photo of Einstein a Signal?'
 math: true

@@ -1,7 +1,7 @@
 ---
 title: "Digital Filters: FIR vs IIR Comparison"
 date: 2026-01-31 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'filter-design', 'fir', 'iir', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## Why Digital Filters?'
 math: true

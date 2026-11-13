@@ -1,7 +1,7 @@
 ---
 title: "Covariance, Correlation, and Real-World Examples"
 date: 2026-01-19 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'statistics', 'signal-analysis', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## Cross-Signal Statistics: Relationships'
 math: true

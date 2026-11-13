@@ -1,7 +1,7 @@
 ---
 title: "Applications: Echo Cancellation, Noise Cancellation, Beamforming"
 date: 2026-02-12 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'adaptive-filters', 'lms', 'rls', 'echo-cancellation', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## Applications'
 math: true
@@ -94,7 +94,7 @@ Sensors: x_1[n], x_2[n], ..., x_M[n] ──► [Adaptive Weights] ──► y[n]
               Beam pattern              Interference
               steering/nulling          suppression
 ```
-- Maximize SINR: $\max \frac{|\mathbf{w}^H \mathbf{d}|^2}{\mathbf{w}^H \mathbf{R}_{ii} \mathbf{w}}$
+- Maximize SINR: $\max \frac{\vert \mathbf{w}^H \mathbf{d}\vert ^2}{\mathbf{w}^H \mathbf{R}_{ii} \mathbf{w}}$
 - **MVDR (Capon):** $\mathbf{w} = \frac{\mathbf{R}^{-1} \mathbf{d}}{\mathbf{d}^H \mathbf{R}^{-1} \mathbf{d}}$
 - Used in: Radar, sonar, 5G massive MIMO, smart antennas
 
@@ -115,7 +115,7 @@ plot(10*log10(movmean(mse, 100)));  % dB learning curve
 ```
 
 ### Stability Checks
-- Monitor $\|\mathbf{w}[n]\|$ for divergence
+- Monitor $\Vert \mathbf{w}[n]\Vert $ for divergence
 - Clip coefficients if needed
 - Use **leaky LMS**: $\mathbf{w}[n+1] = (1-\gamma)\mathbf{w}[n] + \mu e[n]\mathbf{x}[n]$
 

@@ -1,7 +1,7 @@
 ---
 title: "Linearity, Causality, and BIBO Stability"
 date: 2026-01-21 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'lti-systems', 'convolution', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## 2. Time-Invariance (Shift-Invariance)'
 math: true
@@ -54,7 +54,7 @@ Equivalently: **Additivity** + **Homogeneity (Scaling)**
 ## 5. BIBO Stability
 
 **Bounded Input → Bounded Output (BIBO):**
-If $|x[n]| \le B_x < \infty$ for all $n$, then $|y[n]| \le B_y < \infty$ for all $n$.
+If $\vert x[n]\vert \le B_x < \infty$ for all $n$, then $\vert y[n]\vert \le B_y < \infty$ for all $n$.
 
 ### For LTI Systems: Impulse Response Condition
 
@@ -65,13 +65,13 @@ $$\sum_{n=-\infty}^{\infty} |h[n]| < \infty$$
 ### In the Z-Domain
 
 LTI system with transfer function $H(z)$:
-- **Stable** $\iff$ all poles of $H(z)$ lie **inside** the unit circle ($|z| < 1$)
+- **Stable** $\iff$ all poles of $H(z)$ lie **inside** the unit circle ($\vert z\vert < 1$)
 - ROC must include the unit circle
 
-| $h[n]$ | $\sum |h[n]|$ | Stable? | Pole Location |
+| $h[n]$ | $\sum \vert h[n]\vert $ | Stable? | Pole Location |
 |---|---|---|---|
-| $a^n u[n], |a|<1$ | $\frac{1}{1-|a|}$ | ✓ | $z=a$ (inside) |
-| $a^n u[n], |a|>1$ | $\infty$ | ✗ | $z=a$ (outside) |
+| $a^n u[n], \vert a\vert <1$ | $\frac{1}{1-\vert a\vert }$ | ✓ | $z=a$ (inside) |
+| $a^n u[n], \vert a\vert >1$ | $\infty$ | ✗ | $z=a$ (outside) |
 | $u[n]$ | $\infty$ | ✗ | $z=1$ (on circle) |
 | $\delta[n]$ | 1 | ✓ | None (FIR) |
 

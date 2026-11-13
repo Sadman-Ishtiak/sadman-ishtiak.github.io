@@ -1,7 +1,7 @@
 ---
 title: "Practical DFT/FFT Considerations and Cepstrum"
 date: 2026-01-30 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'dft', 'fft', 'frequency-analysis', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## Practical DFT/FFT Considerations'
 math: true
@@ -29,7 +29,7 @@ math: true
 ### 3. Frequency Resolution
 $$\Delta f = \frac{F_s}{N} \quad \text{(Hz per bin)}$$
 
-To resolve two tones at $f_1, f_2$: need $N > F_s / |f_1 - f_2|$
+To resolve two tones at $f_1, f_2$: need $N > F_s / \vert f_1 - f_2\vert $
 
 ### 4. Spectral Leakage
 Energy from one frequency "leaks" into adjacent bins due to:
@@ -45,7 +45,7 @@ The **cepstrum** is the inverse Fourier transform of the log spectrum. It separa
 ### Complex Cepstrum
 $$\hat{x}[n] = \mathcal{F}^{-1}\{\ln X(e^{j\omega})\} = \frac{1}{2\pi} \int_{-\pi}^{\pi} \ln X(e^{j\omega}) e^{j\omega n} d\omega$$
 
-Using $X(e^{j\omega}) = |X(e^{j\omega})| e^{j\theta(\omega)}$:
+Using $X(e^{j\omega}) = \vert X(e^{j\omega})\vert e^{j\theta(\omega)}$:
 $$\ln X(e^{j\omega}) = \ln |X(e^{j\omega})| + j\theta(\omega)$$
 
 ### Real Cepstrum (Magnitude only)

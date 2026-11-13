@@ -1,7 +1,7 @@
 ---
 title: "Bits, Levels, and Dynamic Range Relationships"
 date: 2026-01-11 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'quantization', 'adc', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## Bits, Levels, and Step Size: The Fundamental Relationship'
 math: true

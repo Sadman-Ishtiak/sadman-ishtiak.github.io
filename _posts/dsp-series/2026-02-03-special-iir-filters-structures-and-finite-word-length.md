@@ -1,7 +1,7 @@
 ---
 title: "Special IIR Filters, Structures, and Finite Word-Length"
 date: 2026-02-03 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'filter-design', 'fir', 'iir', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## Special IIR Filter Types (Proakis 5.4)'
 math: true
@@ -48,7 +48,7 @@ $$H(z) = \frac{1 - z^{-N}}{1 - r z^{-N}} \quad \text{(comb with peaks)}$$
 % MATLAB: filtfilt applies filter forward then backward
 y = filtfilt(b, a, x);  % Zero phase, magnitude squared
 ```
-- Magnitude response: $|H(\omega)|^2$
+- Magnitude response: $\vert H(\omega)\vert ^2$
 - Phase response: 0
 - **Non-causal** (offline only)
 
@@ -123,12 +123,12 @@ Partial fraction expansion. Less common.
 ### Coefficient Quantization Sensitivity
 - **Direct Form I/II**: High sensitivity for high-order filters (poles move significantly)
 - **SOS (Cascade)**: Low sensitivity — each biquad has low-order denominator
-- **Pole locations**: Sensitivity $\propto 1/|z - p_k|$ near poles
+- **Pole locations**: Sensitivity $\propto 1/\vert z - p_k\vert $ near poles
 
 ### Scaling Rules (for fixed-point)
-1. **L2-norm scaling**: $\sum |h[n]|^2 \le 1$ (prevents overflow for any input)
-2. **L1-norm scaling**: $\sum |h[n]| \le 1$ (strict, for peak inputs)
-3. **L∞-norm scaling**: $\max |H(\omega)| \le 1$ (frequency domain)
+1. **L2-norm scaling**: $\sum \vert h[n]\vert ^2 \le 1$ (prevents overflow for any input)
+2. **L1-norm scaling**: $\sum \vert h[n]\vert \le 1$ (strict, for peak inputs)
+3. **L∞-norm scaling**: $\max \vert H(\omega)\vert \le 1$ (frequency domain)
 
 **Always use SOS with proper scaling for fixed-point IIR implementation.**
 

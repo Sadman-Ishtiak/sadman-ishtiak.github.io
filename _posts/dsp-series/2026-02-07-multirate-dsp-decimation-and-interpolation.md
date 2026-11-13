@@ -1,7 +1,7 @@
 ---
 title: "Multirate DSP: Decimation and Interpolation"
 date: 2026-02-07 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'multirate', 'decimation', 'interpolation', 'polyphase', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## Why Multirate?'
 math: true

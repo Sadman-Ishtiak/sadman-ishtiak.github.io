@@ -1,7 +1,7 @@
 ---
 title: "LTI Systems: Impulse Response, Convolution, and Correlation"
 date: 2026-01-22 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'lti-systems', 'convolution', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## Why LTI Systems Are Special'
 math: true

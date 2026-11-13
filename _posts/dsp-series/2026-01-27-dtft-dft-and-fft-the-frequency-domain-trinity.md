@@ -1,7 +1,7 @@
 ---
 title: "DTFT, DFT, and FFT: The Frequency Domain Trinity"
 date: 2026-01-27 00:00:00 +0600
-categories: ['Academic', 'Digital Signal Processing']
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: ['dsp', 'dft', 'fft', 'frequency-analysis', 'academic', 'cse409', 'cse410', 'jkkniu']
 description: '## The Frequency Domain Trinity'
 math: true
@@ -26,7 +26,7 @@ $$x[n] = \frac{1}{2\pi} \int_{-\pi}^{\pi} X(e^{j\omega}) e^{j\omega n} d\omega$$
 
 **Key Properties:**
 - Periodic in $\omega$ with period $2\pi$: $X(e^{j(\omega+2\pi)}) = X(e^{j\omega})$
-- Exists if $\sum |x[n]| < \infty$ (absolutely summable) or finite energy
+- Exists if $\sum \vert x[n]\vert < \infty$ (absolutely summable) or finite energy
 - Continuous frequency variable $\omega \in [-\pi, \pi]$
 
 **Limitation:** Cannot compute on a computer—infinite sum, continuous output.
