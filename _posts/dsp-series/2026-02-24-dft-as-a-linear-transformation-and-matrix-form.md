@@ -122,7 +122,7 @@ Bins $k=0$ and $k=N/2$ (when $N$ is even) are **purely real** for a real input, 
 - Store only $N/2+1$ complex values for a real signal.
 - A real-input FFT costs about half a complex FFT.
 - $X[0]=N\bar x$ is the DC component and is always real.
-- $X[N/2]=\sum x[n](-1)^n$ is the Nyquist bin and is always real.
+- $X[N/2]=\sum_n x[n]\\,(-1)^n$ is the Nyquist bin and is always real.
 
 ### Example: 8-Point Real DFT
 
