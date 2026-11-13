@@ -76,6 +76,8 @@ x[n] = s[n] + n[n] ──►[Delay Δ]──►[Adaptive]──►[−]──►
 - Enhances narrowband signals in broadband noise
 - Used in: Sonar, vibration analysis, sinusoid extraction
 
+**Suppression of narrowband interference (Proakis 13.1.4).** The same structure works in reverse when the wanted signal is wideband and the disturbance is narrowband. A reference path containing only the interferer (or a delayed copy) drives an adaptive filter whose output is subtracted from the primary path. The filter converges to the interferer's frequency response and removes it while leaving the wideband signal almost untouched. Typical uses: removing a 50/60 Hz power-line hum from an ECG, or a strong jammer from a spread-spectrum receiver. The adaptation must be slow enough not to track and cancel the wanted signal.
+
 ### 6. Linear Predictive Coding (LPC) of Speech
 ```
 Speech ──►[Adaptive Predictor]──►[−]──► Residual (error)
@@ -86,7 +88,7 @@ Speech ──►[Adaptive Predictor]──►[−]──► Residual (error)
 - **Compression**: Transmit predictor coefficients + residual
 - Used in: GSM, CDMA, VoIP codecs
 
-### 7. Adaptive Beamforming (Arrays)
+### 7. Adaptive Beamforming and Adaptive Arrays
 ```
 Sensors: x_1[n], x_2[n], ..., x_M[n] ──► [Adaptive Weights] ──► y[n]
                     │                        │
@@ -94,9 +96,12 @@ Sensors: x_1[n], x_2[n], ..., x_M[n] ──► [Adaptive Weights] ──► y[n]
               Beam pattern              Interference
               steering/nulling          suppression
 ```
+- An **adaptive array** is a set of $M$ sensors whose outputs are combined with weights $w_1,\dots,w_M$ that are updated from the data.
+- The weights apply a phase (and possibly amplitude) shift per sensor, so signals arriving from the look direction add coherently while signals from other directions cancel.
 - Maximize SINR: $\max \frac{\vert \mathbf{w}^H \mathbf{d}\vert ^2}{\mathbf{w}^H \mathbf{R}_{ii} \mathbf{w}}$
+- **LMS adaptation:** $w_m[n+1]=w_m[n]+\mu e[n]x_m^{*}[n]$, where $e[n]$ is the beamformer output error. This is spatial filtering with the same LMS rule used in time-domain adaptive filters.
 - **MVDR (Capon):** $\mathbf{w} = \frac{\mathbf{R}^{-1} \mathbf{d}}{\mathbf{d}^H \mathbf{R}^{-1} \mathbf{d}}$
-- Used in: Radar, sonar, 5G massive MIMO, smart antennas
+- Used in: Radar, sonar, 5G massive MIMO, smart antennas, microphone arrays for speech enhancement
 
 ---
 
