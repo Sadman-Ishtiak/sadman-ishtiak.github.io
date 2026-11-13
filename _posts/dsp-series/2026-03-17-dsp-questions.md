@@ -1,7 +1,7 @@
 ---
 title: Compiled DSP Questions for CSE-409
 date: 2026-03-17 00:00:00 +0600
-categories: [Academic, CSE-409 Digital Signal Processing]
+categories: ['Academic', 'CSE-409 Digital Signal Processing']
 tags: [dsp, questions, exam-prep, cse-409, lab]
 description: "Compiled Digital Signal Processing (DSP) exam and lab questions for CSE-409 and CSE-410."
 math: true
