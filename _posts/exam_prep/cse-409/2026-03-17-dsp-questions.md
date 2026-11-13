@@ -7,6 +7,8 @@ description: "Compiled Digital Signal Processing (DSP) exam and lab questions fo
 math: true
 ---
 
+> **Answers.** Every question below is answered inside the DSP series: [Answers 1–25](/posts/compiled-dsp-questions-answers-1-25/), [Answers 26–50](/posts/compiled-dsp-questions-answers-26-50/), [Answers 51–75](/posts/compiled-dsp-questions-answers-51-75/), and [Answers 76–99 plus the CSE 410 lab](/posts/compiled-dsp-questions-answers-76-99-and-lab/).
+
 ## Questions for CSE-409 Digital Signal Processing
 1. Define and classify signals with examples.
 2. Explain continuous-time vs. discrete-time signals with a diagram.

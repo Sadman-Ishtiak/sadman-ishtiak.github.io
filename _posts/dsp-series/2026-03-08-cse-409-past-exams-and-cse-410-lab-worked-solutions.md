@@ -8,7 +8,7 @@ math: true
 ---
 ## How to Use This Post
 
-The questions below are the numerical and short-answer items from the compiled CSE 409 finals (2021–2024, sessions 2017–2021) and the CSE 410 lab list. Each answer shows the full working, not just the result, because the marks are in the steps. Theory questions are cross-referenced to the post that covers them.
+The questions below are the numerical and short-answer items from the compiled CSE 409 finals (2021–2024, sessions 2017–2021) and the CSE 410 lab list, which is published as [Compiled DSP Questions for CSE-409](/posts/dsp-questions/). The full 99-question list is answered in [Answers 1–25](/posts/compiled-dsp-questions-answers-1-25/), [Answers 26–50](/posts/compiled-dsp-questions-answers-26-50/), [Answers 51–75](/posts/compiled-dsp-questions-answers-51-75/), and [Answers 76–99 plus the CSE 410 lab](/posts/compiled-dsp-questions-answers-76-99-and-lab/). Each answer shows the full working, not just the result, because the marks are in the steps. Theory questions are cross-referenced to the post that covers them.
 
 ---
 
